@@ -117,29 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 194</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="panelMenu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -153,6 +130,7 @@
   <data name="btnBaseDeDatos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnBaseDeDatos.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
@@ -171,6 +149,7 @@
   <data name="btnBaseDeDatos.Size" type="System.Drawing.Size, System.Drawing">
     <value>388, 70</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnBaseDeDatos.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -246,55 +225,55 @@
   <data name="&gt;&gt;btnUsuario.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="iconButton4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="btnControlStock.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="iconButton4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnControlStock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="iconButton4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnControlStock.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="iconButton4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnControlStock.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
-  <data name="iconButton4.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnControlStock.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="iconButton4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnControlStock.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="iconButton4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnControlStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 398</value>
   </data>
-  <data name="iconButton4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnControlStock.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
-  <data name="iconButton4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnControlStock.Size" type="System.Drawing.Size, System.Drawing">
     <value>388, 70</value>
   </data>
-  <data name="iconButton4.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnControlStock.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="iconButton4.Text" xml:space="preserve">
+  <data name="btnControlStock.Text" xml:space="preserve">
     <value>Control de Stock</value>
   </data>
-  <data name="iconButton4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnControlStock.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="iconButton4.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btnControlStock.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;iconButton4.Name" xml:space="preserve">
-    <value>iconButton4</value>
+  <data name="&gt;&gt;btnControlStock.Name" xml:space="preserve">
+    <value>btnControlStock</value>
   </data>
-  <data name="&gt;&gt;iconButton4.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnControlStock.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
-  <data name="&gt;&gt;iconButton4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnControlStock.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;iconButton4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnControlStock.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <metadata name="btnProveedor.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -601,6 +580,144 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelMenu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblTitleChildForm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTitleChildForm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt</value>
+  </data>
+  <data name="lblTitleChildForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 53</value>
+  </data>
+  <data name="lblTitleChildForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 21</value>
+  </data>
+  <data name="lblTitleChildForm.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblTitleChildForm.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="&gt;&gt;lblTitleChildForm.Name" xml:space="preserve">
+    <value>lblTitleChildForm</value>
+  </data>
+  <data name="&gt;&gt;lblTitleChildForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTitleChildForm.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;lblTitleChildForm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="iconCurrentChildForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 42</value>
+  </data>
+  <data name="iconCurrentChildForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 42</value>
+  </data>
+  <data name="iconCurrentChildForm.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;iconCurrentChildForm.Name" xml:space="preserve">
+    <value>iconCurrentChildForm</value>
+  </data>
+  <data name="&gt;&gt;iconCurrentChildForm.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;iconCurrentChildForm.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;iconCurrentChildForm.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="iconPerfil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>943, 35</value>
+  </data>
+  <data name="iconPerfil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 54</value>
+  </data>
+  <data name="iconPerfil.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;iconPerfil.Name" xml:space="preserve">
+    <value>iconPerfil</value>
+  </data>
+  <data name="&gt;&gt;iconPerfil.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;iconPerfil.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;iconPerfil.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 118</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 71</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panelDesktop</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelDesktop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 118</value>
+  </data>
+  <data name="panelDesktop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1285, 766</value>
+  </data>
+  <data name="panelDesktop.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelDesktop.Name" xml:space="preserve">
+    <value>panelDesktop</value>
+  </data>
+  <data name="&gt;&gt;panelDesktop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelDesktop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelDesktop.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

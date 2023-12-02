@@ -15,12 +15,15 @@ namespace Vista
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
+        private Form currentChildForm;
+
         public HomePage()
         {
             InitializeComponent();
             leftBorderBtn= new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
+            
         }
         private struct RGBColors
         {
@@ -52,7 +55,9 @@ namespace Vista
                 leftBorderBtn.Location= new Point(0,currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
-
+                //Icon current Chid Form
+                iconCurrentChildForm.IconChar = currentBtn.IconChar;
+                iconCurrentChildForm.IconColor = color;
 
             }
         }
@@ -69,6 +74,19 @@ namespace Vista
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
 
             }
+        }
+
+        private void OpenChidForm(Form childForm)
+        {
+            if(currentChildForm!= null)
+            {
+                // open only form
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock= DockStyle.Fill;
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
@@ -124,6 +142,14 @@ namespace Vista
         {
             DisableButton();
             leftBorderBtn.Visible = false;
+            iconCurrentChildForm.IconChar = IconChar.House;
+            iconCurrentChildForm.IconColor = Color.Gainsboro;
+            lblTitleChildForm.Text = "Home";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
