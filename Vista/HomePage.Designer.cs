@@ -39,11 +39,11 @@
             this.btnCompra = new FontAwesome.Sharp.IconButton();
             this.btnVenta = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panelMenu.BackColor = System.Drawing.Color.CadetBlue;
             this.panelMenu.Controls.Add(this.btnBaseDeDatos);
             this.panelMenu.Controls.Add(this.btnUsuario);
             this.panelMenu.Controls.Add(this.iconButton4);
@@ -68,7 +68,7 @@
             // 
             // btnBaseDeDatos
             // 
-            this.btnBaseDeDatos.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnBaseDeDatos.BackColor = System.Drawing.Color.CadetBlue;
             resources.ApplyResources(this.btnBaseDeDatos, "btnBaseDeDatos");
             this.btnBaseDeDatos.FlatAppearance.BorderSize = 0;
             this.btnBaseDeDatos.ForeColor = System.Drawing.Color.White;
@@ -82,7 +82,7 @@
             // 
             // btnUsuario
             // 
-            this.btnUsuario.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnUsuario.BackColor = System.Drawing.Color.CadetBlue;
             resources.ApplyResources(this.btnUsuario, "btnUsuario");
             this.btnUsuario.FlatAppearance.BorderSize = 0;
             this.btnUsuario.ForeColor = System.Drawing.Color.White;
@@ -96,7 +96,7 @@
             // 
             // iconButton4
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconButton4.BackColor = System.Drawing.Color.CadetBlue;
             resources.ApplyResources(this.iconButton4, "iconButton4");
             this.iconButton4.FlatAppearance.BorderSize = 0;
             this.iconButton4.ForeColor = System.Drawing.Color.White;
@@ -110,7 +110,7 @@
             // 
             // btnProveedor
             // 
-            this.btnProveedor.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnProveedor.BackColor = System.Drawing.Color.CadetBlue;
             resources.ApplyResources(this.btnProveedor, "btnProveedor");
             this.btnProveedor.FlatAppearance.BorderSize = 0;
             this.btnProveedor.ForeColor = System.Drawing.Color.White;
@@ -124,7 +124,7 @@
             // 
             // btnProducto
             // 
-            this.btnProducto.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnProducto.BackColor = System.Drawing.Color.CadetBlue;
             resources.ApplyResources(this.btnProducto, "btnProducto");
             this.btnProducto.FlatAppearance.BorderSize = 0;
             this.btnProducto.ForeColor = System.Drawing.Color.White;
@@ -138,7 +138,7 @@
             // 
             // btnCompra
             // 
-            this.btnCompra.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnCompra.BackColor = System.Drawing.Color.CadetBlue;
             resources.ApplyResources(this.btnCompra, "btnCompra");
             this.btnCompra.FlatAppearance.BorderSize = 0;
             this.btnCompra.ForeColor = System.Drawing.Color.White;
@@ -152,7 +152,7 @@
             // 
             // btnVenta
             // 
-            this.btnVenta.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnVenta.BackColor = System.Drawing.Color.CadetBlue;
             resources.ApplyResources(this.btnVenta, "btnVenta");
             this.btnVenta.FlatAppearance.BorderSize = 0;
             this.btnVenta.ForeColor = System.Drawing.Color.White;
@@ -167,20 +167,23 @@
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panelLogo.Controls.Add(this.pictureBox2);
+            this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.panelLogo, "panelLogo");
             this.panelLogo.Name = "panelLogo";
             // 
-            // pictureBox2
+            // btnHome
             // 
-            this.pictureBox2.Image = global::Vista.Properties.Resources.Star_CG;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
+            this.btnHome.BackColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::Vista.Properties.Resources.Star_CG;
+            resources.ApplyResources(this.btnHome, "btnHome");
+            this.btnHome.Name = "btnHome";
+            this.btnHome.TabStop = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.CadetBlue;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
@@ -195,7 +198,7 @@
             this.Name = "HomePage";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -214,6 +217,6 @@
         private FontAwesome.Sharp.IconButton btnProveedor;
         private FontAwesome.Sharp.IconButton btnProducto;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox btnHome;
     }
 }

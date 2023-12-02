@@ -41,7 +41,7 @@ namespace Vista
                 DisableButton();
                 // Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37,36,81);
+                currentBtn.BackColor = Color.FromArgb(95, 158, 160);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor= color;
@@ -61,8 +61,8 @@ namespace Vista
         {
             if(currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(31, 30, 68);
-                currentBtn.ForeColor = Color.Black;
+                currentBtn.BackColor = Color.FromArgb(85, 148, 150);
+                currentBtn.ForeColor = Color.White;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.White;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -114,6 +114,16 @@ namespace Vista
         private void btnBaseDeDatos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color7);
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            Reset();
+        }
+        private void Reset()
+        {
+            DisableButton();
+            leftBorderBtn.Visible = false;
         }
     }
 }
