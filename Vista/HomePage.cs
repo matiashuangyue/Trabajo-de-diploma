@@ -148,7 +148,9 @@ namespace Vista
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            currentChildForm.Close();
             Reset();
+
         }
         private void Reset()
         {
