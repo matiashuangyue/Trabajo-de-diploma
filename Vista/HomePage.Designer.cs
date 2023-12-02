@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCompra = new FontAwesome.Sharp.IconButton();
+            this.btnVenta = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.btnProducto = new FontAwesome.Sharp.IconButton();
+            this.btnProveedor = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.btnUsuario = new FontAwesome.Sharp.IconButton();
+            this.btnBaseDeDatos = new FontAwesome.Sharp.IconButton();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,84 +50,98 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Coral;
-            this.panel2.Controls.Add(this.iconButton7);
-            this.panel2.Controls.Add(this.iconButton6);
-            this.panel2.Controls.Add(this.iconButton5);
+            this.panel2.Controls.Add(this.btnBaseDeDatos);
+            this.panel2.Controls.Add(this.btnUsuario);
             this.panel2.Controls.Add(this.iconButton4);
-            this.panel2.Controls.Add(this.iconButton3);
-            this.panel2.Controls.Add(this.iconButton2);
-            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Controls.Add(this.btnProveedor);
+            this.panel2.Controls.Add(this.btnProducto);
+            this.panel2.Controls.Add(this.btnCompra);
+            this.panel2.Controls.Add(this.btnVenta);
             this.panel2.Controls.Add(this.panel3);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            // 
+            // btnCompra
+            // 
+            resources.ApplyResources(this.btnCompra, "btnCompra");
+            this.btnCompra.FlatAppearance.BorderSize = 0;
+            this.btnCompra.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
+            this.btnCompra.IconColor = System.Drawing.Color.White;
+            this.btnCompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCompra.IconSize = 32;
+            this.btnCompra.Name = "btnCompra";
+            this.btnCompra.UseVisualStyleBackColor = true;
+            // 
+            // btnVenta
+            // 
+            resources.ApplyResources(this.btnVenta, "btnVenta");
+            this.btnVenta.FlatAppearance.BorderSize = 0;
+            this.btnVenta.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
+            this.btnVenta.IconColor = System.Drawing.Color.White;
+            this.btnVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVenta.IconSize = 32;
+            this.btnVenta.Name = "btnVenta";
+            this.btnVenta.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // iconButton1
+            // btnProducto
             // 
-            resources.ApplyResources(this.iconButton1, "iconButton1");
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnProducto, "btnProducto");
+            this.btnProducto.FlatAppearance.BorderSize = 0;
+            this.btnProducto.IconChar = FontAwesome.Sharp.IconChar.Shopify;
+            this.btnProducto.IconColor = System.Drawing.Color.White;
+            this.btnProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnProducto.IconSize = 32;
+            this.btnProducto.Name = "btnProducto";
+            this.btnProducto.UseVisualStyleBackColor = true;
             // 
-            // iconButton2
+            // btnProveedor
             // 
-            resources.ApplyResources(this.iconButton2, "iconButton2");
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // iconButton3
-            // 
-            resources.ApplyResources(this.iconButton3, "iconButton3");
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnProveedor, "btnProveedor");
+            this.btnProveedor.FlatAppearance.BorderSize = 0;
+            this.btnProveedor.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.btnProveedor.IconColor = System.Drawing.Color.White;
+            this.btnProveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnProveedor.IconSize = 32;
+            this.btnProveedor.Name = "btnProveedor";
+            this.btnProveedor.UseVisualStyleBackColor = true;
             // 
             // iconButton4
             // 
             resources.ApplyResources(this.iconButton4, "iconButton4");
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.SquarePollVertical;
+            this.iconButton4.IconColor = System.Drawing.Color.White;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.IconSize = 32;
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.UseVisualStyleBackColor = true;
             // 
-            // iconButton5
+            // btnUsuario
             // 
-            resources.ApplyResources(this.iconButton5, "iconButton5");
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnUsuario, "btnUsuario");
+            this.btnUsuario.FlatAppearance.BorderSize = 0;
+            this.btnUsuario.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.btnUsuario.IconColor = System.Drawing.Color.White;
+            this.btnUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUsuario.IconSize = 32;
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.UseVisualStyleBackColor = true;
             // 
-            // iconButton6
+            // btnBaseDeDatos
             // 
-            resources.ApplyResources(this.iconButton6, "iconButton6");
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton6.IconColor = System.Drawing.Color.Black;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.UseVisualStyleBackColor = true;
-            // 
-            // iconButton7
-            // 
-            resources.ApplyResources(this.iconButton7, "iconButton7");
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton7.IconColor = System.Drawing.Color.Black;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnBaseDeDatos, "btnBaseDeDatos");
+            this.btnBaseDeDatos.FlatAppearance.BorderSize = 0;
+            this.btnBaseDeDatos.IconChar = FontAwesome.Sharp.IconChar.BarChart;
+            this.btnBaseDeDatos.IconColor = System.Drawing.Color.White;
+            this.btnBaseDeDatos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBaseDeDatos.IconSize = 32;
+            this.btnBaseDeDatos.Name = "btnBaseDeDatos";
+            this.btnBaseDeDatos.UseVisualStyleBackColor = true;
             // 
             // HomePage
             // 
@@ -145,13 +159,13 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnCompra;
+        private FontAwesome.Sharp.IconButton btnVenta;
         private System.Windows.Forms.Panel panel3;
+        private FontAwesome.Sharp.IconButton btnBaseDeDatos;
+        private FontAwesome.Sharp.IconButton btnUsuario;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton btnProveedor;
+        private FontAwesome.Sharp.IconButton btnProducto;
     }
 }

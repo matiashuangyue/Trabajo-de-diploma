@@ -140,126 +140,150 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="panel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnBaseDeDatos.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="iconButton7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnBaseDeDatos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="iconButton7.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnBaseDeDatos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnBaseDeDatos.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
-  <data name="iconButton7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnBaseDeDatos.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnBaseDeDatos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="iconButton7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnBaseDeDatos.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 454</value>
   </data>
-  <data name="iconButton7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 56</value>
+  <data name="btnBaseDeDatos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 20, 0</value>
   </data>
-  <data name="iconButton7.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnBaseDeDatos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 56</value>
+  </data>
+  <data name="btnBaseDeDatos.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="iconButton7.Text" xml:space="preserve">
-    <value>iconButton7</value>
+  <data name="btnBaseDeDatos.Text" xml:space="preserve">
+    <value>Base de Datos</value>
   </data>
-  <data name="&gt;&gt;iconButton7.Name" xml:space="preserve">
-    <value>iconButton7</value>
+  <data name="btnBaseDeDatos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;iconButton7.Type" xml:space="preserve">
+  <data name="btnBaseDeDatos.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnBaseDeDatos.Name" xml:space="preserve">
+    <value>btnBaseDeDatos</value>
+  </data>
+  <data name="&gt;&gt;btnBaseDeDatos.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
-  <data name="&gt;&gt;iconButton7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnBaseDeDatos.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;iconButton7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnBaseDeDatos.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="iconButton6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <metadata name="btnUsuario.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnUsuario.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="iconButton6.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnUsuario.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnUsuario.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
-  <data name="iconButton6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnUsuario.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnUsuario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="iconButton6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 398</value>
   </data>
-  <data name="iconButton6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 56</value>
+  <data name="btnUsuario.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 20, 0</value>
   </data>
-  <data name="iconButton6.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnUsuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 56</value>
+  </data>
+  <data name="btnUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="iconButton6.Text" xml:space="preserve">
-    <value>iconButton6</value>
+  <data name="btnUsuario.Text" xml:space="preserve">
+    <value>Usuario</value>
   </data>
-  <data name="&gt;&gt;iconButton6.Name" xml:space="preserve">
-    <value>iconButton6</value>
+  <data name="btnUsuario.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;iconButton6.Type" xml:space="preserve">
+  <data name="btnUsuario.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnUsuario.Name" xml:space="preserve">
+    <value>btnUsuario</value>
+  </data>
+  <data name="&gt;&gt;btnUsuario.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
-  <data name="&gt;&gt;iconButton6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnUsuario.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;iconButton6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnUsuario.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="iconButton5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="iconButton5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 10.2pt</value>
-  </data>
-  <data name="iconButton5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="iconButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 342</value>
-  </data>
-  <data name="iconButton5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 56</value>
-  </data>
-  <data name="iconButton5.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="iconButton5.Text" xml:space="preserve">
-    <value>iconButton5</value>
-  </data>
-  <data name="&gt;&gt;iconButton5.Name" xml:space="preserve">
-    <value>iconButton5</value>
-  </data>
-  <data name="&gt;&gt;iconButton5.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;iconButton5.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;iconButton5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
+  <metadata name="iconButton4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="iconButton4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
+  <data name="iconButton4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="iconButton4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
+  </data>
+  <data name="iconButton4.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="iconButton4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="iconButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 286</value>
+    <value>0, 342</value>
+  </data>
+  <data name="iconButton4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 20, 0</value>
   </data>
   <data name="iconButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 56</value>
+    <value>310, 56</value>
   </data>
   <data name="iconButton4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="iconButton4.Text" xml:space="preserve">
-    <value>iconButton4</value>
+    <value>Control de Stock</value>
+  </data>
+  <data name="iconButton4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="iconButton4.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;iconButton4.Name" xml:space="preserve">
     <value>iconButton4</value>
@@ -271,104 +295,212 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;iconButton4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="iconButton3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="iconButton3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 10.2pt</value>
-  </data>
-  <data name="iconButton3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="iconButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 230</value>
-  </data>
-  <data name="iconButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 56</value>
-  </data>
-  <data name="iconButton3.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="iconButton3.Text" xml:space="preserve">
-    <value>iconButton3</value>
-  </data>
-  <data name="&gt;&gt;iconButton3.Name" xml:space="preserve">
-    <value>iconButton3</value>
-  </data>
-  <data name="&gt;&gt;iconButton3.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;iconButton3.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;iconButton3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="iconButton2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="iconButton2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 10.2pt</value>
-  </data>
-  <data name="iconButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="iconButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 174</value>
-  </data>
-  <data name="iconButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 56</value>
-  </data>
-  <data name="iconButton2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="iconButton2.Text" xml:space="preserve">
-    <value>iconButton2</value>
-  </data>
-  <data name="&gt;&gt;iconButton2.Name" xml:space="preserve">
-    <value>iconButton2</value>
-  </data>
-  <data name="&gt;&gt;iconButton2.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;iconButton2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;iconButton2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="iconButton1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <metadata name="btnProveedor.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnProveedor.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="iconButton1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnProveedor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnProveedor.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
-  <data name="iconButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 118</value>
+  <data name="btnProveedor.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="iconButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 56</value>
+  <data name="btnProveedor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="iconButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="btnProveedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 286</value>
   </data>
-  <data name="iconButton1.Text" xml:space="preserve">
-    <value>iconButton1</value>
+  <data name="btnProveedor.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 20, 0</value>
   </data>
-  <data name="&gt;&gt;iconButton1.Name" xml:space="preserve">
-    <value>iconButton1</value>
+  <data name="btnProveedor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 56</value>
   </data>
-  <data name="&gt;&gt;iconButton1.Type" xml:space="preserve">
+  <data name="btnProveedor.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnProveedor.Text" xml:space="preserve">
+    <value>Proveedor</value>
+  </data>
+  <data name="btnProveedor.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnProveedor.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnProveedor.Name" xml:space="preserve">
+    <value>btnProveedor</value>
+  </data>
+  <data name="&gt;&gt;btnProveedor.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
-  <data name="&gt;&gt;iconButton1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnProveedor.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;iconButton1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnProveedor.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="btnProducto.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnProducto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnProducto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt</value>
+  </data>
+  <data name="btnProducto.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 230</value>
+  </data>
+  <data name="btnProducto.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 20, 0</value>
+  </data>
+  <data name="btnProducto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 56</value>
+  </data>
+  <data name="btnProducto.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnProducto.Text" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="btnProducto.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnProducto.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnProducto.Name" xml:space="preserve">
+    <value>btnProducto</value>
+  </data>
+  <data name="&gt;&gt;btnProducto.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;btnProducto.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnProducto.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="btnCompra.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnCompra.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnCompra.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnCompra.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt</value>
+  </data>
+  <data name="btnCompra.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnCompra.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCompra.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 174</value>
+  </data>
+  <data name="btnCompra.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 20, 0</value>
+  </data>
+  <data name="btnCompra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 56</value>
+  </data>
+  <data name="btnCompra.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnCompra.Text" xml:space="preserve">
+    <value>Compra</value>
+  </data>
+  <data name="btnCompra.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnCompra.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnCompra.Name" xml:space="preserve">
+    <value>btnCompra</value>
+  </data>
+  <data name="&gt;&gt;btnCompra.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;btnCompra.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnCompra.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="btnVenta.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnVenta.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnVenta.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnVenta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt</value>
+  </data>
+  <data name="btnVenta.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnVenta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 118</value>
+  </data>
+  <data name="btnVenta.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 20, 0</value>
+  </data>
+  <data name="btnVenta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 56</value>
+  </data>
+  <data name="btnVenta.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnVenta.Text" xml:space="preserve">
+    <value>VENTA</value>
+  </data>
+  <data name="btnVenta.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnVenta.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnVenta.Name" xml:space="preserve">
+    <value>btnVenta</value>
+  </data>
+  <data name="&gt;&gt;btnVenta.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;btnVenta.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnVenta.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <metadata name="panel3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -376,7 +508,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 118</value>
+    <value>310, 118</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -397,10 +529,10 @@
     <value>Left</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>10, 0</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 960</value>
+    <value>310, 720</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -424,7 +556,10 @@
     <value>8, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1198, 768</value>
+    <value>1181, 720</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 20, 0</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
