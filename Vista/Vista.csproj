@@ -84,6 +84,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -108,6 +109,15 @@
       <Project>{86eda5c7-fb70-4f3f-8ec6-ef5cb512a293}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star CG2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star CG.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star CG3.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
