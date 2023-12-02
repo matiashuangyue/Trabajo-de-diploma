@@ -47,7 +47,7 @@ namespace Vista
                         
                     };
 
-                    ControlLogin User = new ControlLogin();
+                    ControlUsuario User = new ControlUsuario();
                     var LoginValido = User.Validar(usuario);
                     if (LoginValido)
                     {
