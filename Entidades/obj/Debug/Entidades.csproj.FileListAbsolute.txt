@@ -1,0 +1,10 @@
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\bin\Debug\Entidades.exe.config
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\bin\Debug\Entidades.exe
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\bin\Debug\Entidades.pdb
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidades.csproj.SuggestedBindingRedirects.cache
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidades.Properties.Resources.resources
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidades.exe
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidades.pdb

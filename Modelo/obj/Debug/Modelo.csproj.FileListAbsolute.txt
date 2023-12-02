@@ -3,3 +3,12 @@ C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Modelo\obj\Debug\Modelo.csp
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Modelo\obj\Debug\Modelo.Properties.Resources.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Modelo\obj\Debug\Modelo.csproj.GenerateResource.cache
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\bin\Debug\Modelo.exe.config
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\bin\Debug\Modelo.exe
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\bin\Debug\Modelo.pdb
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\bin\Debug\Entidades.exe
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\bin\Debug\Entidades.pdb
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\bin\Debug\Entidades.exe.config
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\obj\Debug\Modelo.exe
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\obj\Debug\Modelo.pdb

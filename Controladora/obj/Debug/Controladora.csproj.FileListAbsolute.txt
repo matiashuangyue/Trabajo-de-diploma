@@ -3,3 +3,15 @@ C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Controladora\obj\Debug\Cont
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Controladora\obj\Debug\Controladora.Properties.Resources.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Controladora\obj\Debug\Controladora.csproj.GenerateResource.cache
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\bin\Debug\Controladora.exe.config
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\bin\Debug\Controladora.exe
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\bin\Debug\Controladora.pdb
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\bin\Debug\Entidades.exe
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\bin\Debug\Modelo.exe
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\bin\Debug\Entidades.pdb
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\bin\Debug\Entidades.exe.config
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\bin\Debug\Modelo.pdb
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\bin\Debug\Modelo.exe.config
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\obj\Debug\Controladora.csproj.CopyComplete
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\obj\Debug\Controladora.exe
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Controladora\obj\Debug\Controladora.pdb
