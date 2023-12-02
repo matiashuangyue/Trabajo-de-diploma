@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlLogin.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +76,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidad\Entidad.csproj">
+      <Project>{d7a92ac0-b9c8-4384-94b8-4ed95be32e16}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{6ee1053d-5af3-4290-8312-d18bd4ba2d61}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

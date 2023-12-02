@@ -1,0 +1,5 @@
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Entidad\obj\Debug\Entidad.csproj.SuggestedBindingRedirects.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Entidad\obj\Debug\Entidad.Properties.Resources.resources
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Entidad\obj\Debug\Entidad.csproj.GenerateResource.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache

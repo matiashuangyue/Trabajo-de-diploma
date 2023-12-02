@@ -9,3 +9,4 @@ C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.cspro
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.csproj.CoreCompileInputs.cache
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.exe
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.Login.resources

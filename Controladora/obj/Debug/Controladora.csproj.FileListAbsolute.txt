@@ -1,0 +1,5 @@
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Controladora\obj\Debug\Controladora.csproj.AssemblyReference.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Controladora\obj\Debug\Controladora.csproj.SuggestedBindingRedirects.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Controladora\obj\Debug\Controladora.Properties.Resources.resources
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Controladora\obj\Debug\Controladora.csproj.GenerateResource.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
