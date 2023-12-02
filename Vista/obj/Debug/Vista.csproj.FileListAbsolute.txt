@@ -1,0 +1,11 @@
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\Vista.exe.config
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\Vista.exe
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\Vista.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.csproj.AssemblyReference.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.Form1.resources
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.Properties.Resources.resources
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.csproj.GenerateResource.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.exe
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.pdb
