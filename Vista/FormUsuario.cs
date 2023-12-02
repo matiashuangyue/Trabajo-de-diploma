@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 
 namespace Vista
 {
@@ -15,6 +16,16 @@ namespace Vista
         public FormUsuario()
         {
             InitializeComponent();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

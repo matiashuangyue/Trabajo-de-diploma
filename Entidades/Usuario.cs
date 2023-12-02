@@ -8,9 +8,14 @@ namespace Entidades
 {
     public class Usuario
     {
-        public int ID { get; set; }
+        public int DNI { get; set; }
         public string Name { get; set; }
-        public string Password { get; set; }
         public string Mail { get; set; }
+
+        public int Telefono { get; set; }
+        public string Password { get; set; }
+        
+        public string Direction { get; set; }
+        public int ID_Rol { get; set; }
     }
 }

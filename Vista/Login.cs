@@ -37,10 +37,14 @@ namespace Vista
                 {
                     Usuario usuario = new Usuario
                     {
-                        Mail = txtMail.Text,
-                        Password = txtPassword.Text,
+                        DNI= 0,
                         Name = string.Empty,
-                        ID= 0
+                        Mail = txtMail.Text,
+                        Telefono=0,
+                        Password = txtPassword.Text,
+
+                        
+                        
                     };
 
                     ControlLogin User = new ControlLogin();

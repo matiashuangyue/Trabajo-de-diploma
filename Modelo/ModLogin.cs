@@ -19,7 +19,7 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT Mail_Usuario , Contraseña_Usuario FROM Usuarios where Mail_Usuario ='" + usuario.Mail + "'AND Contraseña_Usuario='" + usuario.Password + "'", cnn))
+                    using (SqlCommand cmd = new SqlCommand("SELECT Mail , Contra  FROM Usuario where Mail ='" + usuario.Mail + "'AND Contra='" + usuario.Password + "'", cnn))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())

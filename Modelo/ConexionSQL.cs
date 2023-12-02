@@ -12,7 +12,7 @@ namespace Modelo
         private readonly string cnn;
         public ConexionSQL()
         {
-            cnn = "Data Source =DESKTOP-2F4NVAS\\YUESERVER; Initial Catalog = TrabajoDeCampo; Integrated Security= True";
+            cnn = "Data Source =DESKTOP-2F4NVAS\\YUESERVER; Initial Catalog = TrabajoDeDiploma; Integrated Security= True";
         }
         protected SqlConnection GetConnection()
         {

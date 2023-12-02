@@ -141,13 +141,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnInforme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 538</value>
+    <value>0, 646</value>
   </data>
   <data name="btnInforme.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnInforme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 70</value>
+    <value>388, 88</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnInforme.TabIndex" type="System.Int32, mscorlib">
@@ -193,13 +193,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 468</value>
+    <value>0, 558</value>
   </data>
   <data name="btnUsuario.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 70</value>
+    <value>388, 88</value>
   </data>
   <data name="btnUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -244,13 +244,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnControlStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 398</value>
+    <value>0, 470</value>
   </data>
   <data name="btnControlStock.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnControlStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 70</value>
+    <value>388, 88</value>
   </data>
   <data name="btnControlStock.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -295,13 +295,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnProveedor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 328</value>
+    <value>0, 382</value>
   </data>
   <data name="btnProveedor.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnProveedor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 70</value>
+    <value>388, 88</value>
   </data>
   <data name="btnProveedor.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -346,13 +346,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 258</value>
+    <value>0, 294</value>
   </data>
   <data name="btnProducto.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 70</value>
+    <value>388, 88</value>
   </data>
   <data name="btnProducto.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -397,13 +397,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnCompra.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 188</value>
+    <value>0, 206</value>
   </data>
   <data name="btnCompra.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnCompra.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 70</value>
+    <value>388, 88</value>
   </data>
   <data name="btnCompra.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -454,7 +454,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnVenta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 70</value>
+    <value>388, 88</value>
   </data>
   <data name="btnVenta.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -483,11 +483,14 @@
   <metadata name="panelLogo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="btnHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btnHome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 0</value>
+    <value>123, 0</value>
   </data>
   <data name="btnHome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 115</value>
+    <value>139, 118</value>
   </data>
   <data name="btnHome.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -588,6 +591,9 @@
   <data name="lblTitleChildForm.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
+  <data name="lblTitleChildForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lblTitleChildForm.Location" type="System.Drawing.Point, System.Drawing">
     <value>87, 53</value>
   </data>
@@ -612,11 +618,14 @@
   <data name="&gt;&gt;lblTitleChildForm.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="iconCurrentChildForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="iconCurrentChildForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 42</value>
+    <value>23, 34</value>
   </data>
   <data name="iconCurrentChildForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 42</value>
+    <value>58, 53</value>
   </data>
   <data name="iconCurrentChildForm.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -633,11 +642,14 @@
   <data name="&gt;&gt;iconCurrentChildForm.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="iconPerfil.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="iconPerfil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>943, 35</value>
+    <value>1179, 44</value>
   </data>
   <data name="iconPerfil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 54</value>
+    <value>65, 68</value>
   </data>
   <data name="iconPerfil.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -706,7 +718,7 @@
     <value>398, 118</value>
   </data>
   <data name="panelDesktop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1286, 850</value>
+    <value>1029, 680</value>
   </data>
   <data name="panelDesktop.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -731,6 +743,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1447, 798</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>

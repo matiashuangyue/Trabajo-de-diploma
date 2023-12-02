@@ -73,6 +73,16 @@ namespace Vista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Star_CG1 {
+            get {
+                object obj = ResourceManager.GetObject("Star CG1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Star_CG2 {
             get {
                 object obj = ResourceManager.GetObject("Star CG2", resourceCulture);

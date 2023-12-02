@@ -115,6 +115,9 @@
     <EmbeddedResource Include="FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormVenta.resx">
+      <DependentUpon>FormVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.aa.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +169,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Star CG3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star CG1.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
