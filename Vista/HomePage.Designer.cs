@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnBaseDeDatos = new FontAwesome.Sharp.IconButton();
+            this.btnInforme = new FontAwesome.Sharp.IconButton();
             this.btnUsuario = new FontAwesome.Sharp.IconButton();
             this.btnControlStock = new FontAwesome.Sharp.IconButton();
             this.btnProveedor = new FontAwesome.Sharp.IconButton();
@@ -59,7 +59,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.CadetBlue;
-            this.panelMenu.Controls.Add(this.btnBaseDeDatos);
+            this.panelMenu.Controls.Add(this.btnInforme);
             this.panelMenu.Controls.Add(this.btnUsuario);
             this.panelMenu.Controls.Add(this.btnControlStock);
             this.panelMenu.Controls.Add(this.btnProveedor);
@@ -70,19 +70,19 @@
             resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.Name = "panelMenu";
             // 
-            // btnBaseDeDatos
+            // btnInforme
             // 
-            this.btnBaseDeDatos.BackColor = System.Drawing.Color.CadetBlue;
-            resources.ApplyResources(this.btnBaseDeDatos, "btnBaseDeDatos");
-            this.btnBaseDeDatos.FlatAppearance.BorderSize = 0;
-            this.btnBaseDeDatos.ForeColor = System.Drawing.Color.White;
-            this.btnBaseDeDatos.IconChar = FontAwesome.Sharp.IconChar.BarChart;
-            this.btnBaseDeDatos.IconColor = System.Drawing.Color.White;
-            this.btnBaseDeDatos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBaseDeDatos.IconSize = 32;
-            this.btnBaseDeDatos.Name = "btnBaseDeDatos";
-            this.btnBaseDeDatos.UseVisualStyleBackColor = false;
-            this.btnBaseDeDatos.Click += new System.EventHandler(this.btnBaseDeDatos_Click);
+            this.btnInforme.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.btnInforme, "btnInforme");
+            this.btnInforme.FlatAppearance.BorderSize = 0;
+            this.btnInforme.ForeColor = System.Drawing.Color.White;
+            this.btnInforme.IconChar = FontAwesome.Sharp.IconChar.BarChart;
+            this.btnInforme.IconColor = System.Drawing.Color.White;
+            this.btnInforme.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnInforme.IconSize = 32;
+            this.btnInforme.Name = "btnInforme";
+            this.btnInforme.UseVisualStyleBackColor = false;
+            this.btnInforme.Click += new System.EventHandler(this.btnBaseDeDatos_Click);
             // 
             // btnUsuario
             // 
@@ -270,7 +270,7 @@
         private FontAwesome.Sharp.IconButton btnCompra;
         private FontAwesome.Sharp.IconButton btnVenta;
         private System.Windows.Forms.Panel panelLogo;
-        private FontAwesome.Sharp.IconButton btnBaseDeDatos;
+        private FontAwesome.Sharp.IconButton btnInforme;
         private FontAwesome.Sharp.IconButton btnUsuario;
         private FontAwesome.Sharp.IconButton btnControlStock;
         private FontAwesome.Sharp.IconButton btnProveedor;

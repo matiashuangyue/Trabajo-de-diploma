@@ -87,6 +87,11 @@ namespace Vista
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock= DockStyle.Fill;
+            panelDesktop.Controls.Add(childForm);
+            panelDesktop.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            lblTitleChildForm.Text = childForm.Text;
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
@@ -102,36 +107,43 @@ namespace Vista
         private void btnVenta_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChidForm(new FormVenta());
         }
 
         private void btnCompra_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChidForm(new FormCompra());
         }
 
         private void btnProducto_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+            OpenChidForm(new FormProducto());
         }
 
         private void btnProveedor_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            OpenChidForm(new FormProveedor());
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            OpenChidForm(new FormControlStock());
         }
 
         private void btnUsuario_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+            OpenChidForm(new FormUsuario());
         }
 
         private void btnBaseDeDatos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color7);
+            OpenChidForm(new FormInforme());
         }
 
         private void btnHome_Click(object sender, EventArgs e)
