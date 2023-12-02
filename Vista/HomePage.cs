@@ -16,5 +16,15 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+        
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -19,3 +19,5 @@ C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Vista\bin\Debug\Entidades.e
 C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Vista\bin\Debug\Modelo.pdb
 C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Vista\bin\Debug\Modelo.exe.config
 C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Vista\obj\Debug\Vista.csproj.CopyComplete
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Vista\obj\Debug\Vista.HomePage.resources
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Vista\bin\Debug\FontAwesome.Sharp.dll
