@@ -13,11 +13,13 @@ namespace Vista
 {
     public partial class FormUsuario : Form
     {
-        private int RoleID;
+        public int rol;
+        private int NewRoleID;
+        private string selectedItem;
         public FormUsuario(int RoleID)
         {
             InitializeComponent();
-            RoleID = this.RoleID;
+            RoleID = this.rol;
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -34,17 +36,62 @@ namespace Vista
                 txtDireccion != null && !string.IsNullOrWhiteSpace(txtDireccion.Text) &&
                 txtPassword != null && !string.IsNullOrWhiteSpace(txtPassword.Text))
             {
-                Usuario user = new Usuario
+                
+                
+                if (rol != 1)
                 {
-                    DNI = int.Parse(txtDNI.Text),
-                    Name = txtName.Text,
-                    Mail = txtMail.Text,
-                    Telefono = 0,
-                    Direction=txtDireccion.Text,
-                    Password = txtPassword.Text,
+                    Usuario UserActual = new Usuario
+                    {
+                        DNI = int.Parse(txtDNI.Text),
+                        Name = txtName.Text,
+                        Mail = txtMail.Text,
+                        Telefono = 0,
+                        Direction = txtDireccion.Text,
+                        Password = txtPassword.Text,
+                        ID_Rol = 0,
                 };
+                    MessageBox.Show("¡Completaste todos los campos para crear usuario!");
+                    Controladora.ControlUsuario User = new Controladora.ControlUsuario();
+                    var registrarse = User.RegistrarCuenta(UserActual);
+                    if (registrarse)
+                    {
 
-                MessageBox.Show("¡Completaste todos los campos correctamente!");
+                        MessageBox.Show("Ha creado nuevo usuario");
+                    }
+                    else
+                    {
+                        MessageBox.Show("El Usuario o Contrasena es invalido");
+                    }
+
+                }
+                else
+                {
+                    Usuario UserActual = new Usuario
+                    {
+                        DNI = int.Parse(txtDNI.Text),
+                        Name = txtName.Text,
+                        Mail = txtMail.Text,
+                        Telefono = 0,
+                        Direction = txtDireccion.Text,
+                        Password = txtPassword.Text,
+                        ID_Rol = NewRoleID,
+                    };
+                    Controladora.ControlUsuario User = new Controladora.ControlUsuario();
+                    var registrarse = User.RegistrarCuenta(UserActual);
+                    if (registrarse)
+                    {
+
+                        MessageBox.Show("Ha creado nueva cuenta ");
+                    }
+                    else
+                    {
+                        MessageBox.Show("El Usuario o Contrasena es invalido");
+                    }
+                }
+                
+                
+
+                
             }
             else
             {
@@ -61,7 +108,39 @@ namespace Vista
 
         private void FormUsuario_Load(object sender, EventArgs e)
         {
+            MessageBox.Show(rol.ToString());
+            if (rol != 1)
+            {
+                lblRol.Visible = false;
+                cmbRol.Visible = false;
+            }
+            else
+            {
+                if (rol == 1)
+                {
+                    lblRol.Visible = true;
+                cmbRol.Visible = true;
+                selectedItem = cmbRol.SelectedItem.ToString();
+                if (selectedItem == "Admin")
+                {
+                     NewRoleID= 1;
+                }
+                else if (selectedItem == "Empleado")
+                {
+                    NewRoleID = 2;
+                }
+                else if (selectedItem == "Proveedor")
+                {
+                    NewRoleID = 3;
+                }
+                else if (selectedItem == "Usuario")
+                {
+                    NewRoleID = 0;
+                }
 
+                }
+                
+            }
         }
     }
 }

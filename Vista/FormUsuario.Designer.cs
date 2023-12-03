@@ -44,7 +44,7 @@
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblRol = new System.Windows.Forms.Label();
             this.cmbRol = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +61,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox1.Controls.Add(this.cmbRol);
-            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.lblRol);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtDireccion);
@@ -235,17 +235,17 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Direccion";
             // 
-            // label9
+            // lblRol
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(27, 273);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 19);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Rol ";
+            this.lblRol.AutoSize = true;
+            this.lblRol.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRol.ForeColor = System.Drawing.Color.Black;
+            this.lblRol.Location = new System.Drawing.Point(27, 273);
+            this.lblRol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(39, 19);
+            this.lblRol.TabIndex = 11;
+            this.lblRol.Text = "Rol ";
             // 
             // cmbRol
             // 
@@ -255,7 +255,7 @@
             "Admin",
             "Empleado",
             "Proveedor",
-            "Cliente"});
+            "Usuario"});
             this.cmbRol.Location = new System.Drawing.Point(220, 263);
             this.cmbRol.Name = "cmbRol";
             this.cmbRol.Size = new System.Drawing.Size(353, 29);
@@ -295,7 +295,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.ComboBox cmbRol;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtDireccion;

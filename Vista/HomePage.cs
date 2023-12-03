@@ -16,7 +16,8 @@ namespace Vista
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-        private int RoleID;
+        public int RoleID;
+        public int rol;
         public HomePage(int RoleID)
         {
            
@@ -26,6 +27,7 @@ namespace Vista
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
             IdentificarRol();
+            rol = RoleID;
         }
 
         public void IdentificarRol()
@@ -159,7 +161,7 @@ namespace Vista
         private void btnUsuario_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChidForm(new FormUsuario(RoleID));
+            OpenChidForm(new FormUsuario(rol));
         }
 
         private void btnBaseDeDatos_Click(object sender, EventArgs e)
