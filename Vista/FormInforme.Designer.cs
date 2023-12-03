@@ -37,7 +37,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(139, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 19);
+            this.label1.Size = new System.Drawing.Size(63, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "INFORME";
             // 
@@ -46,7 +46,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(173, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 19);
+            this.label2.Size = new System.Drawing.Size(0, 15);
             this.label2.TabIndex = 1;
             // 
             // FormInforme
@@ -58,6 +58,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormInforme";
             this.Text = "FormInforme";
+            this.Load += new System.EventHandler(this.FormInforme_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

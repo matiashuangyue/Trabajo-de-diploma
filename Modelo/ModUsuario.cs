@@ -157,52 +157,43 @@ namespace Modelo
             }
         }
 
-        public bool Registrar(Usuario usuario)
+        public int Registrar(Usuario usuario)
         {
-
-            if (string.IsNullOrEmpty(usuario.Name) ||
-            string.IsNullOrEmpty(usuario.Password)
-            )
+            try
             {
-                if (IsValidID(usuario) == true)
+                if (IsValidID(usuario) && IsValidMail(usuario))
                 {
-                    if (IsValidMail(usuario) == true)
+                    using (var cnn = GetConnection())
                     {
-                        try
-                        {
-                            using (var cnn = GetConnection())
-                            {
-                                cnn.Open();
-                                String QueryDatosValidos = "insert into Usuarios ([DNI],[Nombre],[Mail],[Telefono],[Direccion],[Contra],[ID_Rol])"
-                               + "values ('" + usuario.DNI + "','" + usuario.Name + "','" + usuario.Mail + "','" + usuario.Telefono + "','" + usuario.Direction + "','" + usuario.Password + "','" + usuario.ID_Rol + "')";
-                                using (SqlCommand cmd = new SqlCommand(QueryDatosValidos, cnn))
-                                {
-                                    cmd.ExecuteNonQuery();
-                                    cnn.Close();
-                                }
-                                return true;
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            return false;
-                        }
+                        cnn.Open();
+                        string query = "INSERT INTO Usuario (DNI, Nombre, Mail, Telefono, Direccion, Contra, ID_Rol) " +
+                                       "VALUES (@DNI, @Nombre, @Mail, @Telefono, @Direccion, @Contra, @ID_Rol)";
 
-                    }
+                        using (SqlCommand cmd = new SqlCommand(query, cnn))
+                        {
+                            cmd.Parameters.AddWithValue("@DNI", usuario.DNI);
+                            cmd.Parameters.AddWithValue("@Nombre", usuario.Name);
+                            cmd.Parameters.AddWithValue("@Mail", usuario.Mail);
+                            cmd.Parameters.AddWithValue("@Telefono", usuario.Telefono);
+                            cmd.Parameters.AddWithValue("@Direccion", usuario.Direction);
+                            cmd.Parameters.AddWithValue("@Contra", usuario.Password);
+                            cmd.Parameters.AddWithValue("@ID_Rol", usuario.ID_Rol);
 
-                    else
-                    {
-                        return false;
+                            cmd.ExecuteNonQuery();
+                        }
                     }
+                    return 1; // Completo correctamente
                 }
                 else
                 {
-                    return false;
+                    return IsValidID(usuario) ? -3 : -2;
                 }
             }
-            else
+            catch (Exception ex)
             {
-                return false;
+                Console.WriteLine(ex.Message);
+                // Manejar la excepción de manera adecuada
+                return -1; // Error en insertar datos
             }
         }
 

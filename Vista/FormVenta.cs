@@ -16,7 +16,7 @@ namespace Vista
         public FormVenta(int RoleID)
         {
             InitializeComponent();
-            RoleID = this.RoleID;
+            this.RoleID = RoleID;
         }
 
         private void FormVenta_Load(object sender, EventArgs e)

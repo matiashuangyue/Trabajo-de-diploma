@@ -19,7 +19,7 @@ namespace Controladora
         {
             return User.GetRoleId(usuario);
         }
-        public bool RegistrarCuenta(Usuario usuario)
+        public int RegistrarCuenta(Usuario usuario)
         {
             return User.Registrar(usuario);
         }

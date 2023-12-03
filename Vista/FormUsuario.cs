@@ -19,7 +19,7 @@ namespace Vista
         public FormUsuario(int RoleID)
         {
             InitializeComponent();
-            RoleID = this.rol;
+            this.rol = RoleID;
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -50,22 +50,32 @@ namespace Vista
                         Password = txtPassword.Text,
                         ID_Rol = 0,
                 };
-                    MessageBox.Show("¡Completaste todos los campos para crear usuario!");
                     Controladora.ControlUsuario User = new Controladora.ControlUsuario();
-                    var registrarse = User.RegistrarCuenta(UserActual);
-                    if (registrarse)
+                        
+                    int registrarse = User.RegistrarCuenta(UserActual);
+                    if (registrarse==1)
                     {
 
                         MessageBox.Show("Ha creado nuevo usuario");
                     }
-                    else
+                    else if(registrarse==-1)
                     {
-                        MessageBox.Show("El Usuario o Contrasena es invalido");
+                        MessageBox.Show("error al inserta datos en sql");
                     }
+                    else if (registrarse == -2)
+                    {
+                        MessageBox.Show("tu DNI ya existe en base de datos, cheque porfavor");
+                    }
+                    else if (registrarse == -3)
+                    {
+                        MessageBox.Show("Mail es invalido");
+                    }
+
 
                 }
                 else
                 {
+                    asignarRol();
                     Usuario UserActual = new Usuario
                     {
                         DNI = int.Parse(txtDNI.Text),
@@ -77,15 +87,23 @@ namespace Vista
                         ID_Rol = NewRoleID,
                     };
                     Controladora.ControlUsuario User = new Controladora.ControlUsuario();
-                    var registrarse = User.RegistrarCuenta(UserActual);
-                    if (registrarse)
+                    int registrarse = User.RegistrarCuenta(UserActual);
+                    if (registrarse == 1)
                     {
 
-                        MessageBox.Show("Ha creado nueva cuenta ");
+                        MessageBox.Show("Ha creado nuevo usuario");
                     }
-                    else
+                    else if (registrarse == -1)
                     {
-                        MessageBox.Show("El Usuario o Contrasena es invalido");
+                        MessageBox.Show("error al inserta datos en sql");
+                    }
+                    else if (registrarse == -2)
+                    {
+                        MessageBox.Show("tu DNI ya existe en base de datos, cheque porfavor");
+                    }
+                    else if (registrarse == -3)
+                    {
+                        MessageBox.Show("Mail es invalido");
                     }
                 }
                 
@@ -98,17 +116,11 @@ namespace Vista
                 MessageBox.Show("¡Por favor, completa todos los campos!");
             }
 
-            /*Controladora.ControlUsuario User = new Controladora.ControlUsuario();
-            if (signUp.RegistrarCuenta(txtID.Text, txtName.Text, txtPassWord.Text, txtMail.Text) == false)
-            {
-                MessageBox.Show("chequea sus datos porfavor");
-            }*/
-            // Validaciones();
+           
         }
 
         private void FormUsuario_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(rol.ToString());
             if (rol != 1)
             {
                 lblRol.Visible = false;
@@ -118,29 +130,41 @@ namespace Vista
             {
                 if (rol == 1)
                 {
+
                     lblRol.Visible = true;
                 cmbRol.Visible = true;
-                selectedItem = cmbRol.SelectedItem.ToString();
-                if (selectedItem == "Admin")
-                {
-                     NewRoleID= 1;
-                }
-                else if (selectedItem == "Empleado")
-                {
-                    NewRoleID = 2;
-                }
-                else if (selectedItem == "Proveedor")
-                {
-                    NewRoleID = 3;
-                }
-                else if (selectedItem == "Usuario")
-                {
-                    NewRoleID = 0;
-                }
-
+               
                 }
                 
             }
         }
+
+        private void asignarRol()
+        {
+            selectedItem = cmbRol.SelectedItem.ToString();
+            if (selectedItem == "Admin")
+            {
+                NewRoleID = 1;
+            }
+            else if (selectedItem == "Empleado")
+            {
+                NewRoleID = 2;
+            }
+            else if (selectedItem == "Proveedor")
+            {
+                NewRoleID = 3;
+            }
+            else if (selectedItem == "Usuario")
+            {
+                NewRoleID = 0;
+            }
+            else
+            {
+                MessageBox.Show("porfavor selecciona un rol");
+            }
+
+        }
+
+        
     }
 }

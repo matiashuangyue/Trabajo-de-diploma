@@ -16,7 +16,12 @@ namespace Vista
         public FormCompra(int RoleID)
         {
             InitializeComponent();
-            RoleID = this.RoleID;
+            this.RoleID = RoleID;
+        }
+
+        private void FormCompra_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

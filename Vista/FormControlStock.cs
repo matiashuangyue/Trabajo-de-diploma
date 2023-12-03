@@ -16,7 +16,12 @@ namespace Vista
         public FormControlStock(int RoleID)
         {
             InitializeComponent();
-            RoleID = this.RoleID;
+            this.RoleID = RoleID;
+        }
+
+        private void FormControlStock_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,7 +16,12 @@ namespace Vista
         public FormProveedor(int RoleID)
         {
             InitializeComponent();
-            RoleID = this.RoleID;
+            this.RoleID = RoleID;
+        }
+
+        private void FormProveedor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

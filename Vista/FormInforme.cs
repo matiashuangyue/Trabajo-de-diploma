@@ -16,7 +16,12 @@ namespace Vista
         public FormInforme(  int RoleID)
         {
             InitializeComponent();
-            RoleID=this.RoleID;
+            this.RoleID = RoleID;
+        }
+
+        private void FormInforme_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
