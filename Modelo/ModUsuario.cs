@@ -21,7 +21,7 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT Mail , Contra  FROM Usuario where Mail ='" + usuario.Mail + "'AND Contra='" + usuario.Password + "'", cnn))
+                    using (SqlCommand cmd = new SqlCommand("SELECT DNI , Contra  FROM Usuario where DNI ='" + usuario.DNI + "'AND Contra='" + usuario.Password + "'", cnn))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
@@ -117,6 +117,43 @@ namespace Modelo
             catch (Exception ex)
             {
                 return false;
+            }
+        }
+
+        public int GetRoleId(Usuario usuario)
+        {
+            if (string.IsNullOrWhiteSpace(usuario.DNI.ToString()))
+            {
+                return -1; // Valor que indica que no se pudo obtener el ID_Rol
+            }
+
+            try
+            {
+                using (var conn = GetConnection())
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("SELECT ID_Rol FROM Usuario WHERE DNI = @DNI", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@DNI", usuario.DNI);
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            int idRol = Convert.ToInt32(dr["ID_Rol"]);
+                            conn.Close();
+                            return idRol;
+                        }
+                        else
+                        {
+                            conn.Close();
+                            return -1; // Valor que indica que no se encontró el usuario
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return -1; // Valor que indica un error durante la ejecución
             }
         }
 

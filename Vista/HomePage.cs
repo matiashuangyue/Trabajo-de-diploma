@@ -16,14 +16,36 @@ namespace Vista
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-
-        public HomePage()
+        private int RoleID;
+        public HomePage(int RoleID)
         {
+           
             InitializeComponent();
+            this.RoleID = RoleID;
             leftBorderBtn= new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
-            
+            IdentificarRol();
+        }
+
+        public void IdentificarRol()
+        {
+            if(RoleID == -1)
+            {
+                lblRol.Text = "QUIEN SOS";
+            }
+            if (RoleID == 1)
+            {
+                lblRol.Text = "ADMIN";
+            }
+            if (RoleID == 2)
+            {
+                lblRol.Text = "Empleado";
+            }
+            if (RoleID == 3)
+            {
+                lblRol.Text = "Proveedor";
+            }
         }
         private struct RGBColors
         {
@@ -107,43 +129,43 @@ namespace Vista
         private void btnVenta_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChidForm(new FormVenta());
+            OpenChidForm(new FormVenta(RoleID));
         }
 
         private void btnCompra_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChidForm(new FormCompra());
+            OpenChidForm(new FormCompra(RoleID));
         }
 
         private void btnProducto_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChidForm(new FormProducto());
+            OpenChidForm(new FormProducto(RoleID));
         }
 
         private void btnProveedor_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
-            OpenChidForm(new FormProveedor());
+            OpenChidForm(new FormProveedor(RoleID));
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-            OpenChidForm(new FormControlStock());
+            OpenChidForm(new FormControlStock(RoleID));
         }
 
         private void btnUsuario_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChidForm(new FormUsuario());
+            OpenChidForm(new FormUsuario(RoleID));
         }
 
         private void btnBaseDeDatos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color7);
-            OpenChidForm(new FormInforme());
+            OpenChidForm(new FormInforme(RoleID));
         }
 
         private void btnHome_Click(object sender, EventArgs e)

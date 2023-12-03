@@ -31,27 +31,22 @@ namespace Vista
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtMail != null)
+            if (txtDNI != null)
             {
                 if (txtPassword != null)
                 {
                     Usuario usuario = new Usuario
                     {
-                        DNI= 0,
-                        Name = string.Empty,
-                        Mail = txtMail.Text,
-                        Telefono=0,
+                        DNI = int.Parse(txtDNI.Text),
                         Password = txtPassword.Text,
-
-                        
-                        
                     };
 
                     ControlUsuario User = new ControlUsuario();
                     var LoginValido = User.Validar(usuario);
                     if (LoginValido)
                     {
-                        cambiarformulario();
+                        int RoleID = User.GetRoleID(usuario);
+                        cambiarformulario(RoleID);
                     }
                     else
                     {
@@ -61,9 +56,9 @@ namespace Vista
             }
         }
 
-        public void cambiarformulario()
+        public void cambiarformulario(int RoleID)
         {
-            HomePage pantalla1 = new HomePage();
+            HomePage pantalla1 = new HomePage(RoleID);
             pantalla1.Show();
             this.Hide();
         }

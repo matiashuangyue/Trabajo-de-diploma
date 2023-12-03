@@ -12,9 +12,16 @@ namespace Vista
 {
     public partial class FormVenta : Form
     {
-        public FormVenta()
+        private int RoleID;
+        public FormVenta(int RoleID)
         {
             InitializeComponent();
+            RoleID = this.RoleID;
+        }
+
+        private void FormVenta_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,12 +40,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbRol = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,12 +60,12 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbRol);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtDireccion);
+            this.groupBox1.Controls.Add(this.txtTelefono);
             this.groupBox1.Controls.Add(this.txtDNI);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.txtPassword);
@@ -193,23 +193,23 @@
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // textBox1
+            // txtTelefono
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Cornsilk;
-            this.textBox1.Location = new System.Drawing.Point(220, 154);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(353, 28);
-            this.textBox1.TabIndex = 7;
+            this.txtTelefono.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtTelefono.Location = new System.Drawing.Point(220, 154);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(353, 28);
+            this.txtTelefono.TabIndex = 7;
             // 
-            // textBox2
+            // txtDireccion
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Cornsilk;
-            this.textBox2.Location = new System.Drawing.Point(220, 188);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(353, 28);
-            this.textBox2.TabIndex = 8;
+            this.txtDireccion.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtDireccion.Location = new System.Drawing.Point(220, 188);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(353, 28);
+            this.txtDireccion.TabIndex = 8;
             // 
             // label7
             // 
@@ -247,19 +247,19 @@
             this.label9.TabIndex = 11;
             this.label9.Text = "Rol ";
             // 
-            // comboBox1
+            // cmbRol
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.Cornsilk;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbRol.BackColor = System.Drawing.Color.Cornsilk;
+            this.cmbRol.FormattingEnabled = true;
+            this.cmbRol.Items.AddRange(new object[] {
             "Admin",
             "Empleado",
             "Proveedor",
             "Cliente"});
-            this.comboBox1.Location = new System.Drawing.Point(220, 263);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(353, 29);
-            this.comboBox1.TabIndex = 14;
+            this.cmbRol.Location = new System.Drawing.Point(220, 263);
+            this.cmbRol.Name = "cmbRol";
+            this.cmbRol.Size = new System.Drawing.Size(353, 29);
+            this.cmbRol.TabIndex = 14;
             // 
             // FormUsuario
             // 
@@ -272,6 +272,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormUsuario";
             this.Text = "FormUsuario";
+            this.Load += new System.EventHandler(this.FormUsuario_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -293,11 +294,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbRol;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtTelefono;
     }
 }

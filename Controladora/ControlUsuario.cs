@@ -15,5 +15,14 @@ namespace Controladora
         {
             return User.login(usuario);
         }
+        public int GetRoleID(Usuario usuario)
+        {
+            return User.GetRoleId(usuario);
+        }
+        public bool RegistrarCuenta(Usuario usuario)
+        {
+            return User.Registrar(usuario);
+        }
+
     }
 }

@@ -12,9 +12,11 @@ namespace Vista
 {
     public partial class FormCompra : Form
     {
-        public FormCompra()
+        private int RoleID;
+        public FormCompra(int RoleID)
         {
             InitializeComponent();
+            RoleID = this.RoleID;
         }
     }
 }

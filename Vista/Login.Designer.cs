@@ -30,7 +30,7 @@
         {
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtMail = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,13 +60,13 @@
             this.txtPassword.Size = new System.Drawing.Size(271, 25);
             this.txtPassword.TabIndex = 8;
             // 
-            // txtMail
+            // txtDNI
             // 
-            this.txtMail.Location = new System.Drawing.Point(123, 22);
-            this.txtMail.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(271, 25);
-            this.txtMail.TabIndex = 7;
+            this.txtDNI.Location = new System.Drawing.Point(123, 22);
+            this.txtDNI.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(271, 25);
+            this.txtDNI.TabIndex = 7;
             // 
             // label2
             // 
@@ -85,9 +85,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label1.Location = new System.Drawing.Point(27, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 19);
+            this.label1.Size = new System.Drawing.Size(39, 19);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Mail";
+            this.label1.Text = "DNI";
             // 
             // label3
             // 
@@ -106,7 +106,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.SeaShell;
             this.panel1.Controls.Add(this.txtPassword);
-            this.panel1.Controls.Add(this.txtMail);
+            this.panel1.Controls.Add(this.txtDNI);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnLogin);
@@ -137,7 +137,7 @@
 
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtMail;
+        private System.Windows.Forms.TextBox txtDNI;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
