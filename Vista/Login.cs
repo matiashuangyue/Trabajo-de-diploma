@@ -46,7 +46,8 @@ namespace Vista
                     if (LoginValido)
                     {
                         int RoleID = User.GetRoleID(usuario);
-                        cambiarformulario(RoleID);
+                        int DNI= usuario.DNI;
+                        cambiarformulario(RoleID,DNI);
                     }
                     else
                     {
@@ -56,9 +57,9 @@ namespace Vista
             }
         }
 
-        public void cambiarformulario(int RoleID)
+        public void cambiarformulario(int RoleID,int DNI)
         {
-            HomePage pantalla1 = new HomePage(RoleID);
+            HomePage pantalla1 = new HomePage(RoleID,DNI);
             pantalla1.Show();
             this.Hide();
         }

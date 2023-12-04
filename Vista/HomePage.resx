@@ -166,7 +166,7 @@
     <value>Top</value>
   </data>
   <data name="panelInformeSubmenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 915</value>
+    <value>0, 888</value>
   </data>
   <data name="panelInformeSubmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 69</value>
@@ -205,7 +205,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnInforme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 827</value>
+    <value>0, 800</value>
   </data>
   <data name="btnInforme.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
@@ -277,7 +277,7 @@
     <value>Top</value>
   </data>
   <data name="panelControlSubmenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 758</value>
+    <value>0, 731</value>
   </data>
   <data name="panelControlSubmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 69</value>
@@ -316,7 +316,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnControlStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 670</value>
+    <value>0, 643</value>
   </data>
   <data name="btnControlStock.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
@@ -347,42 +347,6 @@
   </data>
   <data name="&gt;&gt;btnControlStock.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="btnEliminarUsuario.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnEliminarUsuario.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnEliminarUsuario.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 10.2pt</value>
-  </data>
-  <data name="btnEliminarUsuario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnEliminarUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 82</value>
-  </data>
-  <data name="btnEliminarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 41</value>
-  </data>
-  <data name="btnEliminarUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnEliminarUsuario.Text" xml:space="preserve">
-    <value>EliminarUsuario</value>
-  </data>
-  <data name="&gt;&gt;btnEliminarUsuario.Name" xml:space="preserve">
-    <value>btnEliminarUsuario</value>
-  </data>
-  <data name="&gt;&gt;btnEliminarUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnEliminarUsuario.Parent" xml:space="preserve">
-    <value>panelUsuarioSubmenu</value>
-  </data>
-  <data name="&gt;&gt;btnEliminarUsuario.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btnModificarUsuario.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -418,7 +382,7 @@
     <value>panelUsuarioSubmenu</value>
   </data>
   <data name="&gt;&gt;btnModificarUsuario.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="btnAgregarUsuario.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -454,7 +418,7 @@
     <value>panelUsuarioSubmenu</value>
   </data>
   <data name="&gt;&gt;btnAgregarUsuario.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="panelUsuarioSubmenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -463,7 +427,7 @@
     <value>0, 551</value>
   </data>
   <data name="panelUsuarioSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 119</value>
+    <value>367, 92</value>
   </data>
   <data name="panelUsuarioSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1076,9 +1040,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1447, 734</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>

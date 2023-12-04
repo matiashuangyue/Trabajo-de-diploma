@@ -11,11 +11,9 @@ namespace Entidades
         public int DNI { get; set; }
         public string Name { get; set; }
         public string Mail { get; set; }
-
-        public int Telefono { get; set; }
+        public long Telefono { get; set; }
+        public string Direccion { get; set; }
         public string Password { get; set; }
-        
-        public string Direction { get; set; }
         public int ID_Rol { get; set; }
         public int ID_Estado { get; set; }
     }

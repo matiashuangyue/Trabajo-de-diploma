@@ -14,8 +14,7 @@ namespace Vista
 {
     public partial class FormModificacionesProducto : Form
     {
-        // Variable global para rastrear si se ha buscado un producto
-        private bool ProductoHaEncontrado = false;
+       
         private int RoleID;
         private int EstadoID;
         public FormModificacionesProducto(int RoleID)
@@ -65,7 +64,6 @@ namespace Vista
                     txtStock.Text = productoEncontrado.Stock.ToString();
                      cmbEstado.SelectedItem = "Alta";
                     // Establecer la variable de estado a true si se encontró el producto
-                    ProductoHaEncontrado = true;
                     }
                     else
                     {
@@ -232,7 +230,6 @@ namespace Vista
 
         private void permiso()
         {
-           
             if (RoleID != 1)
             {
                 txtPrecio.Enabled = false;
@@ -244,15 +241,13 @@ namespace Vista
             {
                 if (RoleID == 1)
                 {
-
                     txtPrecio.Enabled = true;
                     txtStock.Enabled = true;
                     lblEstado.Visible=true;
                     cmbEstado.Visible=true;
-                    
                 }
-
             }
         }
+
     }
 }

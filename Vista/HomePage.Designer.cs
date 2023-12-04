@@ -35,7 +35,6 @@
             this.panelControlSubmenu = new System.Windows.Forms.Panel();
             this.btnIngresarStock = new System.Windows.Forms.Button();
             this.panelUsuarioSubmenu = new System.Windows.Forms.Panel();
-            this.btnEliminarUsuario = new System.Windows.Forms.Button();
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
             this.panelProductoSubmenu = new System.Windows.Forms.Panel();
@@ -123,20 +122,10 @@
             // panelUsuarioSubmenu
             // 
             this.panelUsuarioSubmenu.BackColor = System.Drawing.Color.Azure;
-            this.panelUsuarioSubmenu.Controls.Add(this.btnEliminarUsuario);
             this.panelUsuarioSubmenu.Controls.Add(this.btnModificarUsuario);
             this.panelUsuarioSubmenu.Controls.Add(this.btnAgregarUsuario);
             resources.ApplyResources(this.panelUsuarioSubmenu, "panelUsuarioSubmenu");
             this.panelUsuarioSubmenu.Name = "panelUsuarioSubmenu";
-            // 
-            // btnEliminarUsuario
-            // 
-            this.btnEliminarUsuario.BackColor = System.Drawing.Color.LightSeaGreen;
-            resources.ApplyResources(this.btnEliminarUsuario, "btnEliminarUsuario");
-            this.btnEliminarUsuario.FlatAppearance.BorderSize = 0;
-            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
-            this.btnEliminarUsuario.UseVisualStyleBackColor = false;
-            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
             // btnModificarUsuario
             // 
@@ -400,7 +389,6 @@
         private System.Windows.Forms.Panel panelControlSubmenu;
         private System.Windows.Forms.Button btnIngresarStock;
         private FontAwesome.Sharp.IconButton btnControlStock;
-        private System.Windows.Forms.Button btnEliminarUsuario;
         private System.Windows.Forms.Panel panelInformeSubmenu;
         private System.Windows.Forms.Button btnVerInfo;
     }

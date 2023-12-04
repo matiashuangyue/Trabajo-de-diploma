@@ -10,18 +10,24 @@ namespace Controladora
 {
     public class ControlUsuario
     {
-        Modelo.ModUsuario User = new Modelo.ModUsuario();
+        
+        private Modelo.ModUsuario ModUser = new Modelo.ModUsuario();
+        private ModUsuario modUsuario = new ModUsuario();
         public bool Validar(Usuario usuario)
         {
-            return User.login(usuario);
+            return ModUser.login(usuario);
         }
         public int GetRoleID(Usuario usuario)
         {
-            return User.GetRoleId(usuario);
+            return ModUser.GetRoleId(usuario);
         }
         public int RegistrarCuenta(Usuario usuario)
         {
-            return User.Registrar(usuario);
+            return ModUser.Registrar(usuario);
+        }
+        public Usuario BuscarUsuarioPorDNI(int dni)
+        {
+            return modUsuario.BuscarUsuarioPorDNI(dni);
         }
 
     }

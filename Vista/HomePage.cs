@@ -16,19 +16,21 @@ namespace Vista
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-        public int RoleID;
+        
         public int rol;
-        public HomePage(int RoleID)
+        public int UserDNI;
+        public HomePage(int RoleID,int DNI)
         {
            
             InitializeComponent();
             customizeDesign();
-            this.RoleID = RoleID;
+            this.rol = RoleID;
+            this.UserDNI=DNI;
             leftBorderBtn= new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
             IdentificarRol();
-            rol = RoleID;
+            
         }
         //para submenu
         private void customizeDesign()
@@ -74,19 +76,19 @@ namespace Vista
         //identificar que rol
         public void IdentificarRol()
         {
-            if(RoleID == -1)
+            if(rol == -1)
             {
                 lblRol.Text = "QUIEN SOS";
             }
-            if (RoleID == 1)
+            if (rol == 1)
             {
                 lblRol.Text = "ADMIN";
             }
-            if (RoleID == 2)
+            if (rol == 2)
             {
                 lblRol.Text = "Empleado";
             }
-            if (RoleID == 3)
+            if (rol == 3)
             {
                 lblRol.Text = "Proveedor";
             }
@@ -177,13 +179,13 @@ namespace Vista
         private void btnProveedor_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
-            OpenChidForm(new FormProveedor(RoleID));
+            OpenChidForm(new FormProveedor(rol));
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-            OpenChidForm(new FormControlStock(RoleID));
+            OpenChidForm(new FormControlStock(rol));
         }
 
         private void btnUsuario_Click(object sender, EventArgs e)
@@ -195,7 +197,7 @@ namespace Vista
         private void btnBaseDeDatos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color7);
-            OpenChidForm(new FormInforme(RoleID));
+            OpenChidForm(new FormInforme(rol));
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -225,13 +227,13 @@ namespace Vista
     private void btnVenta_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChidForm(new FormVenta(RoleID));
+            OpenChidForm(new FormVenta(rol));
         }
 
         private void btnCompra_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChidForm(new FormCompra(RoleID));
+            OpenChidForm(new FormCompra(rol));
         }
     
   private void btnProducto_Click(object sender, EventArgs e)
@@ -246,13 +248,13 @@ namespace Vista
 
         private void btnAddProducto_Click(object sender, EventArgs e)
         {
-            OpenChidForm(new FormAddProducto(RoleID));
+            OpenChidForm(new FormAddProducto(rol));
             hideSubmenu();
         }
 
         private void btnModificarProducto_Click(object sender, EventArgs e)
         {
-            OpenChidForm(new FormModificacionesProducto(RoleID));
+            OpenChidForm(new FormModificacionesProducto(rol));
             hideSubmenu();
         }
 
@@ -278,6 +280,7 @@ namespace Vista
 
         private void btnModificarUsuario_Click(object sender, EventArgs e)
         {
+            OpenChidForm(new FormModificacionesUsuario(rol,UserDNI));
             hideSubmenu();
         }
 

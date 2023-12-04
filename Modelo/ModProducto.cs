@@ -45,7 +45,6 @@ namespace Modelo
         public Producto buscarProductoPorCodigo(Producto producto)
         {
             Producto productoEncontrado = null;
-
             try
             {
                 using (var cnn = GetConnection())

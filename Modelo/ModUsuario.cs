@@ -157,6 +157,9 @@ namespace Modelo
             }
         }
 
+
+       
+
         public int Registrar(Usuario usuario)
         {
             try
@@ -175,7 +178,7 @@ namespace Modelo
                             cmd.Parameters.AddWithValue("@Nombre", usuario.Name);
                             cmd.Parameters.AddWithValue("@Mail", usuario.Mail);
                             cmd.Parameters.AddWithValue("@Telefono", usuario.Telefono);
-                            cmd.Parameters.AddWithValue("@Direccion", usuario.Direction);
+                            cmd.Parameters.AddWithValue("@Direccion", usuario.Direccion);
                             cmd.Parameters.AddWithValue("@Contra", usuario.Password);
                             cmd.Parameters.AddWithValue("@ID_Rol", usuario.ID_Rol);
                             cmd.Parameters.AddWithValue("@ID_Estado", usuario.ID_Estado);
@@ -198,6 +201,88 @@ namespace Modelo
         }
 
 
+
+
+
+
+        public Usuario buscar(Usuario usuario)
+        {
+            Usuario usuario1 = null;
+            try
+            {
+                using (var cnn = GetConnection())
+                
+                using (SqlCommand cmd = new SqlCommand("SELECT *  FROM Usuarios where DNI ='" + usuario.DNI + "'", cnn))
+                {
+                    cnn.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        usuario1 = new Usuario
+                        {  
+                            Name=dr["Name"].ToString(),
+
+                        };
+                        cnn.Close();
+                        
+                    }
+                    else
+                    {
+                        cnn.Close();
+                        
+                    }
+                }// Completo correctamente
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // Manejar la excepción de manera adecuada
+                // no entro a sql
+            }
+            return usuario1;
+        }
+
+        public Usuario BuscarUsuarioPorDNI(int dni)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string queryBuscarPorDNI = "SELECT * FROM Usuarios WHERE DNI = @DNI";
+                    using (SqlCommand cmd = new SqlCommand(queryBuscarPorDNI, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@DNI", dni);
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return new Usuario
+                                {
+                                    DNI = Convert.ToInt32(reader["DNI"]),
+                                    Name = reader["Nombre"].ToString(),
+                                    Mail = reader["Mail"].ToString(),
+                                    Telefono = Convert.ToInt64(reader["Telefono"]),
+                                    Direccion = reader["Direccion"].ToString(),
+                                    Password = reader["Contra"].ToString(),
+                                    ID_Rol = Convert.ToInt32(reader["ID_Rol"]),
+                                    ID_Estado = Convert.ToInt32(reader["ID_Estado"]),
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejar la excepción según tus necesidades
+                Console.WriteLine($"Error en la búsqueda por DNI: {ex.Message}");
+            }
+
+            return null; // Devolver null si no se encuentra el usuario
+        }
 
     }
 }
