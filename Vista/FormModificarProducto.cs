@@ -16,10 +16,11 @@ namespace Vista
     {
         // Variable global para rastrear si se ha buscado un producto
         private bool ProductoHaEncontrado = false;
-
-        public FormModificarProducto()
+        private int RoleID;
+        public FormModificarProducto(int RoleID)
         {
             InitializeComponent();
+            this.RoleID = RoleID;
         }
 
         private void vaciarTextbox()
@@ -184,6 +185,32 @@ namespace Vista
                    !string.IsNullOrEmpty(txtDescripcion.Text) &&
                    !string.IsNullOrEmpty(txtPrecio.Text) &&
                    !string.IsNullOrEmpty(txtStock.Text);
+        }
+
+        private void FormModificarProducto_Load(object sender, EventArgs e)
+        {
+            permiso();
+        }
+
+        private void permiso()
+        {
+            if (RoleID != 1)
+            {
+                txtPrecio.Enabled = false;
+                txtStock.Enabled = false;
+                btnEliminar.Visible = false;
+            }
+            else
+            {
+                if (RoleID == 1)
+                {
+
+                    txtPrecio.Enabled = true;
+                    txtStock.Enabled = true;
+                    btnEliminar.Visible=true;
+                }
+
+            }
         }
     }
 }

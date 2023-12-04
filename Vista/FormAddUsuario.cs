@@ -130,13 +130,10 @@ namespace Vista
             {
                 if (rol == 1)
                 {
-
                     lblRol.Visible = true;
                 cmbRol.Visible = true;
-               
                 }
-                
-            }
+            } 
         }
 
         private void asignarRol()

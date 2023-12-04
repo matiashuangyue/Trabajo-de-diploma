@@ -224,6 +224,7 @@
             this.Controls.Add(this.txtCodProducto);
             this.Name = "FormModificarProducto";
             this.Text = "FormModificarProducto";
+            this.Load += new System.EventHandler(this.FormModificarProducto_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
