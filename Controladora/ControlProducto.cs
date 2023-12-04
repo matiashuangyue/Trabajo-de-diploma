@@ -15,5 +15,9 @@ namespace Controladora
         {
             return Produc.agregarProducto(producto);
         }
+        public Producto BuscarProductoPorCodigo(Producto producto)
+        {
+            return Produc.buscarProductoPorCodigo(producto);
+        }
     }
 }

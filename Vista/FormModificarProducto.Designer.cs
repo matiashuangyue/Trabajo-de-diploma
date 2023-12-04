@@ -30,21 +30,29 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.btnAddProducto = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodProducto = new System.Windows.Forms.TextBox();
             this.txtNombProducto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.Controls.Add(this.txtPrecio);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txtStock);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtDescripcion);
-            this.groupBox1.Controls.Add(this.btnAddProducto);
+            this.groupBox1.Controls.Add(this.btnModificar);
             this.groupBox1.Controls.Add(this.txtNombProducto);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
@@ -59,23 +67,24 @@
             // txtDescripcion
             // 
             this.txtDescripcion.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtDescripcion.Location = new System.Drawing.Point(243, 146);
+            this.txtDescripcion.Location = new System.Drawing.Point(243, 92);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(284, 106);
             this.txtDescripcion.TabIndex = 14;
             // 
-            // btnAddProducto
+            // btnModificar
             // 
-            this.btnAddProducto.BackColor = System.Drawing.Color.Cornsilk;
-            this.btnAddProducto.Location = new System.Drawing.Point(421, 337);
-            this.btnAddProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnAddProducto.Name = "btnAddProducto";
-            this.btnAddProducto.Size = new System.Drawing.Size(151, 54);
-            this.btnAddProducto.TabIndex = 12;
-            this.btnAddProducto.Text = "Agregar Producto";
-            this.btnAddProducto.UseVisualStyleBackColor = false;
+            this.btnModificar.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnModificar.ForeColor = System.Drawing.Color.Black;
+            this.btnModificar.Location = new System.Drawing.Point(549, 344);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(151, 54);
+            this.btnModificar.TabIndex = 12;
+            this.btnModificar.Text = "Modificar Producto";
+            this.btnModificar.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -93,7 +102,7 @@
             // txtCodProducto
             // 
             this.txtCodProducto.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtCodProducto.Location = new System.Drawing.Point(270, 34);
+            this.txtCodProducto.Location = new System.Drawing.Point(298, 34);
             this.txtCodProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCodProducto.Name = "txtCodProducto";
             this.txtCodProducto.Size = new System.Drawing.Size(284, 25);
@@ -102,7 +111,7 @@
             // txtNombProducto
             // 
             this.txtNombProducto.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtNombProducto.Location = new System.Drawing.Point(243, 87);
+            this.txtNombProducto.Location = new System.Drawing.Point(243, 39);
             this.txtNombProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtNombProducto.Name = "txtNombProducto";
             this.txtNombProducto.Size = new System.Drawing.Size(284, 28);
@@ -113,7 +122,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(12, 94);
+            this.label2.Location = new System.Drawing.Point(12, 42);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 19);
@@ -125,30 +134,75 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(12, 149);
+            this.label3.Location = new System.Drawing.Point(12, 95);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "Descripcion";
             // 
-            // button1
+            // btnBuscar
             // 
-            this.button1.BackColor = System.Drawing.Color.Cornsilk;
-            this.button1.Location = new System.Drawing.Point(612, 23);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 54);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Agregar Producto";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.Location = new System.Drawing.Point(612, 23);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(170, 63);
+            this.btnBuscar.TabIndex = 13;
+            this.btnBuscar.Text = "Buscar Producto";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtStock
+            // 
+            this.txtStock.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtStock.Location = new System.Drawing.Point(243, 215);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(284, 28);
+            this.txtStock.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(12, 218);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 19);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Stock :";
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtPrecio.Location = new System.Drawing.Point(243, 255);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(284, 28);
+            this.txtPrecio.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(12, 258);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 19);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Precio :";
             // 
             // FormModificarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(895, 610);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCodProducto);
@@ -165,12 +219,16 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Button btnAddProducto;
+        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.TextBox txtNombProducto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCodProducto;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtStock;
+        private System.Windows.Forms.Label label4;
     }
 }
