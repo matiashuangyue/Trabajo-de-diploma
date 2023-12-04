@@ -24,5 +24,10 @@ namespace Controladora
             return Produc.modificarProducto(producto);
         }
 
+        public int EliminarProducto(Producto producto)
+        {
+            return Produc.eliminarProducto(producto);
+        }
+
     }
 }

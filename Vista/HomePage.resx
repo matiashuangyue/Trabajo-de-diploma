@@ -166,7 +166,7 @@
     <value>Top</value>
   </data>
   <data name="panelInformeSubmenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 958</value>
+    <value>0, 915</value>
   </data>
   <data name="panelInformeSubmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 69</value>
@@ -205,7 +205,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnInforme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 870</value>
+    <value>0, 827</value>
   </data>
   <data name="btnInforme.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
@@ -277,7 +277,7 @@
     <value>Top</value>
   </data>
   <data name="panelControlSubmenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 801</value>
+    <value>0, 758</value>
   </data>
   <data name="panelControlSubmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 69</value>
@@ -316,7 +316,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnControlStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 670</value>
   </data>
   <data name="btnControlStock.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
@@ -460,7 +460,7 @@
     <value>Top</value>
   </data>
   <data name="panelUsuarioSubmenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 594</value>
+    <value>0, 551</value>
   </data>
   <data name="panelUsuarioSubmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 119</value>
@@ -499,7 +499,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 506</value>
+    <value>0, 463</value>
   </data>
   <data name="btnUsuario.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
@@ -530,42 +530,6 @@
   </data>
   <data name="&gt;&gt;btnUsuario.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="btnEliminarProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnEliminarProducto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnEliminarProducto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 10.2pt</value>
-  </data>
-  <data name="btnEliminarProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnEliminarProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 82</value>
-  </data>
-  <data name="btnEliminarProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 41</value>
-  </data>
-  <data name="btnEliminarProducto.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnEliminarProducto.Text" xml:space="preserve">
-    <value>Eliminar Producto</value>
-  </data>
-  <data name="&gt;&gt;btnEliminarProducto.Name" xml:space="preserve">
-    <value>btnEliminarProducto</value>
-  </data>
-  <data name="&gt;&gt;btnEliminarProducto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnEliminarProducto.Parent" xml:space="preserve">
-    <value>panelProductoSubmenu</value>
-  </data>
-  <data name="&gt;&gt;btnEliminarProducto.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btnModificarProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -601,7 +565,7 @@
     <value>panelProductoSubmenu</value>
   </data>
   <data name="&gt;&gt;btnModificarProducto.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="btnAddProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -611,6 +575,9 @@
   </data>
   <data name="btnAddProducto.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century, 10.2pt</value>
+  </data>
+  <data name="btnAddProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnAddProducto.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -634,7 +601,7 @@
     <value>panelProductoSubmenu</value>
   </data>
   <data name="&gt;&gt;btnAddProducto.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="panelProductoSubmenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -643,7 +610,7 @@
     <value>0, 382</value>
   </data>
   <data name="panelProductoSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 124</value>
+    <value>367, 81</value>
   </data>
   <data name="panelProductoSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1109,6 +1076,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1447, 734</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>

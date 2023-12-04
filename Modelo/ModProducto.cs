@@ -152,6 +152,41 @@ namespace Modelo
             }
         }
 
+        public int eliminarProducto(Producto producto)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    String queryEliminarProducto = "DELETE FROM Producto WHERE Codigo = @Codigo";
+
+                    using (SqlCommand cmd = new SqlCommand(queryEliminarProducto, cnn))
+                    {
+                        // Utiliza parámetros para evitar la inyección de SQL
+                        cmd.Parameters.AddWithValue("@Codigo", producto.Codigo);
+
+                        int filasAfectadas = cmd.ExecuteNonQuery();
+
+                        if (filasAfectadas > 0)
+                        {
+                            cnn.Close();
+                            return 1; // se ha eliminado el producto correctamente
+                        }
+                        else
+                        {
+                            cnn.Close();
+                            return -1; // no se encontró el producto con el código dado
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return -2; // error al eliminar datos en SQL
+            }
+        }
+
 
 
     }

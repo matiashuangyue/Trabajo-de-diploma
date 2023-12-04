@@ -41,12 +41,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.Controls.Add(this.btnEliminar);
             this.groupBox1.Controls.Add(this.txtPrecio);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtStock);
@@ -78,7 +80,7 @@
             // 
             this.btnModificar.BackColor = System.Drawing.Color.Cornsilk;
             this.btnModificar.ForeColor = System.Drawing.Color.Black;
-            this.btnModificar.Location = new System.Drawing.Point(549, 344);
+            this.btnModificar.Location = new System.Drawing.Point(376, 347);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(151, 54);
@@ -198,6 +200,19 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "Precio :";
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
+            this.btnEliminar.Location = new System.Drawing.Point(549, 347);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(151, 54);
+            this.btnEliminar.TabIndex = 19;
+            this.btnEliminar.Text = "Eliminar Producto";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // FormModificarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -231,5 +246,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
