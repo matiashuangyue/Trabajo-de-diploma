@@ -30,12 +30,13 @@ namespace Vista
             IdentificarRol();
             rol = RoleID;
         }
-
+        //para submenu
         private void customizeDesign()
         {
             panelControlSubmenu.Visible = false;
             panelProductoSubmenu.Visible = false;
             panelUsuarioSubmenu.Visible = false;
+            panelInformeSubmenu.Visible = false;
         }
 
         private void hideSubmenu()
@@ -52,6 +53,10 @@ namespace Vista
             {
                 panelControlSubmenu.Visible = false;
             }
+            if(panelInformeSubmenu.Visible == true)
+            {
+                panelInformeSubmenu.Visible = false;
+            }
         }
         private void showSubmenu(Panel subMenu)
         {
@@ -66,6 +71,7 @@ namespace Vista
             }
         }
 
+        //identificar que rol
         public void IdentificarRol()
         {
             if(RoleID == -1)
@@ -132,9 +138,9 @@ namespace Vista
                 currentBtn.IconColor = Color.White;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
-
             }
         }
+       
 
         private void OpenChidForm(Form childForm)
         {
@@ -164,24 +170,9 @@ namespace Vista
 
         }
 
-        private void btnVenta_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChidForm(new FormVenta(RoleID));
-        }
+    
 
-        private void btnCompra_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color2);
-            OpenChidForm(new FormCompra(RoleID));
-        }
-
-        private void btnProducto_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color3);
-            showSubmenu(panelProductoSubmenu);
-            
-        }
+      
 
         private void btnProveedor_Click(object sender, EventArgs e)
         {
@@ -231,12 +222,51 @@ namespace Vista
         {
 
         }
+    private void btnVenta_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChidForm(new FormVenta(RoleID));
+        }
 
-        private void btnUsuario_Click_1(object sender, EventArgs e)
+        private void btnCompra_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+            OpenChidForm(new FormCompra(RoleID));
+        }
+    
+  private void btnProducto_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            showSubmenu(panelProductoSubmenu);
+            
+        }
+        #region submenuProducto
+
+
+
+        private void btnAddProducto_Click(object sender, EventArgs e)
+        {
+            OpenChidForm(new FormAddProducto(RoleID));
+            hideSubmenu();
+        }
+
+        private void btnModificarProducto_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void btnEliminarProducto_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+        #endregion
+
+    private void btnUsuario_Click_1(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
             showSubmenu(panelUsuarioSubmenu);
         }
+        #region submenuUsuario
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
@@ -254,37 +284,34 @@ namespace Vista
         {
             hideSubmenu();
         }
+#endregion
+     
 
-        private void btnAddProducto_Click(object sender, EventArgs e)
-        {
-            OpenChidForm(new FormAddProducto(RoleID));
-            hideSubmenu();
-        }
-
-        private void btnModificarProducto_Click(object sender, EventArgs e)
-        {
-            hideSubmenu();
-        }
-
-        private void btnEliminarProducto_Click(object sender, EventArgs e)
-        {
-            hideSubmenu();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            hideSubmenu();
-        }
 
         private void btnControlStock_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
             showSubmenu(panelControlSubmenu);
         }
+        #region submenuControlStock
+        private void button4_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+        #endregion
 
+
+        private void btnInforme_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            showSubmenu(panelInformeSubmenu);
+        }
+        #region submenuInforme
         private void btnInfo_Click(object sender, EventArgs e)
         {
             hideSubmenu();
         }
+        #endregion
+
     }
 }

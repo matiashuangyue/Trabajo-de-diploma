@@ -125,65 +125,65 @@
     <value>True</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnVerInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnInfo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnVerInfo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnInfo.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnVerInfo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century, 10.2pt</value>
   </data>
-  <data name="btnInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnVerInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnInfo.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnVerInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="btnInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+  <data name="btnVerInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 41</value>
   </data>
-  <data name="btnInfo.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnVerInfo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnInfo.Text" xml:space="preserve">
+  <data name="btnVerInfo.Text" xml:space="preserve">
     <value>Ver Info</value>
   </data>
-  <data name="&gt;&gt;btnInfo.Name" xml:space="preserve">
-    <value>btnInfo</value>
+  <data name="&gt;&gt;btnVerInfo.Name" xml:space="preserve">
+    <value>btnVerInfo</value>
   </data>
-  <data name="&gt;&gt;btnInfo.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnVerInfo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnInfo.Parent" xml:space="preserve">
-    <value>panel3</value>
+  <data name="&gt;&gt;btnVerInfo.Parent" xml:space="preserve">
+    <value>panelInformeSubmenu</value>
   </data>
-  <data name="&gt;&gt;btnInfo.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnVerInfo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="panelInformeSubmenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="panelInformeSubmenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 958</value>
   </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 69</value>
+  <data name="panelInformeSubmenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 69</value>
   </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+  <data name="panelInformeSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
+  <data name="&gt;&gt;panelInformeSubmenu.Name" xml:space="preserve">
+    <value>panelInformeSubmenu</value>
   </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelInformeSubmenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelInformeSubmenu.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panelInformeSubmenu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="btnInforme.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -211,7 +211,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnInforme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnInforme.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -237,40 +237,40 @@
   <data name="&gt;&gt;btnInforme.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnIngresarStock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="button4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnIngresarStock.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnIngresarStock.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century, 10.2pt</value>
   </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnIngresarStock.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnIngresarStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+  <data name="btnIngresarStock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 41</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnIngresarStock.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>button4</value>
+  <data name="btnIngresarStock.Text" xml:space="preserve">
+    <value>Ingresar Stock</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="&gt;&gt;btnIngresarStock.Name" xml:space="preserve">
+    <value>btnIngresarStock</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnIngresarStock.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnIngresarStock.Parent" xml:space="preserve">
     <value>panelControlSubmenu</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnIngresarStock.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panelControlSubmenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -280,7 +280,7 @@
     <value>0, 801</value>
   </data>
   <data name="panelControlSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 69</value>
+    <value>367, 69</value>
   </data>
   <data name="panelControlSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -322,7 +322,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnControlStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnControlStock.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -364,7 +364,7 @@
     <value>0, 82</value>
   </data>
   <data name="btnEliminarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnEliminarUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -400,7 +400,7 @@
     <value>0, 41</value>
   </data>
   <data name="btnModificarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnModificarUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -436,7 +436,7 @@
     <value>0, 0</value>
   </data>
   <data name="btnAgregarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnAgregarUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -463,7 +463,7 @@
     <value>0, 594</value>
   </data>
   <data name="panelUsuarioSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 119</value>
+    <value>367, 119</value>
   </data>
   <data name="panelUsuarioSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -505,7 +505,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -547,7 +547,7 @@
     <value>0, 82</value>
   </data>
   <data name="btnEliminarProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnEliminarProducto.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -583,7 +583,7 @@
     <value>0, 41</value>
   </data>
   <data name="btnModificarProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnModificarProducto.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -616,7 +616,7 @@
     <value>0, 0</value>
   </data>
   <data name="btnAddProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnAddProducto.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -643,7 +643,7 @@
     <value>0, 382</value>
   </data>
   <data name="panelProductoSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 124</value>
+    <value>367, 124</value>
   </data>
   <data name="panelProductoSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -685,7 +685,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnProducto.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -736,7 +736,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnCompra.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnCompra.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -787,7 +787,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnVenta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnVenta.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -853,7 +853,7 @@
     <value>0, 0</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 118</value>
+    <value>367, 118</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -877,7 +877,7 @@
     <value>0, 0</value>
   </data>
   <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 118</value>
+    <value>367, 118</value>
   </data>
   <data name="panelLogo.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -901,7 +901,7 @@
     <value>10, 0</value>
   </data>
   <data name="panelMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 1105</value>
+    <value>388, 437</value>
   </data>
   <data name="panelMenu.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1084,7 +1084,7 @@
     <value>398, 118</value>
   </data>
   <data name="panelDesktop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 987</value>
+    <value>1029, 319</value>
   </data>
   <data name="panelDesktop.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1108,7 +1108,7 @@
     <value>8, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1447, 1105</value>
+    <value>1447, 437</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
