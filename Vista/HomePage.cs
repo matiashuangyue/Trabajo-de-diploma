@@ -22,12 +22,48 @@ namespace Vista
         {
            
             InitializeComponent();
+            customizeDesign();
             this.RoleID = RoleID;
             leftBorderBtn= new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
             IdentificarRol();
             rol = RoleID;
+        }
+
+        private void customizeDesign()
+        {
+            panelControlSubmenu.Visible = false;
+            panelProductoSubmenu.Visible = false;
+            panelUsuarioSubmenu.Visible = false;
+        }
+
+        private void hideSubmenu()
+        {
+            if (panelUsuarioSubmenu.Visible == true)
+            {
+                panelUsuarioSubmenu.Visible=false;
+            }
+            if (panelProductoSubmenu.Visible == true)
+            {
+                panelProductoSubmenu.Visible = false;
+            }
+            if (panelControlSubmenu.Visible == true)
+            {
+                panelControlSubmenu.Visible = false;
+            }
+        }
+        private void showSubmenu(Panel subMenu)
+        {
+            if(subMenu.Visible == false)
+            {
+                hideSubmenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible=false;
+            }
         }
 
         public void IdentificarRol()
@@ -143,7 +179,8 @@ namespace Vista
         private void btnProducto_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChidForm(new FormProducto(RoleID));
+            showSubmenu(panelProductoSubmenu);
+            
         }
 
         private void btnProveedor_Click(object sender, EventArgs e)
@@ -161,7 +198,7 @@ namespace Vista
         private void btnUsuario_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChidForm(new FormUsuario(rol));
+            OpenChidForm(new FormAddUsuario(rol));
         }
 
         private void btnBaseDeDatos_Click(object sender, EventArgs e)
@@ -188,6 +225,66 @@ namespace Vista
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnUsuario_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            showSubmenu(panelUsuarioSubmenu);
+        }
+
+        private void btnAgregarUsuario_Click(object sender, EventArgs e)
+        {
+            OpenChidForm(new FormAddUsuario(rol));
+            hideSubmenu();
+
+        }
+
+        private void btnModificarUsuario_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void btnAddProducto_Click(object sender, EventArgs e)
+        {
+            OpenChidForm(new FormAddProducto(RoleID));
+            hideSubmenu();
+        }
+
+        private void btnModificarProducto_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void btnEliminarProducto_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void btnControlStock_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
+            showSubmenu(panelControlSubmenu);
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
         }
     }
 }

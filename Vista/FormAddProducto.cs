@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class FormProducto : Form
+    public partial class FormAddProducto : Form
     {
         private int RoleID;
-        public FormProducto(int RoleID)
+        public FormAddProducto(int RoleID)
         {
             InitializeComponent();
             this.RoleID = RoleID;

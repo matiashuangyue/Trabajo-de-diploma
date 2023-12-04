@@ -71,11 +71,11 @@
     <Compile Include="FormInforme.Designer.cs">
       <DependentUpon>FormInforme.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormProducto.cs">
+    <Compile Include="FormAddProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormProducto.Designer.cs">
-      <DependentUpon>FormProducto.cs</DependentUpon>
+    <Compile Include="FormAddProducto.Designer.cs">
+      <DependentUpon>FormAddProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="FormProveedor.cs">
       <SubType>Form</SubType>
@@ -83,11 +83,11 @@
     <Compile Include="FormProveedor.Designer.cs">
       <DependentUpon>FormProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUsuario.cs">
+    <Compile Include="FormAddUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUsuario.Designer.cs">
-      <DependentUpon>FormUsuario.cs</DependentUpon>
+    <Compile Include="FormAddUsuario.Designer.cs">
+      <DependentUpon>FormAddUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="FormVenta.cs">
       <SubType>Form</SubType>
@@ -118,14 +118,14 @@
     <EmbeddedResource Include="FormInforme.resx">
       <DependentUpon>FormInforme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormProducto.resx">
-      <DependentUpon>FormProducto.cs</DependentUpon>
+    <EmbeddedResource Include="FormAddProducto.resx">
+      <DependentUpon>FormAddProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProveedor.resx">
       <DependentUpon>FormProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUsuario.resx">
-      <DependentUpon>FormUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="FormAddUsuario.resx">
+      <DependentUpon>FormAddUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVenta.resx">
       <DependentUpon>FormVenta.cs</DependentUpon>

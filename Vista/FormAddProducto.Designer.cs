@@ -1,6 +1,6 @@
 ﻿namespace Vista
 {
-    partial class FormProducto
+    partial class FormAddProducto
     {
         /// <summary>
         /// Required designer variable.

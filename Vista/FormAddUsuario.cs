@@ -11,12 +11,12 @@ using Entidades;
 
 namespace Vista
 {
-    public partial class FormUsuario : Form
+    public partial class FormAddUsuario : Form
     {
         public int rol;
         private int NewRoleID;
         private string selectedItem;
-        public FormUsuario(int RoleID)
+        public FormAddUsuario(int RoleID)
         {
             InitializeComponent();
             this.rol = RoleID;
