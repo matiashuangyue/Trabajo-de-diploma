@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Modelo;
+using Entidades;
+
+namespace Controladora
+{
+    public class ControlProducto
+    {
+        Modelo.ModProducto Produc= new ModProducto();
+        public int AddProducto(Producto producto)
+        {
+            return Produc.agregarProducto(producto);
+        }
+    }
+}
