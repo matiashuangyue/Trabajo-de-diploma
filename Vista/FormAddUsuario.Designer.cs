@@ -30,6 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbRol = new System.Windows.Forms.ComboBox();
+            this.lblRol = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -40,12 +46,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblRol = new System.Windows.Forms.Label();
-            this.cmbRol = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(45, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 19);
+            this.label1.Size = new System.Drawing.Size(0, 15);
             this.label1.TabIndex = 0;
             // 
             // groupBox1
@@ -84,13 +84,81 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingresar Los Datos ";
             // 
+            // cmbRol
+            // 
+            this.cmbRol.BackColor = System.Drawing.Color.Cornsilk;
+            this.cmbRol.FormattingEnabled = true;
+            this.cmbRol.Items.AddRange(new object[] {
+            "Admin",
+            "Empleado",
+            "Proveedor",
+            "Usuario"});
+            this.cmbRol.Location = new System.Drawing.Point(220, 263);
+            this.cmbRol.Name = "cmbRol";
+            this.cmbRol.Size = new System.Drawing.Size(353, 29);
+            this.cmbRol.TabIndex = 14;
+            // 
+            // lblRol
+            // 
+            this.lblRol.AutoSize = true;
+            this.lblRol.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRol.ForeColor = System.Drawing.Color.Black;
+            this.lblRol.Location = new System.Drawing.Point(27, 273);
+            this.lblRol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(39, 19);
+            this.lblRol.TabIndex = 11;
+            this.lblRol.Text = "Rol ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(27, 197);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 19);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Direccion";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(27, 163);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 19);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Telefono";
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtDireccion.Location = new System.Drawing.Point(220, 188);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(353, 28);
+            this.txtDireccion.TabIndex = 8;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtTelefono.Location = new System.Drawing.Point(220, 154);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(353, 28);
+            this.txtTelefono.TabIndex = 7;
+            // 
             // txtDNI
             // 
             this.txtDNI.BackColor = System.Drawing.Color.Cornsilk;
             this.txtDNI.Location = new System.Drawing.Point(220, 36);
             this.txtDNI.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(353, 35);
+            this.txtDNI.Size = new System.Drawing.Size(353, 28);
             this.txtDNI.TabIndex = 0;
             // 
             // txtName
@@ -99,7 +167,7 @@
             this.txtName.Location = new System.Drawing.Point(220, 78);
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(353, 35);
+            this.txtName.Size = new System.Drawing.Size(353, 28);
             this.txtName.TabIndex = 0;
             // 
             // txtPassword
@@ -174,7 +242,7 @@
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(46, 35);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(211, 26);
+            this.label6.Size = new System.Drawing.Size(169, 21);
             this.label6.TabIndex = 7;
             this.label6.Text = "Registro De Usuario";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -184,7 +252,7 @@
             this.btnRegistrar.BackColor = System.Drawing.Color.Cornsilk;
             this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.Black;
-            this.btnRegistrar.Location = new System.Drawing.Point(658, 453);
+            this.btnRegistrar.Location = new System.Drawing.Point(50, 453);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(246, 49);
@@ -193,75 +261,7 @@
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // txtTelefono
-            // 
-            this.txtTelefono.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtTelefono.Location = new System.Drawing.Point(220, 154);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(353, 28);
-            this.txtTelefono.TabIndex = 7;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtDireccion.Location = new System.Drawing.Point(220, 188);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(353, 28);
-            this.txtDireccion.TabIndex = 8;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(27, 163);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 19);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Telefono";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(27, 197);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 19);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Direccion";
-            // 
-            // lblRol
-            // 
-            this.lblRol.AutoSize = true;
-            this.lblRol.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRol.ForeColor = System.Drawing.Color.Black;
-            this.lblRol.Location = new System.Drawing.Point(27, 273);
-            this.lblRol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(39, 19);
-            this.lblRol.TabIndex = 11;
-            this.lblRol.Text = "Rol ";
-            // 
-            // cmbRol
-            // 
-            this.cmbRol.BackColor = System.Drawing.Color.Cornsilk;
-            this.cmbRol.FormattingEnabled = true;
-            this.cmbRol.Items.AddRange(new object[] {
-            "Admin",
-            "Empleado",
-            "Proveedor",
-            "Usuario"});
-            this.cmbRol.Location = new System.Drawing.Point(220, 263);
-            this.cmbRol.Name = "cmbRol";
-            this.cmbRol.Size = new System.Drawing.Size(353, 29);
-            this.cmbRol.TabIndex = 14;
-            // 
-            // FormUsuario
+            // FormAddUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -270,7 +270,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "FormUsuario";
+            this.Name = "FormAddUsuario";
             this.Text = "FormUsuario";
             this.Load += new System.EventHandler(this.FormUsuario_Load);
             this.groupBox1.ResumeLayout(false);

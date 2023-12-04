@@ -531,40 +531,40 @@
   <data name="&gt;&gt;btnUsuario.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="btnModificarProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnModificacionProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnModificarProducto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnModificacionProducto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnModificarProducto.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnModificacionProducto.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century, 10.2pt</value>
   </data>
-  <data name="btnModificarProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnModificacionProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnModificarProducto.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnModificacionProducto.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 41</value>
   </data>
-  <data name="btnModificarProducto.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnModificacionProducto.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 41</value>
   </data>
-  <data name="btnModificarProducto.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnModificacionProducto.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnModificarProducto.Text" xml:space="preserve">
-    <value>Modificar Producto</value>
+  <data name="btnModificacionProducto.Text" xml:space="preserve">
+    <value>Modificiones De Producto</value>
   </data>
-  <data name="&gt;&gt;btnModificarProducto.Name" xml:space="preserve">
-    <value>btnModificarProducto</value>
+  <data name="&gt;&gt;btnModificacionProducto.Name" xml:space="preserve">
+    <value>btnModificacionProducto</value>
   </data>
-  <data name="&gt;&gt;btnModificarProducto.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnModificacionProducto.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnModificarProducto.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnModificacionProducto.Parent" xml:space="preserve">
     <value>panelProductoSubmenu</value>
   </data>
-  <data name="&gt;&gt;btnModificarProducto.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnModificacionProducto.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btnAddProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

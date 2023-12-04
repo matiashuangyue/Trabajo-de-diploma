@@ -31,4 +31,5 @@ C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormC
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormProveedor.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormAddProducto.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormAddUsuario.resources
-C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormModificarProducto.resources
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormModificacionesProducto.resources
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormModificacionesUsuario.resources

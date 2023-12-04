@@ -21,7 +21,7 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT DNI , Contra  FROM Usuario where DNI ='" + usuario.DNI + "'AND Contra='" + usuario.Password + "'", cnn))
+                    using (SqlCommand cmd = new SqlCommand("SELECT DNI , Contra  FROM Usuarios where DNI ='" + usuario.DNI + "'AND Contra='" + usuario.Password + "'", cnn))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
@@ -98,7 +98,7 @@ namespace Modelo
                 using (var conn = GetConnection())
                 {
                     conn.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT DNI FROM Usuario where DNI ='" + usuario.DNI + "'", conn))
+                    using (SqlCommand cmd = new SqlCommand("SELECT DNI FROM Usuarios where DNI ='" + usuario.DNI + "'", conn))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
@@ -132,7 +132,7 @@ namespace Modelo
                 using (var conn = GetConnection())
                 {
                     conn.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT ID_Rol FROM Usuario WHERE DNI = @DNI", conn))
+                    using (SqlCommand cmd = new SqlCommand("SELECT ID_Rol FROM Usuarios WHERE DNI = @DNI", conn))
                     {
                         cmd.Parameters.AddWithValue("@DNI", usuario.DNI);
                         SqlDataReader dr = cmd.ExecuteReader();
@@ -166,8 +166,8 @@ namespace Modelo
                     using (var cnn = GetConnection())
                     {
                         cnn.Open();
-                        string query = "INSERT INTO Usuario (DNI, Nombre, Mail, Telefono, Direccion, Contra, ID_Rol) " +
-                                       "VALUES (@DNI, @Nombre, @Mail, @Telefono, @Direccion, @Contra, @ID_Rol)";
+                        string query = "INSERT INTO Usuarios (DNI, Nombre, Mail, Telefono, Direccion, Contra, ID_Rol, ID_Estado) " +
+                                       "VALUES (@DNI, @Nombre, @Mail, @Telefono, @Direccion, @Contra, @ID_Rol,@ID_Estado)";
 
                         using (SqlCommand cmd = new SqlCommand(query, cnn))
                         {
@@ -178,7 +178,7 @@ namespace Modelo
                             cmd.Parameters.AddWithValue("@Direccion", usuario.Direction);
                             cmd.Parameters.AddWithValue("@Contra", usuario.Password);
                             cmd.Parameters.AddWithValue("@ID_Rol", usuario.ID_Rol);
-
+                            cmd.Parameters.AddWithValue("@ID_Estado", usuario.ID_Estado);
                             cmd.ExecuteNonQuery();
                         }
                     }

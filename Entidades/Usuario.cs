@@ -17,5 +17,6 @@ namespace Entidades
         
         public string Direction { get; set; }
         public int ID_Rol { get; set; }
+        public int ID_Estado { get; set; }
     }
 }

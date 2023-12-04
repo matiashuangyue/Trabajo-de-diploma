@@ -20,7 +20,7 @@ namespace Modelo
                 using (var conn = GetConnection())
                 {
                     conn.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT Codigo FROM Producto where Codigo ='" + producto.Codigo + "'", conn))
+                    using (SqlCommand cmd = new SqlCommand("SELECT Codigo FROM Productos where Codigo ='" + producto.Codigo + "'", conn))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
@@ -51,7 +51,7 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    String queryBuscarPorCodigo = "select * from Producto where Codigo = '" + producto.Codigo + "'";
+                    String queryBuscarPorCodigo = "select * from Productos where Codigo = '" + producto.Codigo + "'";
                     using (SqlCommand cmd = new SqlCommand(queryBuscarPorCodigo, cnn))
                     {
                         using (SqlDataReader reader = cmd.ExecuteReader())
@@ -64,7 +64,8 @@ namespace Modelo
                                     Name = reader["Nombre"].ToString(),
                                     Descripcion = reader["Descripcion"].ToString(),
                                     Price = Convert.ToDecimal(reader["Precio"]),
-                                    Stock = Convert.ToInt32(reader["Stock"])
+                                    Stock = Convert.ToInt32(reader["Stock"]),
+                                    ID_Estado = Convert.ToInt32(reader["ID_Estado"]),
                                 };
                             }
                         }
@@ -89,11 +90,9 @@ namespace Modelo
                     {
                         using (var cnn = GetConnection())
                         {
-                            producto.Price = 0;
-                            producto.Stock= 0;
                             cnn.Open();
-                            String QueryDatosValidos = "insert into Producto ([Codigo],[Nombre],[Descripcion],[Precio],[Stock])"
-                           + "values ('" + producto.Codigo + "','" + producto.Name + "','" + producto.Descripcion + "','" + producto.Price + "','" + producto.Stock + "')";
+                            String QueryDatosValidos = "insert into Productos ([Codigo],[Nombre],[Descripcion],[Precio],[Stock],[ID_Estado])"
+                           + "values ('" + producto.Codigo + "','" + producto.Name + "','" + producto.Descripcion + "','" + producto.Price + "','" + producto.Stock + "','" + producto.ID_Estado + "')";
                             using (SqlCommand cmd = new SqlCommand(QueryDatosValidos, cnn))
                             {
                                 cmd.ExecuteNonQuery();
@@ -109,6 +108,7 @@ namespace Modelo
                 }
                 else { return -1; }//ya existe codigo de producto en base de datos
         }
+       
 
         public int modificarProducto(Producto producto)
         {
@@ -119,11 +119,12 @@ namespace Modelo
                     using (var cnn = GetConnection())
                     {
                         cnn.Open();
-                        String queryDatosValidos = "update Producto set " +
+                        String queryDatosValidos = "update Productos set " +
                                                   "Nombre = @Nombre, " +
                                                   "Descripcion = @Descripcion, " +
                                                   "Precio = @Precio, " +
-                                                  "Stock = @Stock " +
+                                                  "Stock = @Stock ," +
+                                                  "ID_Estado = @ID_Estado " +
                                                   "where Codigo = @Codigo";
 
                         using (SqlCommand cmd = new SqlCommand(queryDatosValidos, cnn))
@@ -133,6 +134,7 @@ namespace Modelo
                             cmd.Parameters.AddWithValue("@Descripcion", producto.Descripcion);
                             cmd.Parameters.AddWithValue("@Precio", producto.Price);
                             cmd.Parameters.AddWithValue("@Stock", producto.Stock);
+                            cmd.Parameters.AddWithValue("@ID_Estado", producto.ID_Estado);
                             cmd.Parameters.AddWithValue("@Codigo", producto.Codigo);
 
                             cmd.ExecuteNonQuery();
@@ -159,7 +161,7 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    String queryEliminarProducto = "DELETE FROM Producto WHERE Codigo = @Codigo";
+                    String queryEliminarProducto = "UPDATE Productos SET ID_Estado = 0 WHERE Codigo = @Codigo";
 
                     using (SqlCommand cmd = new SqlCommand(queryEliminarProducto, cnn))
                     {
@@ -171,7 +173,7 @@ namespace Modelo
                         if (filasAfectadas > 0)
                         {
                             cnn.Close();
-                            return 1; // se ha eliminado el producto correctamente
+                            return 1; // se ha cambiado el estado del producto correctamente
                         }
                         else
                         {
@@ -183,7 +185,7 @@ namespace Modelo
             }
             catch (Exception ex)
             {
-                return -2; // error al eliminar datos en SQL
+                return -2; // error al actualizar datos en SQL
             }
         }
 

@@ -39,7 +39,7 @@
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
             this.panelProductoSubmenu = new System.Windows.Forms.Panel();
-            this.btnModificarProducto = new System.Windows.Forms.Button();
+            this.btnModificacionProducto = new System.Windows.Forms.Button();
             this.btnAddProducto = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -159,19 +159,19 @@
             // panelProductoSubmenu
             // 
             this.panelProductoSubmenu.BackColor = System.Drawing.Color.Azure;
-            this.panelProductoSubmenu.Controls.Add(this.btnModificarProducto);
+            this.panelProductoSubmenu.Controls.Add(this.btnModificacionProducto);
             this.panelProductoSubmenu.Controls.Add(this.btnAddProducto);
             resources.ApplyResources(this.panelProductoSubmenu, "panelProductoSubmenu");
             this.panelProductoSubmenu.Name = "panelProductoSubmenu";
             // 
-            // btnModificarProducto
+            // btnModificacionProducto
             // 
-            this.btnModificarProducto.BackColor = System.Drawing.Color.LightSeaGreen;
-            resources.ApplyResources(this.btnModificarProducto, "btnModificarProducto");
-            this.btnModificarProducto.FlatAppearance.BorderSize = 0;
-            this.btnModificarProducto.Name = "btnModificarProducto";
-            this.btnModificarProducto.UseVisualStyleBackColor = false;
-            this.btnModificarProducto.Click += new System.EventHandler(this.btnModificarProducto_Click);
+            this.btnModificacionProducto.BackColor = System.Drawing.Color.LightSeaGreen;
+            resources.ApplyResources(this.btnModificacionProducto, "btnModificacionProducto");
+            this.btnModificacionProducto.FlatAppearance.BorderSize = 0;
+            this.btnModificacionProducto.Name = "btnModificacionProducto";
+            this.btnModificacionProducto.UseVisualStyleBackColor = false;
+            this.btnModificacionProducto.Click += new System.EventHandler(this.btnModificarProducto_Click);
             // 
             // btnAddProducto
             // 
@@ -394,7 +394,7 @@
         private System.Windows.Forms.Button btnModificarUsuario;
         private System.Windows.Forms.Button btnAgregarUsuario;
         private FontAwesome.Sharp.IconButton btnUsuario;
-        private System.Windows.Forms.Button btnModificarProducto;
+        private System.Windows.Forms.Button btnModificacionProducto;
         private System.Windows.Forms.Button btnAddProducto;
         private FontAwesome.Sharp.IconButton btnInforme;
         private System.Windows.Forms.Panel panelControlSubmenu;

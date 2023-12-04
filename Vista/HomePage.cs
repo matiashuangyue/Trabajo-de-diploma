@@ -252,7 +252,7 @@ namespace Vista
 
         private void btnModificarProducto_Click(object sender, EventArgs e)
         {
-            OpenChidForm(new FormModificarProducto(RoleID));
+            OpenChidForm(new FormModificacionesProducto(RoleID));
             hideSubmenu();
         }
 

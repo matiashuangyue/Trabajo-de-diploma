@@ -37,6 +37,9 @@ namespace Vista
                     ProductoActual.Codigo = int.Parse(txtCodProducto.Text);
                     ProductoActual.Name = txtNombProducto.Text;
                     ProductoActual.Descripcion=txtDescripcion.Text;
+                    ProductoActual.Price = 0;
+                    ProductoActual.Stock = 0;
+                    ProductoActual.ID_Estado = 1;
                 }
                 Controladora.ControlProducto Product = new  Controladora.ControlProducto();
                 int registrarse = Product.AddProducto(ProductoActual);

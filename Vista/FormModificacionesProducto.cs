@@ -12,12 +12,13 @@ using Entidades;
 
 namespace Vista
 {
-    public partial class FormModificarProducto : Form
+    public partial class FormModificacionesProducto : Form
     {
         // Variable global para rastrear si se ha buscado un producto
         private bool ProductoHaEncontrado = false;
         private int RoleID;
-        public FormModificarProducto(int RoleID)
+        private int EstadoID;
+        public FormModificacionesProducto(int RoleID)
         {
             InitializeComponent();
             this.RoleID = RoleID;
@@ -55,14 +56,36 @@ namespace Vista
 
                 if (productoEncontrado != null)
                 {
-                    // Mostrar la información del producto en los controles correspondientes
+                    if(productoEncontrado.ID_Estado != 0 )
+                    {// Mostrar la información del producto en los controles correspondientes
                     txtNombProducto.Text = productoEncontrado.Name;
                     txtDescripcion.Text = productoEncontrado.Descripcion;
                     txtPrecio.Text = productoEncontrado.Price.ToString();
                     txtStock.Text = productoEncontrado.Stock.ToString();
-
+                     cmbEstado.SelectedItem = "Alta";
                     // Establecer la variable de estado a true si se encontró el producto
                     ProductoHaEncontrado = true;
+                    }
+                    else
+                    {
+                        if ( RoleID == 1)
+                        {
+                            txtNombProducto.Text = productoEncontrado.Name;
+                            txtDescripcion.Text = productoEncontrado.Descripcion;
+                            txtPrecio.Text = productoEncontrado.Price.ToString();
+                            txtStock.Text = productoEncontrado.Stock.ToString();
+                            // Asignar el valor correspondiente al cmbEstado (alta o baja)
+                            cmbEstado.SelectedItem = "Baja";
+                        }
+                        else
+                        {
+                            MessageBox.Show("Producto Buscado esta dado de baja, porfavor comunicarse con el admin ");
+                            vaciarTextbox();
+                           
+                        }
+                        
+                    }
+
                 }
                 else
                 {
@@ -80,8 +103,7 @@ namespace Vista
                 {
                     MessageBox.Show("Por favor, ingresar un código de producto válido.");
                     return;
-                }
-
+                }  
                 // Modificar el producto usando la controladora
                 ControlProducto controlProducto = new ControlProducto();
                 Producto productoModificado = new Producto
@@ -90,7 +112,8 @@ namespace Vista
                     Name = txtNombProducto.Text,
                     Descripcion = txtDescripcion.Text,
                     Price = Convert.ToDecimal(txtPrecio.Text),
-                    Stock = Convert.ToInt32(txtStock.Text)
+                    Stock = Convert.ToInt32(txtStock.Text),
+                    ID_Estado = EstadoID,
                 };
 
                 int resultado = controlProducto.ModificarProducto(productoModificado);
@@ -177,6 +200,19 @@ namespace Vista
           
         }
 
+        
+
+        private void estadoProducto()
+        {
+            if(cmbEstado.SelectedItem == "Alta")
+            {
+                EstadoID = 1;
+            }
+            else
+            {
+                EstadoID = 0;
+            }
+        }
         private bool CamposCompletados()
         {
             // Verifica que todos los campos estén completados
@@ -190,15 +226,19 @@ namespace Vista
         private void FormModificarProducto_Load(object sender, EventArgs e)
         {
             permiso();
+            estadoProducto();
         }
 
         private void permiso()
         {
+           
             if (RoleID != 1)
             {
                 txtPrecio.Enabled = false;
                 txtStock.Enabled = false;
                 btnEliminar.Visible = false;
+                lblEstado.Visible = false;
+                cmbEstado.Visible=false;
             }
             else
             {
@@ -208,6 +248,9 @@ namespace Vista
                     txtPrecio.Enabled = true;
                     txtStock.Enabled = true;
                     btnEliminar.Visible=true;
+                    lblEstado.Visible=true;
+                    cmbEstado.Visible=true;
+                    
                 }
 
             }

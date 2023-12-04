@@ -49,6 +49,7 @@ namespace Vista
                         Direction = txtDireccion.Text,
                         Password = txtPassword.Text,
                         ID_Rol = 0,
+                        ID_Estado = 1,
                 };
                     Controladora.ControlUsuario User = new Controladora.ControlUsuario();
                         
@@ -85,6 +86,7 @@ namespace Vista
                         Direction = txtDireccion.Text,
                         Password = txtPassword.Text,
                         ID_Rol = NewRoleID,
+                        ID_Estado= 1,
                     };
                     Controladora.ControlUsuario User = new Controladora.ControlUsuario();
                     int registrarse = User.RegistrarCuenta(UserActual);
@@ -159,7 +161,6 @@ namespace Vista
             {
                 MessageBox.Show("porfavor selecciona un rol");
             }
-
         }
 
         
