@@ -32,8 +32,6 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnInforme = new FontAwesome.Sharp.IconButton();
             this.btnUsuario = new FontAwesome.Sharp.IconButton();
-            this.btnControlStock = new FontAwesome.Sharp.IconButton();
-            this.btnProveedor = new FontAwesome.Sharp.IconButton();
             this.btnProducto = new FontAwesome.Sharp.IconButton();
             this.btnCompra = new FontAwesome.Sharp.IconButton();
             this.btnVenta = new FontAwesome.Sharp.IconButton();
@@ -47,6 +45,10 @@
             this.iconPerfil = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnProveedor = new FontAwesome.Sharp.IconButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnControlStock = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -60,10 +62,12 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.CadetBlue;
+            this.panelMenu.Controls.Add(this.btnControlStock);
+            this.panelMenu.Controls.Add(this.panel4);
+            this.panelMenu.Controls.Add(this.btnProveedor);
+            this.panelMenu.Controls.Add(this.panel3);
             this.panelMenu.Controls.Add(this.btnInforme);
             this.panelMenu.Controls.Add(this.btnUsuario);
-            this.panelMenu.Controls.Add(this.btnControlStock);
-            this.panelMenu.Controls.Add(this.btnProveedor);
             this.panelMenu.Controls.Add(this.btnProducto);
             this.panelMenu.Controls.Add(this.btnCompra);
             this.panelMenu.Controls.Add(this.btnVenta);
@@ -98,34 +102,6 @@
             this.btnUsuario.Name = "btnUsuario";
             this.btnUsuario.UseVisualStyleBackColor = false;
             this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
-            // 
-            // btnControlStock
-            // 
-            this.btnControlStock.BackColor = System.Drawing.Color.CadetBlue;
-            resources.ApplyResources(this.btnControlStock, "btnControlStock");
-            this.btnControlStock.FlatAppearance.BorderSize = 0;
-            this.btnControlStock.ForeColor = System.Drawing.Color.White;
-            this.btnControlStock.IconChar = FontAwesome.Sharp.IconChar.SquarePollVertical;
-            this.btnControlStock.IconColor = System.Drawing.Color.White;
-            this.btnControlStock.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnControlStock.IconSize = 32;
-            this.btnControlStock.Name = "btnControlStock";
-            this.btnControlStock.UseVisualStyleBackColor = false;
-            this.btnControlStock.Click += new System.EventHandler(this.iconButton4_Click);
-            // 
-            // btnProveedor
-            // 
-            this.btnProveedor.BackColor = System.Drawing.Color.CadetBlue;
-            resources.ApplyResources(this.btnProveedor, "btnProveedor");
-            this.btnProveedor.FlatAppearance.BorderSize = 0;
-            this.btnProveedor.ForeColor = System.Drawing.Color.White;
-            this.btnProveedor.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.btnProveedor.IconColor = System.Drawing.Color.White;
-            this.btnProveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProveedor.IconSize = 32;
-            this.btnProveedor.Name = "btnProveedor";
-            this.btnProveedor.UseVisualStyleBackColor = false;
-            this.btnProveedor.Click += new System.EventHandler(this.btnProveedor_Click);
             // 
             // btnProducto
             // 
@@ -250,6 +226,44 @@
             resources.ApplyResources(this.panelDesktop, "panelDesktop");
             this.panelDesktop.Name = "panelDesktop";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Azure;
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // btnProveedor
+            // 
+            this.btnProveedor.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.btnProveedor, "btnProveedor");
+            this.btnProveedor.FlatAppearance.BorderSize = 0;
+            this.btnProveedor.ForeColor = System.Drawing.Color.White;
+            this.btnProveedor.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.btnProveedor.IconColor = System.Drawing.Color.White;
+            this.btnProveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnProveedor.IconSize = 32;
+            this.btnProveedor.Name = "btnProveedor";
+            this.btnProveedor.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Azure;
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // btnControlStock
+            // 
+            this.btnControlStock.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.btnControlStock, "btnControlStock");
+            this.btnControlStock.FlatAppearance.BorderSize = 0;
+            this.btnControlStock.ForeColor = System.Drawing.Color.White;
+            this.btnControlStock.IconChar = FontAwesome.Sharp.IconChar.SquarePollVertical;
+            this.btnControlStock.IconColor = System.Drawing.Color.White;
+            this.btnControlStock.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnControlStock.IconSize = 32;
+            this.btnControlStock.Name = "btnControlStock";
+            this.btnControlStock.UseVisualStyleBackColor = false;
+            // 
             // HomePage
             // 
             resources.ApplyResources(this, "$this");
@@ -279,8 +293,6 @@
         private System.Windows.Forms.Panel panelLogo;
         private FontAwesome.Sharp.IconButton btnInforme;
         private FontAwesome.Sharp.IconButton btnUsuario;
-        private FontAwesome.Sharp.IconButton btnControlStock;
-        private FontAwesome.Sharp.IconButton btnProveedor;
         private FontAwesome.Sharp.IconButton btnProducto;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnHome;
@@ -291,5 +303,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label lblRol;
+        private FontAwesome.Sharp.IconButton btnControlStock;
+        private System.Windows.Forms.Panel panel4;
+        private FontAwesome.Sharp.IconButton btnProveedor;
+        private System.Windows.Forms.Panel panel3;
     }
 }
