@@ -30,6 +30,7 @@ namespace Vista
             txtDescripcion.Text = string.Empty;
             txtStock.Text = string.Empty;
             txtPrecio.Text = string.Empty;
+            cmbEstado.SelectedItem = null;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -138,7 +139,7 @@ namespace Vista
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
-        {
+        {/*
             if (CamposCompletados())
             {
                 if (ProductoHaEncontrado)
@@ -196,7 +197,7 @@ namespace Vista
             else
             {
                 MessageBox.Show("Por favor, completa todos los campos antes de intentar modificar el producto.");
-            }
+            }*/
           
         }
 
@@ -236,7 +237,6 @@ namespace Vista
             {
                 txtPrecio.Enabled = false;
                 txtStock.Enabled = false;
-                btnEliminar.Visible = false;
                 lblEstado.Visible = false;
                 cmbEstado.Visible=false;
             }
@@ -247,7 +247,6 @@ namespace Vista
 
                     txtPrecio.Enabled = true;
                     txtStock.Enabled = true;
-                    btnEliminar.Visible=true;
                     lblEstado.Visible=true;
                     cmbEstado.Visible=true;
                     
