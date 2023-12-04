@@ -19,5 +19,10 @@ namespace Controladora
         {
             return Produc.buscarProductoPorCodigo(producto);
         }
+        public int ModificarProducto(Producto producto)
+        {
+            return Produc.modificarProducto(producto);
+        }
+
     }
 }

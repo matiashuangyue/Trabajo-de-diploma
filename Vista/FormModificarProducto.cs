@@ -19,8 +19,16 @@ namespace Vista
             InitializeComponent();
         }
 
+        private void vaciarTextbox()
+        {
+            txtNombProducto.Text = string.Empty;
+            txtDescripcion.Text = string.Empty;
+            txtStock.Text = string.Empty;
+            txtPrecio.Text = string.Empty;
+        }
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            vaciarTextbox();
             if (string.IsNullOrEmpty(txtCodProducto.Text))
             {
                 MessageBox.Show("ingresar codigo de producto deseado porfavor");
@@ -52,6 +60,59 @@ namespace Vista
                     MessageBox.Show("Producto no encontrado.");
                 }
             }
+        }
+
+        
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (CamposCompletados())
+            {
+                int codigoProducto;
+                if (!int.TryParse(txtCodProducto.Text, out codigoProducto))
+                {
+                    MessageBox.Show("Por favor, ingresar un código de producto válido.");
+                    return;
+                }
+
+                // Modificar el producto usando la controladora
+                ControlProducto controlProducto = new ControlProducto();
+                Producto productoModificado = new Producto
+                {
+                    Codigo = codigoProducto,
+                    Name = txtNombProducto.Text,
+                    Descripcion = txtDescripcion.Text,
+                    Price = Convert.ToDecimal(txtPrecio.Text),
+                    Stock = Convert.ToInt32(txtStock.Text)
+                };
+
+                int resultado = controlProducto.ModificarProducto(productoModificado);
+
+                if (resultado == 1)
+                {
+                    MessageBox.Show("Producto modificado correctamente.");
+                }
+                else if (resultado == -1)
+                {
+                    MessageBox.Show("No se puede modificar porque el código no es válido.");
+                }
+                else if (resultado == -2)
+                {
+                    MessageBox.Show("Error al modificar datos en SQL.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, completa todos los campos antes de intentar modificar el producto.");
+            }
+        }
+        private bool CamposCompletados()
+        {
+            // Verifica que todos los campos estén completados
+            return !string.IsNullOrEmpty(txtCodProducto.Text) &&
+                   !string.IsNullOrEmpty(txtNombProducto.Text) &&
+                   !string.IsNullOrEmpty(txtDescripcion.Text) &&
+                   !string.IsNullOrEmpty(txtPrecio.Text) &&
+                   !string.IsNullOrEmpty(txtStock.Text);
         }
     }
 }

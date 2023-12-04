@@ -10,10 +10,9 @@ namespace Modelo
 {
     public class ModProducto: ConexionSQL
     {
-        public bool IsValidCodigo(Producto producto)
+        public bool NoExisteCodigo(Producto producto)
         {
-            if (string.IsNullOrWhiteSpace(producto.Codigo.ToString()))
-                return false;
+           
 
             try
             {
@@ -27,12 +26,12 @@ namespace Modelo
                         if (dr.Read())
                         {
                             conn.Close();
-                            return false;
+                            return false;//existe en base de datos
                         }
                         else
                         {
                             conn.Close();
-                            return true;
+                            return true;// no existe en base de datos
                         }
                     }
                 }
@@ -84,7 +83,7 @@ namespace Modelo
         public int agregarProducto(Producto producto)
         {
            
-                if (IsValidCodigo(producto) == true)
+                if (NoExisteCodigo(producto) == true)
                 {
                     try
                     {
@@ -113,21 +112,29 @@ namespace Modelo
 
         public int modificarProducto(Producto producto)
         {
-            if (IsValidCodigo(producto) == true)
+            if (NoExisteCodigo(producto) == false)
             {
                 try
                 {
                     using (var cnn = GetConnection())
                     {
                         cnn.Open();
-                        String QueryDatosValidos = "update Producto set " +
-                                                  "Nombre = '" + producto.Name + "', " +
-                                                  "Descripcion = '" + producto.Descripcion + "', " +
-                                                  "Precio = '" + producto.Price + "', " +
-                                                  "Stock = '" + producto.Stock + "' " +
-                                                  "where Codigo = '" + producto.Codigo + "'";
-                        using (SqlCommand cmd = new SqlCommand(QueryDatosValidos, cnn))
+                        String queryDatosValidos = "update Producto set " +
+                                                  "Nombre = @Nombre, " +
+                                                  "Descripcion = @Descripcion, " +
+                                                  "Precio = @Precio, " +
+                                                  "Stock = @Stock " +
+                                                  "where Codigo = @Codigo";
+
+                        using (SqlCommand cmd = new SqlCommand(queryDatosValidos, cnn))
                         {
+                            // Utiliza parámetros para evitar la inyección de SQL
+                            cmd.Parameters.AddWithValue("@Nombre", producto.Name);
+                            cmd.Parameters.AddWithValue("@Descripcion", producto.Descripcion);
+                            cmd.Parameters.AddWithValue("@Precio", producto.Price);
+                            cmd.Parameters.AddWithValue("@Stock", producto.Stock);
+                            cmd.Parameters.AddWithValue("@Codigo", producto.Codigo);
+
                             cmd.ExecuteNonQuery();
                             cnn.Close();
                         }
@@ -144,6 +151,7 @@ namespace Modelo
                 return -1; // no se puede modificar porque el código no es válido
             }
         }
+
 
 
     }

@@ -85,6 +85,7 @@
             this.btnModificar.TabIndex = 12;
             this.btnModificar.Text = "Modificar Producto";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label1
             // 
