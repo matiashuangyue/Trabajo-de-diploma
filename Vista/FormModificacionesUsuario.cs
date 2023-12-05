@@ -49,7 +49,8 @@ namespace Vista
         }
 
         private void permiso()
-        {
+        {   
+            perfilUsuario(UserDNI);
             if (RoleID != 1)
             {   
                 lblRol.Visible = false;
@@ -58,7 +59,7 @@ namespace Vista
                 cmbEstado.Visible = false;
                 btnBuscar.Visible = false;
                 txtDNI.Enabled = false;
-                perfilUsuario(UserDNI);
+                
 
             }
             else

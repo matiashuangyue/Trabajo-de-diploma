@@ -32,42 +32,42 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelInformeSubmenu = new System.Windows.Forms.Panel();
             this.btnVerInfo = new System.Windows.Forms.Button();
+            this.btnInforme = new FontAwesome.Sharp.IconButton();
             this.panelControlSubmenu = new System.Windows.Forms.Panel();
             this.btnIngresarStock = new System.Windows.Forms.Button();
+            this.btnControlStock = new FontAwesome.Sharp.IconButton();
             this.panelUsuarioSubmenu = new System.Windows.Forms.Panel();
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
+            this.btnUsuario = new FontAwesome.Sharp.IconButton();
             this.panelProductoSubmenu = new System.Windows.Forms.Panel();
             this.btnModificacionProducto = new System.Windows.Forms.Button();
             this.btnAddProducto = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblRol = new System.Windows.Forms.Label();
-            this.lblTitleChildForm = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPerfil = new FontAwesome.Sharp.IconPictureBox();
-            this.btnInforme = new FontAwesome.Sharp.IconButton();
-            this.btnControlStock = new FontAwesome.Sharp.IconButton();
-            this.btnUsuario = new FontAwesome.Sharp.IconButton();
             this.btnProducto = new FontAwesome.Sharp.IconButton();
             this.btnCompra = new FontAwesome.Sharp.IconButton();
             this.btnVenta = new FontAwesome.Sharp.IconButton();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblRol = new System.Windows.Forms.Label();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPerfil = new FontAwesome.Sharp.IconPictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelInformeSubmenu.SuspendLayout();
             this.panelControlSubmenu.SuspendLayout();
             this.panelUsuarioSubmenu.SuspendLayout();
             this.panelProductoSubmenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPerfil)).BeginInit();
+            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -103,6 +103,20 @@
             this.btnVerInfo.UseVisualStyleBackColor = false;
             this.btnVerInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
+            // btnInforme
+            // 
+            this.btnInforme.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.btnInforme, "btnInforme");
+            this.btnInforme.FlatAppearance.BorderSize = 0;
+            this.btnInforme.ForeColor = System.Drawing.Color.White;
+            this.btnInforme.IconChar = FontAwesome.Sharp.IconChar.BarChart;
+            this.btnInforme.IconColor = System.Drawing.Color.White;
+            this.btnInforme.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnInforme.IconSize = 32;
+            this.btnInforme.Name = "btnInforme";
+            this.btnInforme.UseVisualStyleBackColor = false;
+            this.btnInforme.Click += new System.EventHandler(this.btnInforme_Click);
+            // 
             // panelControlSubmenu
             // 
             this.panelControlSubmenu.BackColor = System.Drawing.Color.Azure;
@@ -118,6 +132,20 @@
             this.btnIngresarStock.Name = "btnIngresarStock";
             this.btnIngresarStock.UseVisualStyleBackColor = false;
             this.btnIngresarStock.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnControlStock
+            // 
+            this.btnControlStock.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.btnControlStock, "btnControlStock");
+            this.btnControlStock.FlatAppearance.BorderSize = 0;
+            this.btnControlStock.ForeColor = System.Drawing.Color.White;
+            this.btnControlStock.IconChar = FontAwesome.Sharp.IconChar.SquarePollVertical;
+            this.btnControlStock.IconColor = System.Drawing.Color.White;
+            this.btnControlStock.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnControlStock.IconSize = 32;
+            this.btnControlStock.Name = "btnControlStock";
+            this.btnControlStock.UseVisualStyleBackColor = false;
+            this.btnControlStock.Click += new System.EventHandler(this.btnControlStock_Click);
             // 
             // panelUsuarioSubmenu
             // 
@@ -145,6 +173,20 @@
             this.btnAgregarUsuario.UseVisualStyleBackColor = false;
             this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
             // 
+            // btnUsuario
+            // 
+            this.btnUsuario.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.btnUsuario, "btnUsuario");
+            this.btnUsuario.FlatAppearance.BorderSize = 0;
+            this.btnUsuario.ForeColor = System.Drawing.Color.White;
+            this.btnUsuario.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.btnUsuario.IconColor = System.Drawing.Color.White;
+            this.btnUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUsuario.IconSize = 32;
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.UseVisualStyleBackColor = false;
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click_1);
+            // 
             // panelProductoSubmenu
             // 
             this.panelProductoSubmenu.BackColor = System.Drawing.Color.Azure;
@@ -170,114 +212,6 @@
             this.btnAddProducto.Name = "btnAddProducto";
             this.btnAddProducto.UseVisualStyleBackColor = false;
             this.btnAddProducto.Click += new System.EventHandler(this.btnAddProducto_Click);
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panelLogo.Controls.Add(this.btnHome);
-            this.panelLogo.Controls.Add(this.pictureBox1);
-            resources.ApplyResources(this.panelLogo, "panelLogo");
-            this.panelLogo.Name = "panelLogo";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.CadetBlue;
-            this.panel2.Controls.Add(this.lblRol);
-            this.panel2.Controls.Add(this.lblTitleChildForm);
-            this.panel2.Controls.Add(this.iconCurrentChildForm);
-            this.panel2.Controls.Add(this.iconPerfil);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // lblRol
-            // 
-            resources.ApplyResources(this.lblRol, "lblRol");
-            this.lblRol.Name = "lblRol";
-            // 
-            // lblTitleChildForm
-            // 
-            resources.ApplyResources(this.lblTitleChildForm, "lblTitleChildForm");
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelDesktop.Controls.Add(this.panel1);
-            resources.ApplyResources(this.panelDesktop, "panelDesktop");
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
-            // 
-            // iconCurrentChildForm
-            // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.CadetBlue;
-            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 53;
-            resources.ApplyResources(this.iconCurrentChildForm, "iconCurrentChildForm");
-            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.TabStop = false;
-            // 
-            // iconPerfil
-            // 
-            this.iconPerfil.BackColor = System.Drawing.Color.CadetBlue;
-            this.iconPerfil.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconPerfil.IconChar = FontAwesome.Sharp.IconChar.UserGear;
-            this.iconPerfil.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconPerfil.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPerfil.IconSize = 65;
-            resources.ApplyResources(this.iconPerfil, "iconPerfil");
-            this.iconPerfil.Name = "iconPerfil";
-            this.iconPerfil.TabStop = false;
-            // 
-            // btnInforme
-            // 
-            this.btnInforme.BackColor = System.Drawing.Color.CadetBlue;
-            resources.ApplyResources(this.btnInforme, "btnInforme");
-            this.btnInforme.FlatAppearance.BorderSize = 0;
-            this.btnInforme.ForeColor = System.Drawing.Color.White;
-            this.btnInforme.IconChar = FontAwesome.Sharp.IconChar.BarChart;
-            this.btnInforme.IconColor = System.Drawing.Color.White;
-            this.btnInforme.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnInforme.IconSize = 32;
-            this.btnInforme.Name = "btnInforme";
-            this.btnInforme.UseVisualStyleBackColor = false;
-            this.btnInforme.Click += new System.EventHandler(this.btnInforme_Click);
-            // 
-            // btnControlStock
-            // 
-            this.btnControlStock.BackColor = System.Drawing.Color.CadetBlue;
-            resources.ApplyResources(this.btnControlStock, "btnControlStock");
-            this.btnControlStock.FlatAppearance.BorderSize = 0;
-            this.btnControlStock.ForeColor = System.Drawing.Color.White;
-            this.btnControlStock.IconChar = FontAwesome.Sharp.IconChar.SquarePollVertical;
-            this.btnControlStock.IconColor = System.Drawing.Color.White;
-            this.btnControlStock.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnControlStock.IconSize = 32;
-            this.btnControlStock.Name = "btnControlStock";
-            this.btnControlStock.UseVisualStyleBackColor = false;
-            this.btnControlStock.Click += new System.EventHandler(this.btnControlStock_Click);
-            // 
-            // btnUsuario
-            // 
-            this.btnUsuario.BackColor = System.Drawing.Color.CadetBlue;
-            resources.ApplyResources(this.btnUsuario, "btnUsuario");
-            this.btnUsuario.FlatAppearance.BorderSize = 0;
-            this.btnUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnUsuario.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.btnUsuario.IconColor = System.Drawing.Color.White;
-            this.btnUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUsuario.IconSize = 32;
-            this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.UseVisualStyleBackColor = false;
-            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click_1);
             // 
             // btnProducto
             // 
@@ -321,6 +255,14 @@
             this.btnVenta.UseVisualStyleBackColor = false;
             this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panelLogo.Controls.Add(this.btnHome);
+            this.panelLogo.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.panelLogo, "panelLogo");
+            this.panelLogo.Name = "panelLogo";
+            // 
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.White;
@@ -337,6 +279,64 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel2.Controls.Add(this.lblRol);
+            this.panel2.Controls.Add(this.lblTitleChildForm);
+            this.panel2.Controls.Add(this.iconCurrentChildForm);
+            this.panel2.Controls.Add(this.iconPerfil);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // lblRol
+            // 
+            resources.ApplyResources(this.lblRol, "lblRol");
+            this.lblRol.Name = "lblRol";
+            // 
+            // lblTitleChildForm
+            // 
+            resources.ApplyResources(this.lblTitleChildForm, "lblTitleChildForm");
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.CadetBlue;
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCurrentChildForm.IconSize = 53;
+            resources.ApplyResources(this.iconCurrentChildForm, "iconCurrentChildForm");
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.TabStop = false;
+            // 
+            // iconPerfil
+            // 
+            this.iconPerfil.BackColor = System.Drawing.Color.CadetBlue;
+            this.iconPerfil.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconPerfil.IconChar = FontAwesome.Sharp.IconChar.UserGear;
+            this.iconPerfil.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconPerfil.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPerfil.IconSize = 65;
+            resources.ApplyResources(this.iconPerfil, "iconPerfil");
+            this.iconPerfil.Name = "iconPerfil";
+            this.iconPerfil.TabStop = false;
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelDesktop.Controls.Add(this.panel1);
+            resources.ApplyResources(this.panelDesktop, "panelDesktop");
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
+            // 
             // HomePage
             // 
             resources.ApplyResources(this, "$this");
@@ -352,13 +352,13 @@
             this.panelUsuarioSubmenu.ResumeLayout(false);
             this.panelProductoSubmenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panelDesktop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPerfil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPerfil)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
