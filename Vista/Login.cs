@@ -14,6 +14,9 @@ namespace Vista
 {
     public partial class Login : Form
     {
+        private ControlUsuario controlUsuario = new ControlUsuario();
+        private int IDEstado;
+        private int IDRol;
         public Login()
         {
             InitializeComponent();
@@ -45,9 +48,17 @@ namespace Vista
                     var LoginValido = User.Validar(usuario);
                     if (LoginValido)
                     {
+                        ChequearEstado(usuario.DNI);
+                        if(IDEstado == 1 || IDRol==1 )
+                        {
                         int RoleID = User.GetRoleID(usuario);
                         int DNI= usuario.DNI;
-                        cambiarformulario(RoleID,DNI);
+                        cambiarformulario(IDRol,DNI);
+                        }
+                        else
+                        {
+                            MessageBox.Show("su cuenta esta dado de baja, porfavor comunicate con administrador");
+                        }
                     }
                     else
                     {
@@ -62,6 +73,12 @@ namespace Vista
             HomePage pantalla1 = new HomePage(RoleID,DNI);
             pantalla1.Show();
             this.Hide();
+        }
+        private void ChequearEstado(int DNI)
+        {
+            Usuario usuarioEncontrado = controlUsuario.BuscarUsuarioPorDNI(DNI);
+            IDEstado = usuarioEncontrado.ID_Estado;
+            IDRol= usuarioEncontrado.ID_Rol;
         }
 
     }
