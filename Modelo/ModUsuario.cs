@@ -203,46 +203,6 @@ namespace Modelo
 
 
 
-
-
-        public Usuario buscar(Usuario usuario)
-        {
-            Usuario usuario1 = null;
-            try
-            {
-                using (var cnn = GetConnection())
-                
-                using (SqlCommand cmd = new SqlCommand("SELECT *  FROM Usuarios where DNI ='" + usuario.DNI + "'", cnn))
-                {
-                    cnn.Open();
-                    SqlDataReader dr = cmd.ExecuteReader();
-                    if (dr.Read())
-                    {
-                        usuario1 = new Usuario
-                        {  
-                            Name=dr["Name"].ToString(),
-
-                        };
-                        cnn.Close();
-                        
-                    }
-                    else
-                    {
-                        cnn.Close();
-                        
-                    }
-                }// Completo correctamente
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                // Manejar la excepción de manera adecuada
-                // no entro a sql
-            }
-            return usuario1;
-        }
-
         public Usuario BuscarUsuarioPorDNI(int dni)
         {
             try
@@ -284,5 +244,56 @@ namespace Modelo
             return null; // Devolver null si no se encuentra el usuario
         }
 
+
+        public int modificarUsuario(Usuario usuario)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    String queryDatosValidos = "UPDATE Usuarios SET " +
+                                                "Nombre = @Nombre, " +
+                                                "Mail = @Mail, " +
+                                                "Telefono = @Telefono, " +
+                                                "Direccion = @Direccion, " +
+                                                "Contra = @Contra, " +
+                                                "ID_Rol = @ID_Rol, " +
+                                                "ID_Estado = @ID_Estado " +
+                                                "WHERE DNI = @DNI";
+
+                    using (SqlCommand cmd = new SqlCommand(queryDatosValidos, cnn))
+                    {
+                        // Utiliza parámetros para evitar la inyección de SQL
+                        cmd.Parameters.AddWithValue("@Nombre", usuario.Name);
+                        cmd.Parameters.AddWithValue("@Mail", usuario.Mail);
+                        cmd.Parameters.AddWithValue("@Telefono", usuario.Telefono);
+                        cmd.Parameters.AddWithValue("@Direccion", usuario.Direccion);
+                        cmd.Parameters.AddWithValue("@Contra", usuario.Password);
+                        cmd.Parameters.AddWithValue("@ID_Rol", usuario.ID_Rol);
+                        cmd.Parameters.AddWithValue("@ID_Estado", usuario.ID_Estado);
+                        cmd.Parameters.AddWithValue("@DNI", usuario.DNI);
+
+                        int filasAfectadas = cmd.ExecuteNonQuery();
+
+                        if (filasAfectadas > 0)
+                        {
+                            cnn.Close();
+                            return 1; // se ha modificado el usuario correctamente
+                        }
+                        else
+                        {
+                            cnn.Close();
+                            return -1; // no se encontró el usuario con el DNI dado
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al modificar usuario: {ex.Message}");
+                return -2; // error al modificar datos en SQL
+            }
+        }
     }
 }

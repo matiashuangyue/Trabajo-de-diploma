@@ -16,7 +16,7 @@ namespace Vista
     {
         private int RoleID;
         private int UserDNI;
-        private int EstadoID;
+        private int NewEstadoID;
         private int NewRoleID;
         
         private ControlUsuario controlUsuario = new ControlUsuario();
@@ -37,17 +37,7 @@ namespace Vista
             cmbRol.SelectedItem = null;
             cmbEstado.SelectedItem = null;
         }
-        private void estadoUsuario()
-        {
-            if (cmbEstado.SelectedItem == "Alta")
-            {
-                EstadoID = 1;
-            }
-            else
-            {
-                EstadoID = 0;
-            }
-        }
+        
         private bool CamposCompletados()
         {
             // Verifica que todos los campos estén completados
@@ -119,6 +109,7 @@ namespace Vista
         private void FormModificacionesUsuario_Load(object sender, EventArgs e)
         {
             permiso();
+           
         }
 
         public void btnBuscar_Click(object sender, EventArgs e)
@@ -161,8 +152,93 @@ namespace Vista
             txtDireccion.Text = usuarioEncontrado.Direccion;
             txtPassword.Text = usuarioEncontrado.Password;
             txtTelefono.Text = usuarioEncontrado.Telefono.ToString();
+            IdentificarEstado(usuarioEncontrado.ID_Estado);
+            IdentificarRol(usuarioEncontrado.ID_Rol);
         }
 
+        private void obtenerRol()
+        {
+            if (cmbRol.SelectedItem == "Admin")
+            {
+                NewRoleID = 1;
+            }else if(cmbRol.SelectedItem == "Empleado")
+            {
+                NewRoleID = 2;
+            }else if (cmbRol.SelectedItem == "Proveedor")
+            {
+                NewRoleID=3;
+            }else if (cmbRol.SelectedItem == "Usuario")
+            {
+                NewRoleID = 0;
+            }
+        }
+
+        private void obtenerEstado()
+        {
+            if (cmbEstado.SelectedItem == "Alta")
+            {
+                NewEstadoID = 1;
+            }
+            else
+            {
+                NewEstadoID = 0;
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            obtenerRol();
+            obtenerEstado();
+
+            // Verifica que los campos numéricos no estén vacíos y contengan valores válidos
+            if (string.IsNullOrWhiteSpace(txtDNI.Text) ||
+                string.IsNullOrWhiteSpace(txtTelefono.Text))
+            {
+                MessageBox.Show("Por favor, complete los campos numéricos.");
+                return;
+            }
+
+            // Verifica que los campos numéricos contengan valores válidos
+            if (!int.TryParse(txtDNI.Text, out int dni) ||
+                !int.TryParse(txtTelefono.Text, out int telefono))
+            {
+                MessageBox.Show("Por favor, ingrese valores numéricos válidos.");
+                return;
+            }
+
+            Usuario usuarioModificado = new Usuario
+            {
+                DNI = dni,
+                Name = txtName.Text,
+                Mail = txtMail.Text,
+                Telefono = telefono,
+                Direccion = txtDireccion.Text,
+                Password = txtPassword.Text,
+                ID_Rol = NewRoleID,
+                ID_Estado = NewEstadoID,
+            };
+
+            // Llama a la función de modificarUsuario en la controladora
+            ControlUsuario controlUsuario = new ControlUsuario();
+            int resultado = controlUsuario.ModificarUsuario(usuarioModificado);
+
+            // Maneja el resultado según tus necesidades (por ejemplo, muestra mensajes)
+            if (resultado == 1)
+            {
+                MessageBox.Show("Usuario modificado correctamente.");
+            }
+            else if (resultado == -1)
+            {
+                MessageBox.Show("No se encontró un usuario con el DNI dado.");
+            }
+            else if (resultado == -2)
+            {
+                MessageBox.Show("Error al modificar datos en la base de datos.");
+            }
+
+
+
+        }
     }
        
 
