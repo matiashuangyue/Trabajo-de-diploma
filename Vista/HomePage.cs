@@ -232,7 +232,7 @@ namespace Vista
     private void btnVenta_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChidForm(new FormVenta(rol));
+            OpenChidForm(new FormVenta(rol,UserDNI));
         }
 
         private void btnCompra_Click(object sender, EventArgs e)

@@ -23,9 +23,11 @@ namespace Vista
         private ControlPedido controlPedido=new ControlPedido();
         private ControlUsuario controlUsuario=new ControlUsuario();
         private bool validarCliente;
-        private decimal sumaTotal;
+        private decimal VentaTotal;
+        private decimal NetosTotal;
+        private int DNIrol;
 
-        public FormVenta(int RoleID)
+        public FormVenta(int RoleID, int DNI)
         {
             InitializeComponent();
             this.RoleID = RoleID;
@@ -35,6 +37,7 @@ namespace Vista
             btnCerrarVenta.Visible = false;
             lblCliente.Visible = true;
             txtCliente.Visible = true;
+            this.DNIrol = DNI;
         }
 
         private void FormVenta_Load(object sender, EventArgs e)
@@ -203,7 +206,8 @@ namespace Vista
                     int seAgrego = controlPedido.registrarDetalles(nuevoDetalle);
                     if (seAgrego == 1)
                     {
-
+                        VentaTotal += precioVenta;
+                        NetosTotal += precioCompra;
                         MessageBox.Show("Detalle agregado exitosamente a la compra.");
                         vaciarTextbox();
                         btnCerrarVenta.Visible = true;
@@ -237,7 +241,50 @@ namespace Vista
 
         private void btnCerrarVenta_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DialogResult confirmacion = MessageBox.Show("¿Estás seguro de que deseas cerrar la Venta?",
+                                                            "Confirmar Finalización",
+                                                            MessageBoxButtons.YesNo,
+                                                            MessageBoxIcon.Question);
 
+                if (confirmacion == DialogResult.Yes)
+                {
+                    // Guarda la compra actual en la base de datos
+
+                    MessageBox.Show("venta cerrada y registrada correctamente.");
+                    Pedido cerrarPedido = new Pedido
+                    {
+                        ID_Pedido = IDPedido,
+                        Fecha = DateTime.Now,
+                        Importe = VentaTotal,
+                        Netos = NetosTotal,
+                        ID_Vendedor = DNIrol,
+                        ID_Cliente = int.Parse(txtCliente.Text),
+                        ID_Estado = 1,
+                    };
+                    int cerrarExito = controlPedido.cerrarPedido(cerrarPedido);
+                    if (cerrarExito == 1)
+                    {
+                        btnCerrarVenta.Visible=false;
+                        lblCliente.Visible=true;
+                        txtCliente.Visible = true;
+                        vaciarTextbox();
+                        VentaTotal = 0;
+                        NetosTotal = 0;
+                    }
+                    else
+                    {
+                        MessageBox.Show("error al cerra compra");
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // Maneja la excepción de manera adecuada
+            }
         }
     }
 }

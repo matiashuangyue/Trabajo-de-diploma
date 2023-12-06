@@ -46,7 +46,7 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    string query = "UPDATE Pedidos SET Fecha = @Fecha, Importe = @Importe, Netos=@Netos" +
+                    string query = "UPDATE Pedidos SET Fecha = @Fecha, Importe = @Importe, Netos=@Netos," +
                                    "ID_Vendedor = @ID_Vendedor, ID_Cliente = @ID_Cliente, ID_Estado = @ID_Estado " +
                                    "WHERE ID_Pedido = @ID_Pedido;";
 
@@ -55,6 +55,7 @@ namespace Modelo
                         cmd.Parameters.AddWithValue("@ID_Pedido", pedido.ID_Pedido);
                         cmd.Parameters.AddWithValue("@Fecha", pedido.Fecha);
                         cmd.Parameters.AddWithValue("@Importe", pedido.Importe);
+                        cmd.Parameters.AddWithValue("@Netos", pedido.Netos);
                         cmd.Parameters.AddWithValue("@ID_Vendedor", pedido.ID_Vendedor);
                         cmd.Parameters.AddWithValue("@ID_Cliente", pedido.ID_Cliente);
                         cmd.Parameters.AddWithValue("@ID_Estado", pedido.ID_Estado);
