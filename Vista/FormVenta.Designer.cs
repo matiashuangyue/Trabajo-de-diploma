@@ -41,18 +41,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCodigoDetalle = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgwDetalles = new System.Windows.Forms.DataGridView();
             this.lblPorcentaje = new System.Windows.Forms.Label();
             this.txtPorcentaje = new System.Windows.Forms.TextBox();
             this.panelDetalle.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwDetalles)).BeginInit();
             this.SuspendLayout();
             // 
             // panelDetalle
             // 
             this.panelDetalle.BackColor = System.Drawing.Color.White;
-            this.panelDetalle.Controls.Add(this.dataGridView1);
+            this.panelDetalle.Controls.Add(this.dgwDetalles);
             this.panelDetalle.Controls.Add(this.btnCerrarVenta);
             this.panelDetalle.Controls.Add(this.btnBuscarProducto);
             this.panelDetalle.Controls.Add(this.groupBox2);
@@ -209,16 +209,16 @@
             this.txtCodigoDetalle.Size = new System.Drawing.Size(284, 25);
             this.txtCodigoDetalle.TabIndex = 14;
             // 
-            // dataGridView1
+            // dgwDetalles
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(71, 351);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(684, 184);
-            this.dataGridView1.TabIndex = 19;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgwDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwDetalles.Location = new System.Drawing.Point(71, 351);
+            this.dgwDetalles.Name = "dgwDetalles";
+            this.dgwDetalles.RowHeadersWidth = 51;
+            this.dgwDetalles.RowTemplate.Height = 27;
+            this.dgwDetalles.Size = new System.Drawing.Size(684, 184);
+            this.dgwDetalles.TabIndex = 19;
+            this.dgwDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // lblPorcentaje
             // 
@@ -254,7 +254,7 @@
             this.panelDetalle.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwDetalles)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,7 +262,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelDetalle;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgwDetalles;
         private System.Windows.Forms.Button btnCerrarVenta;
         private System.Windows.Forms.Button btnBuscarProducto;
         private System.Windows.Forms.GroupBox groupBox2;

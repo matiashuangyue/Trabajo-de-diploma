@@ -86,7 +86,7 @@ namespace Modelo
                         cmd.Parameters.AddWithValue("@ID_Compra", detallePedido.ID_Pedido);
                         cmd.Parameters.AddWithValue("@ID_Producto", detallePedido.ID_Producto);
                         cmd.Parameters.AddWithValue("@Cantidad", detallePedido.Cantidad);
-                        cmd.Parameters.AddWithValue("@PrecioUnitario", detallePedido.PrecioVenta);
+                        cmd.Parameters.AddWithValue("@PrecioVenta", detallePedido.PrecioVenta);
                         cmd.Parameters.AddWithValue("@CantidadPrecio", detallePedido.CantidadPrecio);
                         cmd.ExecuteNonQuery();
                         return 1;

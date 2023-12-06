@@ -152,12 +152,32 @@ namespace Vista
                     
                     IDPedido = nuevoPedido.ID_Pedido;
                     sumaTotal = 0;
-                    btnCerrarVenta.Visible = true;
-                    MessageBox.Show("exito");
+
+                    int cantidad = int.Parse(txtCantidad.Text);
+                    DetallePedido nuevoDetalle = new DetallePedido
+                    {
+                        ID_Pedido = IDPedido, // Asigna el ID de la compra actual
+                        ID_Producto = CodigoEncontrado, // Implementa tu lógica para obtener el ID del producto
+                        Cantidad = cantidad,
+                        PrecioVenta = Convert.ToDecimal(txtPrecioDetalleVenta.Text),
+                        CantidadPrecio = cantidad * precioVenta,
+                    };
+                    int seAgrego = controlPedido.registrarDetalles(nuevoDetalle);
+                    if (seAgrego == 1)
+                    {
+
+                        MessageBox.Show("Detalle agregado exitosamente a la compra.");
+                        vaciarTextbox();
+                        btnCerrarVenta.Visible = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("error ");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("error");
+                    MessageBox.Show("error al insertar IDPedido al Pedidos.");
                 }
             }
         }
@@ -165,6 +185,10 @@ namespace Vista
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+        private void CargarDatos(DetallePedido detallePediddo)
+        {
+            dgwDetalles.DataSource = controlPedido.ObtenerDetallePedido(detallePediddo);
         }
     }
 }
