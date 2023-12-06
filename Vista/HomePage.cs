@@ -83,6 +83,8 @@ namespace Vista
         {
             btnVenta.Visible = true;
             btnCompra.Visible = true;
+            btnInforme.Visible = true;
+            btnControlStock.Visible = true;
             if (rol == -1)
             {
                 lblRol.Text = "QUIEN SOS";
@@ -100,6 +102,8 @@ namespace Vista
                 lblRol.Text = "Proveedor";
                 btnVenta.Visible = false;
                 btnCompra.Visible = false;
+                btnInforme.Visible=false;
+                btnControlStock.Visible=false;
             }
         }
         private struct RGBColors
@@ -211,7 +215,11 @@ namespace Vista
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            currentChildForm.Close();
+            if (currentChildForm != null)
+            {
+                // open only form
+                currentChildForm.Close();
+            }
             Reset();
 
         }
@@ -332,6 +340,28 @@ namespace Vista
         {
             OpenChidForm(new FormInfoVenta(rol,UserDNI));
             hideSubmenu();
+        }
+
+        private void btnCerrarSession_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult confirmacion = MessageBox.Show("¿Estás seguro de que deseas CERRAR LA SESSION?",
+                                                            "Confirmar Finalización",
+                                                            MessageBoxButtons.YesNo,
+                                                            MessageBoxIcon.Question);
+
+                if (confirmacion == DialogResult.Yes)
+                {   
+                        this.Close();
+                        Login login = new Login();
+                       login.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

@@ -124,14 +124,65 @@
   <data name="panelMenu.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <metadata name="btnCerrarSession.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnCerrarSession.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnCerrarSession.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCerrarSession.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt</value>
+  </data>
+  <data name="btnCerrarSession.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnCerrarSession.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCerrarSession.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 991</value>
+  </data>
+  <data name="btnCerrarSession.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 20, 0</value>
+  </data>
+  <data name="btnCerrarSession.Size" type="System.Drawing.Size, System.Drawing">
+    <value>388, 88</value>
+  </data>
+  <data name="btnCerrarSession.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="btnCerrarSession.Text" xml:space="preserve">
+    <value>Cerrar Session</value>
+  </data>
+  <data name="btnCerrarSession.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnCerrarSession.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnCerrarSession.Name" xml:space="preserve">
+    <value>btnCerrarSession</value>
+  </data>
+  <data name="&gt;&gt;btnCerrarSession.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;btnCerrarSession.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="&gt;&gt;btnCerrarSession.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnVentaRealizada.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="btnVentaRealizada.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnVentaRealizada.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century, 10.2pt</value>
   </data>
@@ -202,10 +253,10 @@
     <value>Top</value>
   </data>
   <data name="panelInformeSubmenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 869</value>
+    <value>0, 870</value>
   </data>
   <data name="panelInformeSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 151</value>
+    <value>388, 121</value>
   </data>
   <data name="panelInformeSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -220,7 +271,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;panelInformeSubmenu.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="btnInforme.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -241,7 +292,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnInforme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 781</value>
+    <value>0, 782</value>
   </data>
   <data name="btnInforme.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
@@ -271,7 +322,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;btnInforme.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnIngresarStock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -316,7 +367,7 @@
     <value>0, 725</value>
   </data>
   <data name="panelControlSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 56</value>
+    <value>388, 57</value>
   </data>
   <data name="panelControlSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -331,7 +382,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;panelControlSubmenu.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="btnControlStock.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -382,7 +433,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;btnControlStock.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnModificarUsuario.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -478,7 +529,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;panelUsuarioSubmenu.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <metadata name="btnUsuario.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -529,7 +580,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;btnUsuario.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btnModificacionProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -625,7 +676,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;panelProductoSubmenu.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <metadata name="btnProducto.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -676,7 +727,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;btnProducto.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <metadata name="btnCompra.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -727,7 +778,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;btnCompra.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <metadata name="btnVenta.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -778,7 +829,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;btnVenta.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <metadata name="panelLogo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -859,7 +910,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;panelLogo.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="panelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
