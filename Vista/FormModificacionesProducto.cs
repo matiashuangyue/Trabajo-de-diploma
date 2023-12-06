@@ -249,5 +249,19 @@ namespace Vista
             }
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCodProducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

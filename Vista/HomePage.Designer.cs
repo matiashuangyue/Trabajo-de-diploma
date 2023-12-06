@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelInformeSubmenu = new System.Windows.Forms.Panel();
-            this.btnVerInfo = new System.Windows.Forms.Button();
+            this.btnCompraRealizada = new System.Windows.Forms.Button();
             this.btnInforme = new FontAwesome.Sharp.IconButton();
             this.panelControlSubmenu = new System.Windows.Forms.Panel();
             this.btnIngresarStock = new System.Windows.Forms.Button();
@@ -56,6 +56,7 @@
             this.iconPerfil = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.btnVentaRealizada = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelInformeSubmenu.SuspendLayout();
             this.panelControlSubmenu.SuspendLayout();
@@ -90,18 +91,19 @@
             // panelInformeSubmenu
             // 
             this.panelInformeSubmenu.BackColor = System.Drawing.Color.Azure;
-            this.panelInformeSubmenu.Controls.Add(this.btnVerInfo);
+            this.panelInformeSubmenu.Controls.Add(this.btnVentaRealizada);
+            this.panelInformeSubmenu.Controls.Add(this.btnCompraRealizada);
             resources.ApplyResources(this.panelInformeSubmenu, "panelInformeSubmenu");
             this.panelInformeSubmenu.Name = "panelInformeSubmenu";
             // 
-            // btnVerInfo
+            // btnCompraRealizada
             // 
-            this.btnVerInfo.BackColor = System.Drawing.Color.LightSeaGreen;
-            resources.ApplyResources(this.btnVerInfo, "btnVerInfo");
-            this.btnVerInfo.FlatAppearance.BorderSize = 0;
-            this.btnVerInfo.Name = "btnVerInfo";
-            this.btnVerInfo.UseVisualStyleBackColor = false;
-            this.btnVerInfo.Click += new System.EventHandler(this.btnInfo_Click);
+            this.btnCompraRealizada.BackColor = System.Drawing.Color.LightSeaGreen;
+            resources.ApplyResources(this.btnCompraRealizada, "btnCompraRealizada");
+            this.btnCompraRealizada.FlatAppearance.BorderSize = 0;
+            this.btnCompraRealizada.Name = "btnCompraRealizada";
+            this.btnCompraRealizada.UseVisualStyleBackColor = false;
+            this.btnCompraRealizada.Click += new System.EventHandler(this.btnInfo_Click);
             // 
             // btnInforme
             // 
@@ -337,6 +339,14 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
+            // btnVentaRealizada
+            // 
+            this.btnVentaRealizada.BackColor = System.Drawing.Color.LightSeaGreen;
+            resources.ApplyResources(this.btnVentaRealizada, "btnVentaRealizada");
+            this.btnVentaRealizada.FlatAppearance.BorderSize = 0;
+            this.btnVentaRealizada.Name = "btnVentaRealizada";
+            this.btnVentaRealizada.UseVisualStyleBackColor = false;
+            // 
             // HomePage
             // 
             resources.ApplyResources(this, "$this");
@@ -390,6 +400,7 @@
         private System.Windows.Forms.Button btnIngresarStock;
         private FontAwesome.Sharp.IconButton btnControlStock;
         private System.Windows.Forms.Panel panelInformeSubmenu;
-        private System.Windows.Forms.Button btnVerInfo;
+        private System.Windows.Forms.Button btnCompraRealizada;
+        private System.Windows.Forms.Button btnVentaRealizada;
     }
 }

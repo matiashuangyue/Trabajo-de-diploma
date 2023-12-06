@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using Entidades;
+using Controladora;
 
 namespace Vista
 {
@@ -16,21 +18,21 @@ namespace Vista
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-        
+        private FormCompra formCompra;
+
         public int rol;
         public int UserDNI;
         public HomePage(int RoleID,int DNI)
         {
-           
+
             InitializeComponent();
             customizeDesign();
             this.rol = RoleID;
-            this.UserDNI=DNI;
-            leftBorderBtn= new Panel();
+            this.UserDNI = DNI;
+            leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
             IdentificarRol();
-            
         }
         //para submenu
         private void customizeDesign()
@@ -39,7 +41,10 @@ namespace Vista
             panelProductoSubmenu.Visible = false;
             panelUsuarioSubmenu.Visible = false;
             panelInformeSubmenu.Visible = false;
-        }
+        } 
+     
+
+  
 
         private void hideSubmenu()
         {
@@ -172,9 +177,9 @@ namespace Vista
 
         }
 
-    
 
-      
+
+       
 
         private void btnProveedor_Click(object sender, EventArgs e)
         {
