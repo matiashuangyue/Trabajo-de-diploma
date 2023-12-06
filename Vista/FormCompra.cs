@@ -117,16 +117,15 @@ namespace Vista
             else
             {
                 IDCompra=ObtenerIDCompraActual();
-                MessageBox.Show(IDCompra.ToString());
                 Compra nuevoCompra = new Compra
                 {
-                    ID_Compra = ObtenerIDCompraActual(),
+                    ID_Compra = IDCompra,
                 };
                 int seRegistro = controlCompra.insertID(nuevoCompra);
                 if(seRegistro == 1)
                 {
-                    MessageBox.Show("registro id compra");
                     cambiarForm(2);
+                    IDCompra = nuevoCompra.ID_Compra;
                 }
                 else
                 {
@@ -211,15 +210,6 @@ namespace Vista
                     Cantidad = cantidad,
                     PrecioUnitario = Convert.ToDecimal(txtPrecioDetalle.Text),
                 };
-                try
-                {
-                    controlCompra.ver(nuevoDetalle);
-
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show("Error al agregar detalle de compra: " + ex.Message);
-                }
                 int seAgrego =controlCompra.AddDetalle(nuevoDetalle);
                 if (seAgrego==1)
                 {

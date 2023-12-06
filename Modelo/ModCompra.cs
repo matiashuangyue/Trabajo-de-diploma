@@ -72,16 +72,20 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    string QueryDatosValidos = "insert into DetalleCompra ([ID_Compra])"
-                         + "values ('" + detalleCompra.ID_Compra+ "')";
-                    using (SqlCommand cmd = new SqlCommand(QueryDatosValidos, cnn))
+                    string query = "INSERT INTO DetalleCompras (ID_Compra) " +
+                                        "VALUES (@ID_Compra)";
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
-                        //cmd.Parameters.AddWithValue("@ID_Compra", detalleCompra.ID_Compra);
+
+                        cmd.Parameters.AddWithValue("@ID_Compra", detalleCompra.ID_Compra);
+
                         cmd.ExecuteNonQuery();
                         return 1;
+                       
                     }
+                    cnn.Close();
+                 }
                 }
-            }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
