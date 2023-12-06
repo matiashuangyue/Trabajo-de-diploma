@@ -44,6 +44,8 @@
             this.dgwDetalles = new System.Windows.Forms.DataGridView();
             this.lblPorcentaje = new System.Windows.Forms.Label();
             this.txtPorcentaje = new System.Windows.Forms.TextBox();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.txtCliente = new System.Windows.Forms.TextBox();
             this.panelDetalle.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwDetalles)).BeginInit();
@@ -68,13 +70,14 @@
             this.btnCerrarVenta.BackColor = System.Drawing.Color.Cornsilk;
             this.btnCerrarVenta.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarVenta.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarVenta.Location = new System.Drawing.Point(762, 401);
+            this.btnCerrarVenta.Location = new System.Drawing.Point(762, 381);
             this.btnCerrarVenta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCerrarVenta.Name = "btnCerrarVenta";
             this.btnCerrarVenta.Size = new System.Drawing.Size(131, 154);
             this.btnCerrarVenta.TabIndex = 18;
-            this.btnCerrarVenta.Text = "Finalizar la compra";
+            this.btnCerrarVenta.Text = "Finalizar la Venta";
             this.btnCerrarVenta.UseVisualStyleBackColor = false;
+            this.btnCerrarVenta.Click += new System.EventHandler(this.btnCerrarVenta_Click);
             // 
             // btnBuscarProducto
             // 
@@ -93,6 +96,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox2.Controls.Add(this.txtCliente);
+            this.groupBox2.Controls.Add(this.lblCliente);
             this.groupBox2.Controls.Add(this.txtPorcentaje);
             this.groupBox2.Controls.Add(this.lblPorcentaje);
             this.groupBox2.Controls.Add(this.txtPrecioDetalleVenta);
@@ -211,6 +216,7 @@
             // 
             // dgwDetalles
             // 
+            this.dgwDetalles.BackgroundColor = System.Drawing.Color.White;
             this.dgwDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwDetalles.Location = new System.Drawing.Point(71, 351);
             this.dgwDetalles.Name = "dgwDetalles";
@@ -240,6 +246,27 @@
             this.txtPorcentaje.Name = "txtPorcentaje";
             this.txtPorcentaje.Size = new System.Drawing.Size(284, 28);
             this.txtPorcentaje.TabIndex = 21;
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblCliente.ForeColor = System.Drawing.Color.Black;
+            this.lblCliente.Location = new System.Drawing.Point(12, 223);
+            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(116, 24);
+            this.lblCliente.TabIndex = 22;
+            this.lblCliente.Text = "ID Cliente:";
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtCliente.Location = new System.Drawing.Point(265, 220);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(224, 28);
+            this.txtCliente.TabIndex = 23;
             // 
             // FormVenta
             // 
@@ -277,5 +304,7 @@
         private System.Windows.Forms.TextBox txtCodigoDetalle;
         private System.Windows.Forms.Label lblPorcentaje;
         private System.Windows.Forms.TextBox txtPorcentaje;
+        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.Label lblCliente;
     }
 }

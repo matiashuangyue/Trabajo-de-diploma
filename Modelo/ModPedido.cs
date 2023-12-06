@@ -19,12 +19,13 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    string query = "INSERT INTO Pedidos (ID_Pedido,ID_Estado) " +
-                                        "VALUES (@ID_Pedido,@ID_Estado)";
+                    string query = "INSERT INTO Pedidos (ID_Pedido,ID_Estado,ID_Cliente) " +
+                                        "VALUES (@ID_Pedido,@ID_Estado,@ID_Cliente)";
                     using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
                         cmd.Parameters.AddWithValue("@ID_Pedido", pedido.ID_Pedido);
                         cmd.Parameters.AddWithValue("@ID_Estado", pedido.ID_Estado);
+                        cmd.Parameters.AddWithValue("@ID_Cliente", pedido.ID_Cliente);
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -35,6 +36,38 @@ namespace Modelo
                 Console.WriteLine(ex.Message);
                 // Manejar la excepción de manera adecuada
                 return -1; // Error en insertar datos
+            }
+        }
+
+        public int CerrarPedido(Pedido pedido)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string query = "UPDATE Pedidos SET Fecha = @Fecha, Importe = @Importe, Netos=@Netos" +
+                                   "ID_Vendedor = @ID_Vendedor, ID_Cliente = @ID_Cliente, ID_Estado = @ID_Estado " +
+                                   "WHERE ID_Pedido = @ID_Pedido;";
+
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@ID_Pedido", pedido.ID_Pedido);
+                        cmd.Parameters.AddWithValue("@Fecha", pedido.Fecha);
+                        cmd.Parameters.AddWithValue("@Importe", pedido.Importe);
+                        cmd.Parameters.AddWithValue("@ID_Vendedor", pedido.ID_Vendedor);
+                        cmd.Parameters.AddWithValue("@ID_Cliente", pedido.ID_Cliente);
+                        cmd.Parameters.AddWithValue("@ID_Estado", pedido.ID_Estado);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return 1; // Completo correctamente
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // Manejar la excepción de manera adecuada
+                return -1; // Error al modificar datos
             }
         }
         public DataTable ArrancarPedido(DetallePedido detallePedido)
@@ -72,7 +105,7 @@ namespace Modelo
             }
         }
 
-        public int RegistrarDetalleCompra(DetallePedido detallePedido)
+        public int RegistrarDetallePedido(DetallePedido detallePedido)
         {
             try
             {

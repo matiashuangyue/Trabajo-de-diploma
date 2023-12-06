@@ -34,5 +34,9 @@ namespace Controladora
             return modUsuario.modificarUsuario(usuario);
         }
 
+        public bool validacionID(Usuario usuario)
+        {
+            return modUsuario.IsValidID(usuario);
+        }
     }
 }

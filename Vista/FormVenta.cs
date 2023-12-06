@@ -21,6 +21,8 @@ namespace Vista
         private decimal precioCompra;
         private decimal precioVenta;
         private ControlPedido controlPedido=new ControlPedido();
+        private ControlUsuario controlUsuario=new ControlUsuario();
+        private bool validarCliente;
         private decimal sumaTotal;
 
         public FormVenta(int RoleID)
@@ -29,7 +31,10 @@ namespace Vista
             this.RoleID = RoleID;
             vaciarTextbox();
             txtPorcentaje.Text = "0,4";
+            txtCliente.Text = "0";
             btnCerrarVenta.Visible = false;
+            lblCliente.Visible = true;
+            txtCliente.Visible = true;
         }
 
         private void FormVenta_Load(object sender, EventArgs e)
@@ -130,32 +135,57 @@ namespace Vista
             }
         }
 
+        private void ValidacionCliente()
+        {
+            if (btnCerrarVenta.Visible == false)
+            {
+                Usuario usuario = new Usuario
+            {
+                DNI=int.Parse(txtCliente.Text),
+            };
+            validarCliente = controlUsuario.Validar(usuario);
+            if(validarCliente == false)
+            {
+               
+            }
+            else
+            {
+                MessageBox.Show("error cliente");
+            }
+            }
+        }
         private void btnAgregarDetallePedido_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombDetalle.Text) || string.IsNullOrEmpty(txtCodigoDetalle.Text) || string.IsNullOrEmpty(txtCantidad.Text) || string.IsNullOrEmpty(txtPorcentaje.Text))
+            ValidacionCliente();
+            if (string.IsNullOrEmpty(txtNombDetalle.Text) || string.IsNullOrEmpty(txtCodigoDetalle.Text) || string.IsNullOrEmpty(txtCantidad.Text) || string.IsNullOrEmpty(txtPorcentaje.Text)||validarCliente==true)
             {
                 MessageBox.Show("Por favor, busca un producto  antes de agregar.");
                 return;
             }
             else
             {
+
                 if (btnCerrarVenta.Visible == false)
-                {  
+                {
+                    ValidacionCliente();
                     IDPedido = ObtenerIDPedidoActual();//aca esta error
                     Pedido nuevoPedido = new Pedido
                       {
                     ID_Pedido = IDPedido,
+                    ID_Cliente=int.Parse(txtCliente.Text),
                     ID_Estado = 0,
                         };
                 int seRegistro = controlPedido.inserID(nuevoPedido);
                     if(seRegistro == 1)
                     {
                         IDPedido = nuevoPedido.ID_Pedido;
+                        
                     }
                     else
                     {
                         MessageBox.Show("error al insertar IDPedido al Pedidos.");
                     }
+
                 }
               
                 
@@ -177,6 +207,8 @@ namespace Vista
                         MessageBox.Show("Detalle agregado exitosamente a la compra.");
                         vaciarTextbox();
                         btnCerrarVenta.Visible = true;
+                        lblCliente.Visible = false;
+                    txtCliente.Visible = false;
                         try
                         {
                             CargarDatos(nuevoDetalle);
@@ -201,6 +233,11 @@ namespace Vista
         private void CargarDatos(DetallePedido detallePediddo)
         {
             dgwDetalles.DataSource = controlPedido.ObtenerDetallePedido(detallePediddo);
+        }
+
+        private void btnCerrarVenta_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

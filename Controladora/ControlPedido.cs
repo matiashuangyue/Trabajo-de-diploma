@@ -26,5 +26,9 @@ namespace Controladora
         {
             return modeloPedido.insertarid(pedido);
         }
+        public int cerrarPedido(Pedido pedido)
+        {
+            return modeloPedido.CerrarPedido(pedido);
+        }
     }
 }
