@@ -20,7 +20,7 @@ namespace Controladora
         }
         public int registrarDetalles(DetallePedido detallePedido)
         {
-            return modeloPedido.RegistrarDetalleCompra(detallePedido);
+            return modeloPedido.RegistrarDetallePedido(detallePedido);
         }
         public int inserID(Pedido pedido)
         {

@@ -64,7 +64,6 @@ namespace Vista
                     {// Mostrar la información del producto en los controles correspondientes
                         porcentaje=decimal.Parse(txtPorcentaje.Text);
                         precioCompra = Convert.ToDecimal( productoEncontrado.Price);
-                        MessageBox.Show(precioCompra.ToString());
                         CodigoEncontrado = int.Parse(txtCodigoDetalle.Text);
                         txtNombDetalle.Text = productoEncontrado.Name;
                         precioVenta = precioCompra * (1 + porcentaje);
@@ -140,19 +139,28 @@ namespace Vista
             }
             else
             {
-                IDPedido = ObtenerIDPedidoActual();
-                Pedido nuevoPedido = new Pedido
-                {
+                if (btnCerrarVenta.Visible == false)
+                {  
+                    IDPedido = ObtenerIDPedidoActual();//aca esta error
+                    Pedido nuevoPedido = new Pedido
+                      {
                     ID_Pedido = IDPedido,
                     ID_Estado = 0,
-                };
+                        };
                 int seRegistro = controlPedido.inserID(nuevoPedido);
-                if (seRegistro == 1)
-                {
-                    
-                    IDPedido = nuevoPedido.ID_Pedido;
-                    sumaTotal = 0;
-
+                    if(seRegistro == 1)
+                    {
+                        IDPedido = nuevoPedido.ID_Pedido;
+                    }
+                    else
+                    {
+                        MessageBox.Show("error al insertar IDPedido al Pedidos.");
+                    }
+                }
+              
+                
+               
+                   
                     int cantidad = int.Parse(txtCantidad.Text);
                     DetallePedido nuevoDetalle = new DetallePedido
                     {
@@ -169,16 +177,20 @@ namespace Vista
                         MessageBox.Show("Detalle agregado exitosamente a la compra.");
                         vaciarTextbox();
                         btnCerrarVenta.Visible = true;
+                        try
+                        {
+                            CargarDatos(nuevoDetalle);
+                        }
+                        catch(Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                            MessageBox.Show("no es posible de cargar la tabla");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("error ");
+                        MessageBox.Show("error al insertar detallepedidos  ");
                     }
-                }
-                else
-                {
-                    MessageBox.Show("error al insertar IDPedido al Pedidos.");
-                }
             }
         }
 
