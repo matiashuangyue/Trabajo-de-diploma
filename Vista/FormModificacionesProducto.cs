@@ -102,8 +102,9 @@ namespace Vista
                 {
                     MessageBox.Show("Por favor, ingresar un código de producto válido.");
                     return;
-                }  
+                }
                 // Modificar el producto usando la controladora
+                estadoProducto();
                 ControlProducto controlProducto = new ControlProducto();
                 Producto productoModificado = new Producto
                 {
@@ -207,7 +208,7 @@ namespace Vista
             {
                 EstadoID = 1;
             }
-            else
+            else if(cmbEstado.SelectedItem=="Baja")
             {
                 EstadoID = 0;
             }

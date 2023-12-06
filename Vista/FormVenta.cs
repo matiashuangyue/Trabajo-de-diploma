@@ -24,7 +24,7 @@ namespace Vista
             InitializeComponent();
             this.RoleID = RoleID;
             vaciarTextbox();
-            txtPorcentaje.Text = "0.4";
+            txtPorcentaje.Text = "0,4";
         }
 
         private void FormVenta_Load(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace Vista
             {
                 lblPorcentaje.Visible = false;
                 txtPorcentaje.Visible = false;
-                txtPorcentaje.Text = "0,40";
+                
             }
         }
 
