@@ -43,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panelCompra = new System.Windows.Forms.Panel();
             this.panelDetalle = new System.Windows.Forms.Panel();
+            this.btnCerrarCompra = new System.Windows.Forms.Button();
             this.btnBuscarProducto = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtPrecioDetalle = new System.Windows.Forms.TextBox();
@@ -56,7 +57,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCodigoDetalle = new System.Windows.Forms.TextBox();
-            this.btnCerrarCompra = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panelCompra.SuspendLayout();
             this.panelDetalle.SuspendLayout();
@@ -241,10 +241,24 @@
             this.panelDetalle.Controls.Add(this.groupBox2);
             this.panelDetalle.Controls.Add(this.label10);
             this.panelDetalle.Controls.Add(this.txtCodigoDetalle);
-            this.panelDetalle.Location = new System.Drawing.Point(27, 12);
+            this.panelDetalle.Location = new System.Drawing.Point(29, 12);
             this.panelDetalle.Name = "panelDetalle";
             this.panelDetalle.Size = new System.Drawing.Size(897, 558);
             this.panelDetalle.TabIndex = 18;
+            // 
+            // btnCerrarCompra
+            // 
+            this.btnCerrarCompra.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnCerrarCompra.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarCompra.ForeColor = System.Drawing.Color.Black;
+            this.btnCerrarCompra.Location = new System.Drawing.Point(416, 486);
+            this.btnCerrarCompra.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnCerrarCompra.Name = "btnCerrarCompra";
+            this.btnCerrarCompra.Size = new System.Drawing.Size(328, 59);
+            this.btnCerrarCompra.TabIndex = 18;
+            this.btnCerrarCompra.Text = "Finalizar la compra";
+            this.btnCerrarCompra.UseVisualStyleBackColor = false;
+            this.btnCerrarCompra.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnBuscarProducto
             // 
@@ -319,7 +333,7 @@
             this.label3.Location = new System.Drawing.Point(12, 343);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 24);
+            this.label3.Size = new System.Drawing.Size(165, 19);
             this.label3.TabIndex = 16;
             this.label3.Text = "Ingresar Cantidad :";
             // 
@@ -402,20 +416,6 @@
             this.txtCodigoDetalle.Name = "txtCodigoDetalle";
             this.txtCodigoDetalle.Size = new System.Drawing.Size(284, 25);
             this.txtCodigoDetalle.TabIndex = 14;
-            // 
-            // btnCerrarCompra
-            // 
-            this.btnCerrarCompra.BackColor = System.Drawing.Color.Cornsilk;
-            this.btnCerrarCompra.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarCompra.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarCompra.Location = new System.Drawing.Point(416, 486);
-            this.btnCerrarCompra.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnCerrarCompra.Name = "btnCerrarCompra";
-            this.btnCerrarCompra.Size = new System.Drawing.Size(328, 59);
-            this.btnCerrarCompra.TabIndex = 18;
-            this.btnCerrarCompra.Text = "Finalizar la compra";
-            this.btnCerrarCompra.UseVisualStyleBackColor = false;
-            this.btnCerrarCompra.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormCompra
             // 

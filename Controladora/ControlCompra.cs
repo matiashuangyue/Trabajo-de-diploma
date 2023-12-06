@@ -12,9 +12,9 @@ namespace Controladora
     {
         private ModCompra modeloCompra = new ModCompra();
 
-        public int AddCompra(Compra compra)
+        public int CerrarCompra(Compra compra)
         {
-            return modeloCompra.RegistrarCompra(compra);
+            return modeloCompra.CerrarCompra(compra);
         }
         public int insertID(Compra compra)
         {

@@ -10,19 +10,20 @@ namespace Modelo
 {
     public class ModCompra: ConexionSQL
     {
-        public int RegistrarCompra(Compra compra)
+        public int CerrarCompra(Compra compra)
         {
             try
             {
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    string query = "INSERT INTO Compras (ID_Compra,Fecha, ImporteTotal, ID_Proveedor, DNI_Usuario, ID_Estado) " +
-                                   "VALUES (@ID_Compra,@Fecha, @ImporteTotal, @ID_Proveedor, @DNI_Usuario, @ID_Estado); SELECT SCOPE_IDENTITY();";
+                    string query = "UPDATE Compras SET Fecha = @Fecha, ImporteTotal = @ImporteTotal, " +
+                                   "ID_Proveedor = @ID_Proveedor, DNI_Usuario = @DNI_Usuario, ID_Estado = @ID_Estado " +
+                                   "WHERE ID_Compra = @ID_Compra;";
 
                     using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
-                        cmd.Parameters.AddWithValue("@Fecha",compra.ID_Compra);
+                        cmd.Parameters.AddWithValue("@ID_Compra", compra.ID_Compra);
                         cmd.Parameters.AddWithValue("@Fecha", compra.Fecha);
                         cmd.Parameters.AddWithValue("@ImporteTotal", compra.ImporteTotal);
                         cmd.Parameters.AddWithValue("@ID_Proveedor", compra.ID_Proveedor);
@@ -37,7 +38,7 @@ namespace Modelo
             {
                 Console.WriteLine(ex.Message);
                 // Manejar la excepción de manera adecuada
-                return -1; // Error en insertar datos
+                return -1; // Error al modificar datos
             }
         }
         public int insertarid (Compra compra)
@@ -47,12 +48,12 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    string query = "INSERT INTO Compras (ID_Compra) " +
-                                        "VALUES (@ID_Compra)";
+                    string query = "INSERT INTO Compras (ID_Compra,ID_Estado) " +
+                                        "VALUES (@ID_Compra,@ID_Estado)";
                     using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
                         cmd.Parameters.AddWithValue("@ID_Compra", compra.ID_Compra);
-                        
+                        cmd.Parameters.AddWithValue("@ID_Estado", compra.ID_Estado);
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -76,7 +77,6 @@ namespace Modelo
                                         "VALUES (@ID_Compra,@ID_Producto,@Cantidad,@PrecioUnitario)";
                     using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
-
                         cmd.Parameters.AddWithValue("@ID_Compra", detalleCompra.ID_Compra);
                         cmd.Parameters.AddWithValue("@ID_Producto", detalleCompra.ID_Producto);
                         cmd.Parameters.AddWithValue("@Cantidad", detalleCompra.Cantidad);

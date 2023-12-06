@@ -22,12 +22,16 @@ namespace Vista
         private Compra compraActual = CompraActualContext.ObtenerCompraActual();
         private long IDCompra;
         private ControlCompra controlCompra = new ControlCompra();
+        private decimal precioCantidad;
+        private decimal sumaTotal;
+        private int DNIrol;
 
 
-        public FormCompra(int RoleID)
+        public FormCompra(int RoleID,int DNI)
         {
             InitializeComponent();
             this.RoleID = RoleID;
+            this.DNIrol = DNI;
             cambiarForm(1);
            
         }
@@ -101,6 +105,11 @@ namespace Vista
         }
         private void vaciarTextbox()
         {
+            txtDNI.Text = string.Empty;
+            txtName.Text = string.Empty;
+            txtMail.Text = string.Empty;
+            txtTelefono.Text = string.Empty;
+            txtDireccion.Text=string.Empty;
             txtNombDetalle.Text = string.Empty;
             txtDescripcionDetalle.Text = string.Empty;
             txtCantidad.Text = string.Empty;
@@ -120,12 +129,14 @@ namespace Vista
                 Compra nuevoCompra = new Compra
                 {
                     ID_Compra = IDCompra,
+                    ID_Estado = 0,
                 };
                 int seRegistro = controlCompra.insertID(nuevoCompra);
                 if(seRegistro == 1)
                 {
                     cambiarForm(2);
                     IDCompra = nuevoCompra.ID_Compra;
+                    sumaTotal = 0;
                 }
                 else
                 {
@@ -213,6 +224,7 @@ namespace Vista
                 int seAgrego =controlCompra.AddDetalle(nuevoDetalle);
                 if (seAgrego==1)
                 {
+                    calcularPrecioCantidad(nuevoDetalle.Cantidad, nuevoDetalle.PrecioUnitario);
                     MessageBox.Show("Detalle agregado exitosamente a la compra.");
                     vaciarTextbox();
                 }
@@ -221,6 +233,12 @@ namespace Vista
                     MessageBox.Show("error al insertar datos.");
                 }
             
+        } 
+
+        private void calcularPrecioCantidad(int cantidad,decimal precio)
+        {
+            precioCantidad = cantidad* precio;
+            sumaTotal += precioCantidad;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -238,21 +256,29 @@ namespace Vista
                 if (confirmacion == DialogResult.Yes)
                 {
                     // Guarda la compra actual en la base de datos
-                    int resultado = 1;
-
-                    if (resultado == 1)
+                   
+                     MessageBox.Show("Compra cerrada y registrada correctamente.");
+                    Compra CerrarCompra = new Compra
                     {
-                        // Éxito al cerrar la compra
-                        MessageBox.Show("Compra cerrada y registrada correctamente.");
-
-                        // Reinicia el formulario para una nueva compra
-                        ReiniciarFormulario();
+                        ID_Compra = IDCompra,
+                        Fecha = DateTime.Now,
+                        ImporteTotal = sumaTotal,
+                        ID_Proveedor = DNIEncontrado,
+                        DNI_Usuario = DNIrol,
+                        ID_Estado = 1,
+                    };
+                    int cerrarExito = controlCompra.CerrarCompra(CerrarCompra);
+                    if (cerrarExito == 1)
+                    {
+                        cambiarForm(1);
+                        vaciarTextbox();
+                        sumaTotal = 0;
                     }
                     else
                     {
-                        // Maneja el caso en que no se pueda cerrar la compra correctamente
-                        MessageBox.Show("Error al cerrar la compra. Por favor, inténtalo de nuevo o contacta al administrador.");
+                        MessageBox.Show("error al cerra compra");
                     }
+
                 }
             }
             catch (Exception ex)
@@ -268,10 +294,7 @@ namespace Vista
             compraActual = new Compra(); // Crea una nueva instancia para la próxima compra
                                          // Puedes agregar más reinicializaciones según tus necesidades
         }
-        private void GuardarCompraEnBD(Compra compra)
-        {
-            
-        }
+        
 
     }
 }

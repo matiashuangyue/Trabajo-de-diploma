@@ -238,7 +238,7 @@ namespace Vista
         private void btnCompra_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChidForm(new FormCompra(rol));
+            OpenChidForm(new FormCompra(rol, UserDNI));
         }
     
   private void btnProducto_Click(object sender, EventArgs e)
