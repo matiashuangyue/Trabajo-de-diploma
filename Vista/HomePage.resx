@@ -202,7 +202,7 @@
     <value>Top</value>
   </data>
   <data name="panelInformeSubmenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 899</value>
+    <value>0, 869</value>
   </data>
   <data name="panelInformeSubmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>388, 151</value>
@@ -241,7 +241,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnInforme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 811</value>
+    <value>0, 781</value>
   </data>
   <data name="btnInforme.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
@@ -316,7 +316,7 @@
     <value>0, 725</value>
   </data>
   <data name="panelControlSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 86</value>
+    <value>388, 56</value>
   </data>
   <data name="panelControlSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>

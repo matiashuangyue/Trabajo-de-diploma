@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelInformeSubmenu = new System.Windows.Forms.Panel();
+            this.btnVentaRealizada = new System.Windows.Forms.Button();
             this.btnCompraRealizada = new System.Windows.Forms.Button();
             this.btnInforme = new FontAwesome.Sharp.IconButton();
             this.panelControlSubmenu = new System.Windows.Forms.Panel();
@@ -56,7 +57,6 @@
             this.iconPerfil = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btnVentaRealizada = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelInformeSubmenu.SuspendLayout();
             this.panelControlSubmenu.SuspendLayout();
@@ -95,6 +95,15 @@
             this.panelInformeSubmenu.Controls.Add(this.btnCompraRealizada);
             resources.ApplyResources(this.panelInformeSubmenu, "panelInformeSubmenu");
             this.panelInformeSubmenu.Name = "panelInformeSubmenu";
+            // 
+            // btnVentaRealizada
+            // 
+            this.btnVentaRealizada.BackColor = System.Drawing.Color.LightSeaGreen;
+            resources.ApplyResources(this.btnVentaRealizada, "btnVentaRealizada");
+            this.btnVentaRealizada.FlatAppearance.BorderSize = 0;
+            this.btnVentaRealizada.Name = "btnVentaRealizada";
+            this.btnVentaRealizada.UseVisualStyleBackColor = false;
+            this.btnVentaRealizada.Click += new System.EventHandler(this.btnVentaRealizada_Click);
             // 
             // btnCompraRealizada
             // 
@@ -338,14 +347,6 @@
             resources.ApplyResources(this.panelDesktop, "panelDesktop");
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
-            // 
-            // btnVentaRealizada
-            // 
-            this.btnVentaRealizada.BackColor = System.Drawing.Color.LightSeaGreen;
-            resources.ApplyResources(this.btnVentaRealizada, "btnVentaRealizada");
-            this.btnVentaRealizada.FlatAppearance.BorderSize = 0;
-            this.btnVentaRealizada.Name = "btnVentaRealizada";
-            this.btnVentaRealizada.UseVisualStyleBackColor = false;
             // 
             // HomePage
             // 

@@ -71,6 +71,12 @@
     <Compile Include="FormControlStock.Designer.cs">
       <DependentUpon>FormControlStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInfoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfoCompra.Designer.cs">
+      <DependentUpon>FormInfoCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInforme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="FormAddProducto.Designer.cs">
       <DependentUpon>FormAddProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfoVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfoVenta.Designer.cs">
+      <DependentUpon>FormInfoVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="FormModificacionesProducto.cs">
       <SubType>Form</SubType>
@@ -127,6 +139,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrabajoDeDiplomaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrabajoDeDiplomaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TrabajoDeDiplomaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrabajoDeDiplomaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TrabajoDeDiplomaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrabajoDeDiplomaDataSet2.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAddDetalleCompra.resx">
       <DependentUpon>FormAddDetalleCompra.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,11 +163,17 @@
     <EmbeddedResource Include="FormControlStock.resx">
       <DependentUpon>FormControlStock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInfoCompra.resx">
+      <DependentUpon>FormInfoCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInforme.resx">
       <DependentUpon>FormInforme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddProducto.resx">
       <DependentUpon>FormAddProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfoVenta.resx">
+      <DependentUpon>FormInfoVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormModificacionesProducto.resx">
       <DependentUpon>FormModificacionesProducto.cs</DependentUpon>
@@ -186,6 +219,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TrabajoDeDiplomaDataSet.xsc">
+      <DependentUpon>TrabajoDeDiplomaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TrabajoDeDiplomaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrabajoDeDiplomaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TrabajoDeDiplomaDataSet.xss">
+      <DependentUpon>TrabajoDeDiplomaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TrabajoDeDiplomaDataSet1.xsc">
+      <DependentUpon>TrabajoDeDiplomaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TrabajoDeDiplomaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrabajoDeDiplomaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TrabajoDeDiplomaDataSet1.xss">
+      <DependentUpon>TrabajoDeDiplomaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TrabajoDeDiplomaDataSet2.xsc">
+      <DependentUpon>TrabajoDeDiplomaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TrabajoDeDiplomaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrabajoDeDiplomaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TrabajoDeDiplomaDataSet2.xss">
+      <DependentUpon>TrabajoDeDiplomaDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

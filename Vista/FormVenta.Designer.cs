@@ -29,9 +29,14 @@
         private void InitializeComponent()
         {
             this.panelDetalle = new System.Windows.Forms.Panel();
+            this.dgwDetalles = new System.Windows.Forms.DataGridView();
             this.btnCerrarVenta = new System.Windows.Forms.Button();
             this.btnBuscarProducto = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.txtPorcentaje = new System.Windows.Forms.TextBox();
+            this.lblPorcentaje = new System.Windows.Forms.Label();
             this.txtPrecioDetalleVenta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -41,14 +46,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCodigoDetalle = new System.Windows.Forms.TextBox();
-            this.dgwDetalles = new System.Windows.Forms.DataGridView();
-            this.lblPorcentaje = new System.Windows.Forms.Label();
-            this.txtPorcentaje = new System.Windows.Forms.TextBox();
-            this.lblCliente = new System.Windows.Forms.Label();
-            this.txtCliente = new System.Windows.Forms.TextBox();
             this.panelDetalle.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwDetalles)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDetalle
@@ -64,6 +64,20 @@
             this.panelDetalle.Name = "panelDetalle";
             this.panelDetalle.Size = new System.Drawing.Size(897, 558);
             this.panelDetalle.TabIndex = 19;
+            // 
+            // dgwDetalles
+            // 
+            this.dgwDetalles.BackgroundColor = System.Drawing.Color.White;
+            this.dgwDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwDetalles.GridColor = System.Drawing.Color.Black;
+            this.dgwDetalles.Location = new System.Drawing.Point(71, 351);
+            this.dgwDetalles.Name = "dgwDetalles";
+            this.dgwDetalles.RowHeadersWidth = 51;
+            this.dgwDetalles.RowTemplate.Height = 27;
+            this.dgwDetalles.Size = new System.Drawing.Size(684, 184);
+            this.dgwDetalles.TabIndex = 19;
+            this.dgwDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgwDetalles.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgwDetalles_CellFormatting);
             // 
             // btnCerrarVenta
             // 
@@ -114,6 +128,48 @@
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de Productos";
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtCliente.Location = new System.Drawing.Point(265, 220);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(224, 28);
+            this.txtCliente.TabIndex = 23;
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblCliente.ForeColor = System.Drawing.Color.Black;
+            this.lblCliente.Location = new System.Drawing.Point(12, 223);
+            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(93, 19);
+            this.lblCliente.TabIndex = 22;
+            this.lblCliente.Text = "ID Cliente:";
+            // 
+            // txtPorcentaje
+            // 
+            this.txtPorcentaje.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtPorcentaje.Location = new System.Drawing.Point(265, 86);
+            this.txtPorcentaje.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtPorcentaje.Name = "txtPorcentaje";
+            this.txtPorcentaje.Size = new System.Drawing.Size(284, 28);
+            this.txtPorcentaje.TabIndex = 21;
+            // 
+            // lblPorcentaje
+            // 
+            this.lblPorcentaje.AutoSize = true;
+            this.lblPorcentaje.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblPorcentaje.ForeColor = System.Drawing.Color.Black;
+            this.lblPorcentaje.Location = new System.Drawing.Point(12, 86);
+            this.lblPorcentaje.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPorcentaje.Name = "lblPorcentaje";
+            this.lblPorcentaje.Size = new System.Drawing.Size(194, 19);
+            this.lblPorcentaje.TabIndex = 20;
+            this.lblPorcentaje.Text = "Porcentaje Ganancia :";
             // 
             // txtPrecioDetalleVenta
             // 
@@ -214,60 +270,6 @@
             this.txtCodigoDetalle.Size = new System.Drawing.Size(284, 25);
             this.txtCodigoDetalle.TabIndex = 14;
             // 
-            // dgwDetalles
-            // 
-            this.dgwDetalles.BackgroundColor = System.Drawing.Color.White;
-            this.dgwDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwDetalles.Location = new System.Drawing.Point(71, 351);
-            this.dgwDetalles.Name = "dgwDetalles";
-            this.dgwDetalles.RowHeadersWidth = 51;
-            this.dgwDetalles.RowTemplate.Height = 27;
-            this.dgwDetalles.Size = new System.Drawing.Size(684, 184);
-            this.dgwDetalles.TabIndex = 19;
-            this.dgwDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // lblPorcentaje
-            // 
-            this.lblPorcentaje.AutoSize = true;
-            this.lblPorcentaje.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblPorcentaje.ForeColor = System.Drawing.Color.Black;
-            this.lblPorcentaje.Location = new System.Drawing.Point(12, 86);
-            this.lblPorcentaje.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPorcentaje.Name = "lblPorcentaje";
-            this.lblPorcentaje.Size = new System.Drawing.Size(194, 19);
-            this.lblPorcentaje.TabIndex = 20;
-            this.lblPorcentaje.Text = "Porcentaje Ganancia :";
-            // 
-            // txtPorcentaje
-            // 
-            this.txtPorcentaje.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtPorcentaje.Location = new System.Drawing.Point(265, 86);
-            this.txtPorcentaje.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtPorcentaje.Name = "txtPorcentaje";
-            this.txtPorcentaje.Size = new System.Drawing.Size(284, 28);
-            this.txtPorcentaje.TabIndex = 21;
-            // 
-            // lblCliente
-            // 
-            this.lblCliente.AutoSize = true;
-            this.lblCliente.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblCliente.ForeColor = System.Drawing.Color.Black;
-            this.lblCliente.Location = new System.Drawing.Point(12, 223);
-            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(116, 24);
-            this.lblCliente.TabIndex = 22;
-            this.lblCliente.Text = "ID Cliente:";
-            // 
-            // txtCliente
-            // 
-            this.txtCliente.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtCliente.Location = new System.Drawing.Point(265, 220);
-            this.txtCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(224, 28);
-            this.txtCliente.TabIndex = 23;
-            // 
             // FormVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -279,9 +281,9 @@
             this.Load += new System.EventHandler(this.FormVenta_Load);
             this.panelDetalle.ResumeLayout(false);
             this.panelDetalle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwDetalles)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwDetalles)).EndInit();
             this.ResumeLayout(false);
 
         }

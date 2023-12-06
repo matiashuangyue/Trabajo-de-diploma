@@ -18,8 +18,8 @@ namespace Vista
         private int CodigoEncontrado;
         private long IDPedido;
         private decimal porcentaje;
-        private decimal precioCompra;
-        private decimal precioVenta;
+        private decimal precioCompra=0;
+        private decimal precioVenta=0;
         private ControlPedido controlPedido=new ControlPedido();
         private ControlUsuario controlUsuario=new ControlUsuario();
         private bool validarCliente;
@@ -191,9 +191,6 @@ namespace Vista
 
                 }
               
-                
-               
-                   
                     int cantidad = int.Parse(txtCantidad.Text);
                     DetallePedido nuevoDetalle = new DetallePedido
                     {
@@ -206,13 +203,13 @@ namespace Vista
                     int seAgrego = controlPedido.registrarDetalles(nuevoDetalle);
                     if (seAgrego == 1)
                     {
-                        VentaTotal += precioVenta;
-                        NetosTotal += precioCompra;
+                        VentaTotal += nuevoDetalle.CantidadPrecio;
+                        NetosTotal += precioCompra*cantidad;
                         MessageBox.Show("Detalle agregado exitosamente a la compra.");
                         vaciarTextbox();
                         btnCerrarVenta.Visible = true;
                         lblCliente.Visible = false;
-                    txtCliente.Visible = false;
+                         txtCliente.Visible = false;
                         try
                         {
                             CargarDatos(nuevoDetalle);
@@ -236,7 +233,20 @@ namespace Vista
         }
         private void CargarDatos(DetallePedido detallePediddo)
         {
-            dgwDetalles.DataSource = controlPedido.ObtenerDetallePedido(detallePediddo);
+            //dgwDetalles.DataSource = controlPedido.ObtenerDetallePedido(detallePediddo);
+            DataTable dataTable = controlPedido.ObtenerDetallePedido(detallePediddo);
+
+            // Suscribir el evento CellFormatting
+            dgwDetalles.CellFormatting += (sender, e) =>
+            {
+                if (e.Value == DBNull.Value)
+                {
+                    e.Value = "Nulo"; // O el valor que desees mostrar para DBNull
+                    e.FormattingApplied = true;
+                }
+            };
+
+            dgwDetalles.DataSource = dataTable;
         }
 
         private void btnCerrarVenta_Click(object sender, EventArgs e)
@@ -284,6 +294,17 @@ namespace Vista
             {
                 Console.WriteLine(ex.Message);
                 // Maneja la excepción de manera adecuada
+            }
+        }
+
+        private void dgwDetalles_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            e.CellStyle.ForeColor = Color.Black;
+
+            if (e.RowIndex != -1 && e.Value == DBNull.Value)
+            {
+                e.Value = "Nulo"; // O el valor que desees mostrar para DBNull
+                e.FormattingApplied = true;
             }
         }
     }

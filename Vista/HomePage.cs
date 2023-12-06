@@ -81,7 +81,9 @@ namespace Vista
         //identificar que rol
         public void IdentificarRol()
         {
-            if(rol == -1)
+            btnVenta.Visible = true;
+            btnCompra.Visible = true;
+            if (rol == -1)
             {
                 lblRol.Text = "QUIEN SOS";
             }
@@ -96,6 +98,8 @@ namespace Vista
             if (rol == 3)
             {
                 lblRol.Text = "Proveedor";
+                btnVenta.Visible = false;
+                btnCompra.Visible = false;
             }
         }
         private struct RGBColors
@@ -318,9 +322,16 @@ namespace Vista
         #region submenuInforme
         private void btnInfo_Click(object sender, EventArgs e)
         {
+            OpenChidForm(new FormInfoCompra(rol, UserDNI));
             hideSubmenu();
+
         }
         #endregion
 
+        private void btnVentaRealizada_Click(object sender, EventArgs e)
+        {
+            OpenChidForm(new FormInfoVenta(rol,UserDNI));
+            hideSubmenu();
+        }
     }
 }

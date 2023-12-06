@@ -34,3 +34,5 @@ C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormA
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormModificacionesProducto.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormModificacionesUsuario.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormAddDetalleCompra.resources
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormInfoCompra.resources
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormInfoVenta.resources
