@@ -16,15 +16,20 @@ namespace Vista
     {
         private int RoleID;
         private int CodigoEncontrado;
+        private long IDPedido;
         private decimal porcentaje;
         private decimal precioCompra;
         private decimal precioVenta;
+        private ControlPedido controlPedido=new ControlPedido();
+        private decimal sumaTotal;
+
         public FormVenta(int RoleID)
         {
             InitializeComponent();
             this.RoleID = RoleID;
             vaciarTextbox();
             txtPorcentaje.Text = "0,4";
+            btnCerrarVenta.Visible = false;
         }
 
         private void FormVenta_Load(object sender, EventArgs e)
@@ -81,7 +86,7 @@ namespace Vista
             }
         }
 
-        private long ObtenerIDCompraActual()
+        private long ObtenerIDPedidoActual()
         {
             // Utilizar la fecha y hora actual para generar un identificador único
             // Puedes ajustar el formato según tus necesidades
@@ -128,7 +133,38 @@ namespace Vista
 
         private void btnAgregarDetallePedido_Click(object sender, EventArgs e)
         {
-            
+            if (string.IsNullOrEmpty(txtNombDetalle.Text) || string.IsNullOrEmpty(txtCodigoDetalle.Text) || string.IsNullOrEmpty(txtCantidad.Text) || string.IsNullOrEmpty(txtPorcentaje.Text))
+            {
+                MessageBox.Show("Por favor, busca un producto  antes de agregar.");
+                return;
+            }
+            else
+            {
+                IDPedido = ObtenerIDPedidoActual();
+                Pedido nuevoPedido = new Pedido
+                {
+                    ID_Pedido = IDPedido,
+                    ID_Estado = 0,
+                };
+                int seRegistro = controlPedido.inserID(nuevoPedido);
+                if (seRegistro == 1)
+                {
+                    
+                    IDPedido = nuevoPedido.ID_Pedido;
+                    sumaTotal = 0;
+                    btnCerrarVenta.Visible = true;
+                    MessageBox.Show("exito");
+                }
+                else
+                {
+                    MessageBox.Show("error");
+                }
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
