@@ -72,13 +72,15 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    string query = "INSERT INTO DetalleCompras (ID_Compra) " +
-                                        "VALUES (@ID_Compra)";
+                    string query = "INSERT INTO DetalleCompras (ID_Compra,ID_Producto,Cantidad,PrecioUnitario) " +
+                                        "VALUES (@ID_Compra,@ID_Producto,@Cantidad,@PrecioUnitario)";
                     using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
 
                         cmd.Parameters.AddWithValue("@ID_Compra", detalleCompra.ID_Compra);
-
+                        cmd.Parameters.AddWithValue("@ID_Producto", detalleCompra.ID_Producto);
+                        cmd.Parameters.AddWithValue("@Cantidad", detalleCompra.Cantidad);
+                        cmd.Parameters.AddWithValue("@PrecioUnitario", detalleCompra.PrecioUnitario);
                         cmd.ExecuteNonQuery();
                         return 1;
                        
