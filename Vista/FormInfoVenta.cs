@@ -21,7 +21,7 @@ namespace Vista
         public FormInfoVenta(int Rol,int DNI)
         {
             InitializeComponent();
-            CargarNombreCombobox(3);
+            CargarNombreCombobox(2);
             this.Rol = Rol;
             this.DNIRol = DNI;
         }
@@ -50,6 +50,7 @@ namespace Vista
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
+
             if (e.RowIndex == -1)
             {
                 // Establecer el color del texto en las celdas de encabezado a negro
@@ -75,5 +76,9 @@ namespace Vista
 
         }
 
+        private void dgvVentasVendedor_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

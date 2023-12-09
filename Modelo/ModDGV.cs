@@ -43,5 +43,41 @@ namespace Modelo
             }
         }
 
+
+
+        //public DataTable LLenarTablaVenta(String Nombre)
+        //{
+        //    try
+        //    {
+        //        using (var cnn = GetConnection())
+        //        {
+        //            cnn.Open();
+        //            string queryBuscarPorID = $"SELECT * FROM Pedidos WHERE ID_Pedido = '{detallePedido.ID_Pedido}'";
+
+        //            using (SqlCommand cmd = new SqlCommand(queryBuscarPorID, cnn))
+        //            {
+        //                using (SqlDataReader reader = cmd.ExecuteReader())
+        //                {
+        //                    if (reader.Read())
+        //                    {
+        //                        // Crear un DataTable y llenarlo con los datos leídos
+        //                        DataTable dataTable = new DataTable();
+        //                        dataTable.Load(reader);
+        //                        return dataTable;
+        //                    }
+        //                }
+        //            }
+        //        }
+
+        //        // Si no se encuentra el pedido, puedes retornar un DataTable vacío o null según tu lógica
+        //        return new DataTable();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //        // Manejar la excepción de manera adecuada
+        //        return null; // Error al modificar datos
+        //    }
+        //}
     }
 }
