@@ -21,14 +21,14 @@ namespace Vista
         public FormInfoVenta(int Rol,int DNI)
         {
             InitializeComponent();
-            CargarNombresVendedores();
+            CargarNombreCombobox(3);
             this.Rol = Rol;
             this.DNIRol = DNI;
         }
-        private void CargarNombresVendedores()
+        private void CargarNombreCombobox(int IDROL)
         {
             // Llama al método de la controladora para obtener los nombres de los vendedores
-            var nombresVendedores = controlDGV.ObtenerNombresVendedores();
+            var nombresVendedores = controlDGV.ObtenerNombresVendedores(IDROL);
 
             // Luego, puedes hacer lo que necesites con la lista de nombres, por ejemplo, cargarlos en un ComboBox
             if (nombresVendedores != null)

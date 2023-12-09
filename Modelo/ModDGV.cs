@@ -11,7 +11,7 @@ namespace Modelo
    
     public class ModDGV: ConexionSQL
     {
-        public List<string> LoadNombreVendedor()
+        public List<string> LoadNombreVendedor(int ID_ROL)
         {
             List<string> nombresProveedor = new List<string>();
 
@@ -20,27 +20,26 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    string query = "SELECT Nombre FROM Usuarios WHERE ID_Rol = 3";
+                    string query = "SELECT Nombre FROM Usuarios WHERE ID_Rol = @ID_Rol";
 
                     using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
+                        cmd.Parameters.AddWithValue("@ID_Rol", ID_ROL);
                         SqlDataReader reader = cmd.ExecuteReader();
                         while (reader.Read())
                         {
-                            // Agregar cada nombre de proveedor a la lista
                             string nombreProveedor = reader["Nombre"].ToString();
                             nombresProveedor.Add(nombreProveedor);
                         }
                     }
                 }
 
-                return nombresProveedor; // Devuelve la lista de nombres de proveedores
+                return nombresProveedor; 
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                // Manejar la excepción de manera adecuada
-                return null; // En caso de error, puedes devolver null o una lista vacía, dependiendo de tus necesidades
+                return null; 
             }
         }
 

@@ -14,9 +14,9 @@ namespace Controladora
        
             private ModDGV modeloNombreVendedor = new ModDGV();
 
-            public List<string> ObtenerNombresVendedores()
+            public List<string> ObtenerNombresVendedores(int IDROL)
             {
-                return modeloNombreVendedor.LoadNombreVendedor();
+                return modeloNombreVendedor.LoadNombreVendedor(IDROL);
             }
         
     }
