@@ -21,6 +21,12 @@ namespace Controladora
         {
             return modUsuario.GetRoleId(usuario);
         }
+
+        public int GetDNI(string name)
+        {
+            return modUsuario.GetDNIPorNombre(name);
+        }
+
         public int RegistrarCuenta(Usuario usuario)
         {
             return modUsuario.Registrar(usuario);

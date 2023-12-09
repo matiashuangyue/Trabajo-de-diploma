@@ -307,5 +307,10 @@ namespace Vista
                 e.FormattingApplied = true;
             }
         }
+
+        private void panelDetalle_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -64,6 +64,7 @@
             this.panelDetalle.Name = "panelDetalle";
             this.panelDetalle.Size = new System.Drawing.Size(897, 558);
             this.panelDetalle.TabIndex = 19;
+            this.panelDetalle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDetalle_Paint);
             // 
             // dgwDetalles
             // 

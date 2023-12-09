@@ -157,8 +157,43 @@ namespace Modelo
             }
         }
 
+        public int GetDNIPorNombre(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return -1; // Valor que indica que no se pudo obtener el ID_Rol
+            }
 
-       
+            try
+            {
+                using (var conn = GetConnection())
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("SELECT DNI FROM Usuarios WHERE Nombre = @Nombre", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Nombre", name);
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            int DNI = Convert.ToInt32(dr["DNI"]);
+                            conn.Close();
+                            return DNI;
+                        }
+                        else
+                        {
+                            conn.Close();
+                            return -1; // Valor que indica que no se encontró el usuario
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return -1; // Valor que indica un error durante la ejecución
+            }
+        }
+
 
         public int Registrar(Usuario usuario)
         {
