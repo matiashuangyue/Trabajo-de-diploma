@@ -212,7 +212,8 @@ namespace Vista
 
         private void btnAgregarDetalle_Click(object sender, EventArgs e)
         {
-            
+            if (txtCantidad.Text != "")
+            {
                 int cantidad = int.Parse(txtCantidad.Text);
                 DetalleCompra nuevoDetalle = new DetalleCompra
                 {
@@ -232,6 +233,13 @@ namespace Vista
                 {
                     MessageBox.Show("error al insertar datos.");
                 }
+
+            }
+            else
+            {
+                MessageBox.Show("Completa los campos porfavor");
+            }
+               
             
         } 
 
@@ -265,7 +273,7 @@ namespace Vista
                         ImporteTotal = sumaTotal,
                         ID_Proveedor = DNIEncontrado,
                         DNI_Usuario = DNIrol,
-                        ID_Estado = 1,
+                        ID_Estado = 0,
                     };
                     int cerrarExito = controlCompra.CerrarCompra(CerrarCompra);
                     if (cerrarExito == 1)

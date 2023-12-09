@@ -54,6 +54,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="ModCompra.cs" />
+    <Compile Include="ModDGV.cs" />
     <Compile Include="ModPedido.cs" />
     <Compile Include="ModProducto.cs" />
     <Compile Include="ModUsuario.cs" />

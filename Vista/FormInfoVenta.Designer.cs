@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvVentasVendedor = new System.Windows.Forms.DataGridView();
             this.iDPedidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.importeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,18 +42,20 @@
             this.trabajoDeDiplomaDataSet = new Vista.TrabajoDeDiplomaDataSet();
             this.trabajoDeDiplomaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pedidosTableAdapter = new Vista.TrabajoDeDiplomaDataSet2TableAdapters.PedidosTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lblVendedor = new System.Windows.Forms.Label();
+            this.cbVendedores = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVentasVendedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pedidosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trabajoDeDiplomaDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trabajoDeDiplomaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trabajoDeDiplomaDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvVentasVendedor
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvVentasVendedor.AutoGenerateColumns = false;
+            this.dgvVentasVendedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVentasVendedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDPedidoDataGridViewTextBoxColumn,
             this.fechaDataGridViewTextBoxColumn,
             this.importeDataGridViewTextBoxColumn,
@@ -61,14 +63,14 @@
             this.iDVendedorDataGridViewTextBoxColumn,
             this.iDClienteDataGridViewTextBoxColumn,
             this.iDEstadoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.pedidosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 27);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(919, 441);
-            this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
+            this.dgvVentasVendedor.DataSource = this.pedidosBindingSource;
+            this.dgvVentasVendedor.Location = new System.Drawing.Point(30, 92);
+            this.dgvVentasVendedor.Name = "dgvVentasVendedor";
+            this.dgvVentasVendedor.RowHeadersWidth = 51;
+            this.dgvVentasVendedor.RowTemplate.Height = 27;
+            this.dgvVentasVendedor.Size = new System.Drawing.Size(921, 402);
+            this.dgvVentasVendedor.TabIndex = 1;
+            this.dgvVentasVendedor.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // iDPedidoDataGridViewTextBoxColumn
             // 
@@ -150,27 +152,49 @@
             // 
             this.pedidosTableAdapter.ClearBeforeFill = true;
             // 
+            // lblVendedor
+            // 
+            this.lblVendedor.AutoSize = true;
+            this.lblVendedor.Location = new System.Drawing.Point(27, 47);
+            this.lblVendedor.Name = "lblVendedor";
+            this.lblVendedor.Size = new System.Drawing.Size(207, 15);
+            this.lblVendedor.TabIndex = 6;
+            this.lblVendedor.Text = "Seleccionar el Vendedor :";
+            // 
+            // cbVendedores
+            // 
+            this.cbVendedores.FormattingEnabled = true;
+            this.cbVendedores.Location = new System.Drawing.Point(333, 44);
+            this.cbVendedores.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cbVendedores.Name = "cbVendedores";
+            this.cbVendedores.Size = new System.Drawing.Size(379, 23);
+            this.cbVendedores.TabIndex = 5;
+            this.cbVendedores.SelectedIndexChanged += new System.EventHandler(this.cbVendedores_SelectedIndexChanged);
+            // 
             // FormInfoVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 612);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lblVendedor);
+            this.Controls.Add(this.cbVendedores);
+            this.Controls.Add(this.dgvVentasVendedor);
             this.Name = "FormInfoVenta";
             this.Text = "FormInfoVenta";
             this.Load += new System.EventHandler(this.FormInfoVenta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVentasVendedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pedidosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trabajoDeDiplomaDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trabajoDeDiplomaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trabajoDeDiplomaDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvVentasVendedor;
         private TrabajoDeDiplomaDataSet trabajoDeDiplomaDataSet;
         private System.Windows.Forms.BindingSource trabajoDeDiplomaDataSetBindingSource;
         private TrabajoDeDiplomaDataSet2 trabajoDeDiplomaDataSet2;
@@ -183,5 +207,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDVendedorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDClienteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDEstadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label lblVendedor;
+        private System.Windows.Forms.ComboBox cbVendedores;
     }
 }

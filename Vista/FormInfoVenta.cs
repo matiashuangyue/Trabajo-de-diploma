@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controladora;
+using Entidades;
 
 namespace Vista
 {
@@ -14,11 +16,29 @@ namespace Vista
     {
         private int Rol;
         private int DNIRol;
+
+        private ControlDGV controlDGV =new ControlDGV();
         public FormInfoVenta(int Rol,int DNI)
         {
             InitializeComponent();
+            CargarNombresVendedores();
             this.Rol = Rol;
             this.DNIRol = DNI;
+        }
+        private void CargarNombresVendedores()
+        {
+            // Llama al método de la controladora para obtener los nombres de los vendedores
+            var nombresVendedores = controlDGV.ObtenerNombresVendedores();
+
+            // Luego, puedes hacer lo que necesites con la lista de nombres, por ejemplo, cargarlos en un ComboBox
+            if (nombresVendedores != null)
+            {
+                cbVendedores.DataSource = nombresVendedores;
+            }
+            else
+            {
+                MessageBox.Show("Error al cargar los nombres de vendedores.");
+            }
         }
 
         private void FormInfoVenta_Load(object sender, EventArgs e)
@@ -41,5 +61,19 @@ namespace Vista
                 e.CellStyle.ForeColor = Color.Black;
             }
         }
+
+        private void cbVendedores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dgvVentasVendedor.DataSource = null;
+
+        }
+
+
+        private void loadNameVendedores()
+        {
+            cbVendedores.Items.Clear();
+
+        }
+
     }
 }
