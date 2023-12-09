@@ -79,5 +79,44 @@ namespace Modelo
                 return null; // Error al modificar datos
             }
         }
+
+
+        public DataTable ObtenerCompras(int DNI,int Estado)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string queryBuscarPorDNI = "SELECT * FROM Compras WHERE ID_Proveedor = @ID_Proveedor AND ID_Estado = @ID_Estado";
+
+                    using (SqlCommand cmd = new SqlCommand(queryBuscarPorDNI, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@ID_Proveedor", DNI);
+                        cmd.Parameters.AddWithValue("@ID_Estado", Estado);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Crear un DataTable y llenarlo con los datos leídos
+                                DataTable dataTable = new DataTable();
+                                dataTable.Load(reader);
+                                return dataTable;
+                            }
+                        }
+                    }
+                }
+
+                // Si no se encuentra el pedido, puedes retornar un DataTable vacío o null según tu lógica
+                return new DataTable();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // Manejar la excepción de manera adecuada
+                return null; // Error al modificar datos
+            }
+        }
+
     }
 }

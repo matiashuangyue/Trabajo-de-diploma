@@ -29,88 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDCompraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.importeTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDProveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dNIUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDEstadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCompras = new System.Windows.Forms.DataGridView();
             this.comprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.trabajoDeDiplomaDataSet = new Vista.TrabajoDeDiplomaDataSet();
             this.comprasTableAdapter = new Vista.TrabajoDeDiplomaDataSetTableAdapters.ComprasTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lblEmpleado = new System.Windows.Forms.Label();
+            this.cbProveedor = new System.Windows.Forms.ComboBox();
+            this.cbEstado = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCompras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trabajoDeDiplomaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvCompras
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDCompraDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn,
-            this.importeTotalDataGridViewTextBoxColumn,
-            this.iDProveedorDataGridViewTextBoxColumn,
-            this.dNIUsuarioDataGridViewTextBoxColumn,
-            this.iDEstadoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.comprasBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(50, 36);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(835, 452);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
-            // 
-            // iDCompraDataGridViewTextBoxColumn
-            // 
-            this.iDCompraDataGridViewTextBoxColumn.DataPropertyName = "ID_Compra";
-            this.iDCompraDataGridViewTextBoxColumn.HeaderText = "ID_Compra";
-            this.iDCompraDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDCompraDataGridViewTextBoxColumn.Name = "iDCompraDataGridViewTextBoxColumn";
-            this.iDCompraDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // fechaDataGridViewTextBoxColumn
-            // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
-            this.fechaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // importeTotalDataGridViewTextBoxColumn
-            // 
-            this.importeTotalDataGridViewTextBoxColumn.DataPropertyName = "ImporteTotal";
-            this.importeTotalDataGridViewTextBoxColumn.HeaderText = "ImporteTotal";
-            this.importeTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.importeTotalDataGridViewTextBoxColumn.Name = "importeTotalDataGridViewTextBoxColumn";
-            this.importeTotalDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // iDProveedorDataGridViewTextBoxColumn
-            // 
-            this.iDProveedorDataGridViewTextBoxColumn.DataPropertyName = "ID_Proveedor";
-            this.iDProveedorDataGridViewTextBoxColumn.HeaderText = "ID_Proveedor";
-            this.iDProveedorDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDProveedorDataGridViewTextBoxColumn.Name = "iDProveedorDataGridViewTextBoxColumn";
-            this.iDProveedorDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dNIUsuarioDataGridViewTextBoxColumn
-            // 
-            this.dNIUsuarioDataGridViewTextBoxColumn.DataPropertyName = "DNI_Usuario";
-            this.dNIUsuarioDataGridViewTextBoxColumn.HeaderText = "DNI_Usuario";
-            this.dNIUsuarioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dNIUsuarioDataGridViewTextBoxColumn.Name = "dNIUsuarioDataGridViewTextBoxColumn";
-            this.dNIUsuarioDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // iDEstadoDataGridViewTextBoxColumn
-            // 
-            this.iDEstadoDataGridViewTextBoxColumn.DataPropertyName = "ID_Estado";
-            this.iDEstadoDataGridViewTextBoxColumn.HeaderText = "ID_Estado";
-            this.iDEstadoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDEstadoDataGridViewTextBoxColumn.Name = "iDEstadoDataGridViewTextBoxColumn";
-            this.iDEstadoDataGridViewTextBoxColumn.Width = 125;
+            this.dgvCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCompras.Location = new System.Drawing.Point(50, 145);
+            this.dgvCompras.Name = "dgvCompras";
+            this.dgvCompras.RowHeadersWidth = 51;
+            this.dgvCompras.RowTemplate.Height = 27;
+            this.dgvCompras.Size = new System.Drawing.Size(809, 367);
+            this.dgvCompras.TabIndex = 0;
+            this.dgvCompras.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // comprasBindingSource
             // 
@@ -126,33 +67,83 @@
             // 
             this.comprasTableAdapter.ClearBeforeFill = true;
             // 
+            // lblEmpleado
+            // 
+            this.lblEmpleado.AutoSize = true;
+            this.lblEmpleado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpleado.ForeColor = System.Drawing.Color.Black;
+            this.lblEmpleado.Location = new System.Drawing.Point(46, 52);
+            this.lblEmpleado.Name = "lblEmpleado";
+            this.lblEmpleado.Size = new System.Drawing.Size(284, 24);
+            this.lblEmpleado.TabIndex = 8;
+            this.lblEmpleado.Text = "Seleccionar el Proveedor :";
+            // 
+            // cbProveedor
+            // 
+            this.cbProveedor.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbProveedor.FormattingEnabled = true;
+            this.cbProveedor.Location = new System.Drawing.Point(432, 49);
+            this.cbProveedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cbProveedor.Name = "cbProveedor";
+            this.cbProveedor.Size = new System.Drawing.Size(215, 27);
+            this.cbProveedor.TabIndex = 7;
+            this.cbProveedor.SelectedIndexChanged += new System.EventHandler(this.cbProveedor_SelectedIndexChanged);
+            // 
+            // cbEstado
+            // 
+            this.cbEstado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEstado.FormattingEnabled = true;
+            this.cbEstado.Items.AddRange(new object[] {
+            "Alta",
+            "Baja"});
+            this.cbEstado.Location = new System.Drawing.Point(432, 93);
+            this.cbEstado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cbEstado.Name = "cbEstado";
+            this.cbEstado.Size = new System.Drawing.Size(215, 27);
+            this.cbEstado.TabIndex = 9;
+            this.cbEstado.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(46, 96);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(341, 24);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Seleccionar Estado de Compras";
+            // 
             // FormInfoCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1055, 590);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbEstado);
+            this.Controls.Add(this.lblEmpleado);
+            this.Controls.Add(this.cbProveedor);
+            this.Controls.Add(this.dgvCompras);
             this.Name = "FormInfoCompra";
             this.Text = "FormInfoCompra";
             this.Load += new System.EventHandler(this.FormInfoCompra_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCompras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trabajoDeDiplomaDataSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvCompras;
         private TrabajoDeDiplomaDataSet trabajoDeDiplomaDataSet;
         private System.Windows.Forms.BindingSource comprasBindingSource;
         private TrabajoDeDiplomaDataSetTableAdapters.ComprasTableAdapter comprasTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCompraDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn importeTotalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDProveedorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dNIUsuarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDEstadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label lblEmpleado;
+        private System.Windows.Forms.ComboBox cbProveedor;
+        private System.Windows.Forms.ComboBox cbEstado;
+        private System.Windows.Forms.Label label1;
     }
 }

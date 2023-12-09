@@ -35,7 +35,7 @@
             this.trabajoDeDiplomaDataSet = new Vista.TrabajoDeDiplomaDataSet();
             this.trabajoDeDiplomaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pedidosTableAdapter = new Vista.TrabajoDeDiplomaDataSet2TableAdapters.PedidosTableAdapter();
-            this.lblVendedor = new System.Windows.Forms.Label();
+            this.lblEmpleado = new System.Windows.Forms.Label();
             this.cbVendedores = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentasVendedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pedidosBindingSource)).BeginInit();
@@ -47,11 +47,11 @@
             // dgvVentasVendedor
             // 
             this.dgvVentasVendedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVentasVendedor.Location = new System.Drawing.Point(30, 92);
+            this.dgvVentasVendedor.Location = new System.Drawing.Point(47, 139);
             this.dgvVentasVendedor.Name = "dgvVentasVendedor";
             this.dgvVentasVendedor.RowHeadersWidth = 51;
             this.dgvVentasVendedor.RowTemplate.Height = 27;
-            this.dgvVentasVendedor.Size = new System.Drawing.Size(921, 402);
+            this.dgvVentasVendedor.Size = new System.Drawing.Size(751, 262);
             this.dgvVentasVendedor.TabIndex = 1;
             this.dgvVentasVendedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentasVendedor_CellContentClick);
             this.dgvVentasVendedor.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
@@ -80,22 +80,25 @@
             // 
             this.pedidosTableAdapter.ClearBeforeFill = true;
             // 
-            // lblVendedor
+            // lblEmpleado
             // 
-            this.lblVendedor.AutoSize = true;
-            this.lblVendedor.Location = new System.Drawing.Point(27, 47);
-            this.lblVendedor.Name = "lblVendedor";
-            this.lblVendedor.Size = new System.Drawing.Size(207, 15);
-            this.lblVendedor.TabIndex = 6;
-            this.lblVendedor.Text = "Seleccionar el Vendedor :";
+            this.lblEmpleado.AutoSize = true;
+            this.lblEmpleado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpleado.ForeColor = System.Drawing.Color.Black;
+            this.lblEmpleado.Location = new System.Drawing.Point(43, 74);
+            this.lblEmpleado.Name = "lblEmpleado";
+            this.lblEmpleado.Size = new System.Drawing.Size(283, 24);
+            this.lblEmpleado.TabIndex = 6;
+            this.lblEmpleado.Text = "Seleccionar el Empleado :";
             // 
             // cbVendedores
             // 
+            this.cbVendedores.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbVendedores.FormattingEnabled = true;
-            this.cbVendedores.Location = new System.Drawing.Point(333, 44);
+            this.cbVendedores.Location = new System.Drawing.Point(366, 71);
             this.cbVendedores.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbVendedores.Name = "cbVendedores";
-            this.cbVendedores.Size = new System.Drawing.Size(379, 23);
+            this.cbVendedores.Size = new System.Drawing.Size(215, 27);
             this.cbVendedores.TabIndex = 5;
             this.cbVendedores.SelectedIndexChanged += new System.EventHandler(this.cbVendedores_SelectedIndexChanged);
             // 
@@ -103,8 +106,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 612);
-            this.Controls.Add(this.lblVendedor);
+            this.ClientSize = new System.Drawing.Size(994, 514);
+            this.Controls.Add(this.lblEmpleado);
             this.Controls.Add(this.cbVendedores);
             this.Controls.Add(this.dgvVentasVendedor);
             this.Name = "FormInfoVenta";
@@ -128,7 +131,7 @@
         private TrabajoDeDiplomaDataSet2 trabajoDeDiplomaDataSet2;
         private System.Windows.Forms.BindingSource pedidosBindingSource;
         private TrabajoDeDiplomaDataSet2TableAdapters.PedidosTableAdapter pedidosTableAdapter;
-        private System.Windows.Forms.Label lblVendedor;
+        private System.Windows.Forms.Label lblEmpleado;
         private System.Windows.Forms.ComboBox cbVendedores;
     }
 }
