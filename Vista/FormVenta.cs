@@ -237,7 +237,7 @@ namespace Vista
             DataTable dataTable = controlPedido.ObtenerDetallePedido(detallePediddo);
 
             // Suscribir el evento CellFormatting
-            dgwDetalles.CellFormatting += (sender, e) =>
+            dgvDetalles.CellFormatting += (sender, e) =>
             {
                 if (e.Value == DBNull.Value)
                 {
@@ -246,7 +246,7 @@ namespace Vista
                 }
             };
 
-            dgwDetalles.DataSource = dataTable;
+            dgvDetalles.DataSource = dataTable;
         }
 
         private void btnCerrarVenta_Click(object sender, EventArgs e)
@@ -282,6 +282,7 @@ namespace Vista
                         vaciarTextbox();
                         VentaTotal = 0;
                         NetosTotal = 0;
+                        dgvDetalles.Rows.Clear();
                     }
                     else
                     {

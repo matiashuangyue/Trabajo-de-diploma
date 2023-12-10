@@ -20,6 +20,7 @@ namespace Vista
         private int Estado;
         private ControlDGV controlDGV = new ControlDGV();
         private ControlUsuario controlUsuario = new ControlUsuario();
+
         public FormInfoCompra(int rol, int dNI)
         {
             InitializeComponent();
@@ -66,8 +67,11 @@ namespace Vista
                     e.FormattingApplied = true;
                 }
             };
-
-            dgvCompras.DataSource = dataTable;
+            if (dataTable.Rows.Count > 0)
+            {
+                dgvCompras.DataSource = dataTable;
+            }
+           // dgvCompras.DataSource = dataTable;
         }
 
 

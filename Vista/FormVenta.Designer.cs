@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panelDetalle = new System.Windows.Forms.Panel();
-            this.dgwDetalles = new System.Windows.Forms.DataGridView();
+            this.dgvDetalles = new System.Windows.Forms.DataGridView();
             this.btnCerrarVenta = new System.Windows.Forms.Button();
             this.btnBuscarProducto = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -47,14 +47,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtCodigoDetalle = new System.Windows.Forms.TextBox();
             this.panelDetalle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwDetalles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDetalle
             // 
             this.panelDetalle.BackColor = System.Drawing.Color.White;
-            this.panelDetalle.Controls.Add(this.dgwDetalles);
+            this.panelDetalle.Controls.Add(this.dgvDetalles);
             this.panelDetalle.Controls.Add(this.btnCerrarVenta);
             this.panelDetalle.Controls.Add(this.btnBuscarProducto);
             this.panelDetalle.Controls.Add(this.groupBox2);
@@ -66,19 +66,19 @@
             this.panelDetalle.TabIndex = 19;
             this.panelDetalle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDetalle_Paint);
             // 
-            // dgwDetalles
+            // dgvDetalles
             // 
-            this.dgwDetalles.BackgroundColor = System.Drawing.Color.White;
-            this.dgwDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwDetalles.GridColor = System.Drawing.Color.Black;
-            this.dgwDetalles.Location = new System.Drawing.Point(71, 351);
-            this.dgwDetalles.Name = "dgwDetalles";
-            this.dgwDetalles.RowHeadersWidth = 51;
-            this.dgwDetalles.RowTemplate.Height = 27;
-            this.dgwDetalles.Size = new System.Drawing.Size(684, 184);
-            this.dgwDetalles.TabIndex = 19;
-            this.dgwDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dgwDetalles.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgwDetalles_CellFormatting);
+            this.dgvDetalles.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalles.GridColor = System.Drawing.Color.Black;
+            this.dgvDetalles.Location = new System.Drawing.Point(71, 351);
+            this.dgvDetalles.Name = "dgvDetalles";
+            this.dgvDetalles.RowHeadersWidth = 51;
+            this.dgvDetalles.RowTemplate.Height = 27;
+            this.dgvDetalles.Size = new System.Drawing.Size(684, 184);
+            this.dgvDetalles.TabIndex = 19;
+            this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvDetalles.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgwDetalles_CellFormatting);
             // 
             // btnCerrarVenta
             // 
@@ -282,7 +282,7 @@
             this.Load += new System.EventHandler(this.FormVenta_Load);
             this.panelDetalle.ResumeLayout(false);
             this.panelDetalle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwDetalles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -292,7 +292,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelDetalle;
-        private System.Windows.Forms.DataGridView dgwDetalles;
+        private System.Windows.Forms.DataGridView dgvDetalles;
         private System.Windows.Forms.Button btnCerrarVenta;
         private System.Windows.Forms.Button btnBuscarProducto;
         private System.Windows.Forms.GroupBox groupBox2;
