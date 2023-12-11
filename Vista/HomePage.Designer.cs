@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnCerrarSession = new FontAwesome.Sharp.IconButton();
             this.panelInformeSubmenu = new System.Windows.Forms.Panel();
             this.btnVentaRealizada = new System.Windows.Forms.Button();
             this.btnCompraRealizada = new System.Windows.Forms.Button();
@@ -57,7 +58,6 @@
             this.iconPerfil = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btnCerrarSession = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelInformeSubmenu.SuspendLayout();
             this.panelControlSubmenu.SuspendLayout();
@@ -89,6 +89,20 @@
             this.panelMenu.Controls.Add(this.btnVenta);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Name = "panelMenu";
+            // 
+            // btnCerrarSession
+            // 
+            this.btnCerrarSession.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.btnCerrarSession, "btnCerrarSession");
+            this.btnCerrarSession.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSession.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSession.IconChar = FontAwesome.Sharp.IconChar.Backspace;
+            this.btnCerrarSession.IconColor = System.Drawing.Color.White;
+            this.btnCerrarSession.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrarSession.IconSize = 32;
+            this.btnCerrarSession.Name = "btnCerrarSession";
+            this.btnCerrarSession.UseVisualStyleBackColor = false;
+            this.btnCerrarSession.Click += new System.EventHandler(this.btnCerrarSession_Click);
             // 
             // panelInformeSubmenu
             // 
@@ -349,20 +363,6 @@
             resources.ApplyResources(this.panelDesktop, "panelDesktop");
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
-            // 
-            // btnCerrarSession
-            // 
-            this.btnCerrarSession.BackColor = System.Drawing.Color.CadetBlue;
-            resources.ApplyResources(this.btnCerrarSession, "btnCerrarSession");
-            this.btnCerrarSession.FlatAppearance.BorderSize = 0;
-            this.btnCerrarSession.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSession.IconChar = FontAwesome.Sharp.IconChar.Backspace;
-            this.btnCerrarSession.IconColor = System.Drawing.Color.White;
-            this.btnCerrarSession.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCerrarSession.IconSize = 32;
-            this.btnCerrarSession.Name = "btnCerrarSession";
-            this.btnCerrarSession.UseVisualStyleBackColor = false;
-            this.btnCerrarSession.Click += new System.EventHandler(this.btnCerrarSession_Click);
             // 
             // HomePage
             // 

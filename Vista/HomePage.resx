@@ -151,7 +151,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnCerrarSession.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnCerrarSession.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -193,7 +193,7 @@
     <value>0, 41</value>
   </data>
   <data name="btnVentaRealizada.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnVentaRealizada.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -229,7 +229,7 @@
     <value>0, 0</value>
   </data>
   <data name="btnCompraRealizada.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnCompraRealizada.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -256,7 +256,7 @@
     <value>0, 870</value>
   </data>
   <data name="panelInformeSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 121</value>
+    <value>367, 121</value>
   </data>
   <data name="panelInformeSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -298,7 +298,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnInforme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnInforme.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -340,7 +340,7 @@
     <value>0, 0</value>
   </data>
   <data name="btnIngresarStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnIngresarStock.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -367,7 +367,7 @@
     <value>0, 725</value>
   </data>
   <data name="panelControlSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 57</value>
+    <value>367, 57</value>
   </data>
   <data name="panelControlSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -409,7 +409,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnControlStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnControlStock.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -451,7 +451,7 @@
     <value>0, 41</value>
   </data>
   <data name="btnModificarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 45</value>
+    <value>367, 45</value>
   </data>
   <data name="btnModificarUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -487,7 +487,7 @@
     <value>0, 0</value>
   </data>
   <data name="btnAgregarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnAgregarUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -514,7 +514,7 @@
     <value>0, 551</value>
   </data>
   <data name="panelUsuarioSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 86</value>
+    <value>367, 86</value>
   </data>
   <data name="panelUsuarioSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -556,7 +556,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -598,7 +598,7 @@
     <value>0, 41</value>
   </data>
   <data name="btnModificacionProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnModificacionProducto.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -634,7 +634,7 @@
     <value>0, 0</value>
   </data>
   <data name="btnAddProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 41</value>
+    <value>367, 41</value>
   </data>
   <data name="btnAddProducto.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -661,7 +661,7 @@
     <value>0, 382</value>
   </data>
   <data name="panelProductoSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 81</value>
+    <value>367, 81</value>
   </data>
   <data name="panelProductoSubmenu.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -703,7 +703,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnProducto.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -754,7 +754,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnCompra.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnCompra.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -805,7 +805,7 @@
     <value>10, 0, 20, 0</value>
   </data>
   <data name="btnVenta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 88</value>
+    <value>367, 88</value>
   </data>
   <data name="btnVenta.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -871,7 +871,7 @@
     <value>0, 0</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 118</value>
+    <value>367, 118</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -895,7 +895,7 @@
     <value>0, 0</value>
   </data>
   <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 118</value>
+    <value>367, 118</value>
   </data>
   <data name="panelLogo.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -919,7 +919,7 @@
     <value>10, 0</value>
   </data>
   <data name="panelMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 1139</value>
+    <value>388, 707</value>
   </data>
   <data name="panelMenu.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1057,7 +1057,7 @@
     <value>398, 0</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 118</value>
+    <value>970, 118</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1102,7 +1102,7 @@
     <value>398, 118</value>
   </data>
   <data name="panelDesktop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 1021</value>
+    <value>970, 589</value>
   </data>
   <data name="panelDesktop.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1126,7 +1126,7 @@
     <value>8, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1447, 1139</value>
+    <value>1388, 707</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>

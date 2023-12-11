@@ -212,7 +212,8 @@ namespace Vista
                          txtCliente.Visible = false;
                         try
                         {
-                            CargarDatos(nuevoDetalle);
+                        PasarDatos(nuevoDetalle);
+                           // CargarDatos(nuevoDetalle);     no uso mas por que no comple bien la funcion
                         }
                         catch(Exception ex)
                         {
@@ -227,11 +228,22 @@ namespace Vista
             }
         }
 
+        private void PasarDatos(DetallePedido detallePedido)
+        {
+            int n= dgvDetalles.Rows.Add();
+
+            dgvDetalles.Rows[n].Cells[0].Value = detallePedido.ID_Pedido;
+            dgvDetalles.Rows[n].Cells[1].Value = detallePedido.ID_Producto;
+            dgvDetalles.Rows[n].Cells[2].Value = detallePedido.Cantidad;
+            dgvDetalles.Rows[n].Cells[3].Value = detallePedido.PrecioVenta;
+            dgvDetalles.Rows[n].Cells[4].Value = detallePedido.CantidadPrecio;
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-        private void CargarDatos(DetallePedido detallePediddo)
+        private void CargarDatos(DetallePedido detallePediddo)                         //tengo que borrarlo
         {
             //dgwDetalles.DataSource = controlPedido.ObtenerDetallePedido(detallePediddo);
             DataTable dataTable = controlPedido.ObtenerDetallePedido(detallePediddo);
