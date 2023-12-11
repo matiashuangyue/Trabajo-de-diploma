@@ -317,6 +317,7 @@ namespace Vista
         #region submenuControlStock
         private void button4_Click(object sender, EventArgs e)
         {
+            OpenChidForm(new FormControlStock(rol));
             hideSubmenu();
         }
         #endregion
