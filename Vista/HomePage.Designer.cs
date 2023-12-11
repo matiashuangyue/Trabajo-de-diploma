@@ -58,6 +58,7 @@
             this.iconPerfil = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelInformeSubmenu.SuspendLayout();
             this.panelControlSubmenu.SuspendLayout();
@@ -309,6 +310,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblRol);
             this.panel2.Controls.Add(this.lblTitleChildForm);
             this.panel2.Controls.Add(this.iconCurrentChildForm);
@@ -320,6 +322,7 @@
             // 
             resources.ApplyResources(this.lblRol, "lblRol");
             this.lblRol.Name = "lblRol";
+            this.lblRol.Click += new System.EventHandler(this.lblRol_Click);
             // 
             // lblTitleChildForm
             // 
@@ -342,14 +345,15 @@
             // iconPerfil
             // 
             this.iconPerfil.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.iconPerfil, "iconPerfil");
             this.iconPerfil.ForeColor = System.Drawing.Color.Gainsboro;
             this.iconPerfil.IconChar = FontAwesome.Sharp.IconChar.UserGear;
             this.iconPerfil.IconColor = System.Drawing.Color.Gainsboro;
             this.iconPerfil.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPerfil.IconSize = 65;
-            resources.ApplyResources(this.iconPerfil, "iconPerfil");
+            this.iconPerfil.IconSize = 85;
             this.iconPerfil.Name = "iconPerfil";
             this.iconPerfil.TabStop = false;
+            this.iconPerfil.Click += new System.EventHandler(this.iconPerfil_Click);
             // 
             // panel1
             // 
@@ -364,6 +368,12 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // HomePage
             // 
             resources.ApplyResources(this, "$this");
@@ -373,6 +383,7 @@
             this.Controls.Add(this.panelMenu);
             this.ForeColor = System.Drawing.Color.Gainsboro;
             this.Name = "HomePage";
+            this.Load += new System.EventHandler(this.HomePage_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelInformeSubmenu.ResumeLayout(false);
             this.panelControlSubmenu.ResumeLayout(false);
@@ -420,5 +431,6 @@
         private System.Windows.Forms.Button btnCompraRealizada;
         private System.Windows.Forms.Button btnVentaRealizada;
         private FontAwesome.Sharp.IconButton btnCerrarSession;
+        private System.Windows.Forms.Label label1;
     }
 }

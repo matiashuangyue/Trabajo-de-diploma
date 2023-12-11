@@ -81,10 +81,11 @@ namespace Vista
         //identificar que rol
         public void IdentificarRol()
         {
+            
             btnVenta.Visible = true;
             btnCompra.Visible = true;
             btnInforme.Visible = true;
-            btnControlStock.Visible = true;
+            btnControlStock.Visible = false;// lo puse false para que no vean, desp tengo que cambiar
             if (rol == -1)
             {
                 lblRol.Text = "QUIEN SOS";
@@ -231,6 +232,14 @@ namespace Vista
             iconCurrentChildForm.IconColor = Color.Gainsboro;
             lblTitleChildForm.Text = "Home";
         }
+        private void VolverAHome()
+        {
+            if (currentChildForm != null)
+            {
+                // open only form
+                currentChildForm.Close();
+            }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -258,6 +267,8 @@ namespace Vista
             ActivateButton(sender, RGBColors.color3);
             showSubmenu(panelProductoSubmenu);
             
+            VolverAHome();
+            lblTitleChildForm.Text = "FormProducto";
         }
         #region submenuProducto
 
@@ -285,6 +296,9 @@ namespace Vista
         {
             ActivateButton(sender, RGBColors.color4);
             showSubmenu(panelUsuarioSubmenu);
+
+            VolverAHome();
+            lblTitleChildForm.Text = "FormUsuario";
         }
         #region submenuUsuario
 
@@ -313,6 +327,9 @@ namespace Vista
         {
             ActivateButton(sender, RGBColors.color5);
             showSubmenu(panelControlSubmenu);
+
+            VolverAHome();
+            lblTitleChildForm.Text = "FormControlStock";
         }
         #region submenuControlStock
         private void button4_Click(object sender, EventArgs e)
@@ -327,6 +344,10 @@ namespace Vista
         {
             ActivateButton(sender, RGBColors.color6);
             showSubmenu(panelInformeSubmenu);
+
+
+            VolverAHome();
+            lblTitleChildForm.Text = "FormInforme";
         }
         #region submenuInforme
         private void btnInfo_Click(object sender, EventArgs e)
@@ -345,6 +366,7 @@ namespace Vista
 
         private void btnCerrarSession_Click(object sender, EventArgs e)
         {
+            VolverAHome();
             try
             {
                 DialogResult confirmacion = MessageBox.Show("¿Estás seguro de que deseas CERRAR LA SESSION?",
@@ -363,6 +385,26 @@ namespace Vista
             {
                 Console.WriteLine(ex.Message);
             }
+        }
+
+        private void lblRol_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HomePage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconPerfil_Click(object sender, EventArgs e)
+        {
+            OpenChidForm(new FormModificacionesUsuario(rol, UserDNI));
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
