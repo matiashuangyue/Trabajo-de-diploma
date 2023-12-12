@@ -52,13 +52,13 @@
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblRol = new System.Windows.Forms.Label();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.iconPerfil = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelInformeSubmenu.SuspendLayout();
             this.panelControlSubmenu.SuspendLayout();
@@ -318,6 +318,12 @@
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // lblRol
             // 
             resources.ApplyResources(this.lblRol, "lblRol");
@@ -367,12 +373,6 @@
             resources.ApplyResources(this.panelDesktop, "panelDesktop");
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // HomePage
             // 

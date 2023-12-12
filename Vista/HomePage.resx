@@ -177,6 +177,30 @@
   <data name="&gt;&gt;btnCerrarSession.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btnVentaRealizada.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnVentaRealizada.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnVentaRealizada.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century, 10.2pt</value>
+  </data>
+  <data name="btnVentaRealizada.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnVentaRealizada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 41</value>
+  </data>
+  <data name="btnVentaRealizada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 41</value>
+  </data>
+  <data name="btnVentaRealizada.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnVentaRealizada.Text" xml:space="preserve">
+    <value>Ver Ventas</value>
+  </data>
   <data name="&gt;&gt;btnVentaRealizada.Name" xml:space="preserve">
     <value>btnVentaRealizada</value>
   </data>
@@ -188,6 +212,30 @@
   </data>
   <data name="&gt;&gt;btnVentaRealizada.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btnCompraRealizada.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnCompraRealizada.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnCompraRealizada.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century, 10.2pt</value>
+  </data>
+  <data name="btnCompraRealizada.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCompraRealizada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnCompraRealizada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 41</value>
+  </data>
+  <data name="btnCompraRealizada.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnCompraRealizada.Text" xml:space="preserve">
+    <value>Ver Compras</value>
   </data>
   <data name="&gt;&gt;btnCompraRealizada.Name" xml:space="preserve">
     <value>btnCompraRealizada</value>
@@ -276,6 +324,30 @@
   <data name="&gt;&gt;btnInforme.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btnIngresarStock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnIngresarStock.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnIngresarStock.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century, 10.2pt</value>
+  </data>
+  <data name="btnIngresarStock.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnIngresarStock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnIngresarStock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 41</value>
+  </data>
+  <data name="btnIngresarStock.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnIngresarStock.Text" xml:space="preserve">
+    <value>Ingresar Stock</value>
+  </data>
   <data name="&gt;&gt;btnIngresarStock.Name" xml:space="preserve">
     <value>btnIngresarStock</value>
   </data>
@@ -363,6 +435,30 @@
   <data name="&gt;&gt;btnControlStock.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="btnModificarUsuario.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnModificarUsuario.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnModificarUsuario.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century, 10.2pt</value>
+  </data>
+  <data name="btnModificarUsuario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnModificarUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 41</value>
+  </data>
+  <data name="btnModificarUsuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 45</value>
+  </data>
+  <data name="btnModificarUsuario.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnModificarUsuario.Text" xml:space="preserve">
+    <value>ModificarUsuario</value>
+  </data>
   <data name="&gt;&gt;btnModificarUsuario.Name" xml:space="preserve">
     <value>btnModificarUsuario</value>
   </data>
@@ -374,6 +470,30 @@
   </data>
   <data name="&gt;&gt;btnModificarUsuario.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btnAgregarUsuario.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnAgregarUsuario.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnAgregarUsuario.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century, 10.2pt</value>
+  </data>
+  <data name="btnAgregarUsuario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnAgregarUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnAgregarUsuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 41</value>
+  </data>
+  <data name="btnAgregarUsuario.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnAgregarUsuario.Text" xml:space="preserve">
+    <value>Agregar Usuario</value>
   </data>
   <data name="&gt;&gt;btnAgregarUsuario.Name" xml:space="preserve">
     <value>btnAgregarUsuario</value>
@@ -462,6 +582,30 @@
   <data name="&gt;&gt;btnUsuario.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="btnModificacionProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnModificacionProducto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnModificacionProducto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century, 10.2pt</value>
+  </data>
+  <data name="btnModificacionProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnModificacionProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 41</value>
+  </data>
+  <data name="btnModificacionProducto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 41</value>
+  </data>
+  <data name="btnModificacionProducto.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnModificacionProducto.Text" xml:space="preserve">
+    <value>Modificiones De Producto</value>
+  </data>
   <data name="&gt;&gt;btnModificacionProducto.Name" xml:space="preserve">
     <value>btnModificacionProducto</value>
   </data>
@@ -473,6 +617,30 @@
   </data>
   <data name="&gt;&gt;btnModificacionProducto.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btnAddProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnAddProducto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnAddProducto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century, 10.2pt</value>
+  </data>
+  <data name="btnAddProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnAddProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnAddProducto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 41</value>
+  </data>
+  <data name="btnAddProducto.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnAddProducto.Text" xml:space="preserve">
+    <value>Agregar Producto</value>
   </data>
   <data name="&gt;&gt;btnAddProducto.Name" xml:space="preserve">
     <value>btnAddProducto</value>
@@ -666,6 +834,21 @@
   <metadata name="panelLogo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="btnHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 0</value>
+  </data>
+  <data name="btnHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 118</value>
+  </data>
+  <data name="btnHome.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="btnHome.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
     <value>btnHome</value>
   </data>
@@ -676,6 +859,21 @@
     <value>panelLogo</value>
   </data>
   <data name="&gt;&gt;btnHome.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 118</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
@@ -737,312 +935,6 @@
   </data>
   <data name="&gt;&gt;panelMenu.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="btnVentaRealizada.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnVentaRealizada.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnVentaRealizada.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 10.2pt</value>
-  </data>
-  <data name="btnVentaRealizada.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnVentaRealizada.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 41</value>
-  </data>
-  <data name="btnVentaRealizada.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 41</value>
-  </data>
-  <data name="btnVentaRealizada.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnVentaRealizada.Text" xml:space="preserve">
-    <value>Ver Ventas</value>
-  </data>
-  <data name="&gt;&gt;btnVentaRealizada.Name" xml:space="preserve">
-    <value>btnVentaRealizada</value>
-  </data>
-  <data name="&gt;&gt;btnVentaRealizada.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnVentaRealizada.Parent" xml:space="preserve">
-    <value>panelInformeSubmenu</value>
-  </data>
-  <data name="&gt;&gt;btnVentaRealizada.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnCompraRealizada.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnCompraRealizada.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnCompraRealizada.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 10.2pt</value>
-  </data>
-  <data name="btnCompraRealizada.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnCompraRealizada.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnCompraRealizada.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 41</value>
-  </data>
-  <data name="btnCompraRealizada.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnCompraRealizada.Text" xml:space="preserve">
-    <value>Ver Compras</value>
-  </data>
-  <data name="&gt;&gt;btnCompraRealizada.Name" xml:space="preserve">
-    <value>btnCompraRealizada</value>
-  </data>
-  <data name="&gt;&gt;btnCompraRealizada.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCompraRealizada.Parent" xml:space="preserve">
-    <value>panelInformeSubmenu</value>
-  </data>
-  <data name="&gt;&gt;btnCompraRealizada.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnIngresarStock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnIngresarStock.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnIngresarStock.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 10.2pt</value>
-  </data>
-  <data name="btnIngresarStock.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnIngresarStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnIngresarStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 41</value>
-  </data>
-  <data name="btnIngresarStock.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnIngresarStock.Text" xml:space="preserve">
-    <value>Ingresar Stock</value>
-  </data>
-  <data name="&gt;&gt;btnIngresarStock.Name" xml:space="preserve">
-    <value>btnIngresarStock</value>
-  </data>
-  <data name="&gt;&gt;btnIngresarStock.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnIngresarStock.Parent" xml:space="preserve">
-    <value>panelControlSubmenu</value>
-  </data>
-  <data name="&gt;&gt;btnIngresarStock.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnModificarUsuario.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnModificarUsuario.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnModificarUsuario.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 10.2pt</value>
-  </data>
-  <data name="btnModificarUsuario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnModificarUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 41</value>
-  </data>
-  <data name="btnModificarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 45</value>
-  </data>
-  <data name="btnModificarUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btnModificarUsuario.Text" xml:space="preserve">
-    <value>ModificarUsuario</value>
-  </data>
-  <data name="&gt;&gt;btnModificarUsuario.Name" xml:space="preserve">
-    <value>btnModificarUsuario</value>
-  </data>
-  <data name="&gt;&gt;btnModificarUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnModificarUsuario.Parent" xml:space="preserve">
-    <value>panelUsuarioSubmenu</value>
-  </data>
-  <data name="&gt;&gt;btnModificarUsuario.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnAgregarUsuario.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnAgregarUsuario.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnAgregarUsuario.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 10.2pt</value>
-  </data>
-  <data name="btnAgregarUsuario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnAgregarUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnAgregarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 41</value>
-  </data>
-  <data name="btnAgregarUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnAgregarUsuario.Text" xml:space="preserve">
-    <value>Agregar Usuario</value>
-  </data>
-  <data name="&gt;&gt;btnAgregarUsuario.Name" xml:space="preserve">
-    <value>btnAgregarUsuario</value>
-  </data>
-  <data name="&gt;&gt;btnAgregarUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAgregarUsuario.Parent" xml:space="preserve">
-    <value>panelUsuarioSubmenu</value>
-  </data>
-  <data name="&gt;&gt;btnAgregarUsuario.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnModificacionProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnModificacionProducto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnModificacionProducto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 10.2pt</value>
-  </data>
-  <data name="btnModificacionProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnModificacionProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 41</value>
-  </data>
-  <data name="btnModificacionProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 41</value>
-  </data>
-  <data name="btnModificacionProducto.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnModificacionProducto.Text" xml:space="preserve">
-    <value>Modificiones De Producto</value>
-  </data>
-  <data name="&gt;&gt;btnModificacionProducto.Name" xml:space="preserve">
-    <value>btnModificacionProducto</value>
-  </data>
-  <data name="&gt;&gt;btnModificacionProducto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnModificacionProducto.Parent" xml:space="preserve">
-    <value>panelProductoSubmenu</value>
-  </data>
-  <data name="&gt;&gt;btnModificacionProducto.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnAddProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnAddProducto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnAddProducto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 10.2pt</value>
-  </data>
-  <data name="btnAddProducto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnAddProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnAddProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 41</value>
-  </data>
-  <data name="btnAddProducto.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnAddProducto.Text" xml:space="preserve">
-    <value>Agregar Producto</value>
-  </data>
-  <data name="&gt;&gt;btnAddProducto.Name" xml:space="preserve">
-    <value>btnAddProducto</value>
-  </data>
-  <data name="&gt;&gt;btnAddProducto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAddProducto.Parent" xml:space="preserve">
-    <value>panelProductoSubmenu</value>
-  </data>
-  <data name="&gt;&gt;btnAddProducto.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnHome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 0</value>
-  </data>
-  <data name="btnHome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 118</value>
-  </data>
-  <data name="btnHome.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="btnHome.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
-    <value>btnHome</value>
-  </data>
-  <data name="&gt;&gt;btnHome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnHome.Parent" xml:space="preserve">
-    <value>panelLogo</value>
-  </data>
-  <data name="&gt;&gt;btnHome.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 118</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panelLogo</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

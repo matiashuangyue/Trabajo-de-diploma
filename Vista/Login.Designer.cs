@@ -57,7 +57,7 @@
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(271, 25);
+            this.txtPassword.Size = new System.Drawing.Size(288, 28);
             this.txtPassword.TabIndex = 8;
             // 
             // txtDNI
@@ -65,7 +65,7 @@
             this.txtDNI.Location = new System.Drawing.Point(123, 22);
             this.txtDNI.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(271, 25);
+            this.txtDNI.Size = new System.Drawing.Size(288, 28);
             this.txtDNI.TabIndex = 7;
             // 
             // label2
@@ -74,7 +74,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(27, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 15);
+            this.label2.Size = new System.Drawing.Size(109, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "Password";
             // 
@@ -85,7 +85,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label1.Location = new System.Drawing.Point(27, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 19);
+            this.label1.Size = new System.Drawing.Size(49, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "DNI";
             // 
@@ -110,6 +110,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnLogin);
+            this.panel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(177, 86);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(426, 242);
@@ -123,6 +124,7 @@
             this.ClientSize = new System.Drawing.Size(786, 371);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
