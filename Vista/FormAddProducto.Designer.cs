@@ -62,8 +62,8 @@
             // txtDescripcion
             // 
             this.txtDescripcion.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtDescripcion.Location = new System.Drawing.Point(348, 179);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcion.Location = new System.Drawing.Point(458, 188);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(470, 206);
@@ -73,9 +73,9 @@
             // 
             this.btnAddProducto.BackColor = System.Drawing.Color.Cornsilk;
             this.btnAddProducto.Location = new System.Drawing.Point(864, 468);
-            this.btnAddProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddProducto.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddProducto.Name = "btnAddProducto";
-            this.btnAddProducto.Size = new System.Drawing.Size(263, 103);
+            this.btnAddProducto.Size = new System.Drawing.Size(326, 146);
             this.btnAddProducto.TabIndex = 12;
             this.btnAddProducto.Text = "Agregar Producto";
             this.btnAddProducto.UseVisualStyleBackColor = false;
@@ -97,8 +97,8 @@
             // txtCodProducto
             // 
             this.txtCodProducto.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtCodProducto.Location = new System.Drawing.Point(348, 56);
-            this.txtCodProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodProducto.Location = new System.Drawing.Point(458, 53);
+            this.txtCodProducto.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodProducto.Name = "txtCodProducto";
             this.txtCodProducto.Size = new System.Drawing.Size(470, 42);
             this.txtCodProducto.TabIndex = 0;
@@ -106,8 +106,8 @@
             // txtNombProducto
             // 
             this.txtNombProducto.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtNombProducto.Location = new System.Drawing.Point(348, 112);
-            this.txtNombProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombProducto.Location = new System.Drawing.Point(458, 112);
+            this.txtNombProducto.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombProducto.Name = "txtNombProducto";
             this.txtNombProducto.Size = new System.Drawing.Size(470, 42);
             this.txtNombProducto.TabIndex = 2;

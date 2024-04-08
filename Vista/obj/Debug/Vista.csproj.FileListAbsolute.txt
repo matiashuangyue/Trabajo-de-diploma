@@ -51,7 +51,6 @@ D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Entidades.exe.config
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Modelo.pdb
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Modelo.exe.config
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.AssemblyReference.cache
-D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormAddDetalleCompra.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormCompra.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormControlStock.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoCompra.resources
@@ -73,3 +72,4 @@ D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\aa\Vista.resources.dll
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.Up2Date
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.exe
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.pdb
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoHistoriaCompraVenta.resources
