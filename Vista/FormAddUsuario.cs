@@ -20,6 +20,7 @@ namespace Vista
         {
             InitializeComponent();
             this.rol = RoleID;
+            
         }
 
         private void label6_Click(object sender, EventArgs e)

@@ -45,12 +45,14 @@
             // dgvCompras
             // 
             this.dgvCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCompras.Location = new System.Drawing.Point(50, 145);
+            this.dgvCompras.Location = new System.Drawing.Point(58, 222);
+            this.dgvCompras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvCompras.Name = "dgvCompras";
             this.dgvCompras.RowHeadersWidth = 51;
             this.dgvCompras.RowTemplate.Height = 27;
-            this.dgvCompras.Size = new System.Drawing.Size(809, 367);
+            this.dgvCompras.Size = new System.Drawing.Size(1154, 555);
             this.dgvCompras.TabIndex = 0;
+            this.dgvCompras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompras_CellContentClick);
             this.dgvCompras.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // comprasBindingSource
@@ -70,60 +72,61 @@
             // lblEmpleado
             // 
             this.lblEmpleado.AutoSize = true;
-            this.lblEmpleado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpleado.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpleado.ForeColor = System.Drawing.Color.Black;
-            this.lblEmpleado.Location = new System.Drawing.Point(46, 52);
+            this.lblEmpleado.Location = new System.Drawing.Point(52, 62);
             this.lblEmpleado.Name = "lblEmpleado";
-            this.lblEmpleado.Size = new System.Drawing.Size(284, 24);
+            this.lblEmpleado.Size = new System.Drawing.Size(375, 34);
             this.lblEmpleado.TabIndex = 8;
             this.lblEmpleado.Text = "Seleccionar el Proveedor :";
             // 
             // cbProveedor
             // 
-            this.cbProveedor.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbProveedor.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbProveedor.FormattingEnabled = true;
-            this.cbProveedor.Location = new System.Drawing.Point(432, 49);
-            this.cbProveedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cbProveedor.Location = new System.Drawing.Point(884, 41);
+            this.cbProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbProveedor.Name = "cbProveedor";
-            this.cbProveedor.Size = new System.Drawing.Size(215, 27);
+            this.cbProveedor.Size = new System.Drawing.Size(328, 42);
             this.cbProveedor.TabIndex = 7;
             this.cbProveedor.SelectedIndexChanged += new System.EventHandler(this.cbProveedor_SelectedIndexChanged);
             // 
             // cbEstado
             // 
-            this.cbEstado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEstado.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstado.FormattingEnabled = true;
             this.cbEstado.Items.AddRange(new object[] {
             "Alta",
             "Baja"});
-            this.cbEstado.Location = new System.Drawing.Point(432, 93);
-            this.cbEstado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cbEstado.Location = new System.Drawing.Point(884, 121);
+            this.cbEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbEstado.Name = "cbEstado";
-            this.cbEstado.Size = new System.Drawing.Size(215, 27);
+            this.cbEstado.Size = new System.Drawing.Size(328, 42);
             this.cbEstado.TabIndex = 9;
             this.cbEstado.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(46, 96);
+            this.label1.Location = new System.Drawing.Point(52, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 24);
+            this.label1.Size = new System.Drawing.Size(450, 34);
             this.label1.TabIndex = 10;
             this.label1.Text = "Seleccionar Estado de Compras";
             // 
             // FormInfoCompra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1055, 590);
+            this.ClientSize = new System.Drawing.Size(2046, 1244);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.lblEmpleado);
             this.Controls.Add(this.cbProveedor);
             this.Controls.Add(this.dgvCompras);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormInfoCompra";
             this.Text = "FormInfoCompra";
             this.Load += new System.EventHandler(this.FormInfoCompra_Load);

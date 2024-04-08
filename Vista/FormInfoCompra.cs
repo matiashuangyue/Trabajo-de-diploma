@@ -49,7 +49,7 @@ namespace Vista
         private void FormInfoCompra_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'trabajoDeDiplomaDataSet.Compras' Puede moverla o quitarla según sea necesario.
-            this.comprasTableAdapter.Fill(this.trabajoDeDiplomaDataSet.Compras);
+            
 
         }
 
@@ -118,7 +118,9 @@ namespace Vista
             CargarDatos(DNIVendedor,estado);
         }
 
+        private void dgvCompras_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-
+        }
     }
 }

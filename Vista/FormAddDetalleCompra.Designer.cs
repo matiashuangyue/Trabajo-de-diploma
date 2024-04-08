@@ -36,10 +36,10 @@
             this.btnGuardarDetalle.BackColor = System.Drawing.Color.Cornsilk;
             this.btnGuardarDetalle.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarDetalle.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardarDetalle.Location = new System.Drawing.Point(492, 291);
-            this.btnGuardarDetalle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnGuardarDetalle.Location = new System.Drawing.Point(554, 349);
+            this.btnGuardarDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardarDetalle.Name = "btnGuardarDetalle";
-            this.btnGuardarDetalle.Size = new System.Drawing.Size(246, 49);
+            this.btnGuardarDetalle.Size = new System.Drawing.Size(277, 59);
             this.btnGuardarDetalle.TabIndex = 12;
             this.btnGuardarDetalle.Text = "Modificar";
             this.btnGuardarDetalle.UseVisualStyleBackColor = false;
@@ -47,10 +47,11 @@
             // 
             // FormAddDetalleCompra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(2046, 1244);
             this.Controls.Add(this.btnGuardarDetalle);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormAddDetalleCompra";
             this.Text = "FormAddDetalleCompra";
             this.ResumeLayout(false);
