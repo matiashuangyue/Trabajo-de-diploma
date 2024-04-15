@@ -42,7 +42,12 @@ namespace Vista
 
         private void FormVenta_Load(object sender, EventArgs e)
         {
+
             permiso();
+            dgvDetalles .Columns[0].DefaultCellStyle.Font = new Font("Arial", 14, FontStyle.Bold);
+
+
+            dgvDetalles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)
