@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\proyecto\\Trabajo-de-diploma\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,24 +15,24 @@
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\formaddproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formaddproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfohistoriacompraventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfohistoriacompraventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formaddusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formaddusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formmodificacionesusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -39,8 +43,36 @@
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formmodificacionesproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfohistoriacompraventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfohistoriacompraventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formcontrolstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formcontrolstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\formaddproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formaddproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86EDA5C7-FB70-4F3F-8EC6-EF5CB512A293}|Entidades\\Entidades.csproj|D:\\proyecto\\Trabajo-de-diploma\\entidades\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,30 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfohistoriacompraventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfohistoriacompraventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formaddusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formaddusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formcontrolstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formcontrolstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,16 +99,8 @@
       "RelativeMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|solutionrelative:modelo\\modusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|D:\\proyecto\\Trabajo-de-diploma\\modelo\\conexionsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -154,11 +154,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 245,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "HomePage.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\HomePage.cs",
               "RelativeDocumentMoniker": "Vista\\HomePage.cs",
@@ -171,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\Login.cs",
               "RelativeDocumentMoniker": "Vista\\Login.cs",
@@ -180,34 +180,36 @@
               "ViewState": "AQIAABkAAAAAAAAAAAAswCAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-31T17:11:58.737Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "FormInfoVenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
+              "RelativeDocumentMoniker": "Vista\\FormInfoVenta.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormInfoVenta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T20:42:28.219Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FormInfoCompra.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoCompra.cs",
               "RelativeDocumentMoniker": "Vista\\FormInfoCompra.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoCompra.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormInfoCompra.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T10:46:39.409Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormAddProducto.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddProducto.cs",
-              "RelativeDocumentMoniker": "Vista\\FormAddProducto.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddProducto.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\FormAddProducto.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T19:56:54.406Z",
+              "WhenOpened": "2024-04-08T10:46:39.409Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FormVenta.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormVenta.cs",
               "RelativeDocumentMoniker": "Vista\\FormVenta.cs",
@@ -219,64 +221,166 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FormVenta.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormVenta.cs",
               "RelativeDocumentMoniker": "Vista\\FormVenta.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormVenta.cs",
               "RelativeToolTip": "Vista\\FormVenta.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAwCMAAAAiAAAA",
+              "ViewState": "AQIAANsAAAAAAAAAAAArwO8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-31T17:11:58.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormInfoHistoriaCompraVenta.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoHistoriaCompraVenta.cs",
-              "RelativeDocumentMoniker": "Vista\\FormInfoHistoriaCompraVenta.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoHistoriaCompraVenta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\FormInfoHistoriaCompraVenta.cs [Dise\u00F1o]",
+              "DocumentIndex": 4,
+              "Title": "FormAddUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddUsuario.cs",
+              "RelativeDocumentMoniker": "Vista\\FormAddUsuario.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormAddUsuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T19:56:22.501Z"
+              "WhenOpened": "2024-03-31T17:11:58.737Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\Login.cs",
+              "RelativeDocumentMoniker": "Vista\\Login.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\Login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T20:53:54.663Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "FormModificacionesUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesUsuario.cs",
-              "RelativeDocumentMoniker": "Vista\\FormModificacionesUsuario.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\FormModificacionesUsuario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:11:58.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormModificacionesProducto.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesProducto.cs",
-              "RelativeDocumentMoniker": "Vista\\FormModificacionesProducto.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesProducto.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\FormModificacionesProducto.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:11:58.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "FormProveedor.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormProveedor.cs",
               "RelativeDocumentMoniker": "Vista\\FormProveedor.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormProveedor.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormProveedor.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T20:47:48.967Z"
+              "WhenOpened": "2024-04-08T20:47:48.967Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormModificacionesUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesUsuario.cs",
+              "RelativeDocumentMoniker": "Vista\\FormModificacionesUsuario.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormModificacionesUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T17:11:58.742Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormModificacionesProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesProducto.cs",
+              "RelativeDocumentMoniker": "Vista\\FormModificacionesProducto.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormModificacionesProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T17:11:58.742Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "FormInfoVenta.cs",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
+              "RelativeDocumentMoniker": "Vista\\FormInfoVenta.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
+              "RelativeToolTip": "Vista\\FormInfoVenta.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAD4vzQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T18:53:41.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormInforme.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInforme.cs",
+              "RelativeDocumentMoniker": "Vista\\FormInforme.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInforme.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormInforme.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T17:11:58.722Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormInfoHistoriaCompraVenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoHistoriaCompraVenta.cs",
+              "RelativeDocumentMoniker": "Vista\\FormInfoHistoriaCompraVenta.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoHistoriaCompraVenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormInfoHistoriaCompraVenta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T19:56:22.501Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormInfoCompra.cs",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoCompra.cs",
+              "RelativeDocumentMoniker": "Vista\\FormInfoCompra.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoCompra.cs",
+              "RelativeToolTip": "Vista\\FormInfoCompra.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAIAxwDMAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T17:11:58.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormControlStock.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormControlStock.cs",
+              "RelativeDocumentMoniker": "Vista\\FormControlStock.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormControlStock.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormControlStock.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T17:11:58.722Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FormCompra.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormCompra.cs",
+              "RelativeDocumentMoniker": "Vista\\FormCompra.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormCompra.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormCompra.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T20:16:34.64Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormAddProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddProducto.cs",
+              "RelativeDocumentMoniker": "Vista\\FormAddProducto.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormAddProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T20:34:10.804Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Pedido.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Entidades\\Pedido.cs",
               "RelativeDocumentMoniker": "Entidades\\Pedido.cs",
@@ -288,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "FormInfoHistoriaCompraVenta.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoHistoriaCompraVenta.cs",
               "RelativeDocumentMoniker": "Vista\\FormInfoHistoriaCompraVenta.cs",
@@ -296,77 +400,12 @@
               "RelativeToolTip": "Vista\\FormInfoHistoriaCompraVenta.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T21:05:36.755Z"
+              "WhenOpened": "2024-04-08T21:05:36.755Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FormCompra.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormCompra.cs",
-              "RelativeDocumentMoniker": "Vista\\FormCompra.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormCompra.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\FormCompra.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T20:16:34.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FormAddUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddUsuario.cs",
-              "RelativeDocumentMoniker": "Vista\\FormAddUsuario.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\FormAddUsuario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:11:58.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FormControlStock.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormControlStock.cs",
-              "RelativeDocumentMoniker": "Vista\\FormControlStock.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormControlStock.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\FormControlStock.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:11:58.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FormInfoVenta.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
-              "RelativeDocumentMoniker": "Vista\\FormInfoVenta.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\FormInfoVenta.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T20:53:29.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\Login.cs",
-              "RelativeDocumentMoniker": "Vista\\Login.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\Login.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T20:53:54.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FormInforme.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInforme.cs",
-              "RelativeDocumentMoniker": "Vista\\FormInforme.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInforme.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\FormInforme.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:11:58.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "HomePage.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\HomePage.cs",
               "RelativeDocumentMoniker": "Vista\\HomePage.cs",
@@ -379,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "FormCompra.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormCompra.cs",
               "RelativeDocumentMoniker": "Vista\\FormCompra.cs",
@@ -387,11 +426,12 @@
               "RelativeToolTip": "Vista\\FormCompra.cs",
               "ViewState": "AQIAAHMAAAAAAAAAAAAEwIoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T20:54:05.179Z"
+              "WhenOpened": "2024-04-08T20:54:05.179Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "FormAddUsuario.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddUsuario.cs",
               "RelativeDocumentMoniker": "Vista\\FormAddUsuario.cs",
@@ -399,23 +439,12 @@
               "RelativeToolTip": "Vista\\FormAddUsuario.cs",
               "ViewState": "AQIAAGwAAAAAAAAAAAAwwHsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:11:58.742Z"
+              "WhenOpened": "2024-03-31T17:11:58.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "FormInfoVenta.cs",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
-              "RelativeDocumentMoniker": "Vista\\FormInfoVenta.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
-              "RelativeToolTip": "Vista\\FormInfoVenta.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAIAwwDIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T18:53:41.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "FormInforme.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInforme.cs",
               "RelativeDocumentMoniker": "Vista\\FormInforme.cs",
@@ -423,11 +452,12 @@
               "RelativeToolTip": "Vista\\FormInforme.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAASwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T19:55:58.538Z"
+              "WhenOpened": "2024-04-08T19:55:58.538Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "ModUsuario.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModUsuario.cs",
               "RelativeDocumentMoniker": "Modelo\\ModUsuario.cs",
@@ -451,18 +481,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FormInfoCompra.cs",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoCompra.cs",
-              "RelativeDocumentMoniker": "Vista\\FormInfoCompra.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoCompra.cs",
-              "RelativeToolTip": "Vista\\FormInfoCompra.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAnwDMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:11:58.346Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 28,
               "Title": "FormControlStock.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormControlStock.cs",
@@ -471,7 +489,8 @@
               "RelativeToolTip": "Vista\\FormControlStock.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:11:58.714Z"
+              "WhenOpened": "2024-03-31T17:11:58.714Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -567,7 +586,8 @@
               "RelativeToolTip": "Vista\\FormModificacionesProducto.cs",
               "ViewState": "AQIAAJgAAAAAAAAAAAAkwKIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:11:58.742Z"
+              "WhenOpened": "2024-03-31T17:11:58.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

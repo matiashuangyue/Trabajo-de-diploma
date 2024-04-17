@@ -42,12 +42,14 @@ namespace Vista
 
         private void FormVenta_Load(object sender, EventArgs e)
         {
-
-            permiso();
-            dgvDetalles .Columns[0].DefaultCellStyle.Font = new Font("Arial", 14, FontStyle.Bold);
-
-
+            
+            dgvDetalles.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
             dgvDetalles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            permiso();
+            
+
+
+            
         }
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvCompras = new System.Windows.Forms.DataGridView();
             this.comprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.trabajoDeDiplomaDataSet = new Vista.TrabajoDeDiplomaDataSet();
@@ -45,12 +46,20 @@
             // dgvCompras
             // 
             this.dgvCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCompras.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCompras.Location = new System.Drawing.Point(58, 222);
             this.dgvCompras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvCompras.Name = "dgvCompras";
             this.dgvCompras.RowHeadersWidth = 51;
             this.dgvCompras.RowTemplate.Height = 27;
-            this.dgvCompras.Size = new System.Drawing.Size(1154, 555);
+            this.dgvCompras.Size = new System.Drawing.Size(1870, 991);
             this.dgvCompras.TabIndex = 0;
             this.dgvCompras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompras_CellContentClick);
             this.dgvCompras.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
@@ -84,8 +93,8 @@
             // 
             this.cbProveedor.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbProveedor.FormattingEnabled = true;
-            this.cbProveedor.Location = new System.Drawing.Point(884, 41);
-            this.cbProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbProveedor.Location = new System.Drawing.Point(1572, 54);
+            this.cbProveedor.Margin = new System.Windows.Forms.Padding(4);
             this.cbProveedor.Name = "cbProveedor";
             this.cbProveedor.Size = new System.Drawing.Size(328, 42);
             this.cbProveedor.TabIndex = 7;
@@ -98,8 +107,8 @@
             this.cbEstado.Items.AddRange(new object[] {
             "Alta",
             "Baja"});
-            this.cbEstado.Location = new System.Drawing.Point(884, 121);
-            this.cbEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbEstado.Location = new System.Drawing.Point(1572, 126);
+            this.cbEstado.Margin = new System.Windows.Forms.Padding(4);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(328, 42);
             this.cbEstado.TabIndex = 9;

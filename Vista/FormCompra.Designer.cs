@@ -32,20 +32,20 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnCompra = new System.Windows.Forms.Button();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnCompra = new System.Windows.Forms.Button();
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelCompra = new System.Windows.Forms.Panel();
             this.panelDetalle = new System.Windows.Forms.Panel();
-            this.btnCerrarCompra = new System.Windows.Forms.Button();
             this.btnBuscarProducto = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnCerrarCompra = new System.Windows.Forms.Button();
             this.txtPrecioDetalle = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -69,7 +69,7 @@
             this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.Black;
             this.btnBuscar.Location = new System.Drawing.Point(964, 29);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(364, 59);
             this.btnBuscar.TabIndex = 16;
@@ -91,9 +91,9 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(37, 102);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1326, 691);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
@@ -123,12 +123,26 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Telefono";
             // 
+            // btnCompra
+            // 
+            this.btnCompra.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnCompra.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompra.ForeColor = System.Drawing.Color.Black;
+            this.btnCompra.Location = new System.Drawing.Point(875, 495);
+            this.btnCompra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCompra.Name = "btnCompra";
+            this.btnCompra.Size = new System.Drawing.Size(364, 162);
+            this.btnCompra.TabIndex = 11;
+            this.btnCompra.Text = "Generar Nueva Compra";
+            this.btnCompra.UseVisualStyleBackColor = false;
+            this.btnCompra.Click += new System.EventHandler(this.btnCompra_Click);
+            // 
             // txtDireccion
             // 
             this.txtDireccion.BackColor = System.Drawing.Color.Cornsilk;
             this.txtDireccion.Enabled = false;
             this.txtDireccion.Location = new System.Drawing.Point(318, 311);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(470, 42);
             this.txtDireccion.TabIndex = 8;
@@ -138,7 +152,7 @@
             this.txtTelefono.BackColor = System.Drawing.Color.Cornsilk;
             this.txtTelefono.Enabled = false;
             this.txtTelefono.Location = new System.Drawing.Point(318, 248);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(470, 42);
             this.txtTelefono.TabIndex = 7;
@@ -148,7 +162,7 @@
             this.txtName.BackColor = System.Drawing.Color.Cornsilk;
             this.txtName.Enabled = false;
             this.txtName.Location = new System.Drawing.Point(318, 106);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(470, 42);
             this.txtName.TabIndex = 0;
@@ -170,7 +184,7 @@
             this.txtMail.BackColor = System.Drawing.Color.Cornsilk;
             this.txtMail.Enabled = false;
             this.txtMail.Location = new System.Drawing.Point(318, 179);
-            this.txtMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMail.Margin = new System.Windows.Forms.Padding(4);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(470, 42);
             this.txtMail.TabIndex = 2;
@@ -187,27 +201,13 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Nombre";
             // 
-            // btnCompra
-            // 
-            this.btnCompra.BackColor = System.Drawing.Color.Cornsilk;
-            this.btnCompra.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompra.ForeColor = System.Drawing.Color.Black;
-            this.btnCompra.Location = new System.Drawing.Point(875, 495);
-            this.btnCompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnCompra.Name = "btnCompra";
-            this.btnCompra.Size = new System.Drawing.Size(364, 162);
-            this.btnCompra.TabIndex = 11;
-            this.btnCompra.Text = "Generar Nueva Compra";
-            this.btnCompra.UseVisualStyleBackColor = false;
-            this.btnCompra.Click += new System.EventHandler(this.btnCompra_Click);
-            // 
             // txtDNI
             // 
             this.txtDNI.BackColor = System.Drawing.Color.Cornsilk;
             this.txtDNI.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDNI.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtDNI.Location = new System.Drawing.Point(355, 29);
-            this.txtDNI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDNI.Margin = new System.Windows.Forms.Padding(4);
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(470, 37);
             this.txtDNI.TabIndex = 13;
@@ -250,27 +250,13 @@
             this.panelDetalle.Size = new System.Drawing.Size(1794, 1082);
             this.panelDetalle.TabIndex = 18;
             // 
-            // btnCerrarCompra
-            // 
-            this.btnCerrarCompra.BackColor = System.Drawing.Color.Cornsilk;
-            this.btnCerrarCompra.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarCompra.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarCompra.Location = new System.Drawing.Point(879, 529);
-            this.btnCerrarCompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnCerrarCompra.Name = "btnCerrarCompra";
-            this.btnCerrarCompra.Size = new System.Drawing.Size(425, 104);
-            this.btnCerrarCompra.TabIndex = 18;
-            this.btnCerrarCompra.Text = "Finalizar la compra";
-            this.btnCerrarCompra.UseVisualStyleBackColor = false;
-            this.btnCerrarCompra.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btnBuscarProducto
             // 
             this.btnBuscarProducto.BackColor = System.Drawing.Color.Cornsilk;
             this.btnBuscarProducto.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarProducto.ForeColor = System.Drawing.Color.Black;
             this.btnBuscarProducto.Location = new System.Drawing.Point(1123, 9);
-            this.btnBuscarProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarProducto.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarProducto.Name = "btnBuscarProducto";
             this.btnBuscarProducto.Size = new System.Drawing.Size(278, 71);
             this.btnBuscarProducto.TabIndex = 17;
@@ -301,12 +287,26 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de Productos";
             // 
+            // btnCerrarCompra
+            // 
+            this.btnCerrarCompra.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnCerrarCompra.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarCompra.ForeColor = System.Drawing.Color.Black;
+            this.btnCerrarCompra.Location = new System.Drawing.Point(879, 529);
+            this.btnCerrarCompra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCerrarCompra.Name = "btnCerrarCompra";
+            this.btnCerrarCompra.Size = new System.Drawing.Size(425, 104);
+            this.btnCerrarCompra.TabIndex = 18;
+            this.btnCerrarCompra.Text = "Finalizar la compra";
+            this.btnCerrarCompra.UseVisualStyleBackColor = false;
+            this.btnCerrarCompra.Click += new System.EventHandler(this.button1_Click);
+            // 
             // txtPrecioDetalle
             // 
             this.txtPrecioDetalle.BackColor = System.Drawing.Color.Cornsilk;
             this.txtPrecioDetalle.Enabled = false;
             this.txtPrecioDetalle.Location = new System.Drawing.Point(474, 248);
-            this.txtPrecioDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecioDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecioDetalle.Name = "txtPrecioDetalle";
             this.txtPrecioDetalle.Size = new System.Drawing.Size(470, 42);
             this.txtPrecioDetalle.TabIndex = 17;
@@ -328,7 +328,7 @@
             // 
             this.txtCantidad.BackColor = System.Drawing.Color.Cornsilk;
             this.txtCantidad.Location = new System.Drawing.Point(474, 412);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(246, 42);
             this.txtCantidad.TabIndex = 15;
@@ -351,7 +351,7 @@
             this.txtDescripcionDetalle.BackColor = System.Drawing.Color.Cornsilk;
             this.txtDescripcionDetalle.Enabled = false;
             this.txtDescripcionDetalle.Location = new System.Drawing.Point(474, 106);
-            this.txtDescripcionDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcionDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcionDetalle.Multiline = true;
             this.txtDescripcionDetalle.Name = "txtDescripcionDetalle";
             this.txtDescripcionDetalle.Size = new System.Drawing.Size(470, 126);
@@ -362,7 +362,7 @@
             this.btnAgregarDetalle.BackColor = System.Drawing.Color.Cornsilk;
             this.btnAgregarDetalle.ForeColor = System.Drawing.Color.Black;
             this.btnAgregarDetalle.Location = new System.Drawing.Point(807, 322);
-            this.btnAgregarDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarDetalle.Name = "btnAgregarDetalle";
             this.btnAgregarDetalle.Size = new System.Drawing.Size(497, 132);
             this.btnAgregarDetalle.TabIndex = 12;
@@ -375,7 +375,7 @@
             this.txtNombDetalle.BackColor = System.Drawing.Color.Cornsilk;
             this.txtNombDetalle.Enabled = false;
             this.txtNombDetalle.Location = new System.Drawing.Point(474, 50);
-            this.txtNombDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombDetalle.Name = "txtNombDetalle";
             this.txtNombDetalle.Size = new System.Drawing.Size(470, 42);
             this.txtNombDetalle.TabIndex = 2;
@@ -423,7 +423,7 @@
             // 
             this.txtCodigoDetalle.BackColor = System.Drawing.Color.Cornsilk;
             this.txtCodigoDetalle.Location = new System.Drawing.Point(569, 29);
-            this.txtCodigoDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigoDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoDetalle.Multiline = true;
             this.txtCodigoDetalle.Name = "txtCodigoDetalle";
             this.txtCodigoDetalle.Size = new System.Drawing.Size(470, 42);
