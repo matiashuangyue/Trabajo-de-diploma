@@ -44,6 +44,35 @@ namespace Modelo
         }
 
 
+        public DataTable ObtenerPedidosPorFecha(int DNI, DateTime fechaInicio, DateTime fechaFin)
+        {
+            try
+            {
+                // Obtener todos los pedidos del vendedor
+                DataTable todosLosPedidos = ObtenerPedidos(DNI);
+
+                // Filtrar los pedidos por fecha
+                DataTable pedidosFiltrados = todosLosPedidos.Clone(); // Clonar la estructura del DataTable original
+
+                foreach (DataRow row in todosLosPedidos.Rows)
+                {
+                    DateTime fechaPedido = Convert.ToDateTime(row["Fecha"]);
+                    if (fechaPedido >= fechaInicio && fechaPedido <= fechaFin)
+                    {
+                        pedidosFiltrados.ImportRow(row); // Agregar la fila al DataTable de pedidos filtrados
+                    }
+                }
+
+                return pedidosFiltrados;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // Manejar la excepción de manera adecuada
+                return null; // Error al obtener pedidos por fecha
+            }
+        }
+
 
         public DataTable ObtenerPedidos(int DNI)
         {

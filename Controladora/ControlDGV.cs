@@ -23,6 +23,10 @@ namespace Controladora
         {
             return modDGV.ObtenerPedidos(DNI);
         }
+        public DataTable ObtenerPedidoPorFecha(int DNI, DateTime fechaInicio, DateTime fechaFin)
+        {
+            return modDGV.ObtenerPedidosPorFecha(DNI, fechaInicio, fechaFin);
+        }
         public DataTable ObtenerCompra(int DNI, int Estado)
         {
             return modDGV.ObtenerCompras(DNI, Estado);
