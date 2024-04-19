@@ -205,7 +205,7 @@
     <value>2</value>
   </data>
   <data name="btnVentaRealizada.Text" xml:space="preserve">
-    <value>Ver Ventas</value>
+    <value>Informe Ventas</value>
   </data>
   <data name="&gt;&gt;btnVentaRealizada.Name" xml:space="preserve">
     <value>btnVentaRealizada</value>
@@ -244,7 +244,7 @@
     <value>1</value>
   </data>
   <data name="btnCompraRealizada.Text" xml:space="preserve">
-    <value>Ver Compras</value>
+    <value>Informe Compras</value>
   </data>
   <data name="&gt;&gt;btnCompraRealizada.Name" xml:space="preserve">
     <value>btnCompraRealizada</value>
@@ -643,7 +643,7 @@
     <value>1</value>
   </data>
   <data name="btnModificacionProducto.Text" xml:space="preserve">
-    <value>Modificiones De Producto</value>
+    <value>Modificar Producto</value>
   </data>
   <data name="&gt;&gt;btnModificacionProducto.Name" xml:space="preserve">
     <value>btnModificacionProducto</value>

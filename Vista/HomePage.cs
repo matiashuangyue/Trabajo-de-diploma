@@ -33,6 +33,7 @@ namespace Vista
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
             IdentificarRol();
+            HabilitarControlesSegunRolPermiso();
         }
         //para submenu
         private void customizeDesign()
@@ -78,6 +79,48 @@ namespace Vista
             }
         }
 
+        //para obtener todos los controles
+        private Control[] GetAllControls(Control control)
+        {
+            var controlsList = new List<Control>();
+
+            foreach (Control ctrl in control.Controls)
+            {
+                controlsList.Add(ctrl);
+                controlsList.AddRange(GetAllControls(ctrl));
+            }
+
+            return controlsList.ToArray();
+        }
+        //para obtener todos los botones
+        private void HabilitarControlesSegunRolPermiso()
+        {
+            ControlUsuario controlUsuario = new ControlUsuario();
+            List<string> permisos = ControlUsuario.ObtenerPermisosPorRol(rol);
+            Control[] controles = GetAllControls(this);
+            foreach (Control control in controles)
+            {
+                if (control is Button)
+                {
+                    Button button = (Button)control;
+                    if (permisos.Contains(button.Tag))
+                    {
+                        button.Visible = true;
+                        btnCerrarSession.Visible = true;
+                    }
+                    else
+                    {
+                        button.Visible = false;
+                        btnCerrarSession.Visible = true;
+                    }
+                }
+            }
+        }
+
+        
+
+
+
         //identificar que rol
         public void IdentificarRol()
         {
@@ -85,7 +128,7 @@ namespace Vista
             btnVenta.Visible = true;
             btnCompra.Visible = true;
             btnInforme.Visible = true;
-            btnControlStock.Visible = false;// lo puse false para que no vean, desp tengo que cambiar
+            btnControlStock.Visible = true;// lo puse false para que no vean, desp tengo que cambiar
             if (rol == -1)
             {
                 lblRol.Text = "QUIEN SOS";

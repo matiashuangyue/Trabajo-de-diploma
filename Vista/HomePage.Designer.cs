@@ -119,6 +119,7 @@
             resources.ApplyResources(this.btnVentaRealizada, "btnVentaRealizada");
             this.btnVentaRealizada.FlatAppearance.BorderSize = 0;
             this.btnVentaRealizada.Name = "btnVentaRealizada";
+            this.btnVentaRealizada.Tag = "Ver Informe";
             this.btnVentaRealizada.UseVisualStyleBackColor = false;
             this.btnVentaRealizada.Click += new System.EventHandler(this.btnVentaRealizada_Click);
             // 
@@ -128,6 +129,7 @@
             resources.ApplyResources(this.btnCompraRealizada, "btnCompraRealizada");
             this.btnCompraRealizada.FlatAppearance.BorderSize = 0;
             this.btnCompraRealizada.Name = "btnCompraRealizada";
+            this.btnCompraRealizada.Tag = "Ver Informe";
             this.btnCompraRealizada.UseVisualStyleBackColor = false;
             this.btnCompraRealizada.Click += new System.EventHandler(this.btnInfo_Click);
             // 
@@ -142,6 +144,7 @@
             this.btnInforme.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInforme.IconSize = 32;
             this.btnInforme.Name = "btnInforme";
+            this.btnInforme.Tag = "Ver Informe";
             this.btnInforme.UseVisualStyleBackColor = false;
             this.btnInforme.Click += new System.EventHandler(this.btnInforme_Click);
             // 
@@ -158,6 +161,7 @@
             resources.ApplyResources(this.btnIngresarStock, "btnIngresarStock");
             this.btnIngresarStock.FlatAppearance.BorderSize = 0;
             this.btnIngresarStock.Name = "btnIngresarStock";
+            this.btnIngresarStock.Tag = "Gestionar Stock";
             this.btnIngresarStock.UseVisualStyleBackColor = false;
             this.btnIngresarStock.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -172,6 +176,7 @@
             this.btnControlStock.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnControlStock.IconSize = 32;
             this.btnControlStock.Name = "btnControlStock";
+            this.btnControlStock.Tag = "Gestionar Stock";
             this.btnControlStock.UseVisualStyleBackColor = false;
             this.btnControlStock.Click += new System.EventHandler(this.btnControlStock_Click);
             // 
@@ -189,6 +194,7 @@
             resources.ApplyResources(this.btnModificarUsuario, "btnModificarUsuario");
             this.btnModificarUsuario.FlatAppearance.BorderSize = 0;
             this.btnModificarUsuario.Name = "btnModificarUsuario";
+            this.btnModificarUsuario.Tag = "Gestionar Usuario";
             this.btnModificarUsuario.UseVisualStyleBackColor = false;
             this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
             // 
@@ -198,6 +204,7 @@
             resources.ApplyResources(this.btnAgregarUsuario, "btnAgregarUsuario");
             this.btnAgregarUsuario.FlatAppearance.BorderSize = 0;
             this.btnAgregarUsuario.Name = "btnAgregarUsuario";
+            this.btnAgregarUsuario.Tag = "Gestionar Usuario";
             this.btnAgregarUsuario.UseVisualStyleBackColor = false;
             this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
             // 
@@ -212,6 +219,7 @@
             this.btnUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUsuario.IconSize = 32;
             this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.Tag = "Gestionar Usuario";
             this.btnUsuario.UseVisualStyleBackColor = false;
             this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click_1);
             // 
@@ -229,6 +237,7 @@
             resources.ApplyResources(this.btnModificacionProducto, "btnModificacionProducto");
             this.btnModificacionProducto.FlatAppearance.BorderSize = 0;
             this.btnModificacionProducto.Name = "btnModificacionProducto";
+            this.btnModificacionProducto.Tag = "Gestionar Producto";
             this.btnModificacionProducto.UseVisualStyleBackColor = false;
             this.btnModificacionProducto.Click += new System.EventHandler(this.btnModificarProducto_Click);
             // 
@@ -238,6 +247,7 @@
             resources.ApplyResources(this.btnAddProducto, "btnAddProducto");
             this.btnAddProducto.FlatAppearance.BorderSize = 0;
             this.btnAddProducto.Name = "btnAddProducto";
+            this.btnAddProducto.Tag = "Gestionar Producto";
             this.btnAddProducto.UseVisualStyleBackColor = false;
             this.btnAddProducto.Click += new System.EventHandler(this.btnAddProducto_Click);
             // 
@@ -252,6 +262,7 @@
             this.btnProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProducto.IconSize = 32;
             this.btnProducto.Name = "btnProducto";
+            this.btnProducto.Tag = "Gestionar Producto";
             this.btnProducto.UseVisualStyleBackColor = false;
             this.btnProducto.Click += new System.EventHandler(this.btnProducto_Click);
             // 
@@ -266,6 +277,7 @@
             this.btnCompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCompra.IconSize = 32;
             this.btnCompra.Name = "btnCompra";
+            this.btnCompra.Tag = "Compra";
             this.btnCompra.UseVisualStyleBackColor = false;
             this.btnCompra.Click += new System.EventHandler(this.btnCompra_Click);
             // 
@@ -280,6 +292,7 @@
             this.btnVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVenta.IconSize = 32;
             this.btnVenta.Name = "btnVenta";
+            this.btnVenta.Tag = "Venta";
             this.btnVenta.UseVisualStyleBackColor = false;
             this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 

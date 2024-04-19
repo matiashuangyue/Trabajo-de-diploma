@@ -44,5 +44,17 @@ namespace Controladora
         {
             return modUsuario.IsValidID(usuario);
         }
+
+
+        //permisos
+
+        public static List<string> ObtenerPermisosPorRol(int rol)
+        {
+            ModUsuario modUsuario = new ModUsuario();
+            return modUsuario.ObtenerPermisosPorRol(rol);
+        }
+
+
+
     }
 }

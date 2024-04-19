@@ -330,5 +330,49 @@ namespace Modelo
                 return -2; // error al modificar datos en SQL
             }
         }
+
+
+        //PERMISOS
+        public List<string> ObtenerPermisosPorRol(int rol)
+        {
+            List<string> permisos = new List<string>();
+
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string sql = @"
+                SELECT p.Permiso 
+                FROM Permisos p 
+                JOIN Roles_Permisos rp ON p.ID = rp.ID_Permiso 
+                JOIN Roles r ON rp.ID_Rol = r.ID 
+                WHERE r.ID = @RolID";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@RolID", rol);
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                permisos.Add(reader["Permiso"].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejar la excepción según tus necesidades
+                Console.WriteLine($"Error al obtener permisos: {ex.Message}");
+            }
+
+            return permisos;
+        }
+
+
+
     }
 }
