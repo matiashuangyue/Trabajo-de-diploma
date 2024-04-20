@@ -20,6 +20,7 @@ namespace Vista
         private int Estado;
         private ControlDGV controlDGV = new ControlDGV();
         private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlCompra controlCompra = new ControlCompra();
 
         public FormInfoCompra(int rol, int dNI)
         {
@@ -72,7 +73,8 @@ namespace Vista
             {
                 dgvCompras.DataSource = dataTable;
             }
-           // dgvCompras.DataSource = dataTable;
+            
+            // dgvCompras.DataSource = dataTable;
         }
 
 
@@ -121,7 +123,62 @@ namespace Vista
 
         private void dgvCompras_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+          
+        }
 
+        private void btnDarAlta_Click(object sender, EventArgs e)
+        {
+            if (dgvCompras.SelectedRows.Count > 0)
+            {
+                // Obtiene el ID de la compra, el DNI y el estado de la fila seleccionada
+                long IDCompra = Convert.ToInt64(dgvCompras.SelectedRows[0].Cells["ID_Compra"].Value);
+                int DNI = Convert.ToInt32(dgvCompras.SelectedRows[0].Cells["DNI_Usuario"].Value);
+                int estado = Convert.ToInt32(dgvCompras.SelectedRows[0].Cells["ID_Estado"].Value);
+
+                // Verifica si el estado actual es baja (0) o alta (1)
+                if (estado == 0)
+                {
+                    // Si está en baja, preguntar si quiere dar de alta
+                    DialogResult result = MessageBox.Show("¿Está seguro de cambiar el estado de esta compra a alta?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    // Si el usuario confirma la acción
+                    if (result == DialogResult.Yes)
+                    {
+                        // Cambia el estado a alta (1)
+                        estado = 1;
+                        controlCompra.CambiarEstadoCompra(IDCompra, estado);
+                        MessageBox.Show("La compra ha sido cambiada a estado de alta con éxito!");
+
+                        // Actualiza el ComboBox de estado
+                        cbEstado.SelectedItem = "Alta";
+                        // Actualiza el DataGridView
+                        CargarDatos(DNI, estado);
+                    }
+                }
+                else if (estado == 1)
+                {
+                    // Si está en alta, preguntar si quiere dar de baja
+                    DialogResult result = MessageBox.Show("¿Está seguro de cambiar el estado de esta compra a baja?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    // Si el usuario confirma la acción
+                    if (result == DialogResult.Yes)
+                    {
+                        // Cambia el estado a baja (0)
+                        estado = 0;
+                        controlCompra.CambiarEstadoCompra(IDCompra, estado);
+                        MessageBox.Show("La compra ha sido cambiada a estado de baja con éxito!");
+
+                        // Actualiza el ComboBox de estado
+                        cbEstado.SelectedItem = "Baja";
+                        // Actualiza el DataGridView
+                        CargarDatos(DNI, estado);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una compra para cambiar su estado.");
+            }
         }
     }
 }

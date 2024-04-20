@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvCompras = new System.Windows.Forms.DataGridView();
             this.comprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.trabajoDeDiplomaDataSet = new Vista.TrabajoDeDiplomaDataSet();
@@ -38,6 +38,7 @@
             this.cbProveedor = new System.Windows.Forms.ComboBox();
             this.cbEstado = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnDarAlta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trabajoDeDiplomaDataSet)).BeginInit();
@@ -46,20 +47,20 @@
             // dgvCompras
             // 
             this.dgvCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCompras.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvCompras.Location = new System.Drawing.Point(58, 222);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCompras.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCompras.Location = new System.Drawing.Point(58, 290);
             this.dgvCompras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvCompras.Name = "dgvCompras";
             this.dgvCompras.RowHeadersWidth = 51;
             this.dgvCompras.RowTemplate.Height = 27;
-            this.dgvCompras.Size = new System.Drawing.Size(1870, 991);
+            this.dgvCompras.Size = new System.Drawing.Size(1860, 923);
             this.dgvCompras.TabIndex = 0;
             this.dgvCompras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompras_CellContentClick);
             this.dgvCompras.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
@@ -125,11 +126,26 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Seleccionar Estado de Compras";
             // 
+            // btnDarAlta
+            // 
+            this.btnDarAlta.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnDarAlta.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDarAlta.ForeColor = System.Drawing.Color.Black;
+            this.btnDarAlta.Location = new System.Drawing.Point(1191, 192);
+            this.btnDarAlta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDarAlta.Name = "btnDarAlta";
+            this.btnDarAlta.Size = new System.Drawing.Size(709, 80);
+            this.btnDarAlta.TabIndex = 18;
+            this.btnDarAlta.Text = "Cambiar Estado De Compra";
+            this.btnDarAlta.UseVisualStyleBackColor = false;
+            this.btnDarAlta.Click += new System.EventHandler(this.btnDarAlta_Click);
+            // 
             // FormInfoCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2046, 1244);
+            this.Controls.Add(this.btnDarAlta);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.lblEmpleado);
@@ -157,5 +173,6 @@
         private System.Windows.Forms.ComboBox cbProveedor;
         private System.Windows.Forms.ComboBox cbEstado;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnDarAlta;
     }
 }

@@ -120,6 +120,31 @@ namespace Modelo
         }
 
 
+        public int CambiarEstadoCompra(long ID_Compra, int nuevoEstado)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string query = "UPDATE Compras SET ID_Estado = @nuevoEstado WHERE ID_Compra = @ID_Compra;";
+
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@ID_Compra", ID_Compra);
+                        cmd.Parameters.AddWithValue("@nuevoEstado", nuevoEstado);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return 1; // Cambio de estado completado correctamente
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // Manejar la excepción de manera adecuada
+                return -1; // Error al cambiar el estado
+            }
+        }
 
 
 
