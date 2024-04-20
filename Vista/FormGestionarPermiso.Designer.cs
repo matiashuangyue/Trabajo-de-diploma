@@ -1,6 +1,6 @@
 ﻿namespace Vista
 {
-    partial class FormInfoHistoriaCompraVenta
+    partial class FormGestionarPermiso
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // FormInfoHistoriaCompraVenta
+            // FormGestionarPermiso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2046, 1244);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FormInfoHistoriaCompraVenta";
-            this.Text = "Historia de compra y venta";
+            this.Name = "FormGestionarPermiso";
+            this.Text = "Gestionar Permisos";
             this.ResumeLayout(false);
 
         }

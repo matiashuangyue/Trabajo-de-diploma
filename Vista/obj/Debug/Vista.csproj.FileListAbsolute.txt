@@ -59,7 +59,6 @@ D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormAddProducto.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoVenta.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormModificacionesProducto.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormModificacionesUsuario.resources
-D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormProveedor.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormAddUsuario.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormVenta.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.HomePage.resources
@@ -72,4 +71,5 @@ D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\aa\Vista.resources.dll
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.Up2Date
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.exe
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.pdb
-D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoHistoriaCompraVenta.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormGestionarPermiso.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.Dashboard.resources

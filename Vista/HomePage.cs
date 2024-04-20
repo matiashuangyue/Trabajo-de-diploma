@@ -237,7 +237,7 @@ namespace Vista
         private void btnProveedor_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
-            OpenChidForm(new FormProveedor(rol));
+            OpenChidForm(new Dashboard(rol));
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
@@ -447,6 +447,11 @@ namespace Vista
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
