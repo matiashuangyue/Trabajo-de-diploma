@@ -28,9 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelDetalle = new System.Windows.Forms.Panel();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.ID_Detalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CantidadPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCerrarVenta = new System.Windows.Forms.Button();
             this.btnBuscarProducto = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -43,16 +48,11 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAgregarDetallePedido = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtNombDetalle = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCodigoDetalle = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.ID_Detalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CantidadPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelDetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -84,14 +84,14 @@
             this.Cantidad,
             this.Precio_Venta,
             this.CantidadPrecio});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDetalles.GridColor = System.Drawing.Color.Black;
             this.dgvDetalles.Location = new System.Drawing.Point(75, 744);
             this.dgvDetalles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -103,13 +103,48 @@
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvDetalles.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgwDetalles_CellFormatting);
             // 
+            // ID_Detalle
+            // 
+            this.ID_Detalle.HeaderText = "ID_Detalle";
+            this.ID_Detalle.MinimumWidth = 15;
+            this.ID_Detalle.Name = "ID_Detalle";
+            this.ID_Detalle.Width = 160;
+            // 
+            // ID_Producto
+            // 
+            this.ID_Producto.HeaderText = "ID_Producto";
+            this.ID_Producto.MinimumWidth = 6;
+            this.ID_Producto.Name = "ID_Producto";
+            this.ID_Producto.Width = 125;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 6;
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Width = 125;
+            // 
+            // Precio_Venta
+            // 
+            this.Precio_Venta.HeaderText = "Precio_Venta";
+            this.Precio_Venta.MinimumWidth = 6;
+            this.Precio_Venta.Name = "Precio_Venta";
+            this.Precio_Venta.Width = 125;
+            // 
+            // CantidadPrecio
+            // 
+            this.CantidadPrecio.HeaderText = "CantidadPrecio";
+            this.CantidadPrecio.MinimumWidth = 6;
+            this.CantidadPrecio.Name = "CantidadPrecio";
+            this.CantidadPrecio.Width = 125;
+            // 
             // btnCerrarVenta
             // 
             this.btnCerrarVenta.BackColor = System.Drawing.Color.Cornsilk;
             this.btnCerrarVenta.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarVenta.ForeColor = System.Drawing.Color.Black;
             this.btnCerrarVenta.Location = new System.Drawing.Point(1556, 775);
-            this.btnCerrarVenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrarVenta.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarVenta.Name = "btnCerrarVenta";
             this.btnCerrarVenta.Size = new System.Drawing.Size(276, 369);
             this.btnCerrarVenta.TabIndex = 18;
@@ -123,7 +158,7 @@
             this.btnBuscarProducto.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarProducto.ForeColor = System.Drawing.Color.Black;
             this.btnBuscarProducto.Location = new System.Drawing.Point(1173, 20);
-            this.btnBuscarProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarProducto.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarProducto.Name = "btnBuscarProducto";
             this.btnBuscarProducto.Size = new System.Drawing.Size(345, 135);
             this.btnBuscarProducto.TabIndex = 17;
@@ -160,7 +195,7 @@
             // 
             this.txtCliente.BackColor = System.Drawing.Color.Cornsilk;
             this.txtCliente.Location = new System.Drawing.Point(538, 285);
-            this.txtCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtCliente.Multiline = true;
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(470, 42);
@@ -183,7 +218,7 @@
             // 
             this.txtPorcentaje.BackColor = System.Drawing.Color.Cornsilk;
             this.txtPorcentaje.Location = new System.Drawing.Point(538, 128);
-            this.txtPorcentaje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPorcentaje.Margin = new System.Windows.Forms.Padding(4);
             this.txtPorcentaje.Multiline = true;
             this.txtPorcentaje.Name = "txtPorcentaje";
             this.txtPorcentaje.Size = new System.Drawing.Size(470, 42);
@@ -207,7 +242,7 @@
             this.txtPrecioDetalleVenta.BackColor = System.Drawing.Color.Cornsilk;
             this.txtPrecioDetalleVenta.Enabled = false;
             this.txtPrecioDetalleVenta.Location = new System.Drawing.Point(538, 180);
-            this.txtPrecioDetalleVenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecioDetalleVenta.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecioDetalleVenta.Multiline = true;
             this.txtPrecioDetalleVenta.Name = "txtPrecioDetalleVenta";
             this.txtPrecioDetalleVenta.Size = new System.Drawing.Size(470, 42);
@@ -230,7 +265,7 @@
             // 
             this.txtCantidad.BackColor = System.Drawing.Color.Cornsilk;
             this.txtCantidad.Location = new System.Drawing.Point(538, 230);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidad.Multiline = true;
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(470, 42);
@@ -255,7 +290,7 @@
             this.btnAgregarDetallePedido.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarDetallePedido.ForeColor = System.Drawing.Color.Black;
             this.btnAgregarDetallePedido.Location = new System.Drawing.Point(783, 396);
-            this.btnAgregarDetallePedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarDetallePedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarDetallePedido.Name = "btnAgregarDetallePedido";
             this.btnAgregarDetallePedido.Size = new System.Drawing.Size(316, 142);
             this.btnAgregarDetallePedido.TabIndex = 12;
@@ -263,11 +298,22 @@
             this.btnAgregarDetallePedido.UseVisualStyleBackColor = false;
             this.btnAgregarDetallePedido.Click += new System.EventHandler(this.btnAgregarDetallePedido_Click);
             // 
+            // txtNombre
+            // 
+            this.txtNombre.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtNombre.Location = new System.Drawing.Point(538, 75);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Multiline = true;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(470, 42);
+            this.txtNombre.TabIndex = 2;
+            this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // txtNombDetalle
             // 
             this.txtNombDetalle.BackColor = System.Drawing.Color.Cornsilk;
             this.txtNombDetalle.Location = new System.Drawing.Point(538, 75);
-            this.txtNombDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombDetalle.Multiline = true;
             this.txtNombDetalle.Name = "txtNombDetalle";
             this.txtNombDetalle.Size = new System.Drawing.Size(470, 42);
@@ -304,57 +350,11 @@
             this.txtCodigoDetalle.BackColor = System.Drawing.Color.Cornsilk;
             this.txtCodigoDetalle.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoDetalle.Location = new System.Drawing.Point(613, 58);
-            this.txtCodigoDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigoDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoDetalle.Multiline = true;
             this.txtCodigoDetalle.Name = "txtCodigoDetalle";
             this.txtCodigoDetalle.Size = new System.Drawing.Size(470, 42);
             this.txtCodigoDetalle.TabIndex = 14;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtNombre.Location = new System.Drawing.Point(538, 75);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombre.Multiline = true;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(470, 42);
-            this.txtNombre.TabIndex = 2;
-            this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // ID_Detalle
-            // 
-            this.ID_Detalle.HeaderText = "ID_Detalle";
-            this.ID_Detalle.MinimumWidth = 15;
-            this.ID_Detalle.Name = "ID_Detalle";
-            this.ID_Detalle.Width = 160;
-            // 
-            // ID_Producto
-            // 
-            this.ID_Producto.HeaderText = "ID_Producto";
-            this.ID_Producto.MinimumWidth = 6;
-            this.ID_Producto.Name = "ID_Producto";
-            this.ID_Producto.Width = 125;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 6;
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.Width = 125;
-            // 
-            // Precio_Venta
-            // 
-            this.Precio_Venta.HeaderText = "Precio_Venta";
-            this.Precio_Venta.MinimumWidth = 6;
-            this.Precio_Venta.Name = "Precio_Venta";
-            this.Precio_Venta.Width = 125;
-            // 
-            // CantidadPrecio
-            // 
-            this.CantidadPrecio.HeaderText = "CantidadPrecio";
-            this.CantidadPrecio.MinimumWidth = 6;
-            this.CantidadPrecio.Name = "CantidadPrecio";
-            this.CantidadPrecio.Width = 125;
             // 
             // FormVenta
             // 

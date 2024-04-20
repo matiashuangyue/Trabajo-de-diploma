@@ -250,23 +250,7 @@ namespace Vista
         {
 
         }
-        private void CargarDatos(DetallePedido detallePediddo)                         //tengo que borrarlo
-        {
-            //dgwDetalles.DataSource = controlPedido.ObtenerDetallePedido(detallePediddo);
-            DataTable dataTable = controlPedido.ObtenerDetallePedido(detallePediddo);
-
-            // Suscribir el evento CellFormatting
-            dgvDetalles.CellFormatting += (sender, e) =>
-            {
-                if (e.Value == DBNull.Value)
-                {
-                    e.Value = "Nulo"; // O el valor que desees mostrar para DBNull
-                    e.FormattingApplied = true;
-                }
-            };
-
-            dgvDetalles.DataSource = dataTable;
-        }
+     
 
         private void btnCerrarVenta_Click(object sender, EventArgs e)
         {

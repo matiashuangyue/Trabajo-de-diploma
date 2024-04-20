@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -57,10 +58,16 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCodigoDetalle = new System.Windows.Forms.TextBox();
+            this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.ID_Compra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.panelCompra.SuspendLayout();
             this.panelDetalle.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -240,6 +247,7 @@
             // panelDetalle
             // 
             this.panelDetalle.BackColor = System.Drawing.Color.White;
+            this.panelDetalle.Controls.Add(this.dgvDetalles);
             this.panelDetalle.Controls.Add(this.btnBuscarProducto);
             this.panelDetalle.Controls.Add(this.groupBox2);
             this.panelDetalle.Controls.Add(this.label10);
@@ -247,8 +255,9 @@
             this.panelDetalle.Location = new System.Drawing.Point(26, 68);
             this.panelDetalle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelDetalle.Name = "panelDetalle";
-            this.panelDetalle.Size = new System.Drawing.Size(1794, 1082);
+            this.panelDetalle.Size = new System.Drawing.Size(1955, 1477);
             this.panelDetalle.TabIndex = 18;
+            this.panelDetalle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDetalle_Paint);
             // 
             // btnBuscarProducto
             // 
@@ -429,11 +438,62 @@
             this.txtCodigoDetalle.Size = new System.Drawing.Size(470, 42);
             this.txtCodigoDetalle.TabIndex = 14;
             // 
+            // dgvDetalles
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDetalles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID_Compra,
+            this.ID_Producto,
+            this.Cantidad,
+            this.PrecioUnitario});
+            this.dgvDetalles.Location = new System.Drawing.Point(74, 825);
+            this.dgvDetalles.Name = "dgvDetalles";
+            this.dgvDetalles.RowHeadersWidth = 62;
+            this.dgvDetalles.RowTemplate.Height = 30;
+            this.dgvDetalles.Size = new System.Drawing.Size(1326, 584);
+            this.dgvDetalles.TabIndex = 18;
+            // 
+            // ID_Compra
+            // 
+            this.ID_Compra.HeaderText = "ID de Compra";
+            this.ID_Compra.MinimumWidth = 8;
+            this.ID_Compra.Name = "ID_Compra";
+            this.ID_Compra.Width = 150;
+            // 
+            // ID_Producto
+            // 
+            this.ID_Producto.HeaderText = "ID de Producto";
+            this.ID_Producto.MinimumWidth = 8;
+            this.ID_Producto.Name = "ID_Producto";
+            this.ID_Producto.Width = 150;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 8;
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Width = 150;
+            // 
+            // PrecioUnitario
+            // 
+            this.PrecioUnitario.HeaderText = "Precio Unitario";
+            this.PrecioUnitario.MinimumWidth = 8;
+            this.PrecioUnitario.Name = "PrecioUnitario";
+            this.PrecioUnitario.Width = 150;
+            // 
             // FormCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2046, 1244);
+            this.ClientSize = new System.Drawing.Size(2046, 1558);
             this.Controls.Add(this.panelDetalle);
             this.Controls.Add(this.panelCompra);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -448,6 +508,7 @@
             this.panelDetalle.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -483,5 +544,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtCodigoDetalle;
         private System.Windows.Forms.Button btnCerrarCompra;
+        private System.Windows.Forms.DataGridView dgvDetalles;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Compra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioUnitario;
     }
 }
