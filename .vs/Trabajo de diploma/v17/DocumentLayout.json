@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\proyecto\\Trabajo-de-diploma\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\forminfocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|d:\\proyecto\\trabajo-de-diploma\\modelo\\moddgv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|D:\\proyecto\\Trabajo-de-diploma\\modelo\\moddgv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|solutionrelative:modelo\\moddgv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -37,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|D:\\proyecto\\Trabajo-de-diploma\\modelo\\modusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|solutionrelative:modelo\\modusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -149,7 +145,7 @@
               "RelativeDocumentMoniker": "Vista\\FormInfoCompra.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoCompra.cs",
               "RelativeToolTip": "Vista\\FormInfoCompra.cs",
-              "ViewState": "AQIAAJoAAAAAAAAAAAAqwK4AAAARAAAA",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAiwJoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T23:45:41.812Z",
               "IsPinned": true,
@@ -166,8 +162,7 @@
               "ViewState": "AQIAAIgAAAAAAAAAAAAkwJgAAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T23:55:25.765Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -180,8 +175,7 @@
               "ViewState": "AQIAAAwAAAAAAAAAAIA2wCIAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T23:59:31.994Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -234,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "FormCompra.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormCompra.cs",
               "RelativeDocumentMoniker": "Vista\\FormCompra.cs",
@@ -246,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "FormGestionarPermiso.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormGestionarPermiso.cs",
               "RelativeDocumentMoniker": "Vista\\FormGestionarPermiso.cs",
@@ -257,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "Pedido.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Entidades\\Pedido.cs",
               "RelativeDocumentMoniker": "Entidades\\Pedido.cs",
@@ -269,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "ControlProducto.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Controladora\\ControlProducto.cs",
               "RelativeDocumentMoniker": "Controladora\\ControlProducto.cs",
@@ -281,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "FormControlStock.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormControlStock.cs",
               "RelativeDocumentMoniker": "Vista\\FormControlStock.cs",
@@ -292,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "FormAddUsuario.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddUsuario.cs",
               "RelativeDocumentMoniker": "Vista\\FormAddUsuario.cs",
@@ -303,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\Login.cs",
               "RelativeDocumentMoniker": "Vista\\Login.cs",
@@ -314,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "FormModificacionesUsuario.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesUsuario.cs",
               "RelativeDocumentMoniker": "Vista\\FormModificacionesUsuario.cs",
@@ -325,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "FormModificacionesProducto.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesProducto.cs",
               "RelativeDocumentMoniker": "Vista\\FormModificacionesProducto.cs",
@@ -336,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "FormAddProducto.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddProducto.cs",
               "RelativeDocumentMoniker": "Vista\\FormAddProducto.cs",
@@ -347,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "FormGestionarPermiso.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormGestionarPermiso.cs",
               "RelativeDocumentMoniker": "Vista\\FormGestionarPermiso.cs",
@@ -359,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "FormAddUsuario.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormAddUsuario.cs",
               "RelativeDocumentMoniker": "Vista\\FormAddUsuario.cs",
@@ -371,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "FormInforme.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInforme.cs",
               "RelativeDocumentMoniker": "Vista\\FormInforme.cs",
@@ -383,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "FormControlStock.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormControlStock.cs",
               "RelativeDocumentMoniker": "Vista\\FormControlStock.cs",
@@ -395,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "ControlPedido.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Controladora\\ControlPedido.cs",
               "RelativeDocumentMoniker": "Controladora\\ControlPedido.cs",
@@ -407,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "FormModificacionesProducto.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesProducto.cs",
               "RelativeDocumentMoniker": "Vista\\FormModificacionesProducto.cs",
@@ -416,39 +410,6 @@
               "ViewState": "AQIAAJgAAAAAAAAAAAAkwKIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-31T17:11:58.742Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "4674fb5e-774a-423f-9738-633e4ad9b142",
-        "Display": 1,
-        "X": 35,
-        "Y": 9,
-        "Width": 1205,
-        "Height": 785,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormInfoVenta.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
-              "RelativeDocumentMoniker": "Vista\\FormInfoVenta.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vista\\FormInfoVenta.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T18:13:00.068Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
