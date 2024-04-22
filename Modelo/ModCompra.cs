@@ -83,7 +83,6 @@ namespace Modelo
                         cmd.Parameters.AddWithValue("@PrecioUnitario", detalleCompra.PrecioUnitario);
                         cmd.ExecuteNonQuery();
                         return 1;
-                       
                     }
                     cnn.Close();
                  }

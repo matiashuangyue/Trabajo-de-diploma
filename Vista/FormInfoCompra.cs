@@ -29,7 +29,7 @@ namespace Vista
             this.Rol = rol;
             this.DNI = dNI;
             cbEstado.SelectedItem = "Alta";
-
+            dtpFechaInicio.Value = new DateTime(2020, 1, 1);
         }
 
         private void CargarNombreCombobox(int IDROL)
@@ -55,7 +55,7 @@ namespace Vista
 
         }
 
-        private void CargarDatos(int DNI,int Estado)
+        private void CargarDatos2(int DNI,int Estado)
         {
             //dgwDetalles.DataSource = controlPedido.ObtenerDetallePedido(detallePediddo);
             DataTable dataTable = controlDGV.ObtenerCompra(DNI,Estado);
@@ -77,7 +77,29 @@ namespace Vista
             // dgvCompras.DataSource = dataTable;
         }
 
+        private void CargarDatos(int DNI, int Estado, DateTime? fechaInicio = null, DateTime? fechaFin = null)
+        {
+            DataTable dataTable;
+            if (fechaInicio.HasValue && fechaFin.HasValue)
+            {
+                dataTable = controlDGV.ObtenerCompraPorFechaYEstado(DNI, fechaInicio.Value, fechaFin.Value, Estado);
+            }
+            else
+            {
+                dataTable = controlDGV.ObtenerCompra(DNI, Estado);
+            }
 
+            dgvCompras.CellFormatting += (sender, e) =>
+            {
+                if (e.Value == DBNull.Value)
+                {
+                    e.Value = "Nulo";
+                    e.FormattingApplied = true;
+                }
+            };
+
+            dgvCompras.DataSource = dataTable;
+        }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
@@ -100,14 +122,7 @@ namespace Vista
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbEstado.SelectedItem == "Alta")
-            {
-              Estado = 1;
-            }
-            else
-            {
-               Estado = 0;
-            }
+            Estado = cbEstado.SelectedItem.ToString() == "Alta" ? 1 : 0;
             cambiarDGV();
         }
 
@@ -115,10 +130,12 @@ namespace Vista
         private void cambiarDGV()
         {
             dgvCompras.DataSource = null;
-            string NombreVendedor = cbProveedor.SelectedItem.ToString();
-            int DNIVendedor = controlUsuario.GetDNI(NombreVendedor);
-            int estado = Estado;
-            CargarDatos(DNIVendedor,estado);
+            string NombreVendedor = cbProveedor.SelectedItem?.ToString();
+            if (NombreVendedor != null)
+            {
+                int DNIVendedor = controlUsuario.GetDNI(NombreVendedor);
+                FILTRAR(DNIVendedor, dtpFechaInicio.Value, dtpFechaFin.Value, Estado);
+            }
         }
 
         private void dgvCompras_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -126,59 +143,51 @@ namespace Vista
           
         }
 
+        private void FILTRAR(int DNI, DateTime fechaInicio, DateTime fechaFin, int estado)
+        {
+            CargarDatos(DNI, estado, fechaInicio, fechaFin);
+        }
+
+      
         private void btnDarAlta_Click(object sender, EventArgs e)
         {
             if (dgvCompras.SelectedRows.Count > 0)
             {
-                // Obtiene el ID de la compra, el DNI y el estado de la fila seleccionada
                 long IDCompra = Convert.ToInt64(dgvCompras.SelectedRows[0].Cells["ID_Compra"].Value);
                 int DNI = Convert.ToInt32(dgvCompras.SelectedRows[0].Cells["DNI_Usuario"].Value);
                 int estado = Convert.ToInt32(dgvCompras.SelectedRows[0].Cells["ID_Estado"].Value);
 
-                // Verifica si el estado actual es baja (0) o alta (1)
-                if (estado == 0)
+                DialogResult result = MessageBox.Show(estado == 0 ?
+                    "¿Está seguro de cambiar el estado de esta compra a alta?" :
+                    "¿Está seguro de cambiar el estado de esta compra a baja?",
+                    "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
                 {
-                    // Si está en baja, preguntar si quiere dar de alta
-                    DialogResult result = MessageBox.Show("¿Está seguro de cambiar el estado de esta compra a alta?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    estado = estado == 0 ? 1 : 0;
+                    controlCompra.CambiarEstadoCompra(IDCompra, estado);
+                    MessageBox.Show(estado == 0 ? "La compra ha sido cambiada a estado de baja con éxito!" :
+                        "La compra ha sido cambiada a estado de alta con éxito!");
 
-                    // Si el usuario confirma la acción
-                    if (result == DialogResult.Yes)
-                    {
-                        // Cambia el estado a alta (1)
-                        estado = 1;
-                        controlCompra.CambiarEstadoCompra(IDCompra, estado);
-                        MessageBox.Show("La compra ha sido cambiada a estado de alta con éxito!");
-
-                        // Actualiza el ComboBox de estado
-                        cbEstado.SelectedItem = "Alta";
-                        // Actualiza el DataGridView
-                        CargarDatos(DNI, estado);
-                    }
-                }
-                else if (estado == 1)
-                {
-                    // Si está en alta, preguntar si quiere dar de baja
-                    DialogResult result = MessageBox.Show("¿Está seguro de cambiar el estado de esta compra a baja?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                    // Si el usuario confirma la acción
-                    if (result == DialogResult.Yes)
-                    {
-                        // Cambia el estado a baja (0)
-                        estado = 0;
-                        controlCompra.CambiarEstadoCompra(IDCompra, estado);
-                        MessageBox.Show("La compra ha sido cambiada a estado de baja con éxito!");
-
-                        // Actualiza el ComboBox de estado
-                        cbEstado.SelectedItem = "Baja";
-                        // Actualiza el DataGridView
-                        CargarDatos(DNI, estado);
-                    }
+                    cbEstado.SelectedItem = estado == 0 ? "Baja" : "Alta";
+                    CargarDatos(DNI, estado);
+                    cambiarDGV();
                 }
             }
             else
             {
                 MessageBox.Show("Por favor, seleccione una compra para cambiar su estado.");
             }
+        }
+
+        private void dtpFechaInicio_ValueChanged(object sender, EventArgs e)
+        {
+            cambiarDGV();
+        }
+
+        private void dtpFechaFin_ValueChanged(object sender, EventArgs e)
+        {
+            cambiarDGV();
         }
     }
 }

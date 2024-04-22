@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class FormInfoHistoriaCompraVenta : Form
+    public partial class FormGestionarPermiso : Form
     {
         public Button BtnGuardarDetalle;
-        public FormInfoHistoriaCompraVenta()
+        public FormGestionarPermiso()
         {
             InitializeComponent();
         }

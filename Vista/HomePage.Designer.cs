@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnGestionarPermisos = new FontAwesome.Sharp.IconButton();
             this.btnCerrarSession = new FontAwesome.Sharp.IconButton();
             this.panelInformeSubmenu = new System.Windows.Forms.Panel();
             this.btnVentaRealizada = new System.Windows.Forms.Button();
@@ -77,6 +78,7 @@
             // 
             resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.BackColor = System.Drawing.Color.CadetBlue;
+            this.panelMenu.Controls.Add(this.btnGestionarPermisos);
             this.panelMenu.Controls.Add(this.btnCerrarSession);
             this.panelMenu.Controls.Add(this.panelInformeSubmenu);
             this.panelMenu.Controls.Add(this.btnInforme);
@@ -91,11 +93,25 @@
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Name = "panelMenu";
             // 
+            // btnGestionarPermisos
+            // 
+            this.btnGestionarPermisos.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.btnGestionarPermisos, "btnGestionarPermisos");
+            this.btnGestionarPermisos.FlatAppearance.BorderSize = 0;
+            this.btnGestionarPermisos.ForeColor = System.Drawing.Color.White;
+            this.btnGestionarPermisos.IconChar = FontAwesome.Sharp.IconChar.BarChart;
+            this.btnGestionarPermisos.IconColor = System.Drawing.Color.White;
+            this.btnGestionarPermisos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGestionarPermisos.IconSize = 32;
+            this.btnGestionarPermisos.Name = "btnGestionarPermisos";
+            this.btnGestionarPermisos.Tag = "Permisos";
+            this.btnGestionarPermisos.UseVisualStyleBackColor = false;
+            // 
             // btnCerrarSession
             // 
             this.btnCerrarSession.BackColor = System.Drawing.Color.CadetBlue;
-            resources.ApplyResources(this.btnCerrarSession, "btnCerrarSession");
             this.btnCerrarSession.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnCerrarSession, "btnCerrarSession");
             this.btnCerrarSession.ForeColor = System.Drawing.Color.White;
             this.btnCerrarSession.IconChar = FontAwesome.Sharp.IconChar.Backspace;
             this.btnCerrarSession.IconColor = System.Drawing.Color.White;
@@ -319,6 +335,7 @@
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
@@ -395,6 +412,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
             this.ForeColor = System.Drawing.Color.Gainsboro;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "HomePage";
             this.Load += new System.EventHandler(this.HomePage_Load);
             this.panelMenu.ResumeLayout(false);
@@ -443,7 +461,8 @@
         private System.Windows.Forms.Panel panelInformeSubmenu;
         private System.Windows.Forms.Button btnCompraRealizada;
         private System.Windows.Forms.Button btnVentaRealizada;
-        private FontAwesome.Sharp.IconButton btnCerrarSession;
         private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconButton btnCerrarSession;
+        private FontAwesome.Sharp.IconButton btnGestionarPermisos;
     }
 }
