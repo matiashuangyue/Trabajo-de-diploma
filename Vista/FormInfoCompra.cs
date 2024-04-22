@@ -126,6 +126,34 @@ namespace Vista
           
         }
 
+        private void FILTRAR(int DNI, DateTime fechaInicio, DateTime fechaFin)
+        {
+            // Obtener los pedidos del vendedor dentro del rango de fechas
+            DataTable dataTable = controlDGV.ObtenerPedidoPorFecha(DNI, fechaInicio, fechaFin);
+
+            // Suscribir el evento CellFormatting
+            dgvCompras.CellFormatting += (sender, e) =>
+            {
+                if (e.Value == DBNull.Value)
+                {
+                    e.Value = "Nulo"; // O el valor que desees mostrar para DBNull
+                    e.FormattingApplied = true;
+                }
+            };
+
+            dgvCompras.DataSource = dataTable;
+        }
+
+        private void ActualizarDGV()
+        {
+            string NombreProveedor = cbProveedor.SelectedItem?.ToString();
+            if (NombreProveedor != null)
+            {
+                int DNIProveedor = controlUsuario.GetDNI(NombreProveedor);
+                FILTRAR(DNIProveedor, dtpFechaInicio.Value, dtpFechaFin.Value);
+            }
+        }
+
         private void btnDarAlta_Click(object sender, EventArgs e)
         {
             if (dgvCompras.SelectedRows.Count > 0)
@@ -179,6 +207,16 @@ namespace Vista
             {
                 MessageBox.Show("Por favor, seleccione una compra para cambiar su estado.");
             }
+        }
+
+        private void dtpFechaInicio_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarDGV();
+        }
+
+        private void dtpFechaFin_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

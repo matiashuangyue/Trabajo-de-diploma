@@ -27,6 +27,11 @@ namespace Controladora
         {
             return modDGV.ObtenerPedidosPorFecha(DNI, fechaInicio, fechaFin);
         }
+
+        public DataTable ObtenerCompraPorFechaYEstado(int DNI, DateTime fechaInicio, DateTime fechaFin, int Estado)
+        {
+            return modDGV.ObtenerComprasPorFechaYEstado(DNI, fechaInicio, fechaFin, Estado);
+        }
         public DataTable ObtenerCompra(int DNI, int Estado)
         {
             return modDGV.ObtenerCompras(DNI, Estado);

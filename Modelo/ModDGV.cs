@@ -74,6 +74,9 @@ namespace Modelo
         }
 
 
+ 
+
+
         public DataTable ObtenerPedidos(int DNI)
         {
             try
@@ -144,6 +147,34 @@ namespace Modelo
                 Console.WriteLine(ex.Message);
                 // Manejar la excepción de manera adecuada
                 return null; // Error al modificar datos
+            }
+        }
+
+        public DataTable ObtenerComprasPorFechaYEstado(int DNI, DateTime fechaInicio, DateTime fechaFin, int estado)
+        {
+            try
+            {
+                // Obtener todas las compras del proveedor
+                DataTable todasLasCompras = ObtenerCompras(DNI, estado);
+
+                // Filtrar las compras por fecha
+                DataTable comprasFiltradas = todasLasCompras.Clone(); // Clonar la estructura del DataTable original
+
+                foreach (DataRow row in todasLasCompras.Rows)
+                {
+                    DateTime fechaCompra = Convert.ToDateTime(row["Fecha_Compra"]);
+                    if (fechaCompra >= fechaInicio && fechaCompra <= fechaFin)
+                    {
+                        comprasFiltradas.ImportRow(row); // Agregar la fila al DataTable de compras filtradas
+                    }
+                }
+
+                return comprasFiltradas;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
             }
         }
 

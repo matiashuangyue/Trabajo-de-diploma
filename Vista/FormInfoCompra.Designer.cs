@@ -39,6 +39,10 @@
             this.cbEstado = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDarAlta = new System.Windows.Forms.Button();
+            this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trabajoDeDiplomaDataSet)).BeginInit();
@@ -55,12 +59,12 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCompras.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvCompras.Location = new System.Drawing.Point(58, 290);
+            this.dgvCompras.Location = new System.Drawing.Point(58, 502);
             this.dgvCompras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvCompras.Name = "dgvCompras";
             this.dgvCompras.RowHeadersWidth = 51;
             this.dgvCompras.RowTemplate.Height = 27;
-            this.dgvCompras.Size = new System.Drawing.Size(1860, 923);
+            this.dgvCompras.Size = new System.Drawing.Size(1860, 711);
             this.dgvCompras.TabIndex = 0;
             this.dgvCompras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompras_CellContentClick);
             this.dgvCompras.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
@@ -131,7 +135,7 @@
             this.btnDarAlta.BackColor = System.Drawing.Color.Cornsilk;
             this.btnDarAlta.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDarAlta.ForeColor = System.Drawing.Color.Black;
-            this.btnDarAlta.Location = new System.Drawing.Point(1191, 192);
+            this.btnDarAlta.Location = new System.Drawing.Point(1191, 383);
             this.btnDarAlta.Margin = new System.Windows.Forms.Padding(4);
             this.btnDarAlta.Name = "btnDarAlta";
             this.btnDarAlta.Size = new System.Drawing.Size(709, 80);
@@ -140,11 +144,60 @@
             this.btnDarAlta.UseVisualStyleBackColor = false;
             this.btnDarAlta.Click += new System.EventHandler(this.btnDarAlta_Click);
             // 
+            // dtpFechaFin
+            // 
+            this.dtpFechaFin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaFin.Location = new System.Drawing.Point(1354, 307);
+            this.dtpFechaFin.Name = "dtpFechaFin";
+            this.dtpFechaFin.Size = new System.Drawing.Size(546, 37);
+            this.dtpFechaFin.TabIndex = 23;
+            this.dtpFechaFin.ValueChanged += new System.EventHandler(this.dtpFechaFin_ValueChanged);
+            // 
+            // dtpFechaInicio
+            // 
+            this.dtpFechaInicio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaInicio.Location = new System.Drawing.Point(1354, 216);
+            this.dtpFechaInicio.Name = "dtpFechaInicio";
+            this.dtpFechaInicio.Size = new System.Drawing.Size(546, 37);
+            this.dtpFechaInicio.TabIndex = 24;
+            this.dtpFechaInicio.Value = new System.DateTime(2024, 4, 8, 20, 25, 35, 0);
+            this.dtpFechaInicio.ValueChanged += new System.EventHandler(this.dtpFechaInicio_ValueChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(237, 310);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 34);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Hasta :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(52, 217);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(291, 34);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Fecha Inicio DESDE :";
+            // 
             // FormInfoCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2046, 1244);
+            this.Controls.Add(this.dtpFechaFin);
+            this.Controls.Add(this.dtpFechaInicio);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnDarAlta);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbEstado);
@@ -174,5 +227,9 @@
         private System.Windows.Forms.ComboBox cbEstado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDarAlta;
+        private System.Windows.Forms.DateTimePicker dtpFechaFin;
+        private System.Windows.Forms.DateTimePicker dtpFechaInicio;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
     }
 }
