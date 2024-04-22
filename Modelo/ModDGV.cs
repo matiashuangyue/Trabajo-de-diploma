@@ -154,7 +154,7 @@ namespace Modelo
         {
             try
             {
-                // Obtener todas las compras del proveedor
+                // Obtener todas las compras del proveedor con el estado especificado
                 DataTable todasLasCompras = ObtenerCompras(DNI, estado);
 
                 // Filtrar las compras por fecha
@@ -162,7 +162,7 @@ namespace Modelo
 
                 foreach (DataRow row in todasLasCompras.Rows)
                 {
-                    DateTime fechaCompra = Convert.ToDateTime(row["Fecha_Compra"]);
+                    DateTime fechaCompra = Convert.ToDateTime(row["Fecha"]);
                     if (fechaCompra >= fechaInicio && fechaCompra <= fechaFin)
                     {
                         comprasFiltradas.ImportRow(row); // Agregar la fila al DataTable de compras filtradas
