@@ -455,5 +455,11 @@ namespace Vista
         {
 
         }
+
+        private void btnGestionarPermisos_Click(object sender, EventArgs e)
+        {
+            OpenChidForm(new FormGestionarPermiso(rol, UserDNI));
+            hideSubmenu();
+        }
     }
 }

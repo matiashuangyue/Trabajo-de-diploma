@@ -53,8 +53,26 @@ namespace Controladora
             ModUsuario modUsuario = new ModUsuario();
             return modUsuario.ObtenerPermisosPorRol(rol);
         }
+        public static List<string> ObtenerPermisos()
+        {
+            ModUsuario modUsuario = new ModUsuario();
+            return modUsuario.ObtenerPermisos();
+        }
 
+        public static List<string> ObtenerRoles()
+        {
+            ModUsuario modUsuario = new ModUsuario();
+            return modUsuario.ObtenerRoles();
+        }
 
+        public int CrearNuevoRol(string rol)
+        {
+            return modUsuario.CrearNuevoRol(rol);
+        }
+        public void AgregarPermisoARol(int idRol, string permiso)
+        {
+            modUsuario.AgregarPermisoARol(idRol, permiso);
+        }
 
     }
 }

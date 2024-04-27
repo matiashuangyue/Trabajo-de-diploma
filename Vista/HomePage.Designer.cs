@@ -104,8 +104,9 @@
             this.btnGestionarPermisos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGestionarPermisos.IconSize = 32;
             this.btnGestionarPermisos.Name = "btnGestionarPermisos";
-            this.btnGestionarPermisos.Tag = "Permisos";
+            this.btnGestionarPermisos.Tag = "Gestionar Permisos";
             this.btnGestionarPermisos.UseVisualStyleBackColor = false;
+            this.btnGestionarPermisos.Click += new System.EventHandler(this.btnGestionarPermisos_Click);
             // 
             // btnCerrarSession
             // 

@@ -235,8 +235,56 @@ namespace Modelo
             }
         }
 
+        public int CrearNuevoRol(string nombreRol)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
 
+                    // Obtener el último ID de la tabla Roles
+                    int ultimoId = ObtenerUltimoIdRol(cnn);
 
+                    // Incrementar el ID para el nuevo rol
+                    int nuevoId = ultimoId + 1;
+
+                    // Insertar el nuevo rol en la tabla Roles
+                    string query = "INSERT INTO Roles (ID, Rol) VALUES (@Id, @NombreRol)";
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@Id", nuevoId);
+                        cmd.Parameters.AddWithValue("@NombreRol", nombreRol);
+                        cmd.ExecuteNonQuery();
+                        return nuevoId;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al crear nuevo rol: {ex.Message}");
+                return -1; // Retornar un valor negativo para indicar un error
+            }
+        }
+        private int ObtenerUltimoIdRol(SqlConnection cnn)
+        {
+            // Consulta para obtener el último ID de la tabla Roles
+            string query = "SELECT MAX(ID) FROM Roles";
+
+            // Ejecutar la consulta y obtener el último ID
+            using (SqlCommand cmd = new SqlCommand(query, cnn))
+            {
+                object result = cmd.ExecuteScalar();
+                if (result != DBNull.Value && result != null)
+                {
+                    return Convert.ToInt32(result);
+                }
+                else
+                {
+                    return 0; // Si no hay registros en la tabla, se devuelve 0
+                }
+            }
+        }
 
         public Usuario BuscarUsuarioPorDNI(int dni)
         {
@@ -372,7 +420,143 @@ namespace Modelo
             return permisos;
         }
 
+        public List<string> ObtenerPermisos()
+        {
+            List<string> permisos = new List<string>();
 
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string sql = " SELECT Permiso FROM Permisos ";
+                
+               
+
+                    using (SqlCommand cmd = new SqlCommand(sql, cnn))
+                    {
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                permisos.Add(reader["Permiso"].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejar la excepción según tus necesidades
+                Console.WriteLine($"Error al obtener permisos: {ex.Message}");
+            }
+
+            return permisos;
+        }
+
+        public List<string> ObtenerRoles()
+        {
+            List<string> roles = new List<string>();
+
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string sql = " SELECT Rol FROM Roles ";
+
+
+
+                    using (SqlCommand cmd = new SqlCommand(sql, cnn))
+                    {
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                roles.Add(reader["Rol"].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejar la excepción según tus necesidades
+                Console.WriteLine($"Error al obtener roles: {ex.Message}");
+            }
+
+            return roles;
+        }
+
+        public void AgregarPermisoARol(int idRol, string permiso)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+
+                    // Consulta para insertar el permiso asociado al rol en la tabla Roles_Permisos
+                    string query = "INSERT INTO Roles_Permisos (ID_Rol, ID_Permiso) VALUES (@ID_Rol, @ID_Permiso)";
+
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@ID_Rol", idRol);
+
+                        // Supongamos que tienes una tabla "Permisos" donde almacenas los permisos y sus respectivos IDs
+                        // Aquí buscas el ID del permiso en base a su nombre
+                        int idPermiso = ObtenerIdPermiso(permiso);
+
+                        cmd.Parameters.AddWithValue("@ID_Permiso", idPermiso);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al agregar permiso al rol: {ex.Message}");
+                // Manejar la excepción según tus necesidades
+            }
+        }
+
+        // Método para obtener el ID del permiso en base a su nombre
+        private int ObtenerIdPermiso(string permiso)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+
+                    // Consulta para obtener el ID del permiso en base a su nombre
+                    string query = "SELECT ID FROM Permisos WHERE Permiso = @Permiso";
+
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@Permiso", permiso);
+
+                        object result = cmd.ExecuteScalar();
+                        if (result != DBNull.Value && result != null)
+                        {
+                            return Convert.ToInt32(result);
+                        }
+                        else
+                        {
+                            // Si el permiso no existe, puedes decidir qué hacer, por ejemplo, lanzar una excepción
+                            throw new InvalidOperationException("El permiso especificado no existe en la base de datos.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al obtener ID del permiso: {ex.Message}");
+                // Manejar la excepción según tus necesidades
+                return -1; // Retornar un valor negativo para indicar un error
+            }
+        }
 
     }
 }

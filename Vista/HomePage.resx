@@ -529,7 +529,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnModificarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>436, 87</value>
+    <value>436, 72</value>
   </data>
   <data name="btnModificarUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
