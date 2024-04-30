@@ -19,7 +19,8 @@ namespace Vista
         private int Rol;
         private int DNI;
         private int Estado;
-        
+        // Declara una variable para almacenar los permisos seleccionados
+        private List<string> permisosSeleccionados = new List<string>();
         public FormGestionarPermiso(int dni, int  rol)
         {
             
@@ -31,32 +32,41 @@ namespace Vista
             
 
         }
-        private void defaut()
-        {
-          
-            for (int i = 0; i < clbPermisos.Items.Count; i++)
-            {
-                clbPermisos.SetItemChecked(i, false);
-            }
-           
-        }
-        
+       
+
         private void CargarPermisos()
         {
-            // Limpiar los elementos existentes en el CheckedListBox
-            clbPermisos.Items.Clear();
-
-            // Obtener los permisos disponibles desde la base de datos
-            List<string> permisos = ControlUsuario.ObtenerPermisos ();
-
-            // Agregar los permisos al checkedListBoxPermisos
-            foreach (string permiso in permisos)
+            try
             {
-                clbPermisos.Items.Add(permiso);
+                // Limpiar los datos existentes en el DataGridView
+                dgvPermisos.Rows.Clear();
                 
-              
+                // Obtener los permisos directamente desde la tabla en la base de datos
+                List<string> permisos = ControlUsuario.ObtenerPermisos();
+
+                // Verificar que la lista de permisos no esté vacía
+                if (permisos != null && permisos.Count > 0)
+                {
+                    // Agregar los permisos al DataGridView
+                    foreach (string permiso in permisos)
+                    {
+                        dgvPermisos.Rows.Add(false,permiso);
+                       
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se encontraron permisos disponibles en la base de datos.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los permisos desde la base de datos: " + ex.Message);
             }
         }
+
+
+       
 
         private void CargarRoles()
         {
@@ -86,39 +96,42 @@ namespace Vista
 
         private void btnCrearNuevoRol_Click(object sender, EventArgs e)
         {
-            // Verificar si se ingresó un nombre de rol
-            if (!string.IsNullOrEmpty(txtNombRol.Text))
+           
+        }
+
+        private void dgvPermisos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        { // Verificar si la celda clicada es la columna de selección y si la fila es válida
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0 && e.RowIndex < dgvPermisos.Rows.Count)
             {
-                // Crear el nuevo rol en la base de datos
-                string nombreRol = txtNombRol.Text;
-                ControlUsuario controlUsuario = new ControlUsuario();
-                int idRol = controlUsuario.CrearNuevoRol(nombreRol);
+                // Obtener la celda correspondiente a la columna de selección en la fila clicada
+                DataGridViewCell cell = dgvPermisos.Rows[e.RowIndex].Cells[e.ColumnIndex];
 
-                if (idRol > 0)
+                // Verificar si la celda es una DataGridViewCheckBoxCell
+                if (cell != null && cell is DataGridViewCheckBoxCell)
                 {
-                    // Obtener los permisos seleccionados
-                    List<string> permisosSeleccionados = new List<string>();
-                    foreach (var item in clbPermisos.CheckedItems)
-                    {
-                        permisosSeleccionados.Add(item.ToString());
-                    }
+                    DataGridViewCheckBoxCell checkBoxCell = cell as DataGridViewCheckBoxCell;
 
-                    // Asociar los permisos seleccionados al nuevo rol en la base de datos
-                    foreach (string permiso in permisosSeleccionados)
-                    {
-                        controlUsuario.AgregarPermisoARol(idRol, permiso);
-                    }
+                    // Invertir el valor de la celda (marcar/desmarcar)
+                    checkBoxCell.Value = !(bool)checkBoxCell.Value;
 
-                    MessageBox.Show("Se ha creado el nuevo rol correctamente y se han asignado los permisos seleccionados.");
+                    // Obtener el nombre del permiso de la celda siguiente en la misma fila
+                    string permiso = dgvPermisos.Rows[e.RowIndex].Cells[1].Value?.ToString();
+
+                    // Verificar si se ha seleccionado un permiso
+                    if (!string.IsNullOrEmpty(permiso))
+                    {
+                        // Si la celda está marcada, agrega el permiso a la lista de permisos seleccionados
+                        if ((bool)checkBoxCell.Value)
+                        {
+                            permisosSeleccionados.Add(permiso);
+                        }
+                        else
+                        {
+                            // Si la celda está desmarcada, remueve el permiso de la lista de permisos seleccionados
+                            permisosSeleccionados.Remove(permiso);
+                        }
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Error al crear el nuevo rol. Por favor, inténtalo nuevamente.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Por favor, ingresa un nombre para el nuevo rol.");
             }
         }
     }

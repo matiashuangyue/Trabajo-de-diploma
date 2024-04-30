@@ -455,6 +455,7 @@ namespace Modelo
             return permisos;
         }
 
+        
         public List<string> ObtenerRoles()
         {
             List<string> roles = new List<string>();

@@ -32,18 +32,21 @@
             this.cbRoles = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gbAddRoles = new System.Windows.Forms.GroupBox();
+            this.dgvPermisos = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnCrearNuevoRol = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtNombRol = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lsbRoles = new System.Windows.Forms.ListBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.clbPermisos = new System.Windows.Forms.CheckedListBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbAddRoles.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPermisos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,27 +85,56 @@
             // gbAddRoles
             // 
             this.gbAddRoles.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gbAddRoles.Controls.Add(this.dgvPermisos);
             this.gbAddRoles.Controls.Add(this.label3);
             this.gbAddRoles.Controls.Add(this.btnCrearNuevoRol);
             this.gbAddRoles.Controls.Add(this.txtNombRol);
             this.gbAddRoles.Controls.Add(this.label6);
-            this.gbAddRoles.Controls.Add(this.clbPermisos);
             this.gbAddRoles.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbAddRoles.Location = new System.Drawing.Point(92, 205);
             this.gbAddRoles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbAddRoles.Name = "gbAddRoles";
             this.gbAddRoles.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gbAddRoles.Size = new System.Drawing.Size(1512, 457);
+            this.gbAddRoles.Size = new System.Drawing.Size(1640, 503);
             this.gbAddRoles.TabIndex = 117;
             this.gbAddRoles.TabStop = false;
             this.gbAddRoles.Text = "Crear Roles";
+            // 
+            // dgvPermisos
+            // 
+            this.dgvPermisos.AllowUserToAddRows = false;
+            this.dgvPermisos.AllowUserToDeleteRows = false;
+            this.dgvPermisos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPermisos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            this.dgvPermisos.Location = new System.Drawing.Point(160, 115);
+            this.dgvPermisos.Name = "dgvPermisos";
+            this.dgvPermisos.RowHeadersWidth = 62;
+            this.dgvPermisos.RowTemplate.Height = 30;
+            this.dgvPermisos.Size = new System.Drawing.Size(1025, 366);
+            this.dgvPermisos.TabIndex = 119;
+            this.dgvPermisos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPermisos_CellContentClick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(14, 105);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(149, 34);
+            this.label3.TabIndex = 120;
+            this.label3.Text = "Permisos :";
             // 
             // btnCrearNuevoRol
             // 
             this.btnCrearNuevoRol.BackColor = System.Drawing.Color.Cornsilk;
             this.btnCrearNuevoRol.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearNuevoRol.ForeColor = System.Drawing.Color.Black;
-            this.btnCrearNuevoRol.Location = new System.Drawing.Point(1000, 289);
+            this.btnCrearNuevoRol.Location = new System.Drawing.Point(1218, 276);
             this.btnCrearNuevoRol.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrearNuevoRol.Name = "btnCrearNuevoRol";
             this.btnCrearNuevoRol.Size = new System.Drawing.Size(497, 132);
@@ -110,6 +142,15 @@
             this.btnCrearNuevoRol.Text = "Crear Nuevo Rol";
             this.btnCrearNuevoRol.UseVisualStyleBackColor = false;
             this.btnCrearNuevoRol.Click += new System.EventHandler(this.btnCrearNuevoRol_Click);
+            // 
+            // txtNombRol
+            // 
+            this.txtNombRol.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtNombRol.Location = new System.Drawing.Point(523, 43);
+            this.txtNombRol.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombRol.Name = "txtNombRol";
+            this.txtNombRol.Size = new System.Drawing.Size(470, 42);
+            this.txtNombRol.TabIndex = 2;
             // 
             // label6
             // 
@@ -123,16 +164,6 @@
             this.label6.Size = new System.Drawing.Size(141, 34);
             this.label6.TabIndex = 4;
             this.label6.Text = "Nombre :";
-            // 
-            // txtNombRol
-            // 
-            this.txtNombRol.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtNombRol.Enabled = false;
-            this.txtNombRol.Location = new System.Drawing.Point(523, 43);
-            this.txtNombRol.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombRol.Name = "txtNombRol";
-            this.txtNombRol.Size = new System.Drawing.Size(470, 42);
-            this.txtNombRol.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -204,30 +235,19 @@
             this.lsbRoles.Size = new System.Drawing.Size(871, 238);
             this.lsbRoles.TabIndex = 118;
             // 
-            // label3
+            // Column1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(14, 105);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 34);
-            this.label3.TabIndex = 120;
-            this.label3.Text = "Permisos :";
+            this.Column1.HeaderText = "Seleccionar";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
             // 
-            // clbPermisos
+            // Column2
             // 
-            this.clbPermisos.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clbPermisos.FormattingEnabled = true;
-            this.clbPermisos.Items.AddRange(new object[] {
-            "1321",
-            "123"});
-            this.clbPermisos.Location = new System.Drawing.Point(252, 105);
-            this.clbPermisos.Name = "clbPermisos";
-            this.clbPermisos.Size = new System.Drawing.Size(741, 316);
-            this.clbPermisos.TabIndex = 17;
+            this.Column2.HeaderText = "Column2";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
             // 
             // FormGestionarPermiso
             // 
@@ -245,6 +265,7 @@
             this.Load += new System.EventHandler(this.FormGestionarPermiso_Load);
             this.gbAddRoles.ResumeLayout(false);
             this.gbAddRoles.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPermisos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -268,6 +289,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox lsbRoles;
-        private System.Windows.Forms.CheckedListBox clbPermisos;
+        private System.Windows.Forms.DataGridView dgvPermisos;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }
