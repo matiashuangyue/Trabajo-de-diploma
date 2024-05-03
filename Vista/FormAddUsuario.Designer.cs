@@ -77,13 +77,14 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(54, 98);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1326, 691);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingresar Los Datos ";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnRegistrar
             // 
@@ -91,7 +92,7 @@
             this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.Black;
             this.btnRegistrar.Location = new System.Drawing.Point(709, 459);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(350, 107);
             this.btnRegistrar.TabIndex = 11;
@@ -137,6 +138,7 @@
             this.label8.Size = new System.Drawing.Size(147, 34);
             this.label8.TabIndex = 10;
             this.label8.Text = "Direccion";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -149,56 +151,62 @@
             this.label7.Size = new System.Drawing.Size(131, 34);
             this.label7.TabIndex = 9;
             this.label7.Text = "Telefono";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtDireccion
             // 
             this.txtDireccion.BackColor = System.Drawing.Color.Cornsilk;
             this.txtDireccion.Location = new System.Drawing.Point(319, 230);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(470, 35);
             this.txtDireccion.TabIndex = 8;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
             // txtTelefono
             // 
             this.txtTelefono.BackColor = System.Drawing.Color.Cornsilk;
             this.txtTelefono.Location = new System.Drawing.Point(319, 184);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Multiline = true;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(470, 35);
             this.txtTelefono.TabIndex = 7;
+            this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             // 
             // txtDNI
             // 
             this.txtDNI.BackColor = System.Drawing.Color.Cornsilk;
             this.txtDNI.Location = new System.Drawing.Point(319, 53);
-            this.txtDNI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDNI.Margin = new System.Windows.Forms.Padding(4);
             this.txtDNI.Multiline = true;
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(470, 35);
             this.txtDNI.TabIndex = 0;
+            this.txtDNI.TextChanged += new System.EventHandler(this.txtDNI_TextChanged);
             // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.Cornsilk;
             this.txtName.Location = new System.Drawing.Point(319, 98);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(470, 35);
             this.txtName.TabIndex = 0;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.Cornsilk;
             this.txtPassword.Location = new System.Drawing.Point(319, 275);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(470, 35);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // label4
             // 
@@ -211,16 +219,18 @@
             this.label4.Size = new System.Drawing.Size(72, 34);
             this.label4.TabIndex = 6;
             this.label4.Text = "Mail";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtMail
             // 
             this.txtMail.BackColor = System.Drawing.Color.Cornsilk;
             this.txtMail.Location = new System.Drawing.Point(319, 141);
-            this.txtMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMail.Margin = new System.Windows.Forms.Padding(4);
             this.txtMail.Multiline = true;
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(470, 35);
             this.txtMail.TabIndex = 2;
+            this.txtMail.TextChanged += new System.EventHandler(this.txtMail_TextChanged);
             // 
             // label3
             // 
@@ -233,6 +243,7 @@
             this.label3.Size = new System.Drawing.Size(172, 34);
             this.label3.TabIndex = 5;
             this.label3.Text = "Contraseña";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -245,6 +256,7 @@
             this.label2.Size = new System.Drawing.Size(64, 34);
             this.label2.TabIndex = 3;
             this.label2.Text = "DNI";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label5
             // 
@@ -257,6 +269,7 @@
             this.label5.Size = new System.Drawing.Size(125, 34);
             this.label5.TabIndex = 4;
             this.label5.Text = "Nombre";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 

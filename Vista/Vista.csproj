@@ -77,11 +77,11 @@
     <Compile Include="FormInfoCompra.Designer.cs">
       <DependentUpon>FormInfoCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormInforme.cs">
+    <Compile Include="FormSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormInforme.Designer.cs">
-      <DependentUpon>FormInforme.cs</DependentUpon>
+    <Compile Include="FormSignUp.Designer.cs">
+      <DependentUpon>FormSignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAddProducto.cs">
       <SubType>Form</SubType>
@@ -107,11 +107,11 @@
     <Compile Include="FormModificacionesUsuario.Designer.cs">
       <DependentUpon>FormModificacionesUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.cs">
+    <Compile Include="FormRecuperarClave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="FormRecuperarClave.Designer.cs">
+      <DependentUpon>FormRecuperarClave.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAddUsuario.cs">
       <SubType>Form</SubType>
@@ -166,8 +166,8 @@
     <EmbeddedResource Include="FormInfoCompra.resx">
       <DependentUpon>FormInfoCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormInforme.resx">
-      <DependentUpon>FormInforme.cs</DependentUpon>
+    <EmbeddedResource Include="FormSignUp.resx">
+      <DependentUpon>FormSignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddProducto.resx">
       <DependentUpon>FormAddProducto.cs</DependentUpon>
@@ -181,8 +181,8 @@
     <EmbeddedResource Include="FormModificacionesUsuario.resx">
       <DependentUpon>FormModificacionesUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="FormRecuperarClave.resx">
+      <DependentUpon>FormRecuperarClave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddUsuario.resx">
       <DependentUpon>FormAddUsuario.cs</DependentUpon>

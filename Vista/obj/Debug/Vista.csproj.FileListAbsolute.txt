@@ -54,7 +54,6 @@ D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.AssemblyReference.ca
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormCompra.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormControlStock.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoCompra.resources
-D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInforme.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormAddProducto.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoVenta.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormModificacionesProducto.resources
@@ -72,4 +71,5 @@ D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.Up2Date
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.exe
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.pdb
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormGestionarPermiso.resources
-D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.Dashboard.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormSignUp.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormRecuperarClave.resources

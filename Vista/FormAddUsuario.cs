@@ -38,81 +38,82 @@ namespace Vista
                 txtPassword != null && !string.IsNullOrWhiteSpace(txtPassword.Text))
             {
                 
-                
-                if (rol != 1)
+                long telefono;
+                if (long.TryParse(txtTelefono.Text, out telefono))
                 {
-                    Usuario UserActual = new Usuario
-                    {
-                        DNI = int.Parse(txtDNI.Text),
-                        Name = txtName.Text,
-                        Mail = txtMail.Text,
-                        Telefono = 0,
-                        Direccion = txtDireccion.Text,
-                        Password = txtPassword.Text,
-                        ID_Rol = 0,
-                        ID_Estado = 1,
-                };
-                    Controladora.ControlUsuario User = new Controladora.ControlUsuario();
-                        
-                    int registrarse = User.RegistrarCuenta(UserActual);
-                    if (registrarse==1)
+                    if (rol != 1)
                     {
 
-                        MessageBox.Show("Ha creado nuevo usuario");
-                    }
-                    else if(registrarse==-1)
-                    {
-                        MessageBox.Show("error al inserta datos en sql");
-                    }
-                    else if (registrarse == -2)
-                    {
-                        MessageBox.Show("tu DNI ya existe en base de datos, cheque porfavor");
-                    }
-                    else if (registrarse == -3)
-                    {
-                        MessageBox.Show("Mail es invalido");
-                    }
+                        Usuario UserActual = new Usuario
+                        {
+                            DNI = int.Parse(txtDNI.Text),
+                            Name = txtName.Text,
+                            Mail = txtMail.Text,
+                            Telefono = telefono,
+                            Direccion = txtDireccion.Text,
+                            Password = txtPassword.Text,
+                            ID_Rol = 0,
+                            ID_Estado = 1,
+                        };
+                        Controladora.ControlUsuario User = new Controladora.ControlUsuario();
 
+                        int registrarse = User.RegistrarCuenta(UserActual);
+                        if (registrarse == 1)
+                        {
 
+                            MessageBox.Show("Ha creado nuevo usuario");
+                        }
+                        else if (registrarse == -1)
+                        {
+                            MessageBox.Show("error al inserta datos en sql");
+                        }
+                        else if (registrarse == -2)
+                        {
+                            MessageBox.Show("tu DNI ya existe en base de datos, cheque porfavor");
+                        }
+                        else if (registrarse == -3)
+                        {
+                            MessageBox.Show("Mail es invalido");
+                        }
+                    }
+                    else
+                    {
+                        asignarRol();
+                        Usuario UserActual = new Usuario
+                        {
+                            DNI = int.Parse(txtDNI.Text),
+                            Name = txtName.Text,
+                            Mail = txtMail.Text,
+                            Telefono = telefono,
+                            Direccion = txtDireccion.Text,
+                            Password = txtPassword.Text,
+                            ID_Rol = NewRoleID,
+                            ID_Estado = 1,
+                        };
+                        Controladora.ControlUsuario User = new Controladora.ControlUsuario();
+                        int registrarse = User.RegistrarCuenta(UserActual);
+                        if (registrarse == 1)
+                        {
+                            MessageBox.Show("Ha creado nuevo usuario");
+                        }
+                        else if (registrarse == -1)
+                        {
+                            MessageBox.Show("error al inserta datos en sql");
+                        }
+                        else if (registrarse == -2)
+                        {
+                            MessageBox.Show("tu DNI ya existe en base de datos, cheque porfavor");
+                        }
+                        else if (registrarse == -3)
+                        {
+                            MessageBox.Show("Mail es invalido");
+                        }
+                    }
                 }
-                else
+               else
                 {
-                    asignarRol();
-                    Usuario UserActual = new Usuario
-                    {
-                        DNI = int.Parse(txtDNI.Text),
-                        Name = txtName.Text,
-                        Mail = txtMail.Text,
-                        Telefono = 0,
-                        Direccion = txtDireccion.Text,
-                        Password = txtPassword.Text,
-                        ID_Rol = NewRoleID,
-                        ID_Estado= 1,
-                    };
-                    Controladora.ControlUsuario User = new Controladora.ControlUsuario();
-                    int registrarse = User.RegistrarCuenta(UserActual);
-                    if (registrarse == 1)
-                    {
-
-                        MessageBox.Show("Ha creado nuevo usuario");
-                    }
-                    else if (registrarse == -1)
-                    {
-                        MessageBox.Show("error al inserta datos en sql");
-                    }
-                    else if (registrarse == -2)
-                    {
-                        MessageBox.Show("tu DNI ya existe en base de datos, cheque porfavor");
-                    }
-                    else if (registrarse == -3)
-                    {
-                        MessageBox.Show("Mail es invalido");
-                    }
+                    MessageBox.Show("¡El teléfono debe ser un número!");
                 }
-                
-                
-
-                
             }
             else
             {
@@ -164,6 +165,69 @@ namespace Vista
             }
         }
 
-        
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDireccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDNI_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
