@@ -257,6 +257,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\COMUN\COMUN.csproj">
+      <Project>{21f742ee-e636-4200-848e-92c2cb85af3d}</Project>
+      <Name>COMUN</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Controladora\Controladora.csproj">
       <Project>{dc5c0895-47f6-43a1-b033-0208f3c696e2}</Project>
       <Name>Controladora</Name>

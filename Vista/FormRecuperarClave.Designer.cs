@@ -36,6 +36,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtMail = new System.Windows.Forms.TextBox();
+            this.btnSolicitarCodigo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnVolver)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +73,7 @@
             // txtDNI
             // 
             this.txtDNI.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtDNI.Location = new System.Drawing.Point(376, 116);
+            this.txtDNI.Location = new System.Drawing.Point(378, 44);
             this.txtDNI.Margin = new System.Windows.Forms.Padding(4);
             this.txtDNI.Multiline = true;
             this.txtDNI.Name = "txtDNI";
@@ -84,7 +85,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(193, 208);
+            this.label6.Location = new System.Drawing.Point(195, 103);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 34);
@@ -96,7 +97,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(193, 116);
+            this.label10.Location = new System.Drawing.Point(195, 44);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(64, 34);
@@ -106,12 +107,26 @@
             // txtMail
             // 
             this.txtMail.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtMail.Location = new System.Drawing.Point(376, 208);
+            this.txtMail.Location = new System.Drawing.Point(378, 103);
             this.txtMail.Margin = new System.Windows.Forms.Padding(4);
             this.txtMail.Multiline = true;
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(470, 35);
             this.txtMail.TabIndex = 8;
+            // 
+            // btnSolicitarCodigo
+            // 
+            this.btnSolicitarCodigo.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnSolicitarCodigo.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSolicitarCodigo.ForeColor = System.Drawing.Color.Black;
+            this.btnSolicitarCodigo.Location = new System.Drawing.Point(498, 194);
+            this.btnSolicitarCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSolicitarCodigo.Name = "btnSolicitarCodigo";
+            this.btnSolicitarCodigo.Size = new System.Drawing.Size(350, 107);
+            this.btnSolicitarCodigo.TabIndex = 12;
+            this.btnSolicitarCodigo.Text = "Solicitar Codigo De Verificacion";
+            this.btnSolicitarCodigo.UseVisualStyleBackColor = false;
+            this.btnSolicitarCodigo.Click += new System.EventHandler(this.btnSolicitarCodigo_Click);
             // 
             // FormRecuperarClave
             // 
@@ -119,6 +134,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(951, 577);
+            this.Controls.Add(this.btnSolicitarCodigo);
             this.Controls.Add(this.txtDNI);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label10);
@@ -146,5 +162,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtMail;
+        private System.Windows.Forms.Button btnSolicitarCodigo;
     }
 }

@@ -73,3 +73,6 @@ D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.pdb
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormGestionarPermiso.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormSignUp.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormRecuperarClave.resources
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.pdb
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.dll.config
