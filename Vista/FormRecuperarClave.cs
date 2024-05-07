@@ -19,7 +19,7 @@ namespace Vista
     public partial class FormRecuperarClave : Form
     {
         private int DNI;
-        //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
+
         //contra gmail :area uroj yyri bvwb
         public FormRecuperarClave(int DNI)
         {

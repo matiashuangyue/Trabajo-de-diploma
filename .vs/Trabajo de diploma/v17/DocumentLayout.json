@@ -71,8 +71,7 @@
               "ViewState": "AQIAAFsAAAAAAAAAAAAgwA0BAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T16:51:57.224Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -82,7 +81,7 @@
               "RelativeDocumentMoniker": "Vista\\FormRecuperarClave.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormRecuperarClave.cs",
               "RelativeToolTip": "Vista\\FormRecuperarClave.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAYwEIAAABYAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T00:12:42.976Z",
               "EditorCaption": ""
@@ -97,8 +96,7 @@
               "RelativeToolTip": "COMUN\\MetodosComunes.cs",
               "ViewState": "AQIAADkCAAAAAAAAAAAkwFICAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T22:37:52.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T22:37:52.869Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormRecuperarClave.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormRecuperarClave.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T00:12:40.832Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-03T00:12:40.832Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "Vista\\FormModificacionesUsuario.cs",
               "ViewState": "AQIAAL8AAAAAAAAAAAArwMoAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T19:15:25.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T19:15:25.247Z"
             },
             {
               "$type": "Document",
@@ -134,8 +130,7 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesUsuario.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormModificacionesUsuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:03:35.133Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-02T23:03:35.133Z"
             },
             {
               "$type": "Document",
@@ -146,8 +141,7 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormControlStock.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormControlStock.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:03:40.383Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-02T23:03:40.383Z"
             },
             {
               "$type": "Document",
@@ -158,8 +152,7 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormGestionarPermiso.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormGestionarPermiso.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:03:39.625Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-02T23:03:39.625Z"
             },
             {
               "$type": "Document",
@@ -170,8 +163,7 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoCompra.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormInfoCompra.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:03:38.792Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-02T23:03:38.792Z"
             },
             {
               "$type": "Document",
@@ -182,8 +174,7 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesProducto.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormModificacionesProducto.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:03:36.923Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-02T23:03:36.923Z"
             },
             {
               "$type": "Document",
@@ -195,8 +186,7 @@
               "RelativeToolTip": "Entidades\\Producto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T20:03:25.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T20:03:25.925Z"
             },
             {
               "$type": "Document",
@@ -208,8 +198,7 @@
               "RelativeToolTip": "Vista\\FormInfoCompra.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAUwDcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T13:34:16.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T13:34:16.602Z"
             }
           ]
         }
