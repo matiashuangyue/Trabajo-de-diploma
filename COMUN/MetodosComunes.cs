@@ -584,9 +584,9 @@ namespace COMUN
         {
             try
             {
-                SmtpClient server = new SmtpClient("smtp.gmail.com",587);
-
-                server.Credentials = new System.Net.NetworkCredential("Yue1786812727@gmail.com", "pp020115");
+                SmtpClient server = new SmtpClient("smtp.gmail.com", 587);
+                server.UseDefaultCredentials = false;
+                server.Credentials = new System.Net.NetworkCredential("starcgcompany@gmail.com", "area uroj yyri bvwb");
                 server.EnableSsl = true;
                 //ServicePointManager.ServerCertificateValidationCallback = new System.Net.Security.RemoteCertificateValidationCallback(AcceptAllCertifications);
 
@@ -600,6 +600,7 @@ namespace COMUN
                 CuerpoMail.AppendLine("-------------------------------------------------------------------------------");
                 correoElectronico.Body = CuerpoMail.ToString();
 
+                
                 server.Send(correoElectronico);
             }
             catch (Exception ex)

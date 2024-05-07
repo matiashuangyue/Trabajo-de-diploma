@@ -76,3 +76,9 @@ D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormRecuperarClave.resource
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.dll
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.pdb
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.dll.config
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Newtonsoft.Json.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\SendGrid.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\StarkbankEcdsa.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Newtonsoft.Json.xml
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\SendGrid.pdb
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\SendGrid.xml

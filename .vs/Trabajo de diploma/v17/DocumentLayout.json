@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\proyecto\\Trabajo-de-diploma\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formrecuperarclave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\formrecuperarclave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formrecuperarclave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21F742EE-E636-4200-848E-92C2CB85AF3D}|COMUN\\COMUN.csproj|d:\\proyecto\\trabajo-de-diploma\\comun\\metodoscomunes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{21F742EE-E636-4200-848E-92C2CB85AF3D}|COMUN\\COMUN.csproj|D:\\proyecto\\Trabajo-de-diploma\\comun\\metodoscomunes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21F742EE-E636-4200-848E-92C2CB85AF3D}|COMUN\\COMUN.csproj|solutionrelative:comun\\metodoscomunes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\formrecuperarclave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formrecuperarclave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formrecuperarclave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formrecuperarclave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formmodificacionesusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,13 +62,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "HomePage.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\HomePage.cs",
               "RelativeDocumentMoniker": "Vista\\HomePage.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\HomePage.cs",
               "RelativeToolTip": "Vista\\HomePage.cs",
-              "ViewState": "AQIAAOoAAAAAAAAAAAAAwA0BAAAJAAAA",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAgwA0BAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T16:51:57.224Z",
               "IsPinned": true,
@@ -82,7 +82,7 @@
               "RelativeDocumentMoniker": "Vista\\FormRecuperarClave.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormRecuperarClave.cs",
               "RelativeToolTip": "Vista\\FormRecuperarClave.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAiwDIAAAAJAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwEIAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T00:12:42.976Z",
               "EditorCaption": ""
@@ -95,14 +95,14 @@
               "RelativeDocumentMoniker": "COMUN\\MetodosComunes.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\COMUN\\MetodosComunes.cs",
               "RelativeToolTip": "COMUN\\MetodosComunes.cs",
-              "ViewState": "AQIAAEECAAAAAAAAAAA+wFICAAAsAAAA",
+              "ViewState": "AQIAADkCAAAAAAAAAAAkwFICAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T22:37:52.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FormRecuperarClave.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormRecuperarClave.cs",
               "RelativeDocumentMoniker": "Vista\\FormRecuperarClave.cs",
@@ -122,7 +122,8 @@
               "RelativeToolTip": "Vista\\FormModificacionesUsuario.cs",
               "ViewState": "AQIAAL8AAAAAAAAAAAArwMoAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T19:15:25.247Z"
+              "WhenOpened": "2024-05-03T19:15:25.247Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -133,7 +134,8 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesUsuario.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormModificacionesUsuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:03:35.133Z"
+              "WhenOpened": "2024-05-02T23:03:35.133Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -144,7 +146,8 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormControlStock.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormControlStock.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:03:40.383Z"
+              "WhenOpened": "2024-05-02T23:03:40.383Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -155,7 +158,8 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormGestionarPermiso.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormGestionarPermiso.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:03:39.625Z"
+              "WhenOpened": "2024-05-02T23:03:39.625Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -166,7 +170,8 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoCompra.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormInfoCompra.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:03:38.792Z"
+              "WhenOpened": "2024-05-02T23:03:38.792Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -177,7 +182,8 @@
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormModificacionesProducto.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\FormModificacionesProducto.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:03:36.923Z"
+              "WhenOpened": "2024-05-02T23:03:36.923Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -189,7 +195,8 @@
               "RelativeToolTip": "Entidades\\Producto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T20:03:25.925Z"
+              "WhenOpened": "2024-04-30T20:03:25.925Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -201,7 +208,8 @@
               "RelativeToolTip": "Vista\\FormInfoCompra.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAUwDcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T13:34:16.602Z"
+              "WhenOpened": "2024-05-01T13:34:16.602Z",
+              "EditorCaption": ""
             }
           ]
         }

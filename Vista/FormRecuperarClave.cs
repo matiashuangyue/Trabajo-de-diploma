@@ -19,7 +19,8 @@ namespace Vista
     public partial class FormRecuperarClave : Form
     {
         private int DNI;
-        
+        //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
+        //contra gmail :area uroj yyri bvwb
         public FormRecuperarClave(int DNI)
         {
             InitializeComponent();
@@ -55,10 +56,17 @@ namespace Vista
 
             string remitente = "Yue1786812727@gmail.com"; // Remitente del correo electrónico
             string destinatario = txtMail.Text; // Dirección de correo electrónico del destinatario
+            try
+            {
+                MetodosComunes.EnviarMail(cuerpoMail, remitente, destinatario);
 
-            MetodosComunes.EnviarMail(cuerpoMail, remitente, destinatario);
+                MessageBox.Show("Se ha enviado un correo electrónico con el código de verificación.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al enviar el correo electrónico: " + ex.Message);
+            }
 
-            MessageBox.Show("Se ha enviado un correo electrónico con el código de verificación.");
         }
     }
 }
