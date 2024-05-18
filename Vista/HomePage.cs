@@ -97,7 +97,7 @@ namespace Vista
             if (rol == 2)
             {
                 lblRol.Text = "Empleado";
-                btnInforme.Visible=false;
+               // btnInforme.Visible=false;
             }
             if (rol == 3)
             {

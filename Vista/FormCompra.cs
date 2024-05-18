@@ -131,6 +131,7 @@ namespace Vista
                     ID_Compra = IDCompra,
                     ID_Estado = 0,
                 };
+             
                 int seRegistro = controlCompra.insertID(nuevoCompra);
                 if(seRegistro == 1)
                 {
