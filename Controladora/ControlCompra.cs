@@ -47,5 +47,10 @@ namespace Controladora
                 Console.WriteLine("Error general en la controladora: " + ex.Message);
             }
         }
+
+        public int CambiarEstadoCompra(long ID, int NuevoEstado)
+        {
+            return modeloCompra.CambiarEstadoCompra(ID,NuevoEstado);
+        }
     }
 }

@@ -24,15 +24,67 @@ C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Vista\bin\Debug\FontAwesome
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\aa\Vista.resources.dll
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.HomePage.aa.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\aa\Vista.resources.dll
-C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormInforme.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormVenta.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormCompra.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormControlStock.resources
-C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormProveedor.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormAddProducto.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormAddUsuario.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormModificacionesProducto.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormModificacionesUsuario.resources
-C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormAddDetalleCompra.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormInfoCompra.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormInfoVenta.resources
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Vista.exe.config
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Vista.exe
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Vista.pdb
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\aa\Vista.resources.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Controladora.exe
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Entidades.exe
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\FontAwesome.Sharp.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Modelo.exe
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Controladora.pdb
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Controladora.exe.config
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Entidades.pdb
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Entidades.exe.config
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Modelo.pdb
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Modelo.exe.config
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.AssemblyReference.cache
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormCompra.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormControlStock.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoCompra.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormAddProducto.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoVenta.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormModificacionesProducto.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormModificacionesUsuario.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormAddUsuario.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormVenta.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.HomePage.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.Login.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.Properties.Resources.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.HomePage.aa.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.GenerateResource.cache
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\aa\Vista.resources.dll
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.Up2Date
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.exe
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.pdb
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormGestionarPermiso.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormSignUp.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormRecuperarClave.resources
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.pdb
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.dll.config
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Newtonsoft.Json.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\SendGrid.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\StarkbankEcdsa.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Newtonsoft.Json.xml
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\SendGrid.pdb
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\SendGrid.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\COMUN.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\StarkbankEcdsa.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\COMUN.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\COMUN.dll.config
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormGestionarPermiso.resources
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormSignUp.resources
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormRecuperarClave.resources

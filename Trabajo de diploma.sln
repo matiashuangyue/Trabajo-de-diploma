@@ -4,12 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj", "{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21F742EE-E636-4200-848E-92C2CB85AF3D} = {21F742EE-E636-4200-848E-92C2CB85AF3D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controladora", "Controladora\Controladora.csproj", "{DC5C0895-47F6-43A1-B033-0208F3C696E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{86EDA5C7-FB70-4F3F-8EC6-EF5CB512A293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMUN", "COMUN\COMUN.csproj", "{21F742EE-E636-4200-848E-92C2CB85AF3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +38,10 @@ Global
 		{86EDA5C7-FB70-4F3F-8EC6-EF5CB512A293}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86EDA5C7-FB70-4F3F-8EC6-EF5CB512A293}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86EDA5C7-FB70-4F3F-8EC6-EF5CB512A293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F742EE-E636-4200-848E-92C2CB85AF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F742EE-E636-4200-848E-92C2CB85AF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F742EE-E636-4200-848E-92C2CB85AF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F742EE-E636-4200-848E-92C2CB85AF3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

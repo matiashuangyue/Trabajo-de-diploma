@@ -44,6 +44,38 @@ namespace Modelo
         }
 
 
+        public DataTable ObtenerPedidosPorFecha(int DNI, DateTime fechaInicio, DateTime fechaFin)
+        {
+            try
+            {
+                // Obtener todos los pedidos del vendedor
+                DataTable todosLosPedidos = ObtenerPedidos(DNI);
+
+                // Filtrar los pedidos por fecha
+                DataTable pedidosFiltrados = todosLosPedidos.Clone(); // Clonar la estructura del DataTable original
+
+                foreach (DataRow row in todosLosPedidos.Rows)
+                {
+                    DateTime fechaPedido = Convert.ToDateTime(row["Fecha"]);
+                    if (fechaPedido >= fechaInicio && fechaPedido <= fechaFin)
+                    {
+                        pedidosFiltrados.ImportRow(row); // Agregar la fila al DataTable de pedidos filtrados
+                    }
+                }
+
+                return pedidosFiltrados;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // Manejar la excepción de manera adecuada
+                return null; // Error al obtener pedidos por fecha
+            }
+        }
+
+
+ 
+
 
         public DataTable ObtenerPedidos(int DNI)
         {
@@ -115,6 +147,34 @@ namespace Modelo
                 Console.WriteLine(ex.Message);
                 // Manejar la excepción de manera adecuada
                 return null; // Error al modificar datos
+            }
+        }
+
+        public DataTable ObtenerComprasPorFechaYEstado(int DNI, DateTime fechaInicio, DateTime fechaFin, int estado)
+        {
+            try
+            {
+                // Obtener todas las compras del proveedor con el estado especificado
+                DataTable todasLasCompras = ObtenerCompras(DNI, estado);
+
+                // Filtrar las compras por fecha
+                DataTable comprasFiltradas = todasLasCompras.Clone(); // Clonar la estructura del DataTable original
+
+                foreach (DataRow row in todasLasCompras.Rows)
+                {
+                    DateTime fechaCompra = Convert.ToDateTime(row["Fecha"]);
+                    if (fechaCompra >= fechaInicio && fechaCompra <= fechaFin)
+                    {
+                        comprasFiltradas.ImportRow(row); // Agregar la fila al DataTable de compras filtradas
+                    }
+                }
+
+                return comprasFiltradas;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
             }
         }
 

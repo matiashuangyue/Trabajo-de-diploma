@@ -16,5 +16,9 @@ namespace Entidades
         public string Password { get; set; }
         public int ID_Rol { get; set; }
         public int ID_Estado { get; set; }
+
+     
+
+        
     }
 }

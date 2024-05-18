@@ -44,5 +44,52 @@ namespace Controladora
         {
             return modUsuario.IsValidID(usuario);
         }
+
+
+        //permisos
+
+        public static List<string> ObtenerPermisosPorRol(int rol)
+        {
+            ModUsuario modUsuario = new ModUsuario();
+            return modUsuario.ObtenerPermisosPorRol(rol);
+        }
+        public static List<string> ObtenerPermisos()
+        {
+            ModUsuario modUsuario = new ModUsuario();
+            return modUsuario.ObtenerPermisos();
+        }
+
+        public static List<string> ObtenerRoles()
+        {
+            ModUsuario modUsuario = new ModUsuario();
+            return modUsuario.ObtenerRoles();
+        }
+
+        public int ObtenerRolID(string rol)
+        {
+            return modUsuario.ObtenerIdRolPorNombre(rol);
+        }
+
+        public int CrearNuevoRol(string rol)
+        {
+            return modUsuario.CrearNuevoRol(rol);
+        }
+
+        public int CrearPermiso(string permiso)
+        {
+            return modUsuario.CrearNuevoPermiso(permiso);
+        }
+        public void AgregarPermisoARol(int idRol, string permiso)
+        {
+            modUsuario.AgregarPermisoARol(idRol, permiso);
+        }
+
+        public void ActualizarPermisosPorRol(int idRol, List<string> permisos)
+        {
+            // Llama al método correspondiente en la capa de modelo (ModUsuario)
+            modUsuario.ActualizarPermisosPorRol(idRol, permisos);
+        }
+
+
     }
 }

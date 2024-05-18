@@ -13,6 +13,8 @@ namespace Modelo
         public ConexionSQL()
         {
             cnn = "Data Source =DESKTOP-2F4NVAS\\YUESERVER; Initial Catalog = TrabajoDeDiploma; Integrated Security= True";
+            //conecxion Aorus
+            //cnn = "Data Source = LAPTOP-PJ5NR8U8\\SQLEXPRESS; Initial Catalog = TrabajoDeDiploma; Integrated Security= True";
         }
         protected SqlConnection GetConnection()
         {
