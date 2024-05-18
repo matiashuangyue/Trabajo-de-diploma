@@ -8,3 +8,12 @@ C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidad
 C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidades.exe
 C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Entidades\obj\Debug\Entidades.pdb
+D:\proyecto\Trabajo-de-diploma\Entidades\bin\Debug\Entidades.exe.config
+D:\proyecto\Trabajo-de-diploma\Entidades\bin\Debug\Entidades.exe
+D:\proyecto\Trabajo-de-diploma\Entidades\bin\Debug\Entidades.pdb
+D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.Properties.Resources.resources
+D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
+D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.exe
+D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.pdb

@@ -20,6 +20,7 @@ namespace Vista
         private int Estado;
         private ControlDGV controlDGV = new ControlDGV();
         private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlCompra controlCompra = new ControlCompra();
 
         public FormInfoCompra(int rol, int dNI)
         {
@@ -28,7 +29,7 @@ namespace Vista
             this.Rol = rol;
             this.DNI = dNI;
             cbEstado.SelectedItem = "Alta";
-
+            dtpFechaInicio.Value = new DateTime(2020, 1, 1);
         }
 
         private void CargarNombreCombobox(int IDROL)
@@ -49,11 +50,12 @@ namespace Vista
         private void FormInfoCompra_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'trabajoDeDiplomaDataSet.Compras' Puede moverla o quitarla según sea necesario.
-            this.comprasTableAdapter.Fill(this.trabajoDeDiplomaDataSet.Compras);
+            dgvCompras.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
+            dgvCompras.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
 
-        private void CargarDatos(int DNI,int Estado)
+        private void CargarDatos2(int DNI,int Estado)
         {
             //dgwDetalles.DataSource = controlPedido.ObtenerDetallePedido(detallePediddo);
             DataTable dataTable = controlDGV.ObtenerCompra(DNI,Estado);
@@ -71,10 +73,33 @@ namespace Vista
             {
                 dgvCompras.DataSource = dataTable;
             }
-           // dgvCompras.DataSource = dataTable;
+            
+            // dgvCompras.DataSource = dataTable;
         }
 
+        private void CargarDatos(int DNI, int Estado, DateTime? fechaInicio = null, DateTime? fechaFin = null)
+        {
+            DataTable dataTable;
+            if (fechaInicio.HasValue && fechaFin.HasValue)
+            {
+                dataTable = controlDGV.ObtenerCompraPorFechaYEstado(DNI, fechaInicio.Value, fechaFin.Value, Estado);
+            }
+            else
+            {
+                dataTable = controlDGV.ObtenerCompra(DNI, Estado);
+            }
 
+            dgvCompras.CellFormatting += (sender, e) =>
+            {
+                if (e.Value == DBNull.Value)
+                {
+                    e.Value = "Nulo";
+                    e.FormattingApplied = true;
+                }
+            };
+
+            dgvCompras.DataSource = dataTable;
+        }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
@@ -97,14 +122,7 @@ namespace Vista
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbEstado.SelectedItem == "Alta")
-            {
-              Estado = 1;
-            }
-            else
-            {
-               Estado = 0;
-            }
+            Estado = cbEstado.SelectedItem.ToString() == "Alta" ? 1 : 0;
             cambiarDGV();
         }
 
@@ -112,13 +130,64 @@ namespace Vista
         private void cambiarDGV()
         {
             dgvCompras.DataSource = null;
-            string NombreVendedor = cbProveedor.SelectedItem.ToString();
-            int DNIVendedor = controlUsuario.GetDNI(NombreVendedor);
-            int estado = Estado;
-            CargarDatos(DNIVendedor,estado);
+            string NombreVendedor = cbProveedor.SelectedItem?.ToString();
+            if (NombreVendedor != null)
+            {
+                int DNIVendedor = controlUsuario.GetDNI(NombreVendedor);
+                FILTRAR(DNIVendedor, dtpFechaInicio.Value, dtpFechaFin.Value, Estado);
+            }
         }
 
+        private void dgvCompras_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
+        }
 
+        private void FILTRAR(int DNI, DateTime fechaInicio, DateTime fechaFin, int estado)
+        {
+            CargarDatos(DNI, estado, fechaInicio, fechaFin);
+        }
 
+      
+        private void btnDarAlta_Click(object sender, EventArgs e)
+        {
+            if (dgvCompras.SelectedRows.Count > 0)
+            {
+                long IDCompra = Convert.ToInt64(dgvCompras.SelectedRows[0].Cells["ID_Compra"].Value);
+                int DNI = Convert.ToInt32(dgvCompras.SelectedRows[0].Cells["DNI_Usuario"].Value);
+                int estado = Convert.ToInt32(dgvCompras.SelectedRows[0].Cells["ID_Estado"].Value);
+
+                DialogResult result = MessageBox.Show(estado == 0 ?
+                    "¿Está seguro de cambiar el estado de esta compra a alta?" :
+                    "¿Está seguro de cambiar el estado de esta compra a baja?",
+                    "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    estado = estado == 0 ? 1 : 0;
+                    controlCompra.CambiarEstadoCompra(IDCompra, estado);
+                    MessageBox.Show(estado == 0 ? "La compra ha sido cambiada a estado de baja con éxito!" :
+                        "La compra ha sido cambiada a estado de alta con éxito!");
+
+                    cbEstado.SelectedItem = estado == 0 ? "Baja" : "Alta";
+                    CargarDatos(DNI, estado);
+                    cambiarDGV();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una compra para cambiar su estado.");
+            }
+        }
+
+        private void dtpFechaInicio_ValueChanged(object sender, EventArgs e)
+        {
+            cambiarDGV();
+        }
+
+        private void dtpFechaFin_ValueChanged(object sender, EventArgs e)
+        {
+            cambiarDGV();
+        }
     }
 }

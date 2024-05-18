@@ -26,6 +26,7 @@ namespace Vista
             CargarNombreCombobox(2);
             this.Rol = Rol;
             this.DNIRol = DNI;
+
         }
         private void CargarNombreCombobox(int IDROL)
         {
@@ -46,8 +47,10 @@ namespace Vista
         private void FormInfoVenta_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'trabajoDeDiplomaDataSet2.Pedidos' Puede moverla o quitarla según sea necesario.
-            this.pedidosTableAdapter.Fill(this.trabajoDeDiplomaDataSet2.Pedidos);
-
+            // this.pedidosTableAdapter.Fill(this.trabajoDeDiplomaDataSet2.Pedidos);
+            dgvVentasVendedor.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
+            dgvVentasVendedor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtpFechaInicio.Value = new DateTime(2020, 1, 1);
         }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -70,14 +73,15 @@ namespace Vista
             dgvVentasVendedor.DataSource = null;
             string NombreVendedor = cbVendedores.SelectedItem.ToString();
             int DNIVendedor =controlUsuario.GetDNI(NombreVendedor);
-            CargarDatos(DNIVendedor);
+            // CargarDatos(DNIVendedor);
+            FILTRAR(DNIVendedor, dtpFechaInicio.Value, dtpFechaFin.Value);
         }
 
 
-        private void CargarDatos(int DNI)
+        private void FILTRAR(int DNI, DateTime fechaInicio, DateTime fechaFin)
         {
-            //dgwDetalles.DataSource = controlPedido.ObtenerDetallePedido(detallePediddo);
-            DataTable dataTable = controlDGV.ObtenerPedido(DNI);
+            // Obtener los pedidos del vendedor dentro del rango de fechas
+            DataTable dataTable = controlDGV.ObtenerPedidoPorFecha(DNI, fechaInicio, fechaFin);
 
             // Suscribir el evento CellFormatting
             dgvVentasVendedor.CellFormatting += (sender, e) =>
@@ -92,6 +96,8 @@ namespace Vista
             dgvVentasVendedor.DataSource = dataTable;
         }
 
+
+
         private void loadNameVendedores()
         {
             cbVendedores.Items.Clear();
@@ -102,5 +108,26 @@ namespace Vista
         {
 
         }
+
+        private void dtpFechaInicio_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarDGV();
+
+        } 
+        private void dtpFechaFin_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarDGV();
+        }
+        private void ActualizarDGV()
+        {
+            string NombreVendedor = cbVendedores.SelectedItem?.ToString();
+            if (NombreVendedor != null)
+            {
+                int DNIVendedor = controlUsuario.GetDNI(NombreVendedor);
+                FILTRAR(DNIVendedor, dtpFechaInicio.Value, dtpFechaFin.Value);
+            }
+        }
+
+       
     }
 }

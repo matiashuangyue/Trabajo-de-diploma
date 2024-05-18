@@ -42,7 +42,14 @@ namespace Vista
 
         private void FormVenta_Load(object sender, EventArgs e)
         {
+            
+            dgvDetalles.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
+            dgvDetalles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             permiso();
+            
+
+
+            
         }
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)
@@ -73,7 +80,7 @@ namespace Vista
                         porcentaje=decimal.Parse(txtPorcentaje.Text);
                         precioCompra = Convert.ToDecimal( productoEncontrado.Price);
                         CodigoEncontrado = int.Parse(txtCodigoDetalle.Text);
-                        txtNombDetalle.Text = productoEncontrado.Name;
+                        txtNombre.Text = productoEncontrado.Name;
                         precioVenta = precioCompra * (1 + porcentaje);
                         txtPrecioDetalleVenta.Text = (Math.Round(precioVenta, 2, MidpointRounding.AwayFromZero).ToString());
                         // Establecer la variable de estado a true si se encontró el producto
@@ -160,7 +167,7 @@ namespace Vista
         private void btnAgregarDetallePedido_Click(object sender, EventArgs e)
         {
             ValidacionCliente();
-            if (string.IsNullOrEmpty(txtNombDetalle.Text) || string.IsNullOrEmpty(txtCodigoDetalle.Text) || string.IsNullOrEmpty(txtCantidad.Text) || string.IsNullOrEmpty(txtPorcentaje.Text)||validarCliente==true)
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtCodigoDetalle.Text) || string.IsNullOrEmpty(txtCantidad.Text) || string.IsNullOrEmpty(txtPorcentaje.Text)||validarCliente==true)
             {
                 MessageBox.Show("Por favor, busca un producto  antes de agregar.");
                 return;
@@ -243,23 +250,7 @@ namespace Vista
         {
 
         }
-        private void CargarDatos(DetallePedido detallePediddo)                         //tengo que borrarlo
-        {
-            //dgwDetalles.DataSource = controlPedido.ObtenerDetallePedido(detallePediddo);
-            DataTable dataTable = controlPedido.ObtenerDetallePedido(detallePediddo);
-
-            // Suscribir el evento CellFormatting
-            dgvDetalles.CellFormatting += (sender, e) =>
-            {
-                if (e.Value == DBNull.Value)
-                {
-                    e.Value = "Nulo"; // O el valor que desees mostrar para DBNull
-                    e.FormattingApplied = true;
-                }
-            };
-
-            dgvDetalles.DataSource = dataTable;
-        }
+     
 
         private void btnCerrarVenta_Click(object sender, EventArgs e)
         {
@@ -322,6 +313,11 @@ namespace Vista
         }
 
         private void panelDetalle_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

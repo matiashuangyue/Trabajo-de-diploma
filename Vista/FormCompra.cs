@@ -41,7 +41,18 @@ namespace Vista
 
         private void FormCompra_Load(object sender, EventArgs e)
         {
+            InitializalDgv();
+            
+        }
 
+        private void InitializalDgv()
+        {
+            dgvDetalles.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
+            dgvDetalles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvDetalles.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvDetalles.DefaultCellStyle.Font = new Font("Arial", 10, FontStyle.Regular);
+            dgvDetalles.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvDetalles.DefaultCellStyle.ForeColor = Color.Black;
         }
       
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -229,6 +240,7 @@ namespace Vista
                     calcularPrecioCantidad(nuevoDetalle.Cantidad, nuevoDetalle.PrecioUnitario);
                     MessageBox.Show("Detalle agregado exitosamente a la compra.");
                     vaciarTextbox();
+                    PasarDatos(nuevoDetalle);
                 }
                 else
                 {
@@ -279,6 +291,7 @@ namespace Vista
                     int cerrarExito = controlCompra.CerrarCompra(CerrarCompra);
                     if (cerrarExito == 1)
                     {
+                        dgvDetalles.Rows.Clear();
                         cambiarForm(1);
                         vaciarTextbox();
                         sumaTotal = 0;
@@ -303,7 +316,19 @@ namespace Vista
             compraActual = new Compra(); // Crea una nueva instancia para la próxima compra
                                          // Puedes agregar más reinicializaciones según tus necesidades
         }
-        
 
+        private void PasarDatos(DetalleCompra detalleCompra)
+        {
+            int n = dgvDetalles.Rows.Add();
+
+            dgvDetalles.Rows[n].Cells[0].Value = detalleCompra.ID_Compra;
+            dgvDetalles.Rows[n].Cells[1].Value = detalleCompra.ID_Producto;
+            dgvDetalles.Rows[n].Cells[2].Value = detalleCompra.Cantidad;
+            dgvDetalles.Rows[n].Cells[3].Value = detalleCompra.PrecioUnitario;
+        }
+        private void panelDetalle_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

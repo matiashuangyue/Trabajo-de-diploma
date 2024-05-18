@@ -12,3 +12,16 @@ C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\bin\Debug\Entidades.
 C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\obj\Debug\Modelo.csproj.CopyComplete
 C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\obj\Debug\Modelo.exe
 C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Modelo\obj\Debug\Modelo.pdb
+D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\Modelo.exe.config
+D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\Modelo.exe
+D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\Modelo.pdb
+D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\Entidades.exe
+D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\Entidades.pdb
+D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\Entidades.exe.config
+D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.Properties.Resources.resources
+D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.csproj.GenerateResource.cache
+D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.csproj.Up2Date
+D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.exe
+D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.pdb
