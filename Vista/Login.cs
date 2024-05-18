@@ -34,9 +34,9 @@ namespace Vista
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtDNI != null)
+            if (!string.IsNullOrEmpty(txtDNI.Text))
             {
-                if (txtPassword != null)
+                if (!string.IsNullOrEmpty(txtPassword.Text))
                 {
                     Usuario usuario = new Usuario
                     {
@@ -63,8 +63,17 @@ namespace Vista
                     else
                     {
                         MessageBox.Show("El Usuario o Contrasena es invalido");
+                        txtPassword.Clear();
                     }
                 }
+                else
+                {
+                        MessageBox.Show("Porfavor ingrese su Contrasena");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Porfavor ingrese su DNI ");
             }
         }
 
@@ -81,5 +90,28 @@ namespace Vista
             IDRol= usuarioEncontrado.ID_Rol;
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Form FormSignUp = new FormSignUp();
+            FormSignUp.Show();
+            this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Form FormRecuperarClave = new FormRecuperarClave(-1);///////aca hay que cambiar el 1 por el rolID
+            FormRecuperarClave.Show();
+            this.Hide();
+        }
     }
 }

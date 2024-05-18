@@ -237,7 +237,7 @@ namespace Vista
         private void btnProveedor_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
-            OpenChidForm(new Dashboard(rol));
+            OpenChidForm(new FormRecuperarClave(rol));
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
@@ -255,7 +255,7 @@ namespace Vista
         private void btnBaseDeDatos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color7);
-            OpenChidForm(new FormInforme(rol));
+            OpenChidForm(new FormSignUp());
         }
 
         private void btnHome_Click(object sender, EventArgs e)

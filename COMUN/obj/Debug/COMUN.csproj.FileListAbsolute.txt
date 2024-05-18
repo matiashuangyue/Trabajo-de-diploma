@@ -1,0 +1,346 @@
+C:\Users\Ing\Downloads\Abrir Forms\Abrir Forms\COMUN\obj\Debug\COMUN.csprojResolveAssemblyReference.cache
+D:\Google Drive\PE\PROGRAMACION I\EJEMPLOS WINFORM C#\Abrir Forms\Abrir Forms\COMUN\obj\Debug\COMUN.csprojResolveAssemblyReference.cache
+C:\Users\Ing\Documents\Visual Studio 2012\Projects\EjemploUno\COMUN\bin\Debug\COMUN.dll
+C:\Users\Ing\Documents\Visual Studio 2012\Projects\EjemploUno\COMUN\bin\Debug\COMUN.pdb
+C:\Users\Ing\Documents\Visual Studio 2012\Projects\EjemploUno\COMUN\obj\Debug\COMUN.csprojResolveAssemblyReference.cache
+C:\Users\Ing\Documents\Visual Studio 2012\Projects\EjemploUno\COMUN\obj\Debug\COMUN.dll
+C:\Users\Ing\Documents\Visual Studio 2012\Projects\EjemploUno\COMUN\obj\Debug\COMUN.pdb
+C:\Users\Ing\Desktop\PROYECTOS DE EJEMPLOS\EjemploDos\COMUN\bin\Debug\COMUN.dll
+C:\Users\Ing\Desktop\PROYECTOS DE EJEMPLOS\EjemploDos\COMUN\bin\Debug\COMUN.pdb
+C:\Users\Ing\Desktop\PROYECTOS DE EJEMPLOS\EjemploDos\COMUN\obj\Debug\COMUN.csprojResolveAssemblyReference.cache
+C:\Users\Ing\Desktop\PROYECTOS DE EJEMPLOS\EjemploDos\COMUN\obj\Debug\COMUN.dll
+C:\Users\Ing\Desktop\PROYECTOS DE EJEMPLOS\EjemploDos\COMUN\obj\Debug\COMUN.pdb
+C:\UAI\PI-2019\Clase 11\EjemploDos\EjemploDos\COMUN\bin\Debug\COMUN.dll
+C:\UAI\PI-2019\Clase 11\EjemploDos\EjemploDos\COMUN\bin\Debug\COMUN.pdb
+C:\UAI\PI-2019\Clase 11\EjemploDos\EjemploDos\COMUN\obj\Debug\COMUN.csprojResolveAssemblyReference.cache
+C:\UAI\PI-2019\Clase 11\EjemploDos\EjemploDos\COMUN\obj\Debug\COMUN.dll
+C:\UAI\PI-2019\Clase 11\EjemploDos\EjemploDos\COMUN\obj\Debug\COMUN.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\COMUN.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\COMUN.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\obj\Debug\COMUN.csproj.AssemblyReference.cache
+C:\Users\agusp\source\repos\Studysphere\COMUN\obj\Debug\COMUN.csproj.CoreCompileInputs.cache
+C:\Users\agusp\source\repos\Studysphere\COMUN\obj\Debug\COMUN.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\obj\Debug\COMUN.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\COMUN.dll.config
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Adobe.DocumentServices.PDFTools.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\jose-jwt.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Newtonsoft.Json.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Polly.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\RestSharp.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.Buffers.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.Memory.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.ValueTuple.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Core.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Package.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UriTemplate.Core.dll
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Adobe.DocumentServices.PDFTools.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Newtonsoft.Json.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\Polly.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\RestSharp.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.Buffers.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.Memory.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\System.ValueTuple.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Core.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Core.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Package.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Package.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.pdb
+C:\Users\agusp\source\repos\Studysphere\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.xml
+C:\Users\agusp\source\repos\Studysphere\COMUN\obj\Debug\COMUN.csproj.CopyComplete
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\COMUN.dll.config
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\COMUN.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\COMUN.pdb
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Adobe.DocumentServices.PDFTools.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\jose-jwt.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Polly.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\RestSharp.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Buffers.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Memory.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Text.Json.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.ValueTuple.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Core.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Package.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UriTemplate.Core.dll
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Adobe.DocumentServices.PDFTools.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Newtonsoft.Json.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Polly.pdb
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\Polly.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\RestSharp.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Buffers.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Memory.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Text.Json.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\System.ValueTuple.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.pdb
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Core.pdb
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Core.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.pdb
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.pdb
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Package.pdb
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Package.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.pdb
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.xml
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.pdb
+C:\Users\vitto\source\repos\biosys\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.xml
+C:\Users\vitto\source\repos\biosys\COMUN\obj\Debug\COMUN.csproj.AssemblyReference.cache
+C:\Users\vitto\source\repos\biosys\COMUN\obj\Debug\COMUN.csproj.CoreCompileInputs.cache
+C:\Users\vitto\source\repos\biosys\COMUN\obj\Debug\COMUN.csproj.Up2Date
+C:\Users\vitto\source\repos\biosys\COMUN\obj\Debug\COMUN.dll
+C:\Users\vitto\source\repos\biosys\COMUN\obj\Debug\COMUN.pdb
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\COMUN.dll.config
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\COMUN.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\COMUN.pdb
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Adobe.DocumentServices.PDFTools.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\BouncyCastle.Crypto.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\jose-jwt.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Microsoft.Net.Http.Headers.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Newtonsoft.Json.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Polly.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\RestSharp.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Buffers.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.ComponentModel.Annotations.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Memory.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Numerics.Vectors.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Text.Encodings.Web.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Text.Json.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.ValueTuple.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Core.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Package.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UriTemplate.Core.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Adobe.DocumentServices.PDFTools.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\BouncyCastle.Crypto.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Microsoft.Net.Http.Headers.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Newtonsoft.Json.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Polly.pdb
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\Polly.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\RestSharp.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Buffers.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Memory.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Numerics.Vectors.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Text.Encodings.Web.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Text.Json.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\System.ValueTuple.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.pdb
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Core.pdb
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Core.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.pdb
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.pdb
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Package.pdb
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Package.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.pdb
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.pdb
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.xml
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\obj\Debug\COMUN.csproj.AssemblyReference.cache
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\obj\Debug\COMUN.csproj.CoreCompileInputs.cache
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\obj\Debug\COMUN.csproj.Up2Date
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\obj\Debug\COMUN.dll
+D:\proyecto\proyecto de otro\SANTI biosys-main\biosys-main\COMUN\obj\Debug\COMUN.pdb
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\COMUN.dll.config
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\COMUN.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\COMUN.pdb
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Adobe.DocumentServices.PDFTools.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\BouncyCastle.Crypto.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\jose-jwt.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Microsoft.Net.Http.Headers.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Newtonsoft.Json.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Polly.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\RestSharp.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Buffers.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.ComponentModel.Annotations.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Memory.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Numerics.Vectors.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Text.Encodings.Web.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Text.Json.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.ValueTuple.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Core.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Package.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UriTemplate.Core.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Adobe.DocumentServices.PDFTools.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\BouncyCastle.Crypto.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Microsoft.Net.Http.Headers.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Newtonsoft.Json.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Polly.pdb
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\Polly.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\RestSharp.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Buffers.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Memory.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Numerics.Vectors.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Text.Encodings.Web.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Text.Json.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\System.ValueTuple.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.pdb
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Core.pdb
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Core.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.pdb
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.pdb
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Package.pdb
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Package.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.pdb
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.pdb
+D:\proyecto\Trabajo-de-diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.xml
+D:\proyecto\Trabajo-de-diploma\COMUN\obj\Debug\COMUN.csproj.AssemblyReference.cache
+D:\proyecto\Trabajo-de-diploma\COMUN\obj\Debug\COMUN.csproj.CoreCompileInputs.cache
+D:\proyecto\Trabajo-de-diploma\COMUN\obj\Debug\COMUN.csproj.Up2Date
+D:\proyecto\Trabajo-de-diploma\COMUN\obj\Debug\COMUN.dll
+D:\proyecto\Trabajo-de-diploma\COMUN\obj\Debug\COMUN.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\COMUN.dll.config
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\COMUN.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\COMUN.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Adobe.DocumentServices.PDFTools.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\jose-jwt.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Polly.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\RestSharp.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Buffers.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Memory.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Text.Json.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.ValueTuple.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Core.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Package.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UriTemplate.Core.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Adobe.DocumentServices.PDFTools.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Polly.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\Polly.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\RestSharp.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Buffers.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Memory.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Text.Json.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\System.ValueTuple.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Core.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Core.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.DocumentLayoutAnalysis.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Fonts.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Package.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Package.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokenization.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.pdb
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\bin\Debug\UglyToad.PdfPig.Tokens.xml
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\obj\Debug\COMUN.csproj.AssemblyReference.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\obj\Debug\COMUN.csproj.CoreCompileInputs.cache
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\obj\Debug\COMUN.csproj.CopyComplete
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\obj\Debug\COMUN.dll
+C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\obj\Debug\COMUN.pdb
