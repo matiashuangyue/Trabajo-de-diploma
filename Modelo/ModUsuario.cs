@@ -194,6 +194,46 @@ namespace Modelo
             }
         }
 
+        public string GetPasswordPorDniYMail(int dni, string mail)
+        {
+            if (dni <= 0 || string.IsNullOrWhiteSpace(mail))
+            {
+                return string.Empty; // Valor que indica que no se pudo obtener la contraseña
+            }
+
+            try
+            {
+                using (var conn = GetConnection())
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("SELECT Contra FROM Usuarios WHERE DNI = @DNI AND Mail = @Mail", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@DNI", dni);
+                        cmd.Parameters.AddWithValue("@Mail", mail);
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            string password = dr["Contra"].ToString();
+                            conn.Close();
+                            return password;
+                        }
+                        else
+                        {
+                            conn.Close();
+                            return string.Empty; // Valor que indica que no se encontró el usuario
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (optional)
+                // Console.WriteLine(ex.Message);
+                return string.Empty; // Valor que indica un error durante la ejecución
+            }
+        }
+
 
         public int Registrar(Usuario usuario)
         {

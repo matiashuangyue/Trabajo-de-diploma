@@ -26,6 +26,10 @@ namespace Controladora
         {
             return modUsuario.GetDNIPorNombre(name);
         }
+        public string GetContra(int dni,string mail)
+        {
+            return modUsuario.GetPasswordPorDniYMail(dni,mail);
+        }
 
         public int RegistrarCuenta(Usuario usuario)
         {
