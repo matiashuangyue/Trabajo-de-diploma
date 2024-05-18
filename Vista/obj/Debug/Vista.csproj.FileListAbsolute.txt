@@ -28,12 +28,10 @@ C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormI
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormVenta.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormCompra.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormControlStock.resources
-C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormProveedor.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormAddProducto.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormAddUsuario.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormModificacionesProducto.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormModificacionesUsuario.resources
-C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormAddDetalleCompra.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormInfoCompra.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormInfoVenta.resources
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Vista.exe.config
@@ -73,3 +71,5 @@ D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.exe
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.pdb
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormGestionarPermiso.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.Dashboard.resources
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Vista\obj\Debug\Vista.FormGestionarPermiso.resources
+C:\Users\yue17\Documents\Proyecto\Trabajo de diploma\Vista\obj\Debug\Vista.Dashboard.resources
