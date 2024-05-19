@@ -55,7 +55,7 @@ namespace Vista
             {
                 string mail = txtMail.Text;
 
-
+                
                 // Obtener la contraseña
                 string contraseña = controlUsuario.GetContra(dni, mail);
 
