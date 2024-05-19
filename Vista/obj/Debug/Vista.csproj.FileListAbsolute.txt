@@ -64,7 +64,6 @@ D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.HomePage.aa.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.GenerateResource.cache
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.CoreCompileInputs.cache
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\aa\Vista.resources.dll
-D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.Up2Date
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.exe
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.pdb
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormGestionarPermiso.resources
@@ -74,11 +73,8 @@ D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.dll
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.pdb
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\COMUN.dll.config
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Newtonsoft.Json.dll
-D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\SendGrid.dll
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\StarkbankEcdsa.dll
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Newtonsoft.Json.xml
-D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\SendGrid.pdb
-D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\SendGrid.xml
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\COMUN.dll
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\Newtonsoft.Json.dll
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\StarkbankEcdsa.dll
@@ -88,3 +84,5 @@ C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\Newtonsoft.
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormGestionarPermiso.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormSignUp.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormRecuperarClave.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.CopyComplete

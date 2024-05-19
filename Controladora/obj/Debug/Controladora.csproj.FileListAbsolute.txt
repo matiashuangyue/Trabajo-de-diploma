@@ -28,6 +28,7 @@ D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.csproj.Assemb
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.Properties.Resources.resources
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.csproj.GenerateResource.cache
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
-D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controla.1EE7A4DA.Up2Date
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.exe
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.pdb
+D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.csproj.SuggestedBindingRedirects.cache
+D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.csproj.CopyComplete
