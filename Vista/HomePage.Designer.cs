@@ -434,6 +434,7 @@
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Tag = "Gestionar Auditorias";
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // iconButton2
             // 
@@ -448,6 +449,7 @@
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Tag = "Resguardo y Restauracion";
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // HomePage
             // 

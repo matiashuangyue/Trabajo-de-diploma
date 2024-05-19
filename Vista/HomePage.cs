@@ -467,5 +467,17 @@ namespace Vista
             OpenChidForm(new FormInfoVisual(rol, UserDNI));
             hideSubmenu();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            OpenChidForm(new FormAuditorias(rol, UserDNI));
+            hideSubmenu();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            OpenChidForm(new FormResguardoyRestauracion(rol, UserDNI));
+            hideSubmenu();
+        }
     }
 }

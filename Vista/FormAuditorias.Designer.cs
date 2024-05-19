@@ -28,40 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panelDetalle = new System.Windows.Forms.Panel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.panelAuditoria = new System.Windows.Forms.Panel();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
             this.btnGenerarInforme = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panelDetalle.SuspendLayout();
+            this.panelAuditoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelDetalle
+            // panelAuditoria
             // 
-            this.panelDetalle.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelDetalle.Controls.Add(this.label1);
-            this.panelDetalle.Controls.Add(this.label10);
-            this.panelDetalle.Controls.Add(this.dgvDetalles);
-            this.panelDetalle.Controls.Add(this.btnGenerarInforme);
-            this.panelDetalle.Location = new System.Drawing.Point(25, 26);
-            this.panelDetalle.Name = "panelDetalle";
-            this.panelDetalle.Size = new System.Drawing.Size(1838, 1106);
-            this.panelDetalle.TabIndex = 20;
+            this.panelAuditoria.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelAuditoria.Controls.Add(this.label1);
+            this.panelAuditoria.Controls.Add(this.label10);
+            this.panelAuditoria.Controls.Add(this.dgvDetalles);
+            this.panelAuditoria.Controls.Add(this.btnGenerarInforme);
+            this.panelAuditoria.Location = new System.Drawing.Point(25, 26);
+            this.panelAuditoria.Name = "panelAuditoria";
+            this.panelAuditoria.Size = new System.Drawing.Size(1838, 1106);
+            this.panelAuditoria.TabIndex = 20;
             // 
             // dgvDetalles
             // 
             this.dgvDetalles.BackgroundColor = System.Drawing.Color.White;
             this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDetalles.GridColor = System.Drawing.Color.Black;
             this.dgvDetalles.Location = new System.Drawing.Point(97, 213);
             this.dgvDetalles.Name = "dgvDetalles";
@@ -114,12 +114,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2278, 1308);
-            this.Controls.Add(this.panelDetalle);
+            this.Controls.Add(this.panelAuditoria);
             this.Name = "FormAuditorias";
             this.Text = "Auditorias";
             this.Load += new System.EventHandler(this.FormAuditorias_Load);
-            this.panelDetalle.ResumeLayout(false);
-            this.panelDetalle.PerformLayout();
+            this.panelAuditoria.ResumeLayout(false);
+            this.panelAuditoria.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
             this.ResumeLayout(false);
 
@@ -127,7 +127,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panelDetalle;
+        private System.Windows.Forms.Panel panelAuditoria;
         private System.Windows.Forms.DataGridView dgvDetalles;
         private System.Windows.Forms.Button btnGenerarInforme;
         private System.Windows.Forms.Label label1;
