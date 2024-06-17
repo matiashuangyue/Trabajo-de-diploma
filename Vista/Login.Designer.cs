@@ -36,25 +36,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.LOGO = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnRecuperarClave = new System.Windows.Forms.Label();
             this.btnSignUp = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.LOGO = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LOGO)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOGO)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Cornsilk;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Location = new System.Drawing.Point(181, 233);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.btnLogin.Location = new System.Drawing.Point(121, 155);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(414, 68);
+            this.btnLogin.Size = new System.Drawing.Size(276, 45);
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -62,28 +62,32 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(271, 188);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.txtPassword.Location = new System.Drawing.Point(181, 125);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(324, 33);
+            this.txtPassword.Size = new System.Drawing.Size(217, 24);
             this.txtPassword.TabIndex = 8;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // txtDNI
             // 
-            this.txtDNI.Location = new System.Drawing.Point(271, 131);
-            this.txtDNI.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.txtDNI.Location = new System.Drawing.Point(181, 87);
+            this.txtDNI.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(324, 33);
+            this.txtDNI.Size = new System.Drawing.Size(217, 24);
             this.txtDNI.TabIndex = 7;
+            this.txtDNI.TextChanged += new System.EventHandler(this.txtDNI_TextChanged);
+            this.txtDNI.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDNI_KeyDown);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(163, 191);
+            this.label2.Location = new System.Drawing.Point(109, 127);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 25);
+            this.label2.Size = new System.Drawing.Size(70, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Password";
             // 
@@ -92,9 +96,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label1.Location = new System.Drawing.Point(163, 137);
+            this.label1.Location = new System.Drawing.Point(109, 91);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 25);
+            this.label1.Size = new System.Drawing.Size(32, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "DNI";
             // 
@@ -104,9 +109,10 @@
             this.label3.BackColor = System.Drawing.Color.CadetBlue;
             this.label3.Font = new System.Drawing.Font("Perpetua Titling MT", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(9, 54);
+            this.label3.Location = new System.Drawing.Point(6, 36);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(797, 39);
+            this.label3.Size = new System.Drawing.Size(528, 27);
             this.label3.TabIndex = 9;
             this.label3.Text = "SISTEMA DE CONTROL Y GESTION DE STOCK";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,12 +131,64 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(563, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(375, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(838, 551);
+            this.panel1.Size = new System.Drawing.Size(559, 367);
             this.panel1.TabIndex = 10;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnRecuperarClave
+            // 
+            this.btnRecuperarClave.AutoSize = true;
+            this.btnRecuperarClave.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnRecuperarClave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRecuperarClave.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecuperarClave.ForeColor = System.Drawing.Color.Black;
+            this.btnRecuperarClave.Location = new System.Drawing.Point(284, 326);
+            this.btnRecuperarClave.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnRecuperarClave.Name = "btnRecuperarClave";
+            this.btnRecuperarClave.Size = new System.Drawing.Size(236, 19);
+            this.btnRecuperarClave.TabIndex = 13;
+            this.btnRecuperarClave.Text = "Recuperar mi CONTRASEÑA!!";
+            this.btnRecuperarClave.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // btnSignUp
+            // 
+            this.btnSignUp.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignUp.Location = new System.Drawing.Point(121, 209);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(276, 45);
+            this.btnSignUp.TabIndex = 12;
+            this.btnSignUp.Text = "SIGN UP";
+            this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(517, 2);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(21, 23);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 11;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(488, 2);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(25, 23);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 10;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // LOGO
             // 
@@ -140,79 +198,30 @@
             this.LOGO.Image = global::Vista.Properties.Resources.Star_CG1;
             this.LOGO.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.LOGO.Location = new System.Drawing.Point(-1, 0);
-            this.LOGO.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.LOGO.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.LOGO.Name = "LOGO";
-            this.LOGO.Size = new System.Drawing.Size(567, 551);
+            this.LOGO.Size = new System.Drawing.Size(378, 367);
             this.LOGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LOGO.TabIndex = 11;
             this.LOGO.TabStop = false;
             // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(732, 3);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(37, 35);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 10;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(775, 3);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(31, 35);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 11;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // btnRecuperarClave
-            // 
-            this.btnRecuperarClave.AutoSize = true;
-            this.btnRecuperarClave.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnRecuperarClave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRecuperarClave.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecuperarClave.ForeColor = System.Drawing.Color.Black;
-            this.btnRecuperarClave.Location = new System.Drawing.Point(426, 489);
-            this.btnRecuperarClave.Name = "btnRecuperarClave";
-            this.btnRecuperarClave.Size = new System.Drawing.Size(357, 28);
-            this.btnRecuperarClave.TabIndex = 13;
-            this.btnRecuperarClave.Text = "Recuperar mi CONTRASEÑA!!";
-            this.btnRecuperarClave.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // btnSignUp
-            // 
-            this.btnSignUp.BackColor = System.Drawing.Color.Cornsilk;
-            this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSignUp.Location = new System.Drawing.Point(181, 313);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(414, 68);
-            this.btnSignUp.TabIndex = 12;
-            this.btnSignUp.Text = "SIGN UP";
-            this.btnSignUp.UseVisualStyleBackColor = false;
-            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
-            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 550);
+            this.ClientSize = new System.Drawing.Size(933, 367);
             this.Controls.Add(this.LOGO);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STAR CG";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LOGO)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOGO)).EndInit();
             this.ResumeLayout(false);
 
         }

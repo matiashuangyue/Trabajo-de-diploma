@@ -104,7 +104,7 @@
             resources.ApplyResources(this.iconButton2, "iconButton2");
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.BarChart;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ShieldAlt;
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 32;
@@ -119,7 +119,7 @@
             resources.ApplyResources(this.iconButton1, "iconButton1");
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.BarChart;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Paste;
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 32;
@@ -202,7 +202,7 @@
             resources.ApplyResources(this.btnInforme, "btnInforme");
             this.btnInforme.FlatAppearance.BorderSize = 0;
             this.btnInforme.ForeColor = System.Drawing.Color.White;
-            this.btnInforme.IconChar = FontAwesome.Sharp.IconChar.BarChart;
+            this.btnInforme.IconChar = FontAwesome.Sharp.IconChar.FileContract;
             this.btnInforme.IconColor = System.Drawing.Color.White;
             this.btnInforme.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInforme.IconSize = 32;
@@ -420,7 +420,7 @@
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.House;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.Gainsboro;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 64;
+            this.iconCurrentChildForm.IconSize = 43;
             resources.ApplyResources(this.iconCurrentChildForm, "iconCurrentChildForm");
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.TabStop = false;
@@ -433,7 +433,7 @@
             this.iconPerfil.IconChar = FontAwesome.Sharp.IconChar.UserGear;
             this.iconPerfil.IconColor = System.Drawing.Color.Gainsboro;
             this.iconPerfil.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPerfil.IconSize = 96;
+            this.iconPerfil.IconSize = 64;
             this.iconPerfil.Name = "iconPerfil";
             this.iconPerfil.TabStop = false;
             this.iconPerfil.Click += new System.EventHandler(this.iconPerfil_Click);

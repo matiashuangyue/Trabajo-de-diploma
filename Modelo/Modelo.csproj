@@ -53,6 +53,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModBackUpRestore.cs" />
     <Compile Include="ModCompra.cs" />
     <Compile Include="ModDGV.cs" />
     <Compile Include="ModInforme.cs" />
