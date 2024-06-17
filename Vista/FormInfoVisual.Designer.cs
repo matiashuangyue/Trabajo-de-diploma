@@ -45,10 +45,11 @@
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelInfoVisual = new System.Windows.Forms.Panel();
+            this.datePickerFin = new System.Windows.Forms.DateTimePicker();
+            this.datePickerInicio = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.btnDownloadInforme = new System.Windows.Forms.Button();
-            this.datePickerInicio = new System.Windows.Forms.DateTimePicker();
-            this.datePickerFin = new System.Windows.Forms.DateTimePicker();
+            this.btnFiltrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
@@ -69,7 +70,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(994, 637);
+            this.chart1.Size = new System.Drawing.Size(893, 546);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
@@ -80,14 +81,14 @@
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(1067, 144);
+            this.chart2.Location = new System.Drawing.Point(1083, 144);
             this.chart2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(932, 637);
+            this.chart2.Size = new System.Drawing.Size(842, 546);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
             // 
@@ -97,14 +98,14 @@
             this.chart3.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chart3.Legends.Add(legend3);
-            this.chart3.Location = new System.Drawing.Point(39, 897);
+            this.chart3.Location = new System.Drawing.Point(39, 787);
             this.chart3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart3.Name = "chart3";
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.chart3.Series.Add(series3);
-            this.chart3.Size = new System.Drawing.Size(994, 513);
+            this.chart3.Size = new System.Drawing.Size(893, 419);
             this.chart3.TabIndex = 3;
             this.chart3.Text = "chart3";
             // 
@@ -114,20 +115,21 @@
             this.chart4.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.chart4.Legends.Add(legend4);
-            this.chart4.Location = new System.Drawing.Point(1067, 897);
+            this.chart4.Location = new System.Drawing.Point(1083, 787);
             this.chart4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart4.Name = "chart4";
             series4.ChartArea = "ChartArea1";
             series4.Legend = "Legend1";
             series4.Name = "Series1";
             this.chart4.Series.Add(series4);
-            this.chart4.Size = new System.Drawing.Size(424, 296);
+            this.chart4.Size = new System.Drawing.Size(842, 418);
             this.chart4.TabIndex = 2;
             this.chart4.Text = "chart4";
             // 
             // panelInfoVisual
             // 
             this.panelInfoVisual.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelInfoVisual.Controls.Add(this.btnFiltrar);
             this.panelInfoVisual.Controls.Add(this.datePickerFin);
             this.panelInfoVisual.Controls.Add(this.datePickerInicio);
             this.panelInfoVisual.Controls.Add(this.chart3);
@@ -136,12 +138,26 @@
             this.panelInfoVisual.Controls.Add(this.chart2);
             this.panelInfoVisual.Controls.Add(this.btnDownloadInforme);
             this.panelInfoVisual.Controls.Add(this.chart1);
-            this.panelInfoVisual.Location = new System.Drawing.Point(14, 26);
+            this.panelInfoVisual.Location = new System.Drawing.Point(12, 13);
             this.panelInfoVisual.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelInfoVisual.Name = "panelInfoVisual";
             this.panelInfoVisual.Size = new System.Drawing.Size(2068, 1327);
             this.panelInfoVisual.TabIndex = 21;
             this.panelInfoVisual.Paint += new System.Windows.Forms.PaintEventHandler(this.panelInfoVisual_Paint);
+            // 
+            // datePickerFin
+            // 
+            this.datePickerFin.Location = new System.Drawing.Point(50, 743);
+            this.datePickerFin.Name = "datePickerFin";
+            this.datePickerFin.Size = new System.Drawing.Size(371, 28);
+            this.datePickerFin.TabIndex = 21;
+            // 
+            // datePickerInicio
+            // 
+            this.datePickerInicio.Location = new System.Drawing.Point(50, 709);
+            this.datePickerInicio.Name = "datePickerInicio";
+            this.datePickerInicio.Size = new System.Drawing.Size(371, 28);
+            this.datePickerInicio.TabIndex = 21;
             // 
             // label10
             // 
@@ -161,27 +177,27 @@
             this.btnDownloadInforme.BackColor = System.Drawing.Color.Cornsilk;
             this.btnDownloadInforme.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDownloadInforme.ForeColor = System.Drawing.Color.Black;
-            this.btnDownloadInforme.Location = new System.Drawing.Point(1624, 917);
-            this.btnDownloadInforme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDownloadInforme.Location = new System.Drawing.Point(1312, 698);
+            this.btnDownloadInforme.Margin = new System.Windows.Forms.Padding(4);
             this.btnDownloadInforme.Name = "btnDownloadInforme";
             this.btnDownloadInforme.Size = new System.Drawing.Size(374, 83);
             this.btnDownloadInforme.TabIndex = 18;
             this.btnDownloadInforme.Text = "Download Informe";
             this.btnDownloadInforme.UseVisualStyleBackColor = false;
             // 
-            // datePickerInicio
+            // btnFiltrar
             // 
-            this.datePickerInicio.Location = new System.Drawing.Point(241, 841);
-            this.datePickerInicio.Name = "datePickerInicio";
-            this.datePickerInicio.Size = new System.Drawing.Size(371, 28);
-            this.datePickerInicio.TabIndex = 21;
-            // 
-            // datePickerFin
-            // 
-            this.datePickerFin.Location = new System.Drawing.Point(662, 841);
-            this.datePickerFin.Name = "datePickerFin";
-            this.datePickerFin.Size = new System.Drawing.Size(371, 28);
-            this.datePickerFin.TabIndex = 21;
+            this.btnFiltrar.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnFiltrar.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrar.ForeColor = System.Drawing.Color.Black;
+            this.btnFiltrar.Location = new System.Drawing.Point(558, 696);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(374, 83);
+            this.btnFiltrar.TabIndex = 22;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = false;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // FormInfoVisual
             // 
@@ -214,5 +230,6 @@
         private System.Windows.Forms.Button btnDownloadInforme;
         private System.Windows.Forms.DateTimePicker datePickerFin;
         private System.Windows.Forms.DateTimePicker datePickerInicio;
+        private System.Windows.Forms.Button btnFiltrar;
     }
 }

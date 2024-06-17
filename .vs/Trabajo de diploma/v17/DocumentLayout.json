@@ -7,15 +7,19 @@
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|d:\\proyecto\\trabajo-de-diploma\\modelo\\modinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|D:\\proyecto\\Trabajo-de-diploma\\modelo\\modinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|solutionrelative:modelo\\modinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\forminfovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|D:\\proyecto\\Trabajo-de-diploma\\modelo\\conexionsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|solutionrelative:modelo\\conexionsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|D:\\proyecto\\Trabajo-de-diploma\\controladora\\controlinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|solutionrelative:controladora\\controlinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -23,12 +27,8 @@
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|d:\\proyecto\\trabajo-de-diploma\\controladora\\controlinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|solutionrelative:controladora\\controlinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|d:\\proyecto\\trabajo-de-diploma\\modelo\\conexionsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|solutionrelative:modelo\\conexionsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formrecuperarclave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,17 +78,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 245,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "HomePage.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\HomePage.cs",
               "RelativeDocumentMoniker": "Vista\\HomePage.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\HomePage.cs",
               "RelativeToolTip": "Vista\\HomePage.cs",
-              "ViewState": "AQIAAMcBAAAAAAAAAAAwwNQBAAAIAAAA",
+              "ViewState": "AQIAAMYBAAAAAAAAAAAQwNQBAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T16:51:57.224Z",
               "IsPinned": true,
@@ -96,13 +96,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ControlInforme.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Controladora\\ControlInforme.cs",
               "RelativeDocumentMoniker": "Controladora\\ControlInforme.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Controladora\\ControlInforme.cs",
               "RelativeToolTip": "Controladora\\ControlInforme.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA/wB0AAAAIAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAzwBwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T18:10:34.401Z",
               "IsPinned": true,
@@ -110,29 +110,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ModInforme.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModInforme.cs",
               "RelativeDocumentMoniker": "Modelo\\ModInforme.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModInforme.cs",
               "RelativeToolTip": "Modelo\\ModInforme.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAADwv1QAAAARAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAgwFoAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T18:12:07.371Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormInfoVenta.cs",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
-              "RelativeDocumentMoniker": "Vista\\FormInfoVenta.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
-              "RelativeToolTip": "Vista\\FormInfoVenta.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAzwFMAAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T20:54:46.451Z",
               "EditorCaption": ""
             },
             {
@@ -143,14 +130,14 @@
               "RelativeDocumentMoniker": "Vista\\FormInfoVisual.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVisual.cs",
               "RelativeToolTip": "Vista\\FormInfoVisual.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAYwEUAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T18:08:14.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormInfoVisual.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVisual.cs",
               "RelativeDocumentMoniker": "Vista\\FormInfoVisual.cs",
@@ -163,12 +150,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "FormInfoVenta.cs",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
+              "RelativeDocumentMoniker": "Vista\\FormInfoVenta.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVenta.cs",
+              "RelativeToolTip": "Vista\\FormInfoVenta.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAwFoAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T20:54:46.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ConexionSQL.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ConexionSQL.cs",
               "RelativeDocumentMoniker": "Modelo\\ConexionSQL.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ConexionSQL.cs",
               "RelativeToolTip": "Modelo\\ConexionSQL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAIAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAgwBUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T21:44:59.025Z",
               "EditorCaption": ""

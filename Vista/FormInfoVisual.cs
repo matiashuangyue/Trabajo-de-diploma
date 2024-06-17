@@ -25,17 +25,14 @@ namespace Vista
             this.DNI = dni;
             this.controlInforme = new ControlInforme();
 
-            this.datePickerInicio = new DateTimePicker();
-            this.datePickerInicio.Format = DateTimePickerFormat.Short;
-            this.datePickerInicio.ValueChanged += new EventHandler(this.DatePicker_ValueChanged);
-            this.Controls.Add(this.datePickerInicio);
-
-            this.datePickerFin = new DateTimePicker();
-            this.datePickerFin.Format = DateTimePickerFormat.Short;
-            this.datePickerFin.ValueChanged += new EventHandler(this.DatePicker_ValueChanged);
-            this.Controls.Add(this.datePickerFin);
             DateTime fechaEspecifica = new DateTime(2022, 1, 1);
             datePickerInicio.Value = fechaEspecifica;
+
+
+
+
+            // Añadir el manejador de eventos para btnFiltrar
+            this.btnFiltrar.Click += new EventHandler(this.btnFiltrar_Click);
         }
         private void FormInfoVisual_Load(object sender, EventArgs e)
         {
@@ -48,7 +45,11 @@ namespace Vista
             DateTime fechaInicio = datePickerInicio.Value.Date;
             DateTime fechaFin = datePickerFin.Value.Date;
 
+            Console.WriteLine($"Fecha Inicio: {fechaInicio}, Fecha Fin: {fechaFin}"); // Depuración
+
             DataTable dataTable = controlInforme.ObtenerVentaPorFecha(fechaInicio, fechaFin);
+
+            Console.WriteLine($"Número de filas obtenidas: {dataTable.Rows.Count}"); // Depuración
 
             chart3.Series.Clear();
             chart3.Titles.Clear();
@@ -227,6 +228,11 @@ namespace Vista
         private void chart1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            CargarVentasPorFechaEnChart();
         }
     }
 }
