@@ -101,6 +101,32 @@ namespace Modelo
         }
 
 
+        public DataTable ObtenerMargenesDeGanancia()
+        {
+          
+            DataTable dataTable = new DataTable();
+            string query = @"
+        SELECT 
+            P.Nombre,
+            P.Precio AS Costo,
+            AVG(DP.PrecioVenta) AS PrecioVentaPromedio,
+            SUM((DP.PrecioVenta - P.Precio) * DP.Cantidad) AS GananciaTotal
+        FROM 
+            Productos P
+        JOIN 
+            DetallePedidos DP ON P.Codigo = DP.ID_Producto
+        GROUP BY 
+            P.Nombre, P.Precio";
+
+            using (SqlConnection connection = GetConnection())
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(dataTable);
+            }
+
+            return dataTable;
+        }
 
 
 

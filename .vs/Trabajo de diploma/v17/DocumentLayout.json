@@ -3,40 +3,60 @@
   "WorkspaceRootPath": "D:\\proyecto\\Trabajo-de-diploma\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\formresguardoyrestauracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formresguardoyrestauracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|d:\\proyecto\\trabajo-de-diploma\\modelo\\modauditoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|solutionrelative:modelo\\modauditoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\formresguardoyrestauracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formresguardoyrestauracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|d:\\proyecto\\trabajo-de-diploma\\modelo\\modbackuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|D:\\proyecto\\Trabajo-de-diploma\\modelo\\modbackuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|solutionrelative:modelo\\modbackuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|d:\\proyecto\\trabajo-de-diploma\\controladora\\controlbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|solutionrelative:controladora\\controlbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|D:\\proyecto\\Trabajo-de-diploma\\controladora\\controlinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|solutionrelative:controladora\\controlinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|D:\\proyecto\\Trabajo-de-diploma\\controladora\\controlinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|solutionrelative:controladora\\controlinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\formgestionarpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formgestionarpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\forminfovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\forminfovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\forminfovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|d:\\proyecto\\trabajo-de-diploma\\modelo\\modinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE1053D-5AF3-4290-8312-D18BD4BA2D61}|Modelo\\Modelo.csproj|solutionrelative:modelo\\modinforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|d:\\proyecto\\trabajo-de-diploma\\vista\\formresguardoyrestauracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formresguardoyrestauracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\formresguardoyrestauracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\formresguardoyrestauracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|D:\\proyecto\\Trabajo-de-diploma\\controladora\\controlbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC5C0895-47F6-43A1-B033-0208F3C696E2}|Controladora\\Controladora.csproj|solutionrelative:controladora\\controlbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|D:\\proyecto\\Trabajo-de-diploma\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43983A7-BC2D-4345-8A2B-D60BF4AE21E0}|Vista\\Vista.csproj|solutionrelative:vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,17 +66,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 245,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "HomePage.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\HomePage.cs",
               "RelativeDocumentMoniker": "Vista\\HomePage.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\HomePage.cs",
               "RelativeToolTip": "Vista\\HomePage.cs",
-              "ViewState": "AQIAANQBAAAAAAAAAAAAANQBAAAIAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T16:51:57.224Z",
               "IsPinned": true,
@@ -64,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "ControlInforme.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Controladora\\ControlInforme.cs",
               "RelativeDocumentMoniker": "Controladora\\ControlInforme.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Controladora\\ControlInforme.cs",
               "RelativeToolTip": "Controladora\\ControlInforme.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwBwAAAAMAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T18:10:34.401Z",
               "IsPinned": true,
@@ -78,32 +98,107 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModAuditoria.cs",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModAuditoria.cs",
+              "RelativeDocumentMoniker": "Modelo\\ModAuditoria.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModAuditoria.cs",
+              "RelativeToolTip": "Modelo\\ModAuditoria.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAwwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T00:16:04.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "FormGestionarPermiso.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormGestionarPermiso.cs",
+              "RelativeDocumentMoniker": "Vista\\FormGestionarPermiso.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormGestionarPermiso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormGestionarPermiso.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T00:06:03.316Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormInfoVisual.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVisual.cs",
+              "RelativeDocumentMoniker": "Vista\\FormInfoVisual.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVisual.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\FormInfoVisual.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T23:44:44.874Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\Login.cs",
               "RelativeDocumentMoniker": "Vista\\Login.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\Login.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vista\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T22:33:10.6Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-06-17T22:33:10.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "ModBackUpRestore.cs",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModBackUpRestore.cs",
+              "RelativeDocumentMoniker": "Modelo\\ModBackUpRestore.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModBackUpRestore.cs",
+              "RelativeToolTip": "Modelo\\ModBackUpRestore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T20:46:51.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ModInforme.cs",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModInforme.cs",
+              "RelativeDocumentMoniker": "Modelo\\ModInforme.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModInforme.cs",
+              "RelativeToolTip": "Modelo\\ModInforme.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAADwv3YAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T23:44:59.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "FormResguardoyRestauracion.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormResguardoyRestauracion.cs",
               "RelativeDocumentMoniker": "Vista\\FormResguardoyRestauracion.cs",
               "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormResguardoyRestauracion.cs",
               "RelativeToolTip": "Vista\\FormResguardoyRestauracion.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAlwGQAAAANAAAA",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAlwGUAAABtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T21:18:37.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "FormInfoVisual.cs",
+              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVisual.cs",
+              "RelativeDocumentMoniker": "Vista\\FormInfoVisual.cs",
+              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormInfoVisual.cs",
+              "RelativeToolTip": "Vista\\FormInfoVisual.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAkwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T23:49:29.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "FormResguardoyRestauracion.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\FormResguardoyRestauracion.cs",
               "RelativeDocumentMoniker": "Vista\\FormResguardoyRestauracion.cs",
@@ -115,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "ControlBackUp.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Controladora\\ControlBackUp.cs",
               "RelativeDocumentMoniker": "Controladora\\ControlBackUp.cs",
@@ -123,25 +218,11 @@
               "RelativeToolTip": "Controladora\\ControlBackUp.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T21:17:34.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T21:17:34.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ModBackUpRestore.cs",
-              "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModBackUpRestore.cs",
-              "RelativeDocumentMoniker": "Modelo\\ModBackUpRestore.cs",
-              "ToolTip": "D:\\proyecto\\Trabajo-de-diploma\\Modelo\\ModBackUpRestore.cs",
-              "RelativeToolTip": "Modelo\\ModBackUpRestore.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAgwDsAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T20:46:51.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\Login.cs",
               "RelativeDocumentMoniker": "Vista\\Login.cs",
@@ -149,12 +230,37 @@
               "RelativeToolTip": "Vista\\Login.cs",
               "ViewState": "AQIAAHQAAAAAAAAAAAAawIcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T22:33:33.703Z",
-              "EditorCaption": ""
-            },
+              "WhenOpened": "2024-06-17T22:33:33.703Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 245,
+          "SelectedChildIndex": -1,
+          "Children": []
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "6a92a00a-cec8-47d6-85f5-5ee124537cf4",
+        "Display": 1,
+        "X": 884,
+        "Y": 157,
+        "Width": 666,
+        "Height": 745,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "HomePage.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\proyecto\\Trabajo-de-diploma\\Vista\\HomePage.cs",
               "RelativeDocumentMoniker": "Vista\\HomePage.cs",

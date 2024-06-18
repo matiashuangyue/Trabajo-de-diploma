@@ -39,6 +39,7 @@ namespace Vista
             CargarProductoMásVendidos();
             CargarVentasPorVendedorEnChart();
             CargarVentasPorFechaEnChart();
+            CargarMargenesDeGananciaEnChart();
         }
  private void CargarVentasPorFechaEnChart()
         {
@@ -212,6 +213,83 @@ namespace Vista
         }
 
 
+        private void CargarMargenesDeGananciaEnChart()
+        {
+            DataTable dataTable = controlInforme.ObtenerMargenesDeGanancia();
+
+            chart4.Series.Clear();
+            chart4.Titles.Clear();
+            chart4.ChartAreas.Clear();
+
+            // Configura el área del gráfico
+            ChartArea chartArea = new ChartArea();
+            chart4.ChartAreas.Add(chartArea);
+
+            // Título del gráfico
+            chart4.Titles.Add("Márgenes de Ganancia por Producto");
+
+            // Configura la serie de costos
+            Series serieCosto = new Series("Costo")
+            {
+                ChartType = SeriesChartType.Column,
+                XValueMember = "Nombre",
+                YValueMembers = "Costo"
+            };
+            chart4.Series.Add(serieCosto);
+
+            // Configura la serie de precios de venta promedio
+            Series seriePrecioVenta = new Series("Precio Venta Promedio")
+            {
+                ChartType = SeriesChartType.Column,
+                XValueMember = "Nombre",
+                YValueMembers = "PrecioVentaPromedio"
+            };
+            chart4.Series.Add(seriePrecioVenta);
+
+            // Configura la serie de márgenes de ganancia total
+            Series serieGanancia = new Series("Ganancia Total")
+            {
+                ChartType = SeriesChartType.Column,
+                XValueMember = "Nombre",
+                YValueMembers = "GananciaTotal"
+            };
+            chart4.Series.Add(serieGanancia);
+
+            // Configura los ejes
+            chart4.ChartAreas[0].AxisX.Title = "Producto";
+            chart4.ChartAreas[0].AxisY.Title = "Valor";
+            chart4.ChartAreas[0].AxisX.LabelStyle.Angle = -45; // Rota las etiquetas del eje X para mejor legibilidad
+            chart4.ChartAreas[0].AxisX.Interval = 1; // Asegura que todas las etiquetas se muestren
+            chart4.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0; // Quita las líneas de la cuadrícula principal del eje X
+            chart4.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.LightGray; // Color de las líneas de la cuadrícula principal del eje Y
+
+            // Rellenar datos en el chart
+            chart4.DataSource = dataTable;
+            chart4.DataBind();
+
+            // Configura las etiquetas de los puntos de datos
+            foreach (Series series in chart4.Series)
+            {
+                foreach (DataPoint point in series.Points)
+                {
+                    point.Label = point.YValues[0].ToString("N2");
+                    point.LabelForeColor = Color.Black;
+                    point.Font = new Font("Arial", 10, FontStyle.Bold);
+                }
+            }
+
+            // Opcional: Cambiar el color de las columnas
+            serieCosto.Color = Color.FromArgb(204, 0, 0); // Color rojo oscuro
+            seriePrecioVenta.Color = Color.FromArgb(0, 102, 204); // Color azul oscuro
+            serieGanancia.Color = Color.FromArgb(0, 204, 102); // Color verde oscuro
+
+            // Opcional: Añadir un borde alrededor de las columnas
+            foreach (Series series in chart4.Series)
+            {
+                series.BorderWidth = 1;
+                series.BorderColor = Color.Black;
+            }
+        }
 
 
         private void DatePicker_ValueChanged(object sender, EventArgs e)

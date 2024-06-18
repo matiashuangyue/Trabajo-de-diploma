@@ -420,7 +420,7 @@
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.House;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.Gainsboro;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 43;
+            this.iconCurrentChildForm.IconSize = 64;
             resources.ApplyResources(this.iconCurrentChildForm, "iconCurrentChildForm");
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.TabStop = false;
@@ -433,7 +433,7 @@
             this.iconPerfil.IconChar = FontAwesome.Sharp.IconChar.UserGear;
             this.iconPerfil.IconColor = System.Drawing.Color.Gainsboro;
             this.iconPerfil.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPerfil.IconSize = 64;
+            this.iconPerfil.IconSize = 96;
             this.iconPerfil.Name = "iconPerfil";
             this.iconPerfil.TabStop = false;
             this.iconPerfil.Click += new System.EventHandler(this.iconPerfil_Click);

@@ -29,6 +29,10 @@ namespace Controladora
             return modInforme.ObtenerVentasPorFecha( fechaInicio,  fechaFin);
         }
 
+        public DataTable ObtenerMargenesDeGanancia()
+        {
+            return modInforme.ObtenerMargenesDeGanancia();
+        }
 
     }
 }
