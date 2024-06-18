@@ -30,5 +30,4 @@ D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.csproj.Genera
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.csproj.CoreCompileInputs.cache
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.exe
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.pdb
-D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.csproj.SuggestedBindingRedirects.cache
-D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.csproj.CopyComplete
+D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controla.1EE7A4DA.Up2Date

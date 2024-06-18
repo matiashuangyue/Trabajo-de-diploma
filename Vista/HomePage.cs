@@ -125,10 +125,7 @@ namespace Vista
         public void IdentificarRol()
         {
             
-            btnVenta.Visible = true;
-            btnCompra.Visible = true;
-            btnInforme.Visible = true;
-            btnControlStock.Visible = true;// lo puse false para que no vean, desp tengo que cambiar
+           
             if (rol == -1)
             {
                 lblRol.Text = "QUIEN SOS";
@@ -140,15 +137,12 @@ namespace Vista
             if (rol == 2)
             {
                 lblRol.Text = "Empleado";
-                btnInforme.Visible=false;
+               
             }
             if (rol == 3)
             {
                 lblRol.Text = "Proveedor";
-                btnVenta.Visible = false;
-                btnCompra.Visible = false;
-                btnInforme.Visible=false;
-                btnControlStock.Visible=false;
+                
             }
         }
         private struct RGBColors
@@ -160,6 +154,9 @@ namespace Vista
             public static Color color5 = Color.FromArgb(15, 130, 220);
             public static Color color6 = Color.FromArgb(150, 40, 200);
             public static Color color7 = Color.FromArgb(64, 168, 70);
+            public static Color color8 = Color.FromArgb(243, 156, 160);
+            public static Color color9 = Color.FromArgb(144, 60, 120);
+            public static Color color10 = Color.FromArgb(200, 100, 50);
         }
 
 
@@ -298,12 +295,14 @@ namespace Vista
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChidForm(new FormVenta(rol,UserDNI));
+            hideSubmenu();
         }
 
         private void btnCompra_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChidForm(new FormCompra(rol, UserDNI));
+            hideSubmenu();
         }
     
   private void btnProducto_Click(object sender, EventArgs e)
@@ -458,6 +457,7 @@ namespace Vista
 
         private void btnGestionarPermisos_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color8);
             OpenChidForm(new FormGestionarPermiso(rol, UserDNI));
             hideSubmenu();
         }
@@ -470,12 +470,14 @@ namespace Vista
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color9);
             OpenChidForm(new FormAuditorias(rol, UserDNI));
             hideSubmenu();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color10);
             OpenChidForm(new FormResguardoyRestauracion(rol, UserDNI));
             hideSubmenu();
         }

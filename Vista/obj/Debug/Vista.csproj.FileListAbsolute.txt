@@ -84,8 +84,7 @@ C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\bin\Debug\Newtonsoft.
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormGestionarPermiso.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormSignUp.resources
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\Vista\obj\Debug\Vista.FormRecuperarClave.resources
-D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
-D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.CopyComplete
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoVisual.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormAuditorias.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormResguardoyRestauracion.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.Up2Date

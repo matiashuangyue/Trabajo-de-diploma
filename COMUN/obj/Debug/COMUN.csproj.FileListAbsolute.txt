@@ -343,4 +343,4 @@ C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\obj\Debug\COMUN.cspro
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\obj\Debug\COMUN.csproj.CopyComplete
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\obj\Debug\COMUN.dll
 C:\Users\yue17\Documents\Proyecto\trabajo de diploma\COMUN\obj\Debug\COMUN.pdb
-D:\proyecto\Trabajo-de-diploma\COMUN\obj\Debug\COMUN.csproj.CopyComplete
+D:\proyecto\Trabajo-de-diploma\COMUN\obj\Debug\COMUN.csproj.Up2Date
