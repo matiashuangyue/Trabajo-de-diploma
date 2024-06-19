@@ -494,5 +494,39 @@ namespace Vista
             OpenChidForm(new FormResguardoyRestauracion(rol, UserDNI));
             hideSubmenu();
         }
+
+        private void HomePage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+                DialogResult result = MessageBox.Show("¿Estás seguro de que deseas cerrar el formulario?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.No)
+                {
+                    e.Cancel = true; // Cancelar el cierre del formulario si el usuario dice que no
+                }
+                else
+                {
+                // Desuscribir temporalmente el evento FormClosing
+                this.FormClosing -= HomePage_FormClosing;
+
+                try
+                {
+                    AuditoriaGlobal.RegistrarLogout();
+                    this.Close(); // Cerrar el formulario después de realizar las operaciones necesarias
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al registrar logout: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Puedes manejar el error como prefieras, por ejemplo, no cerrando el formulario aquí
+                    // e.Cancel = true;
+                }
+                finally
+                {
+                    // Volver a suscribir el evento FormClosing
+                    this.FormClosing += HomePage_FormClosing;
+                }
+
+            }
+           
+        }
     }
 }
