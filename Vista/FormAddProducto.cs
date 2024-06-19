@@ -9,16 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using Entidades;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
     public partial class FormAddProducto : Form
     {
         private int RoleID;
-        public FormAddProducto(int RoleID)
+        private int DNI;
+        public FormAddProducto(int RoleID,int DNi)
         {
             InitializeComponent();
             this.RoleID = RoleID;
+            this.DNI = DNI;
         }
 
         private void FormProducto_Load(object sender, EventArgs e)
@@ -47,6 +50,9 @@ namespace Vista
                 {
 
                     MessageBox.Show("Ha Agregado nuevo producto con existo");
+
+                    ControlAuditoria controlAuditoria = new ControlAuditoria();
+                    controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI , "Gestionar Producto");
                 }
                 else if (registrarse == -1)
                 {

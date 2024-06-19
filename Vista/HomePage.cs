@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using Entidades;
 using Controladora;
+using static Controladora.ControlAuditoria;
+using System.Net;
 
 namespace Vista
 {
@@ -19,6 +21,7 @@ namespace Vista
         private Panel leftBorderBtn;
         private Form currentChildForm;
         private FormCompra formCompra;
+        private ControlAuditoria controlAuditoria = new ControlAuditoria();
 
         public int rol;
         public int UserDNI;
@@ -246,7 +249,7 @@ namespace Vista
         private void btnUsuario_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChidForm(new FormAddUsuario(rol));
+            OpenChidForm(new FormAddUsuario(rol,UserDNI));
         }
 
         private void btnBaseDeDatos_Click(object sender, EventArgs e)
@@ -319,13 +322,13 @@ namespace Vista
 
         private void btnAddProducto_Click(object sender, EventArgs e)
         {
-            OpenChidForm(new FormAddProducto(rol));
+            OpenChidForm(new FormAddProducto(rol, UserDNI));
             hideSubmenu();
         }
 
         private void btnModificarProducto_Click(object sender, EventArgs e)
         {
-            OpenChidForm(new FormModificacionesProducto(rol));
+            OpenChidForm(new FormModificacionesProducto(rol,UserDNI));
             hideSubmenu();
         }
 
@@ -347,7 +350,7 @@ namespace Vista
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
-            OpenChidForm(new FormAddUsuario(rol));
+            OpenChidForm(new FormAddUsuario(rol,UserDNI));
             hideSubmenu();
 
         }
@@ -405,6 +408,8 @@ namespace Vista
         {
             OpenChidForm(new FormInfoVenta(rol,UserDNI));
             hideSubmenu();
+            ControlAuditoria controlAuditoria = new ControlAuditoria();
+            controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Ver Informe");
         }
 
         private void btnCerrarSession_Click(object sender, EventArgs e)
@@ -420,8 +425,10 @@ namespace Vista
                 if (confirmacion == DialogResult.Yes)
                 {   
                         this.Close();
+                        AuditoriaGlobal.RegistrarLogout();
                         Login login = new Login();
                        login.ShowDialog();
+                        
                 }
             }
             catch (Exception ex)
@@ -466,6 +473,9 @@ namespace Vista
         {
             OpenChidForm(new FormInfoVisual(rol, UserDNI));
             hideSubmenu();
+
+            ControlAuditoria controlAuditoria = new ControlAuditoria();
+            controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Ver Informe");
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -473,6 +483,9 @@ namespace Vista
             ActivateButton(sender, RGBColors.color9);
             OpenChidForm(new FormAuditorias(rol, UserDNI));
             hideSubmenu();
+
+            ControlAuditoria controlAuditoria = new ControlAuditoria();
+            controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Gestionar Auditorias");
         }
 
         private void iconButton2_Click(object sender, EventArgs e)

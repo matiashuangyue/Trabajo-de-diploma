@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controladora;
 using Entidades;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -16,11 +18,12 @@ namespace Vista
         public int rol;
         private int NewRoleID;
         private string selectedItem;
-        public FormAddUsuario(int RoleID)
+        private int DNI;
+        public FormAddUsuario(int RoleID, int DNI)
         {
             InitializeComponent();
             this.rol = RoleID;
-            
+            this.DNI = DNI;
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -62,6 +65,9 @@ namespace Vista
                         {
 
                             MessageBox.Show("Ha creado nuevo usuario");
+
+                            ControlAuditoria controlAuditoria = new ControlAuditoria();
+                            controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Gestionar Usuario");
                         }
                         else if (registrarse == -1)
                         {

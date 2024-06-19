@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using Entidades;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -227,6 +228,8 @@ namespace Vista
             if (resultado == 1)
             {
                 MessageBox.Show("Usuario modificado correctamente.");
+                ControlAuditoria controlAuditoria = new ControlAuditoria();
+                controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Gestionar Usuario");
             }
             else if (resultado == -1)
             {

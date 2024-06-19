@@ -11,31 +11,62 @@ namespace Modelo
     public class ModAuditoria : ConexionSQL
     {
 
-        public void RegistrarLogin(int dni)
+        public string RegistrarLogin(int dni)
         {
-            string queryUsuario = "SELECT Nombre FROM [TrabajoDeDiploma].[dbo].[Usuarios] WHERE DNI = @DNI";
-            string nombreUsuario = "";
+            string id = DateTime.Now.ToString("yyyyMMddHHmmssfff"); // Crear una cadena única basada en el tiempo actual
 
             using (SqlConnection connection = GetConnection())
             {
-                SqlCommand commandUsuario = new SqlCommand(queryUsuario, connection);
-                commandUsuario.Parameters.AddWithValue("@DNI", dni);
-                connection.Open();
-
-                SqlDataReader reader = commandUsuario.ExecuteReader();
-                if (reader.Read())
-                {
-                    nombreUsuario = reader["Nombre"].ToString();
-                }
-                reader.Close();
-
                 string query = @"
-            INSERT INTO Auditoria (Usuario, TiempoLogin, Operacion, FechaOperacion)
-            VALUES (@Usuario, GETDATE(), 'Login', GETDATE())
+            INSERT INTO Auditoria (ID, DNI, TimeLogin)
+            VALUES (@ID, @DNI, GETDATE())
         ";
 
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Usuario", nombreUsuario);
+                command.Parameters.AddWithValue("@ID", id);
+                command.Parameters.AddWithValue("@DNI", dni);
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+
+            return id;
+        }
+
+        public void RegistrarLogout(string auditoriaId)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = @"
+            UPDATE Auditoria
+            SET TimeLogout = GETDATE()
+            WHERE ID = @AuditoriaID AND TimeLogout IS NULL
+        ";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@AuditoriaID", auditoriaId);
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+        public void RegistrarOperacion(string auditoriaId, int dni, string operacion)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = @"
+            INSERT INTO DetalleAuditoria (AuditoriaID, DNI, ID_Operacion, FechaOperacion)
+            VALUES (
+                @AuditoriaID,
+                @DNI,
+                (SELECT ID FROM Permisos WHERE Permiso = @Operacion),
+                GETDATE()
+            )
+        ";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@AuditoriaID", auditoriaId);
+                command.Parameters.AddWithValue("@DNI", dni);
+                command.Parameters.AddWithValue("@Operacion", operacion);
+                connection.Open();
                 command.ExecuteNonQuery();
             }
         }

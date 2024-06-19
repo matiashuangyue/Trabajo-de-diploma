@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 using Controladora;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -17,6 +18,8 @@ namespace Vista
         private ControlUsuario controlUsuario = new ControlUsuario();
         private int IDEstado;
         private int IDRol;
+        private ControlAuditoria controlAuditoria = new ControlAuditoria();
+        private string auditoriaId;
         public Login()
         {
             InitializeComponent();
@@ -54,6 +57,9 @@ namespace Vista
                         int RoleID = User.GetRoleID(usuario);
                         int DNI= usuario.DNI;
                         cambiarformulario(IDRol,DNI);
+
+                            // Registrar el login y almacenar el ID de auditoría globalmente
+                            AuditoriaGlobal.RegistrarLogin(DNI);
                         }
                         else
                         {

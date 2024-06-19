@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using Entidades;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -41,6 +42,8 @@ namespace Vista
                     {
 
                         MessageBox.Show("Resguardo realizado correctamente. En: " + Ruta + posicion);
+                        ControlAuditoria controlAuditoria = new ControlAuditoria();
+                        controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Resguardo y Restauracion");
                     }
                     else
                     {
@@ -112,6 +115,8 @@ namespace Vista
                             if (exito == 1)
                             {
                                 MessageBox.Show("Restauración realizada correctamente.");
+                                ControlAuditoria controlAuditoria = new ControlAuditoria();
+                                controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Resguardo y Restauracion");
                             }
                             else
                             {
