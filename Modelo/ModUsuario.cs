@@ -768,5 +768,28 @@ namespace Modelo
             }
         }
 
+        public List<KeyValuePair<int, string>> ObtenerIDyRoles()
+        {
+            List<KeyValuePair<int, string>> roles = new List<KeyValuePair<int, string>>();
+            string query = "SELECT ID, Rol FROM [TrabajoDeDiploma].[dbo].[Roles]";
+
+            using (SqlConnection connection = GetConnection())
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        roles.Add(new KeyValuePair<int, string>(reader.GetInt32(0), reader.GetString(1)));
+                    }
+                }
+            }
+            return roles;
+        }
+
+
+
+
     }
 }

@@ -104,11 +104,11 @@
             this.gbAddRoles.Controls.Add(this.txtNombRol);
             this.gbAddRoles.Controls.Add(this.label6);
             this.gbAddRoles.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAddRoles.Location = new System.Drawing.Point(45, 86);
+            this.gbAddRoles.Location = new System.Drawing.Point(47, 468);
             this.gbAddRoles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbAddRoles.Name = "gbAddRoles";
             this.gbAddRoles.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gbAddRoles.Size = new System.Drawing.Size(1918, 525);
+            this.gbAddRoles.Size = new System.Drawing.Size(1918, 472);
             this.gbAddRoles.TabIndex = 117;
             this.gbAddRoles.TabStop = false;
             this.gbAddRoles.Text = "Crear Roles";
@@ -138,7 +138,7 @@
             this.dgvPermisos.Name = "dgvPermisos";
             this.dgvPermisos.RowHeadersWidth = 62;
             this.dgvPermisos.RowTemplate.Height = 30;
-            this.dgvPermisos.Size = new System.Drawing.Size(1259, 330);
+            this.dgvPermisos.Size = new System.Drawing.Size(1259, 283);
             this.dgvPermisos.TabIndex = 119;
             this.dgvPermisos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPermisos_CellContentClick);
             // 
@@ -174,9 +174,9 @@
             // 
             this.lsbRoles.FormattingEnabled = true;
             this.lsbRoles.ItemHeight = 34;
-            this.lsbRoles.Location = new System.Drawing.Point(1379, 234);
+            this.lsbRoles.Location = new System.Drawing.Point(1379, 216);
             this.lsbRoles.Name = "lsbRoles";
-            this.lsbRoles.Size = new System.Drawing.Size(492, 310);
+            this.lsbRoles.Size = new System.Drawing.Size(492, 242);
             this.lsbRoles.TabIndex = 118;
             // 
             // btnCrearNuevoRol
@@ -225,11 +225,11 @@
             this.groupBox1.Controls.Add(this.txtNombPermiso);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(45, 619);
+            this.groupBox1.Location = new System.Drawing.Point(47, 948);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(1918, 315);
+            this.groupBox1.Size = new System.Drawing.Size(1918, 290);
             this.groupBox1.TabIndex = 118;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Crear Permisos";
@@ -253,7 +253,7 @@
             this.lsbPermisos.ItemHeight = 34;
             this.lsbPermisos.Location = new System.Drawing.Point(1148, 100);
             this.lsbPermisos.Name = "lsbPermisos";
-            this.lsbPermisos.Size = new System.Drawing.Size(708, 208);
+            this.lsbPermisos.Size = new System.Drawing.Size(708, 174);
             this.lsbPermisos.TabIndex = 118;
             // 
             // btnCrearNuevoPermiso
@@ -299,11 +299,11 @@
             this.groupBox2.Controls.Add(this.cbRoles);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(45, 942);
+            this.groupBox2.Location = new System.Drawing.Point(47, 66);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(1918, 528);
+            this.groupBox2.Size = new System.Drawing.Size(1914, 394);
             this.groupBox2.TabIndex = 119;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Modificar Permisos";
@@ -320,7 +320,7 @@
             this.dgvPermisosSegunRol.Name = "dgvPermisosSegunRol";
             this.dgvPermisosSegunRol.RowHeadersWidth = 62;
             this.dgvPermisosSegunRol.RowTemplate.Height = 30;
-            this.dgvPermisosSegunRol.Size = new System.Drawing.Size(1259, 330);
+            this.dgvPermisosSegunRol.Size = new System.Drawing.Size(1259, 259);
             this.dgvPermisosSegunRol.TabIndex = 120;
             // 
             // dataGridViewCheckBoxColumn1

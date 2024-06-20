@@ -52,67 +52,63 @@ namespace Vista
         private void permiso()
         {   
             perfilUsuario(UserDNI);
-            if (RoleID != 1)
-            {   
-                lblRol.Visible = false;
-                cmbRol.Visible = false;
-                lblEstado.Visible = false;
-                cmbEstado.Visible = false;
-                btnBuscar.Visible = false;
-                txtDNI.Enabled = false;
-                
-
-            }
-            else
-            {
-                if (RoleID == 1)
-                {
-                    lblRol.Visible = true;
-                    cmbRol.Visible = true;
-                    lblEstado.Visible = true;
-                    cmbEstado.Visible = true;
-                    btnBuscar.Visible=true;
-                    txtDNI.Enabled = true;
-                }
-            }
         }
 
         private void IdentificarRol(int rol)
         {
-            if(rol == 0)
+            foreach (var item in cmbRol.Items)
             {
-                cmbRol.SelectedItem = "Usuario";
-            }
-            else if (rol == 1)
-            {
-                cmbRol.SelectedItem = "Admin";
-            }
-            else if (rol == 2)
-            {
-                cmbRol.SelectedItem = "Empleado";
-            }
-            else if (rol == 3)
-            {
-                cmbRol.SelectedItem = "Proveedor";
+                if (item is KeyValuePair<int, string> kvp && kvp.Key == rol)
+                {
+                    cmbRol.SelectedItem = item;
+                    break;
+                }
             }
         }
-        private void IdentificarEstado(int Estado)
+
+
+        private void IdentificarEstado(int estado)
         {
-            if (Estado != 0)
+            foreach (var item in cmbEstado.Items)
             {
-                cmbEstado.SelectedItem = "Alta";
-            }
-            else
-            {
-                cmbEstado.SelectedItem = "Baja";
+                if (item is KeyValuePair<int, string> kvp && kvp.Key == estado)
+                {
+                    cmbEstado.SelectedItem = item;
+                    break;
+                }
             }
         }
+
+
 
         private void FormModificacionesUsuario_Load(object sender, EventArgs e)
         {
             permiso();
-           
+            CargarRoles();
+            CargarEstados();
         }
+
+        private void CargarRoles()
+        {
+            var roles = controlUsuario.ObtenerIDyRoles();
+            cmbRol.DataSource = new BindingSource(roles, null);
+            cmbRol.DisplayMember = "Value";
+            cmbRol.ValueMember = "Key";
+        }
+
+        private void CargarEstados()
+        {
+            var estados = new List<KeyValuePair<int, string>>
+    {
+        new KeyValuePair<int, string>(1, "Alta"),
+        new KeyValuePair<int, string>(0, "Baja")
+    };
+
+            cmbEstado.DataSource = new BindingSource(estados, null);
+            cmbEstado.DisplayMember = "Value";
+            cmbEstado.ValueMember = "Key";
+        }
+
 
         public void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -160,31 +156,12 @@ namespace Vista
 
         private void obtenerRol()
         {
-            if (cmbRol.SelectedItem == "Admin")
-            {
-                NewRoleID = 1;
-            }else if(cmbRol.SelectedItem == "Empleado")
-            {
-                NewRoleID = 2;
-            }else if (cmbRol.SelectedItem == "Proveedor")
-            {
-                NewRoleID=3;
-            }else if (cmbRol.SelectedItem == "Usuario")
-            {
-                NewRoleID = 0;
-            }
+            NewRoleID = ((KeyValuePair<int, string>)cmbRol.SelectedItem).Key;
         }
 
         private void obtenerEstado()
         {
-            if (cmbEstado.SelectedItem == "Alta")
-            {
-                NewEstadoID = 1;
-            }
-            else
-            {
-                NewEstadoID = 0;
-            }
+            NewEstadoID = ((KeyValuePair<int, string>)cmbEstado.SelectedItem).Key;
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -239,8 +216,6 @@ namespace Vista
             {
                 MessageBox.Show("Error al modificar datos en la base de datos.");
             }
-
-
 
         }
 

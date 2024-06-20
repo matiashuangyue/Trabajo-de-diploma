@@ -72,6 +72,7 @@
             // btnAddProducto
             // 
             this.btnAddProducto.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnAddProducto.ForeColor = System.Drawing.Color.Black;
             this.btnAddProducto.Location = new System.Drawing.Point(864, 468);
             this.btnAddProducto.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddProducto.Name = "btnAddProducto";

@@ -94,6 +94,11 @@ namespace Controladora
             modUsuario.ActualizarPermisosPorRol(idRol, permisos);
         }
 
+        public List<KeyValuePair<int, string>> ObtenerIDyRoles()
+        {
+            return modUsuario.ObtenerIDyRoles();
+        }
+
 
     }
 }
