@@ -19,9 +19,10 @@ namespace Vista
         private int UserDNI;
         private int NewEstadoID;
         private int NewRoleID;
-        
+
         private ControlUsuario controlUsuario = new ControlUsuario();
-        public FormModificacionesUsuario(int rol,int DNI)
+
+        public FormModificacionesUsuario(int rol, int DNI)
         {
             InitializeComponent();
             this.RoleID = rol;
@@ -38,7 +39,7 @@ namespace Vista
             cmbRol.SelectedItem = null;
             cmbEstado.SelectedItem = null;
         }
-        
+
         private bool CamposCompletados()
         {
             // Verifica que todos los campos estén completados
@@ -50,7 +51,7 @@ namespace Vista
         }
 
         private void permiso()
-        {   
+        {
             perfilUsuario(UserDNI);
         }
 
@@ -66,7 +67,6 @@ namespace Vista
             }
         }
 
-
         private void IdentificarEstado(int estado)
         {
             foreach (var item in cmbEstado.Items)
@@ -78,8 +78,6 @@ namespace Vista
                 }
             }
         }
-
-
 
         private void FormModificacionesUsuario_Load(object sender, EventArgs e)
         {
@@ -99,20 +97,18 @@ namespace Vista
         private void CargarEstados()
         {
             var estados = new List<KeyValuePair<int, string>>
-    {
-        new KeyValuePair<int, string>(1, "Alta"),
-        new KeyValuePair<int, string>(0, "Baja")
-    };
+            {
+                new KeyValuePair<int, string>(1, "Alta"),
+                new KeyValuePair<int, string>(0, "Baja")
+            };
 
             cmbEstado.DataSource = new BindingSource(estados, null);
             cmbEstado.DisplayMember = "Value";
             cmbEstado.ValueMember = "Key";
         }
 
-
         public void btnBuscar_Click(object sender, EventArgs e)
         {
-
             if (int.TryParse(txtDNI.Text, out int dni))
             {
                 Usuario usuarioEncontrado = controlUsuario.BuscarUsuarioPorDNI(dni);
@@ -120,7 +116,6 @@ namespace Vista
                 if (usuarioEncontrado != null)
                 {
                     // Mostrar información del usuario encontrado en tu formulario
-                    // Puedes usar los TextBox u otros controles según tus necesidades
                     txtName.Text = usuarioEncontrado.Name;
                     txtMail.Text = usuarioEncontrado.Mail;
                     txtDireccion.Text = usuarioEncontrado.Direccion;
@@ -128,7 +123,6 @@ namespace Vista
                     txtTelefono.Text = usuarioEncontrado.Telefono.ToString();
                     IdentificarEstado(usuarioEncontrado.ID_Estado);
                     IdentificarRol(usuarioEncontrado.ID_Rol);
-                    // ... (otros campos)
                 }
                 else
                 {
@@ -198,7 +192,6 @@ namespace Vista
             };
 
             // Llama a la función de modificarUsuario en la controladora
-            ControlUsuario controlUsuario = new ControlUsuario();
             int resultado = controlUsuario.ModificarUsuario(usuarioModificado);
 
             // Maneja el resultado según tus necesidades (por ejemplo, muestra mensajes)
@@ -216,15 +209,11 @@ namespace Vista
             {
                 MessageBox.Show("Error al modificar datos en la base de datos.");
             }
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            // Este método está vacío, podrías eliminarlo si no es necesario
         }
     }
-       
-
 }
-
