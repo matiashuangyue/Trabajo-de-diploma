@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using Entidades;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -266,6 +267,10 @@ namespace Vista
                     // Guarda la compra actual en la base de datos
 
                     MessageBox.Show("venta cerrada y registrada correctamente.");
+
+                    ControlAuditoria controlAuditoria = new ControlAuditoria();
+                    controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNIrol, "Venta");
+
                     Pedido cerrarPedido = new Pedido
                     {
                         ID_Pedido = IDPedido,

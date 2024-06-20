@@ -11,6 +11,7 @@ using Controladora;
 using Entidades;
 using System.Data;
 using System.Runtime.CompilerServices;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -214,6 +215,8 @@ namespace Vista
 
                         // Mostrar un mensaje de éxito
                         MessageBox.Show("Se ha creado el nuevo rol correctamente y se han asignado los permisos seleccionados.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ControlAuditoria controlAuditoria = new ControlAuditoria();
+                        controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Gestionar Permisos");
                     }
                     else
                     {
@@ -244,6 +247,8 @@ namespace Vista
                     {
                         MessageBox.Show("Se ha creado el nuevo permiso correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         CargarPermisos();
+                        ControlAuditoria controlAuditoria = new ControlAuditoria();
+                        controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Gestionar Permisos");
                     }
                     else
                     {
@@ -352,6 +357,8 @@ namespace Vista
                     controlUsuario.ActualizarPermisosPorRol(idRol, permisos);
                     
                     MessageBox.Show("Los permisos del rol se han actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ControlAuditoria controlAuditoria = new ControlAuditoria();
+                    controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Gestionar Permisos");
                 }
                 else
                 {

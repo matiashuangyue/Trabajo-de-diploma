@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using Entidades;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -17,10 +18,12 @@ namespace Vista
        
         private int RoleID;
         private int EstadoID;
-        public FormModificacionesProducto(int RoleID)
+        private int DNI;
+        public FormModificacionesProducto(int RoleID, int DNI)
         {
             InitializeComponent();
             this.RoleID = RoleID;
+            this.DNI = DNI;
         }
 
         private void vaciarTextbox()
@@ -121,6 +124,9 @@ namespace Vista
                 if (resultado == 1)
                 {
                     MessageBox.Show("Producto modificado correctamente.");
+
+                    ControlAuditoria controlAuditoria = new ControlAuditoria();
+                    controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Gestionar Producto");
                 }
                 else if (resultado == -1)
                 {

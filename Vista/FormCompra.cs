@@ -4,11 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using Entidades;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -276,8 +278,10 @@ namespace Vista
                 if (confirmacion == DialogResult.Yes)
                 {
                     // Guarda la compra actual en la base de datos
-                   
-                     MessageBox.Show("Compra cerrada y registrada correctamente.");
+                    ControlAuditoria controlAuditoria = new ControlAuditoria();
+                    controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNIrol, "Compra");
+                    MessageBox.Show("Compra cerrada y registrada correctamente.");
+
                     Compra CerrarCompra = new Compra
                     {
                         ID_Compra = IDCompra,

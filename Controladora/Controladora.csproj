@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlAuditoria.cs" />
     <Compile Include="ControlBackUp.cs" />
     <Compile Include="ControlCompra.cs" />
     <Compile Include="ControlDGV.cs" />

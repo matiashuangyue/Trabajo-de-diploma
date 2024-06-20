@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using Entidades;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -18,9 +19,10 @@ namespace Vista
         private int UserDNI;
         private int NewEstadoID;
         private int NewRoleID;
-        
+
         private ControlUsuario controlUsuario = new ControlUsuario();
-        public FormModificacionesUsuario(int rol,int DNI)
+
+        public FormModificacionesUsuario(int rol, int DNI)
         {
             InitializeComponent();
             this.RoleID = rol;
@@ -37,7 +39,7 @@ namespace Vista
             cmbRol.SelectedItem = null;
             cmbEstado.SelectedItem = null;
         }
-        
+
         private bool CamposCompletados()
         {
             // Verifica que todos los campos estén completados
@@ -49,73 +51,64 @@ namespace Vista
         }
 
         private void permiso()
-        {   
+        {
             perfilUsuario(UserDNI);
-            if (RoleID != 1)
-            {   
-                lblRol.Visible = false;
-                cmbRol.Visible = false;
-                lblEstado.Visible = false;
-                cmbEstado.Visible = false;
-                btnBuscar.Visible = false;
-                txtDNI.Enabled = false;
-                
-
-            }
-            else
-            {
-                if (RoleID == 1)
-                {
-                    lblRol.Visible = true;
-                    cmbRol.Visible = true;
-                    lblEstado.Visible = true;
-                    cmbEstado.Visible = true;
-                    btnBuscar.Visible=true;
-                    txtDNI.Enabled = true;
-                }
-            }
         }
 
         private void IdentificarRol(int rol)
         {
-            if(rol == 0)
+            foreach (var item in cmbRol.Items)
             {
-                cmbRol.SelectedItem = "Usuario";
-            }
-            else if (rol == 1)
-            {
-                cmbRol.SelectedItem = "Admin";
-            }
-            else if (rol == 2)
-            {
-                cmbRol.SelectedItem = "Empleado";
-            }
-            else if (rol == 3)
-            {
-                cmbRol.SelectedItem = "Proveedor";
+                if (item is KeyValuePair<int, string> kvp && kvp.Key == rol)
+                {
+                    cmbRol.SelectedItem = item;
+                    break;
+                }
             }
         }
-        private void IdentificarEstado(int Estado)
+
+        private void IdentificarEstado(int estado)
         {
-            if (Estado != 0)
+            foreach (var item in cmbEstado.Items)
             {
-                cmbEstado.SelectedItem = "Alta";
-            }
-            else
-            {
-                cmbEstado.SelectedItem = "Baja";
+                if (item is KeyValuePair<int, string> kvp && kvp.Key == estado)
+                {
+                    cmbEstado.SelectedItem = item;
+                    break;
+                }
             }
         }
 
         private void FormModificacionesUsuario_Load(object sender, EventArgs e)
         {
             permiso();
-           
+            CargarRoles();
+            CargarEstados();
+        }
+
+        private void CargarRoles()
+        {
+            var roles = controlUsuario.ObtenerIDyRoles();
+            cmbRol.DataSource = new BindingSource(roles, null);
+            cmbRol.DisplayMember = "Value";
+            cmbRol.ValueMember = "Key";
+        }
+
+        private void CargarEstados()
+        {
+            var estados = new List<KeyValuePair<int, string>>
+            {
+                new KeyValuePair<int, string>(1, "Alta"),
+                new KeyValuePair<int, string>(0, "Baja")
+            };
+
+            cmbEstado.DataSource = new BindingSource(estados, null);
+            cmbEstado.DisplayMember = "Value";
+            cmbEstado.ValueMember = "Key";
         }
 
         public void btnBuscar_Click(object sender, EventArgs e)
         {
-
             if (int.TryParse(txtDNI.Text, out int dni))
             {
                 Usuario usuarioEncontrado = controlUsuario.BuscarUsuarioPorDNI(dni);
@@ -123,7 +116,6 @@ namespace Vista
                 if (usuarioEncontrado != null)
                 {
                     // Mostrar información del usuario encontrado en tu formulario
-                    // Puedes usar los TextBox u otros controles según tus necesidades
                     txtName.Text = usuarioEncontrado.Name;
                     txtMail.Text = usuarioEncontrado.Mail;
                     txtDireccion.Text = usuarioEncontrado.Direccion;
@@ -131,7 +123,6 @@ namespace Vista
                     txtTelefono.Text = usuarioEncontrado.Telefono.ToString();
                     IdentificarEstado(usuarioEncontrado.ID_Estado);
                     IdentificarRol(usuarioEncontrado.ID_Rol);
-                    // ... (otros campos)
                 }
                 else
                 {
@@ -159,31 +150,12 @@ namespace Vista
 
         private void obtenerRol()
         {
-            if (cmbRol.SelectedItem == "Admin")
-            {
-                NewRoleID = 1;
-            }else if(cmbRol.SelectedItem == "Empleado")
-            {
-                NewRoleID = 2;
-            }else if (cmbRol.SelectedItem == "Proveedor")
-            {
-                NewRoleID=3;
-            }else if (cmbRol.SelectedItem == "Usuario")
-            {
-                NewRoleID = 0;
-            }
+            NewRoleID = ((KeyValuePair<int, string>)cmbRol.SelectedItem).Key;
         }
 
         private void obtenerEstado()
         {
-            if (cmbEstado.SelectedItem == "Alta")
-            {
-                NewEstadoID = 1;
-            }
-            else
-            {
-                NewEstadoID = 0;
-            }
+            NewEstadoID = ((KeyValuePair<int, string>)cmbEstado.SelectedItem).Key;
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -220,13 +192,14 @@ namespace Vista
             };
 
             // Llama a la función de modificarUsuario en la controladora
-            ControlUsuario controlUsuario = new ControlUsuario();
             int resultado = controlUsuario.ModificarUsuario(usuarioModificado);
 
             // Maneja el resultado según tus necesidades (por ejemplo, muestra mensajes)
             if (resultado == 1)
             {
                 MessageBox.Show("Usuario modificado correctamente.");
+                ControlAuditoria controlAuditoria = new ControlAuditoria();
+                controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Gestionar Usuario");
             }
             else if (resultado == -1)
             {
@@ -236,17 +209,11 @@ namespace Vista
             {
                 MessageBox.Show("Error al modificar datos en la base de datos.");
             }
-
-
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            // Este método está vacío, podrías eliminarlo si no es necesario
         }
     }
-       
-
 }
-

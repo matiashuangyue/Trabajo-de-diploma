@@ -37,5 +37,19 @@ namespace Controladora
             return modDGV.ObtenerCompras(DNI, Estado);
         }
 
+        public DataTable ObtenerInfoAuditoria()
+        {
+            return modDGV.ObtenerInfoAuditoria();
+        }
+
+        public DataTable ObtenrInfoAuditoriaPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            return modDGV.ObtenerInfoAuditoriaPorFecha(fechaInicio, fechaFin);
+        }
+
+        public DataTable ObtenerDetallesAuditoria(string auditoriaID)
+        {
+            return modDGV.ObtenerDetallesAuditoria(auditoriaID);
+        }
     }
 }

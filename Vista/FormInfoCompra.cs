@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Controladora;
 using Entidades;
 using System.Data;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -168,6 +169,9 @@ namespace Vista
                     controlCompra.CambiarEstadoCompra(IDCompra, estado);
                     MessageBox.Show(estado == 0 ? "La compra ha sido cambiada a estado de baja con éxito!" :
                         "La compra ha sido cambiada a estado de alta con éxito!");
+                    
+                    ControlAuditoria controlAuditoria = new ControlAuditoria();
+                    controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Ver Informe");
 
                     cbEstado.SelectedItem = estado == 0 ? "Baja" : "Alta";
                     CargarDatos(DNI, estado);
