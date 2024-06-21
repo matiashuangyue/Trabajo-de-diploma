@@ -312,5 +312,10 @@ namespace Vista
         {
             CargarVentasPorFechaEnChart();
         }
+
+        private void btnDownloadInforme_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
