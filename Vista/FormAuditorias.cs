@@ -1,14 +1,11 @@
 ﻿using Controladora;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
-using Controladora;
 
 namespace Vista
 {
@@ -59,11 +56,11 @@ namespace Vista
 
         private void AjustarDGV()
         {
-            dgvAuditoria.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
+            dgvAuditoria.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Arial", 11, FontStyle.Bold);
             dgvAuditoria.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             
 
-            dgvDetallesAuditoria.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
+            dgvDetallesAuditoria.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Arial", 11, FontStyle.Bold);
             dgvDetallesAuditoria.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
@@ -125,6 +122,93 @@ namespace Vista
                 // Establecer el color del texto en las celdas de datos a negro
                 e.CellStyle.ForeColor = Color.Black;
             }
+        }
+
+
+        private void AgregarDGVAPdf(Document document, DataGridView dgv, string titulo)
+        {
+            document.NewPage();
+
+            // Añadir título
+            Paragraph paragraph = new Paragraph(titulo, new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 14, iTextSharp.text.Font.BOLD))
+            {
+                Alignment = Element.ALIGN_CENTER
+            };
+            document.Add(paragraph);
+            document.Add(new Paragraph("\n"));
+
+            // Crear tabla PDF
+            PdfPTable pdfTable = new PdfPTable(dgv.ColumnCount)
+            {
+                WidthPercentage = 100
+            };
+
+            // Añadir encabezados
+            foreach (DataGridViewColumn column in dgv.Columns)
+            {
+                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText, new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.BOLD)))
+                {
+                    HorizontalAlignment = Element.ALIGN_CENTER
+                };
+                pdfTable.AddCell(cell);
+            }
+
+            // Añadir filas
+            foreach (DataGridViewRow row in dgv.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    string cellValue = cell.Value == null ? "Nulo" : cell.Value.ToString();
+                    pdfTable.AddCell(new PdfPCell(new Phrase(cellValue, new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10)))
+                    {
+                        HorizontalAlignment = Element.ALIGN_CENTER
+                    });
+                }
+            }
+
+            document.Add(pdfTable);
+        }
+
+        private void ExportarDGVsAPdf()
+        {
+            string nombreArchivoPredeterminado = $"Informe Auditoria {dtpFechaInicio.Value:yyyy-MM-dd} a {dtpFechaFin.Value:yyyy-MM-dd}.pdf";
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "PDF Files|*.pdf",
+                Title = "Guardar Informe de Auditoría como PDF",
+                FileName = nombreArchivoPredeterminado
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = saveFileDialog.FileName;
+                Document document = new Document(PageSize.A4, 25, 25, 30, 30);
+                PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(filePath, FileMode.Create));
+                document.Open();
+
+                // Añadir título
+                Paragraph paragraph = new Paragraph("Informe de Auditoría", new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 16, iTextSharp.text.Font.BOLD))
+                {
+                    Alignment = Element.ALIGN_CENTER
+                };
+                document.Add(paragraph);
+                document.Add(new Paragraph("\n"));
+
+                // Añadir DataGridView de Auditoria
+                AgregarDGVAPdf(document, dgvAuditoria, "Auditorías");
+
+                // Añadir DataGridView de Detalles Auditoria
+                AgregarDGVAPdf(document, dgvDetallesAuditoria, "Detalles de Auditoría");
+
+                document.Close();
+
+                MessageBox.Show("Informe guardado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnDescargarInformeAuditoria_Click(object sender, EventArgs e)
+        {
+            ExportarDGVsAPdf();
         }
     }
 }
