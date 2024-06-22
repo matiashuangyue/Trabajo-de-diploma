@@ -73,8 +73,8 @@ namespace Modelo
                 using (var cnn = GetConnection())
                 {
                     cnn.Open();
-                    string query = "INSERT INTO DetalleCompras (ID_Compra,ID_Producto,Cantidad,PrecioUnitario) " +
-                                        "VALUES (@ID_Compra,@ID_Producto,@Cantidad,@PrecioUnitario)";
+                    string query = "INSERT INTO DetalleCompras (ID_Compra, ID_Producto, Cantidad, PrecioUnitario) " +
+                                   "VALUES (@ID_Compra, @ID_Producto, @Cantidad, @PrecioUnitario)";
                     using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
                         cmd.Parameters.AddWithValue("@ID_Compra", detalleCompra.ID_Compra);
@@ -84,9 +84,8 @@ namespace Modelo
                         cmd.ExecuteNonQuery();
                         return 1;
                     }
-                    cnn.Close();
-                 }
                 }
+            }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
@@ -94,6 +93,7 @@ namespace Modelo
                 return -1;
             }
         }
+
         public Tuple<int, Exception> paraverQuepasa(DetalleCompra detalleCompra)
         {
             try

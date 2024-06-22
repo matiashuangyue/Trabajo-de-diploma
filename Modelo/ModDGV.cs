@@ -268,8 +268,8 @@ namespace Modelo
             DataTable dataTable = new DataTable();
             string query = @"
           SELECT 
-    
-            DA.FechaOperacion,
+            DA.auditoriaID as 'ID Auditoria',
+            DA.FechaOperacion as 'Fecha Operacion',
             P.Permiso as 'Operacion Realizado'
         FROM 
             [TrabajoDeDiploma].[dbo].[DetalleAuditoria] DA

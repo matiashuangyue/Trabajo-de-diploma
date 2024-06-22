@@ -88,3 +88,7 @@ D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoVisual.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormAuditorias.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormResguardoyRestauracion.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.Up2Date
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\BouncyCastle.Cryptography.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\itextsharp.dll
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\BouncyCastle.Cryptography.xml
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\itextsharp.xml

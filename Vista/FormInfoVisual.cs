@@ -1,9 +1,12 @@
 ﻿using Controladora;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,13 +30,8 @@ namespace Vista
 
             DateTime fechaEspecifica = new DateTime(2022, 1, 1);
             datePickerInicio.Value = fechaEspecifica;
-
-
-
-
-            // Añadir el manejador de eventos para btnFiltrar
-            this.btnFiltrar.Click += new EventHandler(this.btnFiltrar_Click);
         }
+
         private void FormInfoVisual_Load(object sender, EventArgs e)
         {
             CargarProductoMásVendidos();
@@ -41,7 +39,8 @@ namespace Vista
             CargarVentasPorFechaEnChart();
             CargarMargenesDeGananciaEnChart();
         }
- private void CargarVentasPorFechaEnChart()
+
+        private void CargarVentasPorFechaEnChart()
         {
             DateTime fechaInicio = datePickerInicio.Value.Date;
             DateTime fechaFin = datePickerFin.Value.Date;
@@ -89,7 +88,7 @@ namespace Vista
             {
                 point.Label = point.YValues[0].ToString();
                 point.LabelForeColor = Color.Black;
-                point.Font = new Font("Arial", 10, FontStyle.Bold);
+                point.Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold);
             }
 
             // Opcional: Cambiar el color de las líneas
@@ -141,7 +140,7 @@ namespace Vista
             {
                 point.Label = point.YValues[0].ToString();
                 point.LabelForeColor = Color.Black;
-                point.Font = new Font("Arial", 10, FontStyle.Bold);
+                point.Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold);
             }
 
             // Opcional: Cambiar el color de las barras
@@ -154,8 +153,6 @@ namespace Vista
             series.BorderWidth = 1;
             series.BorderColor = Color.Black;
         }
-
-
 
         private void CargarVentasPorVendedorEnChart()
         {
@@ -198,7 +195,7 @@ namespace Vista
             {
                 point.Label = point.YValues[0].ToString();
                 point.LabelForeColor = Color.Black;
-                point.Font = new Font("Arial", 10, FontStyle.Bold);
+                point.Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold);
             }
 
             // Opcional: Cambiar el color de las barras
@@ -211,7 +208,6 @@ namespace Vista
             series.BorderWidth = 1;
             series.BorderColor = Color.Black;
         }
-
 
         private void CargarMargenesDeGananciaEnChart()
         {
@@ -274,7 +270,7 @@ namespace Vista
                 {
                     point.Label = point.YValues[0].ToString("N2");
                     point.LabelForeColor = Color.Black;
-                    point.Font = new Font("Arial", 10, FontStyle.Bold);
+                    point.Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold);
                 }
             }
 
@@ -290,7 +286,6 @@ namespace Vista
                 series.BorderColor = Color.Black;
             }
         }
-
 
         private void DatePicker_ValueChanged(object sender, EventArgs e)
         {
@@ -315,7 +310,59 @@ namespace Vista
 
         private void btnDownloadInforme_Click(object sender, EventArgs e)
         {
+            ExportarChartsAPdf();
+        }
 
+        private void AgregarChartAPdf(Document document, PdfWriter writer, Chart chart, string titulo)
+        {
+            document.NewPage();
+
+            // Añadir título
+            Paragraph paragraph = new Paragraph(titulo, new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 16, iTextSharp.text.Font.BOLD))
+            {
+                Alignment = Element.ALIGN_CENTER
+            };
+            document.Add(paragraph);
+            document.Add(new Paragraph("\n"));
+
+            // Guardar el chart como imagen
+            using (MemoryStream memoryStream = new MemoryStream())
+            {
+                chart.SaveImage(memoryStream, ChartImageFormat.Png);
+                iTextSharp.text.Image chartImage = iTextSharp.text.Image.GetInstance(memoryStream.GetBuffer());
+                chartImage.ScaleToFit(document.PageSize.Width - 50, document.PageSize.Height - 100);
+                chartImage.Alignment = Element.ALIGN_CENTER;
+                document.Add(chartImage);
+            }
+        }
+
+        private void ExportarChartsAPdf()
+        {
+            string nombreArchivo = "InformeVisual_" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + ".pdf";
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "PDF Files|*.pdf",
+                Title = "Guardar Informe como PDF",
+                FileName = nombreArchivo
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = saveFileDialog.FileName;
+                Document document = new Document(PageSize.A4, 25, 25, 30, 30);
+                PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(filePath, FileMode.Create));
+                document.Open();
+
+                // Añadir el contenido de los gráficos al PDF
+                AgregarChartAPdf(document, writer, chart1, "Productos Más Vendidos");
+                AgregarChartAPdf(document, writer, chart2, "Ventas por Vendedor");
+                AgregarChartAPdf(document, writer, chart3, "Ventas por Fecha");
+                AgregarChartAPdf(document, writer, chart4, "Márgenes de Ganancia");
+
+                document.Close();
+
+                MessageBox.Show("Informe guardado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
