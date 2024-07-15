@@ -34,12 +34,16 @@ namespace Vista
             this.RoleID = RoleID;
             vaciarTextbox();
             txtPorcentaje.Text = "0,4";
+            txtCantidad.Text = "1";
             txtCliente.Text = "0";
+            lblCant.Text = "0";
+            lblTotal.Text = "$ 0";
             btnCerrarVenta.Visible = false;
             lblCliente.Visible = true;
             txtCliente.Visible = true;
             this.DNIrol = DNI;
         }
+        private int CantidadTotal = 0;
 
         private void FormVenta_Load(object sender, EventArgs e)
         {
@@ -123,9 +127,9 @@ namespace Vista
 
         private void vaciarTextbox()
         {
-            txtCantidad.Text=String.Empty;
+
+            txtCantidad.Text = "1";
             txtNombDetalle.Text = string.Empty;
-            txtPrecioDetalleVenta.Text = string.Empty;
         }
 
 
@@ -168,74 +172,74 @@ namespace Vista
         private void btnAgregarDetallePedido_Click(object sender, EventArgs e)
         {
             ValidacionCliente();
-            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtCodigoDetalle.Text) || string.IsNullOrEmpty(txtCantidad.Text) || string.IsNullOrEmpty(txtPorcentaje.Text)||validarCliente==true)
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtCodigoDetalle.Text) || string.IsNullOrEmpty(txtCantidad.Text) || string.IsNullOrEmpty(txtPorcentaje.Text) || validarCliente == true)
             {
-                MessageBox.Show("Por favor, busca un producto  antes de agregar.");
+                MessageBox.Show("Por favor, busca un producto antes de agregar.");
                 return;
             }
             else
             {
-
                 if (btnCerrarVenta.Visible == false)
                 {
                     ValidacionCliente();
-                    IDPedido = ObtenerIDPedidoActual();//aca esta error
+                    IDPedido = ObtenerIDPedidoActual();
                     Pedido nuevoPedido = new Pedido
-                      {
-                    ID_Pedido = IDPedido,
-                    ID_Cliente=int.Parse(txtCliente.Text),
-                    ID_Estado = 0,
-                        };
-                int seRegistro = controlPedido.inserID(nuevoPedido);
-                    if(seRegistro == 1)
+                    {
+                        ID_Pedido = IDPedido,
+                        ID_Cliente = int.Parse(txtCliente.Text),
+                        ID_Estado = 0,
+                    };
+                    int seRegistro = controlPedido.inserID(nuevoPedido);
+                    if (seRegistro == 1)
                     {
                         IDPedido = nuevoPedido.ID_Pedido;
-                        
                     }
                     else
                     {
-                        MessageBox.Show("error al insertar IDPedido al Pedidos.");
+                        MessageBox.Show("Error al insertar IDPedido al Pedidos.");
                     }
-
                 }
-              
-                    int cantidad = int.Parse(txtCantidad.Text);
-                    DetallePedido nuevoDetalle = new DetallePedido
+
+                int cantidad = int.Parse(txtCantidad.Text);
+                DetallePedido nuevoDetalle = new DetallePedido
+                {
+                    ID_Pedido = IDPedido,
+                    ID_Producto = CodigoEncontrado,
+                    Cantidad = cantidad,
+                    PrecioVenta = Convert.ToDecimal(txtPrecioDetalleVenta.Text),
+                    CantidadPrecio = cantidad * precioVenta,
+                };
+                int seAgrego = controlPedido.registrarDetalles(nuevoDetalle);
+                if (seAgrego == 1)
+                {
+                    
+                    VentaTotal += nuevoDetalle.CantidadPrecio;
+                    NetosTotal += precioCompra * cantidad;
+                    CantidadTotal += nuevoDetalle.Cantidad;
+                    MessageBox.Show("Detalle agregado exitosamente a la compra.");
+                    vaciarTextbox();
+                    btnCerrarVenta.Visible = true;
+                    lblCliente.Visible = false;
+                    txtCliente.Visible = false;
+                    try
                     {
-                        ID_Pedido = IDPedido, // Asigna el ID de la compra actual
-                        ID_Producto = CodigoEncontrado, // Implementa tu lógica para obtener el ID del producto
-                        Cantidad = cantidad,
-                        PrecioVenta = Convert.ToDecimal(txtPrecioDetalleVenta.Text),
-                        CantidadPrecio = cantidad * precioVenta,
-                    };
-                    int seAgrego = controlPedido.registrarDetalles(nuevoDetalle);
-                    if (seAgrego == 1)
-                    {
-                        VentaTotal += nuevoDetalle.CantidadPrecio;
-                        NetosTotal += precioCompra*cantidad;
-                        MessageBox.Show("Detalle agregado exitosamente a la compra.");
-                        vaciarTextbox();
-                        btnCerrarVenta.Visible = true;
-                        lblCliente.Visible = false;
-                         txtCliente.Visible = false;
-                        try
-                        {
                         PasarDatos(nuevoDetalle);
-                           // CargarDatos(nuevoDetalle);     no uso mas por que no comple bien la funcion
-                        }
-                        catch(Exception ex)
-                        {
-                            Console.WriteLine(ex.Message);
-                            MessageBox.Show("no es posible de cargar la tabla");
-                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("error al insertar detallepedidos  ");
+                        Console.WriteLine(ex.Message);
+                        MessageBox.Show("No es posible de cargar la tabla");
                     }
+                    // Actualizar los labels
+                    lblCant.Text =  CantidadTotal.ToString();
+                    lblTotal.Text = "$" + VentaTotal.ToString("F2");
+                }
+                else
+                {
+                    MessageBox.Show("Error al insertar detallepedidos.");
+                }
             }
         }
-
         private void PasarDatos(DetallePedido detallePedido)
         {
             int n= dgvDetalles.Rows.Add();
@@ -288,9 +292,12 @@ namespace Vista
                         lblCliente.Visible=true;
                         txtCliente.Visible = true;
                         vaciarTextbox();
+                        CantidadTotal = 0;
                         VentaTotal = 0;
                         NetosTotal = 0;
                         dgvDetalles.Rows.Clear();
+                        lblCant.Text = "0";
+                        lblTotal.Text = "$ 0";
                     }
                     else
                     {
