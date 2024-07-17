@@ -28,35 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelDetalle = new System.Windows.Forms.Panel();
-            this.dgvDetalles = new System.Windows.Forms.DataGridView();
-            this.ID_Detalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CantidadPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnCerrarVenta = new System.Windows.Forms.Button();
-            this.btnBuscarProducto = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnEliminarDetalle = new System.Windows.Forms.Button();
             this.txtCliente = new System.Windows.Forms.TextBox();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();
+            this.lblCant = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.btnCerrarVenta = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnBuscarProducto = new System.Windows.Forms.Button();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtPorcentaje = new System.Windows.Forms.TextBox();
             this.lblPorcentaje = new System.Windows.Forms.Label();
             this.txtPrecioDetalleVenta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnAgregarDetallePedido = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtNombDetalle = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCodigoDetalle = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblCant = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
+            this.ID_Detalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CantidadPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DetalleID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelDetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -65,13 +67,18 @@
             // panelDetalle
             // 
             this.panelDetalle.BackColor = System.Drawing.Color.White;
+            this.panelDetalle.Controls.Add(this.btnEliminarDetalle);
+            this.panelDetalle.Controls.Add(this.txtCliente);
             this.panelDetalle.Controls.Add(this.lblTotal);
+            this.panelDetalle.Controls.Add(this.lblCliente);
             this.panelDetalle.Controls.Add(this.lblCant);
             this.panelDetalle.Controls.Add(this.label4);
             this.panelDetalle.Controls.Add(this.label2);
             this.panelDetalle.Controls.Add(this.dgvDetalles);
             this.panelDetalle.Controls.Add(this.btnCerrarVenta);
+            this.panelDetalle.Controls.Add(this.label3);
             this.panelDetalle.Controls.Add(this.btnBuscarProducto);
+            this.panelDetalle.Controls.Add(this.txtCantidad);
             this.panelDetalle.Controls.Add(this.groupBox2);
             this.panelDetalle.Controls.Add(this.label10);
             this.panelDetalle.Controls.Add(this.txtCodigoDetalle);
@@ -82,6 +89,96 @@
             this.panelDetalle.TabIndex = 19;
             this.panelDetalle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDetalle_Paint);
             // 
+            // btnEliminarDetalle
+            // 
+            this.btnEliminarDetalle.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnEliminarDetalle.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarDetalle.ForeColor = System.Drawing.Color.Black;
+            this.btnEliminarDetalle.Location = new System.Drawing.Point(1587, 515);
+            this.btnEliminarDetalle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarDetalle.Name = "btnEliminarDetalle";
+            this.btnEliminarDetalle.Size = new System.Drawing.Size(379, 120);
+            this.btnEliminarDetalle.TabIndex = 24;
+            this.btnEliminarDetalle.Text = "Eliminar detalle seleccionado ";
+            this.btnEliminarDetalle.UseVisualStyleBackColor = false;
+            this.btnEliminarDetalle.Click += new System.EventHandler(this.btnEliminarDetalle_Click);
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtCliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCliente.Location = new System.Drawing.Point(340, 21);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCliente.Multiline = true;
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(629, 42);
+            this.txtCliente.TabIndex = 23;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.BackColor = System.Drawing.SystemColors.Control;
+            this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.Color.Green;
+            this.lblTotal.Location = new System.Drawing.Point(838, 1043);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(293, 56);
+            this.lblTotal.TabIndex = 23;
+            this.lblTotal.Text = "Total Precio";
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.BackColor = System.Drawing.SystemColors.Control;
+            this.lblCliente.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.ForeColor = System.Drawing.Color.Black;
+            this.lblCliente.Location = new System.Drawing.Point(73, 21);
+            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(120, 34);
+            this.lblCliente.TabIndex = 22;
+            this.lblCliente.Text = "Cliente:";
+            // 
+            // lblCant
+            // 
+            this.lblCant.AutoSize = true;
+            this.lblCant.BackColor = System.Drawing.SystemColors.Control;
+            this.lblCant.Font = new System.Drawing.Font("Century Gothic", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCant.ForeColor = System.Drawing.Color.Green;
+            this.lblCant.Location = new System.Drawing.Point(92, 1043);
+            this.lblCant.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCant.Name = "lblCant";
+            this.lblCant.Size = new System.Drawing.Size(494, 51);
+            this.lblCant.TabIndex = 22;
+            this.lblCant.Text = "Cantidad de Producto";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(92, 977);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(331, 34);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Cantidad de Producto :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(842, 977);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 34);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "TOTAL:";
+            // 
             // dgvDetalles
             // 
             this.dgvDetalles.BackgroundColor = System.Drawing.Color.White;
@@ -91,25 +188,221 @@
             this.ID_Producto,
             this.Cantidad,
             this.Precio_Venta,
-            this.CantidadPrecio});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CantidadPrecio,
+            this.DetalleID});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDetalles.GridColor = System.Drawing.Color.Black;
-            this.dgvDetalles.Location = new System.Drawing.Point(75, 744);
+            this.dgvDetalles.Location = new System.Drawing.Point(79, 515);
             this.dgvDetalles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvDetalles.Name = "dgvDetalles";
             this.dgvDetalles.RowHeadersWidth = 51;
             this.dgvDetalles.RowTemplate.Height = 27;
-            this.dgvDetalles.Size = new System.Drawing.Size(1443, 400);
+            this.dgvDetalles.Size = new System.Drawing.Size(1444, 400);
             this.dgvDetalles.TabIndex = 19;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvDetalles.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgwDetalles_CellFormatting);
+            // 
+            // btnCerrarVenta
+            // 
+            this.btnCerrarVenta.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnCerrarVenta.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarVenta.ForeColor = System.Drawing.Color.Black;
+            this.btnCerrarVenta.Location = new System.Drawing.Point(1587, 940);
+            this.btnCerrarVenta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCerrarVenta.Name = "btnCerrarVenta";
+            this.btnCerrarVenta.Size = new System.Drawing.Size(379, 232);
+            this.btnCerrarVenta.TabIndex = 18;
+            this.btnCerrarVenta.Text = "Finalizar la Venta";
+            this.btnCerrarVenta.UseVisualStyleBackColor = false;
+            this.btnCerrarVenta.Click += new System.EventHandler(this.btnCerrarVenta_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(79, 195);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(274, 34);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Ingresar Cantidad :";
+            // 
+            // btnBuscarProducto
+            // 
+            this.btnBuscarProducto.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnBuscarProducto.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarProducto.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscarProducto.Location = new System.Drawing.Point(1148, 50);
+            this.btnBuscarProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscarProducto.Name = "btnBuscarProducto";
+            this.btnBuscarProducto.Size = new System.Drawing.Size(345, 134);
+            this.btnBuscarProducto.TabIndex = 17;
+            this.btnBuscarProducto.Text = "Buscar Producto";
+            this.btnBuscarProducto.UseVisualStyleBackColor = false;
+            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtCantidad.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidad.Location = new System.Drawing.Point(601, 196);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCantidad.Multiline = true;
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(470, 42);
+            this.txtCantidad.TabIndex = 15;
+            this.txtCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox2.Controls.Add(this.txtPorcentaje);
+            this.groupBox2.Controls.Add(this.lblPorcentaje);
+            this.groupBox2.Controls.Add(this.txtPrecioDetalleVenta);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.btnAgregarDetallePedido);
+            this.groupBox2.Controls.Add(this.txtNombre);
+            this.groupBox2.Controls.Add(this.txtNombDetalle);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(79, 260);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(1444, 247);
+            this.groupBox2.TabIndex = 16;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Datos de Productos";
+            // 
+            // txtPorcentaje
+            // 
+            this.txtPorcentaje.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtPorcentaje.Location = new System.Drawing.Point(538, 121);
+            this.txtPorcentaje.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPorcentaje.Multiline = true;
+            this.txtPorcentaje.Name = "txtPorcentaje";
+            this.txtPorcentaje.Size = new System.Drawing.Size(470, 42);
+            this.txtPorcentaje.TabIndex = 21;
+            // 
+            // lblPorcentaje
+            // 
+            this.lblPorcentaje.AutoSize = true;
+            this.lblPorcentaje.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblPorcentaje.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentaje.ForeColor = System.Drawing.Color.Black;
+            this.lblPorcentaje.Location = new System.Drawing.Point(16, 121);
+            this.lblPorcentaje.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPorcentaje.Name = "lblPorcentaje";
+            this.lblPorcentaje.Size = new System.Drawing.Size(323, 34);
+            this.lblPorcentaje.TabIndex = 20;
+            this.lblPorcentaje.Text = "Porcentaje Ganancia :";
+            // 
+            // txtPrecioDetalleVenta
+            // 
+            this.txtPrecioDetalleVenta.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtPrecioDetalleVenta.Enabled = false;
+            this.txtPrecioDetalleVenta.Location = new System.Drawing.Point(538, 173);
+            this.txtPrecioDetalleVenta.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecioDetalleVenta.Multiline = true;
+            this.txtPrecioDetalleVenta.Name = "txtPrecioDetalleVenta";
+            this.txtPrecioDetalleVenta.Size = new System.Drawing.Size(470, 42);
+            this.txtPrecioDetalleVenta.TabIndex = 17;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(16, 173);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 34);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Precio :";
+            // 
+            // btnAgregarDetallePedido
+            // 
+            this.btnAgregarDetallePedido.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnAgregarDetallePedido.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarDetallePedido.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregarDetallePedido.Location = new System.Drawing.Point(1098, 57);
+            this.btnAgregarDetallePedido.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregarDetallePedido.Name = "btnAgregarDetallePedido";
+            this.btnAgregarDetallePedido.Size = new System.Drawing.Size(316, 142);
+            this.btnAgregarDetallePedido.TabIndex = 12;
+            this.btnAgregarDetallePedido.Text = "Agregar Al Detalle Pedido";
+            this.btnAgregarDetallePedido.UseVisualStyleBackColor = false;
+            this.btnAgregarDetallePedido.Click += new System.EventHandler(this.btnAgregarDetallePedido_Click);
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtNombre.Location = new System.Drawing.Point(538, 67);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Multiline = true;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(470, 42);
+            this.txtNombre.TabIndex = 2;
+            this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtNombDetalle
+            // 
+            this.txtNombDetalle.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtNombDetalle.Location = new System.Drawing.Point(538, 67);
+            this.txtNombDetalle.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombDetalle.Multiline = true;
+            this.txtNombDetalle.Name = "txtNombDetalle";
+            this.txtNombDetalle.Size = new System.Drawing.Size(470, 42);
+            this.txtNombDetalle.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(16, 67);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(141, 34);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Nombre :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.SystemColors.Control;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(77, 82);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(292, 34);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Codigo De Producto";
+            // 
+            // txtCodigoDetalle
+            // 
+            this.txtCodigoDetalle.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtCodigoDetalle.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoDetalle.Location = new System.Drawing.Point(601, 79);
+            this.txtCodigoDetalle.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigoDetalle.Multiline = true;
+            this.txtCodigoDetalle.Name = "txtCodigoDetalle";
+            this.txtCodigoDetalle.Size = new System.Drawing.Size(470, 42);
+            this.txtCodigoDetalle.TabIndex = 14;
+            this.txtCodigoDetalle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCodigoDetalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoDetalle_KeyPress);
             // 
             // ID_Detalle
             // 
@@ -146,275 +439,12 @@
             this.CantidadPrecio.Name = "CantidadPrecio";
             this.CantidadPrecio.Width = 125;
             // 
-            // btnCerrarVenta
+            // DetalleID
             // 
-            this.btnCerrarVenta.BackColor = System.Drawing.Color.Cornsilk;
-            this.btnCerrarVenta.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarVenta.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarVenta.Location = new System.Drawing.Point(1556, 775);
-            this.btnCerrarVenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnCerrarVenta.Name = "btnCerrarVenta";
-            this.btnCerrarVenta.Size = new System.Drawing.Size(276, 370);
-            this.btnCerrarVenta.TabIndex = 18;
-            this.btnCerrarVenta.Text = "Finalizar la Venta";
-            this.btnCerrarVenta.UseVisualStyleBackColor = false;
-            this.btnCerrarVenta.Click += new System.EventHandler(this.btnCerrarVenta_Click);
-            // 
-            // btnBuscarProducto
-            // 
-            this.btnBuscarProducto.BackColor = System.Drawing.Color.Cornsilk;
-            this.btnBuscarProducto.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarProducto.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscarProducto.Location = new System.Drawing.Point(1173, 20);
-            this.btnBuscarProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnBuscarProducto.Name = "btnBuscarProducto";
-            this.btnBuscarProducto.Size = new System.Drawing.Size(345, 134);
-            this.btnBuscarProducto.TabIndex = 17;
-            this.btnBuscarProducto.Text = "Buscar Producto";
-            this.btnBuscarProducto.UseVisualStyleBackColor = false;
-            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox2.Controls.Add(this.txtCliente);
-            this.groupBox2.Controls.Add(this.lblCliente);
-            this.groupBox2.Controls.Add(this.txtPorcentaje);
-            this.groupBox2.Controls.Add(this.lblPorcentaje);
-            this.groupBox2.Controls.Add(this.txtPrecioDetalleVenta);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.txtCantidad);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.btnAgregarDetallePedido);
-            this.groupBox2.Controls.Add(this.txtNombre);
-            this.groupBox2.Controls.Add(this.txtNombDetalle);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(75, 163);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(1443, 546);
-            this.groupBox2.TabIndex = 16;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Datos de Productos";
-            // 
-            // txtCliente
-            // 
-            this.txtCliente.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtCliente.Location = new System.Drawing.Point(538, 286);
-            this.txtCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCliente.Multiline = true;
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(470, 42);
-            this.txtCliente.TabIndex = 23;
-            // 
-            // lblCliente
-            // 
-            this.lblCliente.AutoSize = true;
-            this.lblCliente.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblCliente.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.ForeColor = System.Drawing.Color.Black;
-            this.lblCliente.Location = new System.Drawing.Point(16, 286);
-            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(156, 34);
-            this.lblCliente.TabIndex = 22;
-            this.lblCliente.Text = "ID Cliente:";
-            // 
-            // txtPorcentaje
-            // 
-            this.txtPorcentaje.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtPorcentaje.Location = new System.Drawing.Point(538, 128);
-            this.txtPorcentaje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtPorcentaje.Multiline = true;
-            this.txtPorcentaje.Name = "txtPorcentaje";
-            this.txtPorcentaje.Size = new System.Drawing.Size(470, 42);
-            this.txtPorcentaje.TabIndex = 21;
-            // 
-            // lblPorcentaje
-            // 
-            this.lblPorcentaje.AutoSize = true;
-            this.lblPorcentaje.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblPorcentaje.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentaje.ForeColor = System.Drawing.Color.Black;
-            this.lblPorcentaje.Location = new System.Drawing.Point(16, 128);
-            this.lblPorcentaje.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPorcentaje.Name = "lblPorcentaje";
-            this.lblPorcentaje.Size = new System.Drawing.Size(323, 34);
-            this.lblPorcentaje.TabIndex = 20;
-            this.lblPorcentaje.Text = "Porcentaje Ganancia :";
-            // 
-            // txtPrecioDetalleVenta
-            // 
-            this.txtPrecioDetalleVenta.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtPrecioDetalleVenta.Enabled = false;
-            this.txtPrecioDetalleVenta.Location = new System.Drawing.Point(538, 180);
-            this.txtPrecioDetalleVenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtPrecioDetalleVenta.Multiline = true;
-            this.txtPrecioDetalleVenta.Name = "txtPrecioDetalleVenta";
-            this.txtPrecioDetalleVenta.Size = new System.Drawing.Size(470, 42);
-            this.txtPrecioDetalleVenta.TabIndex = 17;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(16, 180);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 34);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Precio :";
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtCantidad.Location = new System.Drawing.Point(538, 230);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCantidad.Multiline = true;
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(470, 42);
-            this.txtCantidad.TabIndex = 15;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(16, 230);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(274, 34);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Ingresar Cantidad :";
-            // 
-            // btnAgregarDetallePedido
-            // 
-            this.btnAgregarDetallePedido.BackColor = System.Drawing.Color.Cornsilk;
-            this.btnAgregarDetallePedido.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarDetallePedido.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregarDetallePedido.Location = new System.Drawing.Point(783, 396);
-            this.btnAgregarDetallePedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAgregarDetallePedido.Name = "btnAgregarDetallePedido";
-            this.btnAgregarDetallePedido.Size = new System.Drawing.Size(316, 142);
-            this.btnAgregarDetallePedido.TabIndex = 12;
-            this.btnAgregarDetallePedido.Text = "Agregar Detalle Pedido";
-            this.btnAgregarDetallePedido.UseVisualStyleBackColor = false;
-            this.btnAgregarDetallePedido.Click += new System.EventHandler(this.btnAgregarDetallePedido_Click);
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtNombre.Location = new System.Drawing.Point(538, 74);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNombre.Multiline = true;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(470, 42);
-            this.txtNombre.TabIndex = 2;
-            this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txtNombDetalle
-            // 
-            this.txtNombDetalle.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtNombDetalle.Location = new System.Drawing.Point(538, 74);
-            this.txtNombDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNombDetalle.Multiline = true;
-            this.txtNombDetalle.Name = "txtNombDetalle";
-            this.txtNombDetalle.Size = new System.Drawing.Size(470, 42);
-            this.txtNombDetalle.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(16, 74);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 34);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Nombre :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.Control;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(73, 48);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(292, 34);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Codigo De Producto";
-            // 
-            // txtCodigoDetalle
-            // 
-            this.txtCodigoDetalle.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtCodigoDetalle.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoDetalle.Location = new System.Drawing.Point(613, 58);
-            this.txtCodigoDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCodigoDetalle.Multiline = true;
-            this.txtCodigoDetalle.Name = "txtCodigoDetalle";
-            this.txtCodigoDetalle.Size = new System.Drawing.Size(470, 42);
-            this.txtCodigoDetalle.TabIndex = 14;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(1550, 274);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 34);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "TOTAL:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(1550, 84);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(497, 51);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Cantidad de Producto :";
-            // 
-            // lblCant
-            // 
-            this.lblCant.AutoSize = true;
-            this.lblCant.BackColor = System.Drawing.SystemColors.Control;
-            this.lblCant.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCant.ForeColor = System.Drawing.Color.Green;
-            this.lblCant.Location = new System.Drawing.Point(1550, 163);
-            this.lblCant.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCant.Name = "lblCant";
-            this.lblCant.Size = new System.Drawing.Size(540, 57);
-            this.lblCant.TabIndex = 22;
-            this.lblCant.Text = "Cantidad de Producto";
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.BackColor = System.Drawing.SystemColors.Control;
-            this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.Color.Green;
-            this.lblTotal.Location = new System.Drawing.Point(1550, 351);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(368, 71);
-            this.lblTotal.TabIndex = 23;
-            this.lblTotal.Text = "Total Precio";
+            this.DetalleID.HeaderText = "DetalleID";
+            this.DetalleID.MinimumWidth = 8;
+            this.DetalleID.Name = "DetalleID";
+            this.DetalleID.Width = 150;
             // 
             // FormVenta
             // 
@@ -456,14 +486,16 @@
         private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblCant;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnEliminarDetalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_Detalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio_Venta;
         private System.Windows.Forms.DataGridViewTextBoxColumn CantidadPrecio;
-        private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Label lblCant;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DetalleID;
     }
 }

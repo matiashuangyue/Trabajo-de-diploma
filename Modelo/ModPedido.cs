@@ -135,5 +135,62 @@ namespace Modelo
                 return -1;
             }
         }
+
+        public int EliminarDetallePedido(long detalleID)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string query = "DELETE FROM DetallePedidos WHERE DetalleID = @DetalleID";
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@DetalleID", detalleID);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // Manejar la excepción de manera adecuada
+                return -1; // Error al eliminar
+            }
+        }
+
+
+
+        public long ObtenerUltimoDetalleID()
+        {
+            long ultimoID = 0;
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string query = "SELECT ISNULL(MAX(DetalleID), 0) FROM DetallePedidos";
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        object result = cmd.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            ultimoID = Convert.ToInt64(result);
+                        }
+                    }
+                }
+            }
+            catch (InvalidCastException ex)
+            {
+                Console.WriteLine($"Error de conversión: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al obtener el último DetalleID: {ex.Message}");
+            }
+            return ultimoID;
+        }
+
     }
 }

@@ -19,6 +19,7 @@ namespace Entidades
     }
     public class DetallePedido
     {
+        public long DetalleID { get; set; }
         public long ID_Pedido { get; set; }
         public int ID_Producto { get; set; }
         public int Cantidad { get; set; }
