@@ -19,14 +19,16 @@ namespace Vista
         private int CodigoEncontrado;
         private long IDPedido;
         private decimal porcentaje;
-        private decimal precioCompra=0;
-        private decimal precioVenta=0;
-        private ControlPedido controlPedido=new ControlPedido();
-        private ControlUsuario controlUsuario=new ControlUsuario();
+        private decimal precioCompra = 0;
+        private decimal precioVenta = 0;
+        private ControlPedido controlPedido = new ControlPedido();
+        private ControlUsuario controlUsuario = new ControlUsuario();
         private bool validarCliente;
         private decimal VentaTotal;
         private decimal NetosTotal;
         private int DNIrol;
+
+        private const string ClienteDefecto = "CONSUMIDOR FINAL(INGRESE ID USUARIO)";
 
         public FormVenta(int RoleID, int DNI)
         {
@@ -35,26 +37,45 @@ namespace Vista
             vaciarTextbox();
             txtPorcentaje.Text = "0,4";
             txtCantidad.Text = "1";
-            txtCliente.Text = "0";
+            txtCliente.Text = ClienteDefecto;
             lblCant.Text = "0";
             lblTotal.Text = "$ 0";
             btnCerrarVenta.Visible = false;
             lblCliente.Visible = true;
             txtCliente.Visible = true;
             this.DNIrol = DNI;
+
+            // Event handlers for txtCliente
+            txtCliente.GotFocus += TxtCliente_GotFocus;
+            txtCliente.LostFocus += TxtCliente_LostFocus;
+           
         }
+
+        private void TxtCliente_GotFocus(object sender, EventArgs e)
+        {
+            if (txtCliente.Text == ClienteDefecto)
+            {
+                txtCliente.Text = string.Empty;
+                txtCliente.ForeColor = Color.Black;
+            }
+        }
+
+        private void TxtCliente_LostFocus(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCliente.Text))
+            {
+                txtCliente.Text = "0";
+                txtCliente.ForeColor = Color.Gray;
+            }
+        }
+
         private int CantidadTotal = 0;
 
         private void FormVenta_Load(object sender, EventArgs e)
         {
-            
             dgvDetalles.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
             dgvDetalles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             permiso();
-            
-
-
-            
         }
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)
@@ -81,22 +102,19 @@ namespace Vista
                 if (productoEncontrado != null)
                 {
                     if (productoEncontrado.ID_Estado != 0 || RoleID == 1)
-                    {// Mostrar la información del producto en los controles correspondientes
-                        porcentaje=decimal.Parse(txtPorcentaje.Text);
-                        precioCompra = Convert.ToDecimal( productoEncontrado.Price);
+                    {
+                        porcentaje = decimal.Parse(txtPorcentaje.Text);
+                        precioCompra = Convert.ToDecimal(productoEncontrado.Price);
                         CodigoEncontrado = int.Parse(txtCodigoDetalle.Text);
                         txtNombre.Text = productoEncontrado.Name;
                         precioVenta = precioCompra * (1 + porcentaje);
                         txtPrecioDetalleVenta.Text = (Math.Round(precioVenta, 2, MidpointRounding.AwayFromZero).ToString());
-                        // Establecer la variable de estado a true si se encontró el producto
                     }
                     else
                     {
-                        MessageBox.Show("Producto Buscado esta dado de baja, porfavor comunicarse con el admin ");
+                        MessageBox.Show("Producto Buscado está dado de baja, por favor comuníquese con el admin.");
                         vaciarTextbox();
-
                     }
-
                 }
                 else
                 {
@@ -107,46 +125,36 @@ namespace Vista
 
         private long ObtenerIDPedidoActual()
         {
-            // Utilizar la fecha y hora actual para generar un identificador único
-            // Puedes ajustar el formato según tus necesidades
             string formatoID = "yyyyMMddHHmmss";
             string idCompra = DateTime.Now.ToString(formatoID);
 
-            // Convertir el ID a un valor numérico (opcional, dependiendo de tu implementación en la base de datos)
             if (long.TryParse(idCompra, out long resultado))
             {
                 return resultado;
             }
             else
             {
-                // Manejar el caso en el que la conversión no sea exitosa
-                // Podrías lanzar una excepción, retornar un valor predeterminado, etc.
-                return 0; // Valor predeterminado, ajusta según tu lógica
+                return 0;
             }
         }
 
         private void vaciarTextbox()
         {
-
             txtCantidad.Text = "1";
             txtNombDetalle.Text = string.Empty;
         }
-
-
-
 
         private void permiso()
         {
             if (RoleID == 1)
             {
                 lblPorcentaje.Visible = true;
-                txtPorcentaje.Visible =true;
+                txtPorcentaje.Visible = true;
             }
             else
             {
                 lblPorcentaje.Visible = false;
                 txtPorcentaje.Visible = false;
-                
             }
         }
 
@@ -154,21 +162,25 @@ namespace Vista
         {
             if (btnCerrarVenta.Visible == false)
             {
+                if(txtCliente.Text== ClienteDefecto)
+                {
+                    txtCliente.Text = "0";
+                }
                 Usuario usuario = new Usuario
-            {
-                DNI=int.Parse(txtCliente.Text),
-            };
-            validarCliente = controlUsuario.Validar(usuario);
-            if(validarCliente == false)
-            {
-               
-            }
-            else
-            {
-                MessageBox.Show("error cliente");
-            }
+                {
+                    DNI = int.Parse(txtCliente.Text),
+                };
+                validarCliente = controlUsuario.Validar(usuario);
+                if (validarCliente == false)
+                {
+                }
+                else
+                {
+                    MessageBox.Show("Error cliente");
+                }
             }
         }
+
         private void btnAgregarDetallePedido_Click(object sender, EventArgs e)
         {
             ValidacionCliente();
@@ -212,7 +224,9 @@ namespace Vista
                 int seAgrego = controlPedido.registrarDetalles(nuevoDetalle);
                 if (seAgrego == 1)
                 {
-                    
+                    // Aquí es donde deberías obtener el DetalleID del nuevo detalle registrado
+                    nuevoDetalle.DetalleID = controlPedido.ObtenerUltimoDetalleID();
+
                     VentaTotal += nuevoDetalle.CantidadPrecio;
                     NetosTotal += precioCompra * cantidad;
                     CantidadTotal += nuevoDetalle.Cantidad;
@@ -230,8 +244,7 @@ namespace Vista
                         Console.WriteLine(ex.Message);
                         MessageBox.Show("No es posible de cargar la tabla");
                     }
-                    // Actualizar los labels
-                    lblCant.Text =  CantidadTotal.ToString();
+                    lblCant.Text = CantidadTotal.ToString();
                     lblTotal.Text = "$" + VentaTotal.ToString("F2");
                 }
                 else
@@ -240,22 +253,22 @@ namespace Vista
                 }
             }
         }
+
         private void PasarDatos(DetallePedido detallePedido)
         {
-            int n= dgvDetalles.Rows.Add();
+            int n = dgvDetalles.Rows.Add();
 
             dgvDetalles.Rows[n].Cells[0].Value = detallePedido.ID_Pedido;
             dgvDetalles.Rows[n].Cells[1].Value = detallePedido.ID_Producto;
             dgvDetalles.Rows[n].Cells[2].Value = detallePedido.Cantidad;
             dgvDetalles.Rows[n].Cells[3].Value = detallePedido.PrecioVenta;
             dgvDetalles.Rows[n].Cells[4].Value = detallePedido.CantidadPrecio;
+            dgvDetalles.Rows[n].Cells[5].Value = detallePedido.DetalleID;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
-     
 
         private void btnCerrarVenta_Click(object sender, EventArgs e)
         {
@@ -268,8 +281,6 @@ namespace Vista
 
                 if (confirmacion == DialogResult.Yes)
                 {
-                    // Guarda la compra actual en la base de datos
-
                     MessageBox.Show("venta cerrada y registrada correctamente.");
 
                     ControlAuditoria controlAuditoria = new ControlAuditoria();
@@ -288,8 +299,8 @@ namespace Vista
                     int cerrarExito = controlPedido.cerrarPedido(cerrarPedido);
                     if (cerrarExito == 1)
                     {
-                        btnCerrarVenta.Visible=false;
-                        lblCliente.Visible=true;
+                        btnCerrarVenta.Visible = false;
+                        lblCliente.Visible = true;
                         txtCliente.Visible = true;
                         vaciarTextbox();
                         CantidadTotal = 0;
@@ -298,18 +309,17 @@ namespace Vista
                         dgvDetalles.Rows.Clear();
                         lblCant.Text = "0";
                         lblTotal.Text = "$ 0";
+                        txtCliente.Text = ClienteDefecto;
                     }
                     else
                     {
                         MessageBox.Show("error al cerra compra");
                     }
-
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                // Maneja la excepción de manera adecuada
             }
         }
 
@@ -319,19 +329,66 @@ namespace Vista
 
             if (e.RowIndex != -1 && e.Value == DBNull.Value)
             {
-                e.Value = "Nulo"; // O el valor que desees mostrar para DBNull
+                e.Value = "Nulo";
                 e.FormattingApplied = true;
             }
         }
 
         private void panelDetalle_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void txtCodigoDetalle_KeyPress(object sender, KeyPressEventArgs e)
+        {
 
         }
+
+        private void btnEliminarDetalle_Click(object sender, EventArgs e)
+        {
+            if (dgvDetalles.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dgvDetalles.SelectedRows[0];
+                long detalleID = Convert.ToInt64(selectedRow.Cells["DetalleID"].Value); // Usar la columna de DetalleID
+
+                int result = controlPedido.EliminarDetallePedido(detalleID);
+
+                if (result > 0)
+                {
+                    dgvDetalles.Rows.Remove(selectedRow);
+                    MessageBox.Show("Detalle del pedido eliminado exitosamente.");
+
+                    // Actualizar los totales
+                    ActualizarTotales();
+                }
+                else
+                {
+                    MessageBox.Show("Error al eliminar el detalle del pedido.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un detalle del pedido para eliminar.");
+            }
+        }
+
+        private void ActualizarTotales()
+        {
+            VentaTotal = 0;
+            CantidadTotal = 0;
+            foreach (DataGridViewRow row in dgvDetalles.Rows)
+            {
+                VentaTotal += Convert.ToDecimal(row.Cells[4].Value);
+                CantidadTotal += Convert.ToInt32(row.Cells[2].Value);
+            }
+
+            lblCant.Text = CantidadTotal.ToString();
+            lblTotal.Text = "$" + VentaTotal.ToString("F2");
+        }
+
+
     }
 }
