@@ -15,6 +15,7 @@ namespace Entidades
         public int ID_Vendedor { get; set; }
         public int ID_Cliente { get; set; }
         public int ID_Estado { get; set; }
+        public string MetodoPago { get; set; } // Nuevo campo para el método de pago
 
     }
     public class DetallePedido

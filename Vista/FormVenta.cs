@@ -226,18 +226,21 @@ namespace Vista
                 }
 
                 int cantidad = int.Parse(txtCantidad.Text);
+                decimal precioVenta = Convert.ToDecimal(txtPrecioDetalleVenta.Text);
+                decimal cantidadPrecio = cantidad * precioVenta;
+
                 DetallePedido nuevoDetalle = new DetallePedido
                 {
                     ID_Pedido = IDPedido,
                     ID_Producto = CodigoEncontrado,
                     Cantidad = cantidad,
-                    PrecioVenta = Convert.ToDecimal(txtPrecioDetalleVenta.Text),
-                    CantidadPrecio = cantidad * precioVenta,
+                    PrecioVenta = precioVenta,
+                    CantidadPrecio = cantidadPrecio,
                 };
+
                 int seAgrego = controlPedido.registrarDetalles(nuevoDetalle);
                 if (seAgrego == 1)
                 {
-                    // Aquí es donde deberías obtener el DetalleID del nuevo detalle registrado
                     nuevoDetalle.DetalleID = controlPedido.ObtenerUltimoDetalleID();
 
                     VentaTotal += nuevoDetalle.CantidadPrecio;
@@ -248,6 +251,7 @@ namespace Vista
                     btnCerrarVenta.Visible = true;
                     lblCliente.Visible = false;
                     txtCliente.Visible = false;
+
                     try
                     {
                         PasarDatos(nuevoDetalle);
@@ -257,6 +261,7 @@ namespace Vista
                         Console.WriteLine(ex.Message);
                         MessageBox.Show("No es posible de cargar la tabla");
                     }
+
                     lblCant.Text = CantidadTotal.ToString();
                     lblTotal.Text = "$" + VentaTotal.ToString("F2");
                 }
@@ -278,6 +283,7 @@ namespace Vista
             dgvDetalles.Rows[n].Cells[4].Value = detallePedido.CantidadPrecio;
             dgvDetalles.Rows[n].Cells[5].Value = detallePedido.DetalleID;
         }
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -306,25 +312,6 @@ namespace Vista
                     string metodoPago = formPago.MetodoPago;
                     decimal montoRecibido = formPago.MontoRecibido;
 
-                    switch (metodoPago)
-                    {
-                        case "Efectivo":
-                            IDPedido = long.Parse(IDPedido + "0");
-                            break;
-                        case "Tarjeta de Crédito":
-                            IDPedido = long.Parse(IDPedido + "1");
-                            break;
-                        case "Tarjeta de Débito":
-                            IDPedido = long.Parse(IDPedido + "2");
-                            break;
-                        case "Otros":
-                            IDPedido = long.Parse(IDPedido + "3");
-                            break;
-                        default:
-                            MessageBox.Show("Método de pago no reconocido.");
-                            return;
-                    }
-
                     ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNIrol, "Venta");
 
@@ -337,7 +324,9 @@ namespace Vista
                         ID_Vendedor = DNIrol,
                         ID_Cliente = int.Parse(txtCliente.Text),
                         ID_Estado = 1,
+                        MetodoPago = metodoPago // Guardar el método de pago
                     };
+
                     int cerrarExito = controlPedido.cerrarPedido(cerrarPedido);
                     if (cerrarExito == 1)
                     {
@@ -426,13 +415,14 @@ namespace Vista
             CantidadTotal = 0;
             foreach (DataGridViewRow row in dgvDetalles.Rows)
             {
-                VentaTotal += Convert.ToDecimal(row.Cells[4].Value);
-                CantidadTotal += Convert.ToInt32(row.Cells[2].Value);
+                VentaTotal += Convert.ToDecimal(row.Cells[4].Value); // CantidadPrecio
+                CantidadTotal += Convert.ToInt32(row.Cells[2].Value); // Cantidad
             }
 
             lblCant.Text = CantidadTotal.ToString();
             lblTotal.Text = "$" + VentaTotal.ToString("F2");
         }
+
 
         private void FormVenta_KeyDown(object sender, KeyEventArgs e)
         {
