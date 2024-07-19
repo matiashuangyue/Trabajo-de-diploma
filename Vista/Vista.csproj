@@ -73,6 +73,12 @@
     <Compile Include="FormAuditorias.Designer.cs">
       <DependentUpon>FormAuditorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBusquedaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBusquedaProducto.Designer.cs">
+      <DependentUpon>FormBusquedaProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGestionarPermiso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,11 +91,11 @@
     <Compile Include="FormCompra.Designer.cs">
       <DependentUpon>FormCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControlStock.cs">
+    <Compile Include="FormControlCaja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormControlStock.Designer.cs">
-      <DependentUpon>FormControlStock.cs</DependentUpon>
+    <Compile Include="FormControlCaja.Designer.cs">
+      <DependentUpon>FormControlCaja.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInfoCompra.cs">
       <SubType>Form</SubType>
@@ -102,6 +108,12 @@
     </Compile>
     <Compile Include="FormInfoVisual.Designer.cs">
       <DependentUpon>FormInfoVisual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPago.Designer.cs">
+      <DependentUpon>FormPago.cs</DependentUpon>
     </Compile>
     <Compile Include="FormResguardoyRestauracion.cs">
       <SubType>Form</SubType>
@@ -189,20 +201,26 @@
     <EmbeddedResource Include="FormAuditorias.resx">
       <DependentUpon>FormAuditorias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBusquedaProducto.resx">
+      <DependentUpon>FormBusquedaProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGestionarPermiso.resx">
       <DependentUpon>FormGestionarPermiso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCompra.resx">
       <DependentUpon>FormCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControlStock.resx">
-      <DependentUpon>FormControlStock.cs</DependentUpon>
+    <EmbeddedResource Include="FormControlCaja.resx">
+      <DependentUpon>FormControlCaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInfoCompra.resx">
       <DependentUpon>FormInfoCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInfoVisual.resx">
       <DependentUpon>FormInfoVisual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPago.resx">
+      <DependentUpon>FormPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormResguardoyRestauracion.resx">
       <DependentUpon>FormResguardoyRestauracion.cs</DependentUpon>

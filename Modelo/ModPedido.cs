@@ -47,7 +47,7 @@ namespace Modelo
                 {
                     cnn.Open();
                     string query = "UPDATE Pedidos SET Fecha = @Fecha, Importe = @Importe, Netos=@Netos," +
-                                   "ID_Vendedor = @ID_Vendedor, ID_Cliente = @ID_Cliente, ID_Estado = @ID_Estado " +
+                                   "ID_Vendedor = @ID_Vendedor, ID_Cliente = @ID_Cliente, ID_Estado = @ID_Estado, MetodoPago = @MetodoPago " + // Incluir MetodoPago
                                    "WHERE ID_Pedido = @ID_Pedido;";
 
                     using (SqlCommand cmd = new SqlCommand(query, cnn))
@@ -59,6 +59,7 @@ namespace Modelo
                         cmd.Parameters.AddWithValue("@ID_Vendedor", pedido.ID_Vendedor);
                         cmd.Parameters.AddWithValue("@ID_Cliente", pedido.ID_Cliente);
                         cmd.Parameters.AddWithValue("@ID_Estado", pedido.ID_Estado);
+                        cmd.Parameters.AddWithValue("@MetodoPago", pedido.MetodoPago); // Agregar el parámetro MetodoPago
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -71,6 +72,7 @@ namespace Modelo
                 return -1; // Error al modificar datos
             }
         }
+
         public DataTable ArrancarPedido(DetallePedido detallePedido)
         {
             try

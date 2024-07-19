@@ -562,7 +562,7 @@
     <value>1</value>
   </data>
   <data name="btnIngresarStock.Text" xml:space="preserve">
-    <value>Ingresar Stock</value>
+    <value>Controlar Caja</value>
   </data>
   <data name="&gt;&gt;btnIngresarStock.Name" xml:space="preserve">
     <value>btnIngresarStock</value>
@@ -603,58 +603,58 @@
   <data name="&gt;&gt;panelControlSubmenu.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <metadata name="btnControlStock.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="btnControlCaja.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="btnControlStock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnControlCaja.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnControlStock.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnControlCaja.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnControlStock.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnControlCaja.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
-  <data name="btnControlStock.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnControlCaja.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnControlStock.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnControlCaja.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnControlStock.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnControlCaja.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 866</value>
   </data>
-  <data name="btnControlStock.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnControlCaja.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnControlStock.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnControlCaja.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 22, 0</value>
   </data>
-  <data name="btnControlStock.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnControlCaja.Size" type="System.Drawing.Size, System.Drawing">
     <value>436, 106</value>
   </data>
-  <data name="btnControlStock.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnControlCaja.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="btnControlStock.Text" xml:space="preserve">
-    <value>Control de Stock</value>
+  <data name="btnControlCaja.Text" xml:space="preserve">
+    <value>Control de Caja</value>
   </data>
-  <data name="btnControlStock.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnControlCaja.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnControlStock.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btnControlCaja.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;btnControlStock.Name" xml:space="preserve">
-    <value>btnControlStock</value>
+  <data name="&gt;&gt;btnControlCaja.Name" xml:space="preserve">
+    <value>btnControlCaja</value>
   </data>
-  <data name="&gt;&gt;btnControlStock.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnControlCaja.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
-  <data name="&gt;&gt;btnControlStock.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnControlCaja.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;btnControlStock.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnControlCaja.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="btnModificarUsuario.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

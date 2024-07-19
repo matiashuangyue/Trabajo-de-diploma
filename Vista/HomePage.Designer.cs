@@ -41,7 +41,7 @@
             this.btnInforme = new FontAwesome.Sharp.IconButton();
             this.panelControlSubmenu = new System.Windows.Forms.Panel();
             this.btnIngresarStock = new System.Windows.Forms.Button();
-            this.btnControlStock = new FontAwesome.Sharp.IconButton();
+            this.btnControlCaja = new FontAwesome.Sharp.IconButton();
             this.panelUsuarioSubmenu = new System.Windows.Forms.Panel();
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
@@ -88,7 +88,7 @@
             this.panelMenu.Controls.Add(this.panelInformeSubmenu);
             this.panelMenu.Controls.Add(this.btnInforme);
             this.panelMenu.Controls.Add(this.panelControlSubmenu);
-            this.panelMenu.Controls.Add(this.btnControlStock);
+            this.panelMenu.Controls.Add(this.btnControlCaja);
             this.panelMenu.Controls.Add(this.panelUsuarioSubmenu);
             this.panelMenu.Controls.Add(this.btnUsuario);
             this.panelMenu.Controls.Add(this.panelProductoSubmenu);
@@ -224,24 +224,24 @@
             resources.ApplyResources(this.btnIngresarStock, "btnIngresarStock");
             this.btnIngresarStock.FlatAppearance.BorderSize = 0;
             this.btnIngresarStock.Name = "btnIngresarStock";
-            this.btnIngresarStock.Tag = "Gestionar Stock";
+            this.btnIngresarStock.Tag = "Controlar Caja";
             this.btnIngresarStock.UseVisualStyleBackColor = false;
             this.btnIngresarStock.Click += new System.EventHandler(this.button4_Click);
             // 
-            // btnControlStock
+            // btnControlCaja
             // 
-            this.btnControlStock.BackColor = System.Drawing.Color.CadetBlue;
-            resources.ApplyResources(this.btnControlStock, "btnControlStock");
-            this.btnControlStock.FlatAppearance.BorderSize = 0;
-            this.btnControlStock.ForeColor = System.Drawing.Color.White;
-            this.btnControlStock.IconChar = FontAwesome.Sharp.IconChar.SquarePollVertical;
-            this.btnControlStock.IconColor = System.Drawing.Color.White;
-            this.btnControlStock.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnControlStock.IconSize = 32;
-            this.btnControlStock.Name = "btnControlStock";
-            this.btnControlStock.Tag = "Gestionar Stock";
-            this.btnControlStock.UseVisualStyleBackColor = false;
-            this.btnControlStock.Click += new System.EventHandler(this.btnControlStock_Click);
+            this.btnControlCaja.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.btnControlCaja, "btnControlCaja");
+            this.btnControlCaja.FlatAppearance.BorderSize = 0;
+            this.btnControlCaja.ForeColor = System.Drawing.Color.White;
+            this.btnControlCaja.IconChar = FontAwesome.Sharp.IconChar.SquarePollVertical;
+            this.btnControlCaja.IconColor = System.Drawing.Color.White;
+            this.btnControlCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnControlCaja.IconSize = 32;
+            this.btnControlCaja.Name = "btnControlCaja";
+            this.btnControlCaja.Tag = "Controlar Caja";
+            this.btnControlCaja.UseVisualStyleBackColor = false;
+            this.btnControlCaja.Click += new System.EventHandler(this.btnControlStock_Click);
             // 
             // panelUsuarioSubmenu
             // 
@@ -505,7 +505,7 @@
         private FontAwesome.Sharp.IconButton btnInforme;
         private System.Windows.Forms.Panel panelControlSubmenu;
         private System.Windows.Forms.Button btnIngresarStock;
-        private FontAwesome.Sharp.IconButton btnControlStock;
+        private FontAwesome.Sharp.IconButton btnControlCaja;
         private System.Windows.Forms.Panel panelInformeSubmenu;
         private System.Windows.Forms.Button btnCompraRealizada;
         private System.Windows.Forms.Button btnVentaRealizada;

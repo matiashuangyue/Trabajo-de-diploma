@@ -29,10 +29,13 @@ namespace Vista
         private int DNIrol;
 
         private const string ClienteDefecto = "CONSUMIDOR FINAL(INGRESE ID USUARIO)";
+        private List<Producto> productosEnVenta;
 
         public FormVenta(int RoleID, int DNI)
         {
             InitializeComponent();
+            
+
             this.RoleID = RoleID;
             vaciarTextbox();
             txtPorcentaje.Text = "0,4";
@@ -40,17 +43,28 @@ namespace Vista
             txtCliente.Text = ClienteDefecto;
             lblCant.Text = "0";
             lblTotal.Text = "$ 0";
+            lblCambio.Text = "Cambio: $0.00";
             btnCerrarVenta.Visible = false;
             lblCliente.Visible = true;
             txtCliente.Visible = true;
             this.DNIrol = DNI;
-
+            txtCodigoDetalle.KeyPress += AllowOnlyNumbers;
+            txtCantidad.KeyPress += AllowOnlyNumbers;
             // Event handlers for txtCliente
             txtCliente.GotFocus += TxtCliente_GotFocus;
             txtCliente.LostFocus += TxtCliente_LostFocus;
-           
-        }
 
+            this.KeyPreview = true;
+
+            productosEnVenta = new List<Producto>();
+        }
+     private void AllowOnlyNumbers(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Delete)
+            {
+                e.Handled = true;
+            }
+        }
         private void TxtCliente_GotFocus(object sender, EventArgs e)
         {
             if (txtCliente.Text == ClienteDefecto)
@@ -76,7 +90,14 @@ namespace Vista
             dgvDetalles.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
             dgvDetalles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             permiso();
+
+
+            txtCodigoDetalle.Focus();// Enfoca el textbox de código de producto al cargar el formulario
+            // Opcionalmente, selecciona todo el texto
+            txtCodigoDetalle.SelectAll();
         }
+
+   
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)
         {
@@ -156,6 +177,13 @@ namespace Vista
                 lblPorcentaje.Visible = false;
                 txtPorcentaje.Visible = false;
             }
+            if(txtCliente.Visible == false)
+            {
+                lblCant.Text = "0";
+                lblTotal.Text = "$ 0";
+                lblCambio.Text = "Cambio: $0.00";
+            }
+            
         }
 
         private void ValidacionCliente()
@@ -213,18 +241,21 @@ namespace Vista
                 }
 
                 int cantidad = int.Parse(txtCantidad.Text);
+                decimal precioVenta = Convert.ToDecimal(txtPrecioDetalleVenta.Text);
+                decimal cantidadPrecio = cantidad * precioVenta;
+
                 DetallePedido nuevoDetalle = new DetallePedido
                 {
                     ID_Pedido = IDPedido,
-                    ID_Producto = CodigoEncontrado,
+                    ID_Producto = Convert.ToInt32(txtCodigoDetalle.Text),
                     Cantidad = cantidad,
-                    PrecioVenta = Convert.ToDecimal(txtPrecioDetalleVenta.Text),
-                    CantidadPrecio = cantidad * precioVenta,
+                    PrecioVenta = precioVenta,
+                    CantidadPrecio = cantidadPrecio,
                 };
+
                 int seAgrego = controlPedido.registrarDetalles(nuevoDetalle);
                 if (seAgrego == 1)
                 {
-                    // Aquí es donde deberías obtener el DetalleID del nuevo detalle registrado
                     nuevoDetalle.DetalleID = controlPedido.ObtenerUltimoDetalleID();
 
                     VentaTotal += nuevoDetalle.CantidadPrecio;
@@ -235,6 +266,7 @@ namespace Vista
                     btnCerrarVenta.Visible = true;
                     lblCliente.Visible = false;
                     txtCliente.Visible = false;
+
                     try
                     {
                         PasarDatos(nuevoDetalle);
@@ -244,6 +276,7 @@ namespace Vista
                         Console.WriteLine(ex.Message);
                         MessageBox.Show("No es posible de cargar la tabla");
                     }
+
                     lblCant.Text = CantidadTotal.ToString();
                     lblTotal.Text = "$" + VentaTotal.ToString("F2");
                 }
@@ -253,6 +286,7 @@ namespace Vista
                 }
             }
         }
+
 
         private void PasarDatos(DetallePedido detallePedido)
         {
@@ -265,6 +299,7 @@ namespace Vista
             dgvDetalles.Rows[n].Cells[4].Value = detallePedido.CantidadPrecio;
             dgvDetalles.Rows[n].Cells[5].Value = detallePedido.DetalleID;
         }
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -281,7 +316,17 @@ namespace Vista
 
                 if (confirmacion == DialogResult.Yes)
                 {
-                    MessageBox.Show("venta cerrada y registrada correctamente.");
+                    FormPago formPago = new FormPago(VentaTotal);
+                    formPago.ShowDialog();
+
+                    if (!formPago.PagoConfirmado)
+                    {
+                        return;
+                    }
+
+                    // Actualizar ID del pedido según el método de pago
+                    string metodoPago = formPago.MetodoPago;
+                    decimal montoRecibido = formPago.MontoRecibido;
 
                     ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNIrol, "Venta");
@@ -295,10 +340,17 @@ namespace Vista
                         ID_Vendedor = DNIrol,
                         ID_Cliente = int.Parse(txtCliente.Text),
                         ID_Estado = 1,
+                        MetodoPago = metodoPago // Guardar el método de pago
                     };
+
                     int cerrarExito = controlPedido.cerrarPedido(cerrarPedido);
                     if (cerrarExito == 1)
                     {
+                        // Muestra el cambio en lblCambio
+                        lblCambio.Text = $"Cambio: ${formPago.Cambio}";
+
+                        MessageBox.Show($"Venta cerrada y registrada correctamente. Cambio: ${montoRecibido - VentaTotal}");
+
                         btnCerrarVenta.Visible = false;
                         lblCliente.Visible = true;
                         txtCliente.Visible = true;
@@ -307,13 +359,11 @@ namespace Vista
                         VentaTotal = 0;
                         NetosTotal = 0;
                         dgvDetalles.Rows.Clear();
-                        lblCant.Text = "0";
-                        lblTotal.Text = "$ 0";
                         txtCliente.Text = ClienteDefecto;
                     }
                     else
                     {
-                        MessageBox.Show("error al cerra compra");
+                        MessageBox.Show("Error al cerrar la compra.");
                     }
                 }
             }
@@ -381,12 +431,46 @@ namespace Vista
             CantidadTotal = 0;
             foreach (DataGridViewRow row in dgvDetalles.Rows)
             {
-                VentaTotal += Convert.ToDecimal(row.Cells[4].Value);
-                CantidadTotal += Convert.ToInt32(row.Cells[2].Value);
+                VentaTotal += Convert.ToDecimal(row.Cells[4].Value); // CantidadPrecio
+                CantidadTotal += Convert.ToInt32(row.Cells[2].Value); // Cantidad
             }
 
             lblCant.Text = CantidadTotal.ToString();
             lblTotal.Text = "$" + VentaTotal.ToString("F2");
+        }
+
+
+        private void FormVenta_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.B)
+            {
+                AbrirFormularioBusqueda();
+            }
+        }
+        private void AbrirFormularioBusqueda()
+        {
+            FormBusquedaProducto formBusqueda = new FormBusquedaProducto();
+            if (formBusqueda.ShowDialog() == DialogResult.OK)
+            {
+                Producto productoSeleccionado = formBusqueda.ProductoSeleccionado;
+                if (productoSeleccionado != null)
+                {
+                    txtCodigoDetalle.Text = productoSeleccionado.Codigo.ToString();
+                    txtNombre.Text = productoSeleccionado.Name;
+
+                    decimal precioCompra = productoSeleccionado.Price ?? 0; // Usar 0 si el precio es null
+                    decimal porcentaje = decimal.Parse(txtPorcentaje.Text);
+                    decimal precioVenta = precioCompra * (1 + porcentaje);
+                    txtPrecioDetalleVenta.Text = Math.Round(precioVenta, 2, MidpointRounding.AwayFromZero).ToString();
+
+                    // Asegúrate de que todos los campos necesarios estén completos antes de agregar el detalle
+                    if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtCodigoDetalle.Text) && !string.IsNullOrEmpty(txtCantidad.Text) && !string.IsNullOrEmpty(txtPorcentaje.Text))
+                    {
+                        // Llama directamente al método de agregar detalle
+                        btnAgregarDetallePedido_Click(this, EventArgs.Empty);
+                    }
+                }
+            }
         }
 
 
