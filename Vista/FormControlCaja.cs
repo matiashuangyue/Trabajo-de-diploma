@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class FormControlStock : Form
+    public partial class FormControlCaja : Form
     {
         private int RoleID;
-        public FormControlStock(int RoleID)
+        public FormControlCaja(int RoleID)
         {
             InitializeComponent();
             this.RoleID = RoleID;

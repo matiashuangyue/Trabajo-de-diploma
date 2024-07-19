@@ -49,7 +49,6 @@ D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Modelo.pdb
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Modelo.exe.config
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.csproj.AssemblyReference.cache
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormCompra.resources
-D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormControlStock.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoCompra.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormAddProducto.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormInfoVenta.resources
@@ -92,3 +91,6 @@ D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\BouncyCastle.Cryptography.dll
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\itextsharp.dll
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\BouncyCastle.Cryptography.xml
 D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\itextsharp.xml
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormControlCaja.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormPago.resources
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormBusquedaProducto.resources

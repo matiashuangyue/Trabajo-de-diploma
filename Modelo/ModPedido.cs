@@ -50,6 +50,8 @@ namespace Modelo
                                    "ID_Vendedor = @ID_Vendedor, ID_Cliente = @ID_Cliente, ID_Estado = @ID_Estado " +
                                    "WHERE ID_Pedido = @ID_Pedido;";
 
+
+
                     using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
                         cmd.Parameters.AddWithValue("@ID_Pedido", pedido.ID_Pedido);

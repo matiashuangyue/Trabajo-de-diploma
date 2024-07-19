@@ -29,6 +29,7 @@ namespace Vista
         private int DNIrol;
 
         private const string ClienteDefecto = "CONSUMIDOR FINAL(INGRESE ID USUARIO)";
+        private List<Producto> productosEnVenta;
 
         public FormVenta(int RoleID, int DNI)
         {
@@ -40,6 +41,7 @@ namespace Vista
             txtCliente.Text = ClienteDefecto;
             lblCant.Text = "0";
             lblTotal.Text = "$ 0";
+            lblCambio.Text = "Cambio: $0.00";
             btnCerrarVenta.Visible = false;
             lblCliente.Visible = true;
             txtCliente.Visible = true;
@@ -48,7 +50,10 @@ namespace Vista
             // Event handlers for txtCliente
             txtCliente.GotFocus += TxtCliente_GotFocus;
             txtCliente.LostFocus += TxtCliente_LostFocus;
-           
+
+            this.KeyPreview = true;
+
+            productosEnVenta = new List<Producto>();
         }
 
         private void TxtCliente_GotFocus(object sender, EventArgs e)
@@ -76,6 +81,7 @@ namespace Vista
             dgvDetalles.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
             dgvDetalles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             permiso();
+
         }
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)
@@ -156,6 +162,13 @@ namespace Vista
                 lblPorcentaje.Visible = false;
                 txtPorcentaje.Visible = false;
             }
+            if(txtCliente.Visible == false)
+            {
+                lblCant.Text = "0";
+                lblTotal.Text = "$ 0";
+                lblCambio.Text = "Cambio: $0.00";
+            }
+            
         }
 
         private void ValidacionCliente()
@@ -281,7 +294,36 @@ namespace Vista
 
                 if (confirmacion == DialogResult.Yes)
                 {
-                    MessageBox.Show("venta cerrada y registrada correctamente.");
+                    FormPago formPago = new FormPago(VentaTotal);
+                    formPago.ShowDialog();
+
+                    if (!formPago.PagoConfirmado)
+                    {
+                        return;
+                    }
+
+                    // Actualizar ID del pedido según el método de pago
+                    string metodoPago = formPago.MetodoPago;
+                    decimal montoRecibido = formPago.MontoRecibido;
+
+                    switch (metodoPago)
+                    {
+                        case "Efectivo":
+                            IDPedido = long.Parse(IDPedido + "0");
+                            break;
+                        case "Tarjeta de Crédito":
+                            IDPedido = long.Parse(IDPedido + "1");
+                            break;
+                        case "Tarjeta de Débito":
+                            IDPedido = long.Parse(IDPedido + "2");
+                            break;
+                        case "Otros":
+                            IDPedido = long.Parse(IDPedido + "3");
+                            break;
+                        default:
+                            MessageBox.Show("Método de pago no reconocido.");
+                            return;
+                    }
 
                     ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNIrol, "Venta");
@@ -299,6 +341,11 @@ namespace Vista
                     int cerrarExito = controlPedido.cerrarPedido(cerrarPedido);
                     if (cerrarExito == 1)
                     {
+                        // Muestra el cambio en lblCambio
+                        lblCambio.Text = $"Cambio: ${formPago.Cambio}";
+
+                        MessageBox.Show($"Venta cerrada y registrada correctamente. Cambio: ${montoRecibido - VentaTotal}");
+
                         btnCerrarVenta.Visible = false;
                         lblCliente.Visible = true;
                         txtCliente.Visible = true;
@@ -307,13 +354,11 @@ namespace Vista
                         VentaTotal = 0;
                         NetosTotal = 0;
                         dgvDetalles.Rows.Clear();
-                        lblCant.Text = "0";
-                        lblTotal.Text = "$ 0";
                         txtCliente.Text = ClienteDefecto;
                     }
                     else
                     {
-                        MessageBox.Show("error al cerra compra");
+                        MessageBox.Show("Error al cerrar la compra.");
                     }
                 }
             }
@@ -389,6 +434,27 @@ namespace Vista
             lblTotal.Text = "$" + VentaTotal.ToString("F2");
         }
 
+        private void FormVenta_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.B)
+            {
+                AbrirFormularioBusqueda();
+            }
+        }
 
+        private void AbrirFormularioBusqueda()
+        {
+            FormBusquedaProducto formBusqueda = new FormBusquedaProducto();
+            if (formBusqueda.ShowDialog() == DialogResult.OK)
+            {
+                Producto productoSeleccionado = formBusqueda.ProductoSeleccionado;
+                if (productoSeleccionado != null)
+                {
+                    txtCodigoDetalle.Text = productoSeleccionado.Codigo.ToString();
+                    txtNombre.Text = productoSeleccionado.Name;
+                    txtPrecioDetalleVenta.Text = (productoSeleccionado.Price * (1 + decimal.Parse(txtPorcentaje.Text))).ToString();
+                }
+            }
+        }
     }
 }
