@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelDetalle = new System.Windows.Forms.Panel();
+            this.lblCambio = new System.Windows.Forms.Label();
             this.btnEliminarDetalle = new System.Windows.Forms.Button();
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCodigoDetalle = new System.Windows.Forms.TextBox();
-            this.lblCambio = new System.Windows.Forms.Label();
             this.panelDetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -90,6 +90,19 @@
             this.panelDetalle.Size = new System.Drawing.Size(2068, 1327);
             this.panelDetalle.TabIndex = 19;
             this.panelDetalle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDetalle_Paint);
+            // 
+            // lblCambio
+            // 
+            this.lblCambio.AutoSize = true;
+            this.lblCambio.BackColor = System.Drawing.SystemColors.Control;
+            this.lblCambio.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCambio.ForeColor = System.Drawing.Color.Green;
+            this.lblCambio.Location = new System.Drawing.Point(838, 1151);
+            this.lblCambio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCambio.Name = "lblCambio";
+            this.lblCambio.Size = new System.Drawing.Size(213, 56);
+            this.lblCambio.TabIndex = 25;
+            this.lblCambio.Text = "Cambio";
             // 
             // btnEliminarDetalle
             // 
@@ -192,14 +205,14 @@
             this.Precio_Venta,
             this.CantidadPrecio,
             this.DetalleID});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDetalles.GridColor = System.Drawing.Color.Black;
             this.dgvDetalles.Location = new System.Drawing.Point(79, 515);
             this.dgvDetalles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -391,6 +404,7 @@
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(538, 67);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Multiline = true;
@@ -447,19 +461,6 @@
             this.txtCodigoDetalle.TabIndex = 14;
             this.txtCodigoDetalle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtCodigoDetalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoDetalle_KeyPress);
-            // 
-            // lblCambio
-            // 
-            this.lblCambio.AutoSize = true;
-            this.lblCambio.BackColor = System.Drawing.SystemColors.Control;
-            this.lblCambio.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCambio.ForeColor = System.Drawing.Color.Green;
-            this.lblCambio.Location = new System.Drawing.Point(838, 1151);
-            this.lblCambio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCambio.Name = "lblCambio";
-            this.lblCambio.Size = new System.Drawing.Size(320, 84);
-            this.lblCambio.TabIndex = 25;
-            this.lblCambio.Text = "Cambio";
             // 
             // FormVenta
             // 

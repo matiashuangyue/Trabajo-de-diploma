@@ -34,6 +34,8 @@ namespace Vista
         public FormVenta(int RoleID, int DNI)
         {
             InitializeComponent();
+            
+
             this.RoleID = RoleID;
             vaciarTextbox();
             txtPorcentaje.Text = "0,4";
@@ -46,7 +48,8 @@ namespace Vista
             lblCliente.Visible = true;
             txtCliente.Visible = true;
             this.DNIrol = DNI;
-
+            txtCodigoDetalle.KeyPress += AllowOnlyNumbers;
+            txtCantidad.KeyPress += AllowOnlyNumbers;
             // Event handlers for txtCliente
             txtCliente.GotFocus += TxtCliente_GotFocus;
             txtCliente.LostFocus += TxtCliente_LostFocus;
@@ -55,7 +58,13 @@ namespace Vista
 
             productosEnVenta = new List<Producto>();
         }
-
+     private void AllowOnlyNumbers(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Delete)
+            {
+                e.Handled = true;
+            }
+        }
         private void TxtCliente_GotFocus(object sender, EventArgs e)
         {
             if (txtCliente.Text == ClienteDefecto)
@@ -82,7 +91,13 @@ namespace Vista
             dgvDetalles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             permiso();
 
+
+            txtCodigoDetalle.Focus();// Enfoca el textbox de código de producto al cargar el formulario
+            // Opcionalmente, selecciona todo el texto
+            txtCodigoDetalle.SelectAll();
         }
+
+   
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)
         {
@@ -232,7 +247,7 @@ namespace Vista
                 DetallePedido nuevoDetalle = new DetallePedido
                 {
                     ID_Pedido = IDPedido,
-                    ID_Producto = CodigoEncontrado,
+                    ID_Producto = Convert.ToInt32(txtCodigoDetalle.Text),
                     Cantidad = cantidad,
                     PrecioVenta = precioVenta,
                     CantidadPrecio = cantidadPrecio,
@@ -271,6 +286,7 @@ namespace Vista
                 }
             }
         }
+
 
         private void PasarDatos(DetallePedido detallePedido)
         {
@@ -431,7 +447,6 @@ namespace Vista
                 AbrirFormularioBusqueda();
             }
         }
-
         private void AbrirFormularioBusqueda()
         {
             FormBusquedaProducto formBusqueda = new FormBusquedaProducto();
@@ -442,9 +457,22 @@ namespace Vista
                 {
                     txtCodigoDetalle.Text = productoSeleccionado.Codigo.ToString();
                     txtNombre.Text = productoSeleccionado.Name;
-                    txtPrecioDetalleVenta.Text = (productoSeleccionado.Price * (1 + decimal.Parse(txtPorcentaje.Text))).ToString();
+
+                    decimal precioCompra = productoSeleccionado.Price ?? 0; // Usar 0 si el precio es null
+                    decimal porcentaje = decimal.Parse(txtPorcentaje.Text);
+                    decimal precioVenta = precioCompra * (1 + porcentaje);
+                    txtPrecioDetalleVenta.Text = Math.Round(precioVenta, 2, MidpointRounding.AwayFromZero).ToString();
+
+                    // Asegúrate de que todos los campos necesarios estén completos antes de agregar el detalle
+                    if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtCodigoDetalle.Text) && !string.IsNullOrEmpty(txtCantidad.Text) && !string.IsNullOrEmpty(txtPorcentaje.Text))
+                    {
+                        // Llama directamente al método de agregar detalle
+                        btnAgregarDetallePedido_Click(this, EventArgs.Empty);
+                    }
                 }
             }
         }
+
+
     }
 }
