@@ -243,7 +243,7 @@ namespace Vista
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-            OpenChidForm(new FormControlStock(rol));
+            OpenChidForm(new FormControlCaja(rol));
         }
 
         private void btnUsuario_Click(object sender, EventArgs e)
@@ -375,12 +375,12 @@ namespace Vista
             showSubmenu(panelControlSubmenu);
 
             VolverAHome();
-            lblTitleChildForm.Text = "FormControlStock";
+            lblTitleChildForm.Text = "FormControCaja";
         }
-        #region submenuControlStock
+        #region submenuControlCaja
         private void button4_Click(object sender, EventArgs e)
         {
-            OpenChidForm(new FormControlStock(rol));
+            OpenChidForm(new FormControlCaja(rol));
             hideSubmenu();
         }
         #endregion

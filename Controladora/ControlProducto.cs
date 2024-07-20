@@ -19,6 +19,11 @@ namespace Controladora
         {
             return Produc.buscarProductoPorCodigo(producto);
         }
+        public List<Producto> BuscarProductosPorNombre(string nombre)
+        {
+            return Produc.BuscarProductosPorNombre(nombre);
+        }
+
         public int ModificarProducto(Producto producto)
         {
             return Produc.modificarProducto(producto);

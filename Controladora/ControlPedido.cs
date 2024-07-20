@@ -30,5 +30,16 @@ namespace Controladora
         {
             return modeloPedido.CerrarPedido(pedido);
         }
+
+        public int EliminarDetallePedido(long detalleID)
+        {
+            return modeloPedido.EliminarDetallePedido(detalleID);
+        }
+
+
+        public long ObtenerUltimoDetalleID()
+        {
+            return modeloPedido.ObtenerUltimoDetalleID();
+        }
     }
 }

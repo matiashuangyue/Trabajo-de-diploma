@@ -79,6 +79,46 @@ namespace Modelo
             return productoEncontrado;
         }
 
+        public List<Producto> BuscarProductosPorNombre(string nombre)
+        {
+            List<Producto> productos = new List<Producto>();
+
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    String queryBuscarPorNombre = "SELECT * FROM Productos WHERE Nombre LIKE @Nombre";
+                    using (SqlCommand cmd = new SqlCommand(queryBuscarPorNombre, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@Nombre", "%" + nombre + "%");
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                Producto producto = new Producto
+                                {
+                                    Codigo = Convert.ToInt32(reader["Codigo"]),
+                                    Name = reader["Nombre"].ToString(),
+                                    Descripcion = reader["Descripcion"].ToString(),
+                                    Price = Convert.ToDecimal(reader["Precio"]),
+                                    Stock = Convert.ToInt32(reader["Stock"]),
+                                    ID_Estado = Convert.ToInt32(reader["ID_Estado"]),
+                                };
+                                productos.Add(producto);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Maneja la excepción según tus necesidades
+            }
+
+            return productos;
+        }
+
 
         public int agregarProducto(Producto producto)
         {

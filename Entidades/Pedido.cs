@@ -15,10 +15,12 @@ namespace Entidades
         public int ID_Vendedor { get; set; }
         public int ID_Cliente { get; set; }
         public int ID_Estado { get; set; }
+        public string MetodoPago { get; set; } // Nuevo campo para el método de pago
 
     }
     public class DetallePedido
     {
+        public long DetalleID { get; set; }
         public long ID_Pedido { get; set; }
         public int ID_Producto { get; set; }
         public int Cantidad { get; set; }
