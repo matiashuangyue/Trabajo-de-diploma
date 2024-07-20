@@ -45,6 +45,7 @@ namespace Vista
             lblTotal.Text = "$ 0";
             lblCambio.Text = "Cambio: $0.00";
             btnCerrarVenta.Visible = false;
+            btnEliminarDetalle.Visible = false;
             lblCliente.Visible = true;
             txtCliente.Visible = true;
             this.DNIrol = DNI;
@@ -264,6 +265,7 @@ namespace Vista
                     MessageBox.Show("Detalle agregado exitosamente a la compra.");
                     vaciarTextbox();
                     btnCerrarVenta.Visible = true;
+                    btnEliminarDetalle.Visible = true;
                     lblCliente.Visible = false;
                     txtCliente.Visible = false;
 
@@ -352,6 +354,7 @@ namespace Vista
                         MessageBox.Show($"Venta cerrada y registrada correctamente. Cambio: ${montoRecibido - VentaTotal}");
 
                         btnCerrarVenta.Visible = false;
+                        btnEliminarDetalle.Visible = false;
                         lblCliente.Visible = true;
                         txtCliente.Visible = true;
                         vaciarTextbox();
@@ -472,6 +475,9 @@ namespace Vista
                 }
             }
         }
+
+
+
 
 
     }

@@ -51,5 +51,17 @@ namespace Controladora
         {
             return modDGV.ObtenerDetallesAuditoria(auditoriaID);
         }
+
+        public DataTable ObtenerTiposDeComprobante(int vendedorID, DateTime fechaInicio, DateTime fechaFin)
+        {
+            return modDGV.ObtenerTiposDeComprobante(vendedorID, fechaInicio, fechaFin);
+        }
+
+        public DataTable ObtenerMetodosDeCobro(int vendedorID, DateTime fechaInicio, DateTime fechaFin)
+        {
+            return modDGV.ObtenerMetodosDeCobro(vendedorID, fechaInicio, fechaFin);
+        }
+
+
     }
 }

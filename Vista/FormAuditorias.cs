@@ -138,7 +138,9 @@ namespace Vista
             document.Add(new Paragraph("\n"));
 
             // Crear tabla PDF
-            PdfPTable pdfTable = new PdfPTable(dgv.ColumnCount)
+            if (dgv.ColumnCount > 0)
+            {
+                PdfPTable pdfTable = new PdfPTable(dgv.ColumnCount)
             {
                 WidthPercentage = 100
             };
@@ -167,6 +169,12 @@ namespace Vista
             }
 
             document.Add(pdfTable);
+            }
+            else
+            {
+                document.Add(new Paragraph("No hay datos para mostrar.", new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12)));
+            }
+
         }
 
         private void ExportarDGVsAPdf()

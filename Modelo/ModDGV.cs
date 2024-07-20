@@ -290,5 +290,97 @@ namespace Modelo
             return dataTable;
         }
 
+
+
+        public DataTable ObtenerTiposDeComprobante(int vendedorID, DateTime fechaInicio, DateTime fechaFin)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string query = @"
+                SELECT 
+                    CASE 
+                        WHEN ID_Cliente = 0 THEN 'Ticket Común'
+                        ELSE 'Factura A'
+                    END AS TipoComprobante, 
+                    COUNT(*) AS Cantidad, 
+                    SUM(Importe) AS ImporteTotal 
+                FROM Pedidos
+                WHERE ID_Vendedor = @VendedorID
+                  AND Fecha BETWEEN @FechaInicio AND @FechaFin
+                GROUP BY 
+                    CASE 
+                        WHEN ID_Cliente = 0 THEN 'Ticket Común'
+                        ELSE 'Factura A'
+                    END";
+
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@VendedorID", vendedorID);
+                        cmd.Parameters.AddWithValue("@FechaInicio", fechaInicio);
+                        cmd.Parameters.AddWithValue("@FechaFin", fechaFin);
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            DataTable dataTable = new DataTable();
+                            dataTable.Load(reader);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+
+        public DataTable ObtenerMetodosDeCobro(int vendedorID, DateTime fechaInicio, DateTime fechaFin)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string query = @"
+                SELECT 
+                    MetodoPago, 
+                    COUNT(*) AS Cantidad, 
+                    SUM(Importe) AS ImporteTotal 
+                FROM Pedidos
+                WHERE ID_Vendedor = @VendedorID
+                  AND Fecha BETWEEN @FechaInicio AND @FechaFin
+                GROUP BY MetodoPago";
+
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@VendedorID", vendedorID);
+                        cmd.Parameters.AddWithValue("@FechaInicio", fechaInicio);
+                        cmd.Parameters.AddWithValue("@FechaFin", fechaFin);
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            DataTable dataTable = new DataTable();
+                            dataTable.Load(reader);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+
+
+
+
     }
 }
