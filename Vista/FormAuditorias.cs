@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -217,6 +218,8 @@ namespace Vista
         private void btnDescargarInformeAuditoria_Click(object sender, EventArgs e)
         {
             ExportarDGVsAPdf();
+            ControlAuditoria controlAuditoria = new ControlAuditoria();
+            controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Exportar Informe");
         }
     }
 }

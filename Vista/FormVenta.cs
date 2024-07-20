@@ -102,7 +102,7 @@ namespace Vista
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)
         {
-            vaciarTextbox();
+            
             if (string.IsNullOrEmpty(txtCodigoDetalle.Text))
             {
                 MessageBox.Show("Ingresar código de producto deseado por favor.");
@@ -113,6 +113,7 @@ namespace Vista
                 if (!int.TryParse(txtCodigoDetalle.Text, out codigoProducto))
                 {
                     MessageBox.Show("Por favor, ingresar un código de producto válido.");
+                    vaciarTextbox();
                     return;
                 }
 
@@ -141,8 +142,10 @@ namespace Vista
                 else
                 {
                     MessageBox.Show("Producto no encontrado.");
+                    vaciarTextbox();
                 }
             }
+          
         }
 
         private long ObtenerIDPedidoActual()
@@ -164,6 +167,10 @@ namespace Vista
         {
             txtCantidad.Text = "1";
             txtNombDetalle.Text = string.Empty;
+            txtCodigoDetalle.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtPrecioDetalleVenta.Text = string.Empty;
+
         }
 
         private void permiso()
@@ -405,7 +412,7 @@ namespace Vista
             if (dgvDetalles.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dgvDetalles.SelectedRows[0];
-                long detalleID = Convert.ToInt64(selectedRow.Cells["DetalleID"].Value); // Usar la columna de DetalleID
+                long detalleID = Convert.ToInt64(selectedRow.Cells["DetalleID"].Value);
 
                 int result = controlPedido.EliminarDetallePedido(detalleID);
 
@@ -414,8 +421,12 @@ namespace Vista
                     dgvDetalles.Rows.Remove(selectedRow);
                     MessageBox.Show("Detalle del pedido eliminado exitosamente.");
 
-                    // Actualizar los totales
                     ActualizarTotales();
+
+                    if (lblCant.Text == "0")
+                    {
+                        ReiniciarPedido();
+                    }
                 }
                 else
                 {
@@ -449,6 +460,13 @@ namespace Vista
             {
                 AbrirFormularioBusqueda();
             }
+            if(e.KeyCode == Keys.Space)
+            {
+                if(btnCerrarVenta.Visible == true)
+                {
+                    btnCerrarVenta_Click(this, EventArgs.Empty);
+                }
+            }
         }
         private void AbrirFormularioBusqueda()
         {
@@ -477,8 +495,41 @@ namespace Vista
         }
 
 
+        private void ReiniciarPedido()
+        {
+            btnCerrarVenta.Visible = false;
+            btnEliminarDetalle.Visible = false;
+            lblCliente.Visible = true;
+            txtCliente.Visible = true;
+            vaciarTextbox();
+            CantidadTotal = 0;
+            VentaTotal = 0;
+            NetosTotal = 0;
+            dgvDetalles.Rows.Clear();
+            txtCliente.Text = ClienteDefecto;
+            IDPedido = 0; // Reiniciar el ID del pedido
+            lblCant.Text = "0";
+            lblTotal.Text = "$ 0";
+            lblCambio.Text = "Cambio: $0.00";
 
+            // Opcional: si necesitas eliminar el pedido de la base de datos
+            if (IDPedido != 0)
+            {
+                controlPedido.EliminarPedido(IDPedido);
+                
+            }
+        }
 
+        private void FormVenta_FormClosing(object sender, FormClosingEventArgs e)
+        {
 
+            if (btnCerrarVenta.Visible == true)
+            {
+                ReiniciarPedido();
+                controlPedido.EliminarPedidosInutiles();
+                MessageBox.Show("Venta cancelada.");
+            }
+
+        }
     }
 }

@@ -12,6 +12,7 @@ using Entidades;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
 using System.IO;
+using static Controladora.ControlAuditoria;
 
 
 namespace Vista
@@ -19,13 +20,15 @@ namespace Vista
     public partial class FormControlCaja : Form
     {
         private int RoleID;
+        private int UserDNI;
 
         private ControlDGV controlDGV = new ControlDGV();
         private ControlUsuario controlUsuario = new ControlUsuario();
-        public FormControlCaja(int RoleID)
+        public FormControlCaja(int RoleID,int UserDNI)
         {
             InitializeComponent();
             this.RoleID = RoleID;
+            this.UserDNI = UserDNI;
             CargarNombreCombobox();
 
             dtpHoraInicio.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, 0, 0, 0);
@@ -117,6 +120,8 @@ namespace Vista
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ExportarDGVsAPdf(lblCantidad.Text, lblTotal.Text);
+            ControlAuditoria controlAuditoria = new ControlAuditoria();
+            controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Exportar Informe");
         }
 
         private void dtpFechaInicio_ValueChanged(object sender, EventArgs e)
