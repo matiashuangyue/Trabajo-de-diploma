@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelDetalle = new System.Windows.Forms.Panel();
             this.lblCambio = new System.Windows.Forms.Label();
             this.btnEliminarDetalle = new System.Windows.Forms.Button();
@@ -109,10 +109,10 @@
             this.btnEliminarDetalle.BackColor = System.Drawing.Color.Cornsilk;
             this.btnEliminarDetalle.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarDetalle.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminarDetalle.Location = new System.Drawing.Point(1587, 515);
+            this.btnEliminarDetalle.Location = new System.Drawing.Point(1290, 934);
             this.btnEliminarDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarDetalle.Name = "btnEliminarDetalle";
-            this.btnEliminarDetalle.Size = new System.Drawing.Size(379, 120);
+            this.btnEliminarDetalle.Size = new System.Drawing.Size(320, 144);
             this.btnEliminarDetalle.TabIndex = 24;
             this.btnEliminarDetalle.Text = "Eliminar detalle seleccionado ";
             this.btnEliminarDetalle.UseVisualStyleBackColor = false;
@@ -205,21 +205,21 @@
             this.Precio_Venta,
             this.CantidadPrecio,
             this.DetalleID});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDetalles.GridColor = System.Drawing.Color.Black;
             this.dgvDetalles.Location = new System.Drawing.Point(79, 515);
             this.dgvDetalles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvDetalles.Name = "dgvDetalles";
             this.dgvDetalles.RowHeadersWidth = 51;
             this.dgvDetalles.RowTemplate.Height = 27;
-            this.dgvDetalles.Size = new System.Drawing.Size(1444, 400);
+            this.dgvDetalles.Size = new System.Drawing.Size(1918, 400);
             this.dgvDetalles.TabIndex = 19;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvDetalles.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgwDetalles_CellFormatting);
@@ -271,7 +271,7 @@
             this.btnCerrarVenta.BackColor = System.Drawing.Color.Cornsilk;
             this.btnCerrarVenta.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarVenta.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarVenta.Location = new System.Drawing.Point(1587, 940);
+            this.btnCerrarVenta.Location = new System.Drawing.Point(1618, 934);
             this.btnCerrarVenta.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarVenta.Name = "btnCerrarVenta";
             this.btnCerrarVenta.Size = new System.Drawing.Size(379, 232);
@@ -286,7 +286,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(79, 195);
+            this.label3.Location = new System.Drawing.Point(77, 182);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(274, 34);
@@ -298,7 +298,7 @@
             this.btnBuscarProducto.BackColor = System.Drawing.Color.Cornsilk;
             this.btnBuscarProducto.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarProducto.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscarProducto.Location = new System.Drawing.Point(1148, 50);
+            this.btnBuscarProducto.Location = new System.Drawing.Point(1618, 59);
             this.btnBuscarProducto.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarProducto.Name = "btnBuscarProducto";
             this.btnBuscarProducto.Size = new System.Drawing.Size(345, 134);
@@ -311,11 +311,11 @@
             // 
             this.txtCantidad.BackColor = System.Drawing.Color.Cornsilk;
             this.txtCantidad.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad.Location = new System.Drawing.Point(601, 196);
+            this.txtCantidad.Location = new System.Drawing.Point(581, 174);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidad.Multiline = true;
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(470, 42);
+            this.txtCantidad.Size = new System.Drawing.Size(707, 42);
             this.txtCantidad.TabIndex = 15;
             this.txtCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -335,7 +335,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(1444, 247);
+            this.groupBox2.Size = new System.Drawing.Size(1918, 247);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de Productos";
@@ -453,11 +453,11 @@
             // 
             this.txtCodigoDetalle.BackColor = System.Drawing.Color.Cornsilk;
             this.txtCodigoDetalle.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoDetalle.Location = new System.Drawing.Point(601, 79);
+            this.txtCodigoDetalle.Location = new System.Drawing.Point(581, 82);
             this.txtCodigoDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoDetalle.Multiline = true;
             this.txtCodigoDetalle.Name = "txtCodigoDetalle";
-            this.txtCodigoDetalle.Size = new System.Drawing.Size(470, 42);
+            this.txtCodigoDetalle.Size = new System.Drawing.Size(707, 42);
             this.txtCodigoDetalle.TabIndex = 14;
             this.txtCodigoDetalle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtCodigoDetalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoDetalle_KeyPress);
