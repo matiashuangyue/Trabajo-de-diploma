@@ -22,6 +22,7 @@ namespace Vista
         public FormPago(decimal montoTotal)
         {
             InitializeComponent();
+            this.Load += new System.EventHandler( this.FormPago_Load);
             this.CenterToScreen();
             MontoTotal = montoTotal;
             txtTotal.Text = $"Total: ${montoTotal}";
@@ -35,6 +36,17 @@ namespace Vista
             txtTotal.Text = $"$ {MontoTotal}";
             txtRestante.Text = $"$ {MontoTotal}";
             txtCambio.Text = "$0.00";
+            txtEntrega.Focus();
+          
+            txtEntrega.KeyPress += AllowOnlyNumbers;
+            
+        }
+        private void AllowOnlyNumbers(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Delete)
+            {
+                e.Handled = true;
+            }
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -99,6 +111,14 @@ namespace Vista
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void txtEntrega_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnAceptar.PerformClick();
+            }
         }
     }
 }

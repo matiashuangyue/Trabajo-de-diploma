@@ -194,7 +194,105 @@ namespace Modelo
             return ultimoID;
         }
 
-      
+        public int EliminarPedido(long idPedido)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    using (SqlTransaction transaction = cnn.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Primero, eliminar los detalles del pedido
+                            string queryEliminarDetalles = "DELETE FROM DetallePedidos WHERE ID_Pedido = @ID_Pedido";
+                            using (SqlCommand cmdDetalles = new SqlCommand(queryEliminarDetalles, cnn, transaction))
+                            {
+                                cmdDetalles.Parameters.AddWithValue("@ID_Pedido", idPedido);
+                                cmdDetalles.ExecuteNonQuery();
+                            }
+
+                            // Luego, eliminar el pedido
+                            string queryEliminarPedido = "DELETE FROM Pedidos WHERE ID_Pedido = @ID_Pedido";
+                            using (SqlCommand cmdPedido = new SqlCommand(queryEliminarPedido, cnn, transaction))
+                            {
+                                cmdPedido.Parameters.AddWithValue("@ID_Pedido", idPedido);
+                                int rowsAffected = cmdPedido.ExecuteNonQuery();
+
+                                // Si todo salió bien, hacer commit de la transacción
+                                transaction.Commit();
+                                return rowsAffected;
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            // Si algo salió mal, hacer rollback de la transacción
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al eliminar el pedido: {ex.Message}");
+                            return -1;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error de conexión: {ex.Message}");
+                return -1;
+            }
+        }
+
+        public int EliminarPedidosInutiles()
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    using (SqlTransaction transaction = cnn.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Primero, eliminar los detalles de los pedidos con Fecha NULL
+                            string queryEliminarDetalles = @"
+                        DELETE FROM DetallePedidos
+                        WHERE ID_Pedido IN (
+                            SELECT ID_Pedido
+                            FROM Pedidos
+                            WHERE Fecha IS NULL
+                        )";
+                            using (SqlCommand cmdDetalles = new SqlCommand(queryEliminarDetalles, cnn, transaction))
+                            {
+                                cmdDetalles.ExecuteNonQuery();
+                            }
+
+                            // Luego, eliminar los pedidos con Fecha NULL
+                            string queryEliminarPedidos = "DELETE FROM Pedidos WHERE Fecha IS NULL";
+                            using (SqlCommand cmdPedidos = new SqlCommand(queryEliminarPedidos, cnn, transaction))
+                            {
+                                int rowsAffected = cmdPedidos.ExecuteNonQuery();
+
+                                // Si todo salió bien, hacer commit de la transacción
+                                transaction.Commit();
+                                return rowsAffected;
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            // Si algo salió mal, hacer rollback de la transacción
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al eliminar los pedidos: {ex.Message}");
+                            return -1;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error de conexión: {ex.Message}");
+                return -1;
+            }
+        }
 
 
     }

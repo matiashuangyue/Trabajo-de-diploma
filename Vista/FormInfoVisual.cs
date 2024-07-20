@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using static Controladora.ControlAuditoria;
 
 namespace Vista
 {
@@ -311,6 +312,8 @@ namespace Vista
         private void btnDownloadInforme_Click(object sender, EventArgs e)
         {
             ExportarChartsAPdf();
+            ControlAuditoria controlAuditoria = new ControlAuditoria();
+            controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Exportar Informe");
         }
 
         private void AgregarChartAPdf(Document document, PdfWriter writer, Chart chart, string titulo)

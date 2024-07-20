@@ -537,43 +537,43 @@
   <data name="&gt;&gt;btnInforme.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="btnIngresarStock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnControlarCaja.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnIngresarStock.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnControlarCaja.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnIngresarStock.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnControlarCaja.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century, 10.2pt</value>
   </data>
-  <data name="btnIngresarStock.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnControlarCaja.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnIngresarStock.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnControlarCaja.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="btnIngresarStock.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnControlarCaja.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnIngresarStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>436, 68</value>
+  <data name="btnControlarCaja.Size" type="System.Drawing.Size, System.Drawing">
+    <value>436, 75</value>
   </data>
-  <data name="btnIngresarStock.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnControlarCaja.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnIngresarStock.Text" xml:space="preserve">
+  <data name="btnControlarCaja.Text" xml:space="preserve">
     <value>Controlar Caja</value>
   </data>
-  <data name="&gt;&gt;btnIngresarStock.Name" xml:space="preserve">
-    <value>btnIngresarStock</value>
+  <data name="&gt;&gt;btnControlarCaja.Name" xml:space="preserve">
+    <value>btnControlarCaja</value>
   </data>
-  <data name="&gt;&gt;btnIngresarStock.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnControlarCaja.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnIngresarStock.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnControlarCaja.Parent" xml:space="preserve">
     <value>panelControlSubmenu</value>
   </data>
-  <data name="&gt;&gt;btnIngresarStock.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnControlarCaja.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panelControlSubmenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

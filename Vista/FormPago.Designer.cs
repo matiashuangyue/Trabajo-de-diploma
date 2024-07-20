@@ -33,20 +33,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rbEfectivo = new System.Windows.Forms.RadioButton();
-            this.rbDebito = new System.Windows.Forms.RadioButton();
-            this.rbCredito = new System.Windows.Forms.RadioButton();
-            this.rbOtros = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtSubtotal = new System.Windows.Forms.TextBox();
-            this.txtOfertas = new System.Windows.Forms.TextBox();
-            this.txtTotal = new System.Windows.Forms.TextBox();
-            this.txtRestante = new System.Windows.Forms.TextBox();
-            this.txtEntrega = new System.Windows.Forms.TextBox();
-            this.txtCambio = new System.Windows.Forms.TextBox();
-            this.btnAceptar = new FontAwesome.Sharp.IconButton();
             this.btnCancelar = new FontAwesome.Sharp.IconButton();
+            this.btnAceptar = new FontAwesome.Sharp.IconButton();
+            this.txtCambio = new System.Windows.Forms.TextBox();
+            this.txtEntrega = new System.Windows.Forms.TextBox();
+            this.txtRestante = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.txtOfertas = new System.Windows.Forms.TextBox();
+            this.txtSubtotal = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.rbOtros = new System.Windows.Forms.RadioButton();
+            this.rbCredito = new System.Windows.Forms.RadioButton();
+            this.rbDebito = new System.Windows.Forms.RadioButton();
+            this.rbEfectivo = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,134 +114,19 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // rbEfectivo
+            // btnCancelar
             // 
-            this.rbEfectivo.AutoSize = true;
-            this.rbEfectivo.Location = new System.Drawing.Point(31, 221);
-            this.rbEfectivo.Name = "rbEfectivo";
-            this.rbEfectivo.Size = new System.Drawing.Size(136, 34);
-            this.rbEfectivo.TabIndex = 3;
-            this.rbEfectivo.TabStop = true;
-            this.rbEfectivo.Text = "Efectivo";
-            this.rbEfectivo.UseVisualStyleBackColor = true;
-            // 
-            // rbDebito
-            // 
-            this.rbDebito.AutoSize = true;
-            this.rbDebito.Location = new System.Drawing.Point(282, 221);
-            this.rbDebito.Name = "rbDebito";
-            this.rbDebito.Size = new System.Drawing.Size(204, 34);
-            this.rbDebito.TabIndex = 4;
-            this.rbDebito.TabStop = true;
-            this.rbDebito.Text = "Tarjeta Debito";
-            this.rbDebito.UseVisualStyleBackColor = true;
-            // 
-            // rbCredito
-            // 
-            this.rbCredito.AutoSize = true;
-            this.rbCredito.Location = new System.Drawing.Point(548, 221);
-            this.rbCredito.Name = "rbCredito";
-            this.rbCredito.Size = new System.Drawing.Size(213, 34);
-            this.rbCredito.TabIndex = 5;
-            this.rbCredito.TabStop = true;
-            this.rbCredito.Text = "Tarjeta Credito";
-            this.rbCredito.UseVisualStyleBackColor = true;
-            // 
-            // rbOtros
-            // 
-            this.rbOtros.AutoSize = true;
-            this.rbOtros.Location = new System.Drawing.Point(854, 221);
-            this.rbOtros.Name = "rbOtros";
-            this.rbOtros.Size = new System.Drawing.Size(100, 34);
-            this.rbOtros.TabIndex = 6;
-            this.rbOtros.TabStop = true;
-            this.rbOtros.Text = "Otros";
-            this.rbOtros.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(203, 289);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 30);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Entrega";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(203, 346);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 30);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Cambio";
-            // 
-            // txtSubtotal
-            // 
-            this.txtSubtotal.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtSubtotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubtotal.Location = new System.Drawing.Point(227, 12);
-            this.txtSubtotal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSubtotal.Multiline = true;
-            this.txtSubtotal.Name = "txtSubtotal";
-            this.txtSubtotal.Size = new System.Drawing.Size(287, 42);
-            this.txtSubtotal.TabIndex = 24;
-            // 
-            // txtOfertas
-            // 
-            this.txtOfertas.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtOfertas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOfertas.Location = new System.Drawing.Point(227, 62);
-            this.txtOfertas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOfertas.Multiline = true;
-            this.txtOfertas.Name = "txtOfertas";
-            this.txtOfertas.Size = new System.Drawing.Size(287, 42);
-            this.txtOfertas.TabIndex = 25;
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtTotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(227, 112);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTotal.Multiline = true;
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(287, 42);
-            this.txtTotal.TabIndex = 26;
-            // 
-            // txtRestante
-            // 
-            this.txtRestante.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtRestante.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRestante.Location = new System.Drawing.Point(227, 162);
-            this.txtRestante.Margin = new System.Windows.Forms.Padding(4);
-            this.txtRestante.Multiline = true;
-            this.txtRestante.Name = "txtRestante";
-            this.txtRestante.Size = new System.Drawing.Size(287, 42);
-            this.txtRestante.TabIndex = 27;
-            // 
-            // txtEntrega
-            // 
-            this.txtEntrega.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtEntrega.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEntrega.Location = new System.Drawing.Point(364, 277);
-            this.txtEntrega.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEntrega.Multiline = true;
-            this.txtEntrega.Name = "txtEntrega";
-            this.txtEntrega.Size = new System.Drawing.Size(287, 42);
-            this.txtEntrega.TabIndex = 28;
-            this.txtEntrega.TextChanged += new System.EventHandler(this.txtEntrega_TextChanged);
-            // 
-            // txtCambio
-            // 
-            this.txtCambio.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCambio.Location = new System.Drawing.Point(364, 334);
-            this.txtCambio.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCambio.Multiline = true;
-            this.txtCambio.Name = "txtCambio";
-            this.txtCambio.Size = new System.Drawing.Size(287, 42);
-            this.txtCambio.TabIndex = 29;
+            this.btnCancelar.IconChar = FontAwesome.Sharp.IconChar.ThumbsDown;
+            this.btnCancelar.IconColor = System.Drawing.Color.Black;
+            this.btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(764, 532);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(261, 91);
+            this.btnCancelar.TabIndex = 33;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAceptar
             // 
@@ -257,19 +142,135 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // btnCancelar
+            // txtCambio
             // 
-            this.btnCancelar.IconChar = FontAwesome.Sharp.IconChar.ThumbsDown;
-            this.btnCancelar.IconColor = System.Drawing.Color.Black;
-            this.btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(764, 532);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(261, 91);
-            this.btnCancelar.TabIndex = 33;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.txtCambio.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCambio.Location = new System.Drawing.Point(364, 334);
+            this.txtCambio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCambio.Multiline = true;
+            this.txtCambio.Name = "txtCambio";
+            this.txtCambio.Size = new System.Drawing.Size(287, 42);
+            this.txtCambio.TabIndex = 29;
+            // 
+            // txtEntrega
+            // 
+            this.txtEntrega.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtEntrega.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEntrega.Location = new System.Drawing.Point(364, 277);
+            this.txtEntrega.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEntrega.Multiline = true;
+            this.txtEntrega.Name = "txtEntrega";
+            this.txtEntrega.Size = new System.Drawing.Size(287, 42);
+            this.txtEntrega.TabIndex = 28;
+            this.txtEntrega.TextChanged += new System.EventHandler(this.txtEntrega_TextChanged);
+            this.txtEntrega.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEntrega_KeyDown);
+            // 
+            // txtRestante
+            // 
+            this.txtRestante.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtRestante.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRestante.Location = new System.Drawing.Point(227, 162);
+            this.txtRestante.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRestante.Multiline = true;
+            this.txtRestante.Name = "txtRestante";
+            this.txtRestante.Size = new System.Drawing.Size(287, 42);
+            this.txtRestante.TabIndex = 27;
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtTotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Location = new System.Drawing.Point(227, 112);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotal.Multiline = true;
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(287, 42);
+            this.txtTotal.TabIndex = 26;
+            // 
+            // txtOfertas
+            // 
+            this.txtOfertas.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtOfertas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOfertas.Location = new System.Drawing.Point(227, 62);
+            this.txtOfertas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOfertas.Multiline = true;
+            this.txtOfertas.Name = "txtOfertas";
+            this.txtOfertas.Size = new System.Drawing.Size(287, 42);
+            this.txtOfertas.TabIndex = 25;
+            // 
+            // txtSubtotal
+            // 
+            this.txtSubtotal.BackColor = System.Drawing.Color.Cornsilk;
+            this.txtSubtotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubtotal.Location = new System.Drawing.Point(227, 12);
+            this.txtSubtotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSubtotal.Multiline = true;
+            this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.Size = new System.Drawing.Size(287, 42);
+            this.txtSubtotal.TabIndex = 24;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(203, 346);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 30);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Cambio";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(203, 289);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 30);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Entrega";
+            // 
+            // rbOtros
+            // 
+            this.rbOtros.AutoSize = true;
+            this.rbOtros.Location = new System.Drawing.Point(854, 221);
+            this.rbOtros.Name = "rbOtros";
+            this.rbOtros.Size = new System.Drawing.Size(100, 34);
+            this.rbOtros.TabIndex = 6;
+            this.rbOtros.TabStop = true;
+            this.rbOtros.Text = "Otros";
+            this.rbOtros.UseVisualStyleBackColor = true;
+            // 
+            // rbCredito
+            // 
+            this.rbCredito.AutoSize = true;
+            this.rbCredito.Location = new System.Drawing.Point(548, 221);
+            this.rbCredito.Name = "rbCredito";
+            this.rbCredito.Size = new System.Drawing.Size(213, 34);
+            this.rbCredito.TabIndex = 5;
+            this.rbCredito.TabStop = true;
+            this.rbCredito.Text = "Tarjeta Credito";
+            this.rbCredito.UseVisualStyleBackColor = true;
+            // 
+            // rbDebito
+            // 
+            this.rbDebito.AutoSize = true;
+            this.rbDebito.Location = new System.Drawing.Point(282, 221);
+            this.rbDebito.Name = "rbDebito";
+            this.rbDebito.Size = new System.Drawing.Size(204, 34);
+            this.rbDebito.TabIndex = 4;
+            this.rbDebito.TabStop = true;
+            this.rbDebito.Text = "Tarjeta Debito";
+            this.rbDebito.UseVisualStyleBackColor = true;
+            // 
+            // rbEfectivo
+            // 
+            this.rbEfectivo.AutoSize = true;
+            this.rbEfectivo.Location = new System.Drawing.Point(31, 221);
+            this.rbEfectivo.Name = "rbEfectivo";
+            this.rbEfectivo.Size = new System.Drawing.Size(136, 34);
+            this.rbEfectivo.TabIndex = 3;
+            this.rbEfectivo.TabStop = true;
+            this.rbEfectivo.Text = "Efectivo";
+            this.rbEfectivo.UseVisualStyleBackColor = true;
             // 
             // FormPago
             // 

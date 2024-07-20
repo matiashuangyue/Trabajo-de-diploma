@@ -41,5 +41,15 @@ namespace Controladora
         {
             return modeloPedido.ObtenerUltimoDetalleID();
         }
+
+        public long EliminarPedido(long pedidoID)
+        {
+            return modeloPedido.EliminarPedido(pedidoID);
+        }
+
+        public void EliminarPedidosInutiles()
+        {
+            modeloPedido.EliminarPedidosInutiles();
+        }
     }
 }
