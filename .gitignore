@@ -3,3 +3,6 @@
 .vs/
 *.suo
 *.cache
+# Ignorar carpetas bin y obj
+bin/
+obj/
