@@ -1,3 +1,5 @@
-git rm -r --cached .vs
-git add .gitignore
-git commit -m "Agregar .gitignore para ignorar archivos de Visual Studio"
+
+# Ignorar archivos de Visual Studio
+.vs/
+*.suo
+*.cache
