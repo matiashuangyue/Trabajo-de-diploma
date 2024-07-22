@@ -3,6 +3,7 @@
 bin/
 obj/
 # Ignorar archivos de configuración de Visual Studio
+# Ignorar archivos de Visual Studio
 .vs/
 *.suo
 *.cache
