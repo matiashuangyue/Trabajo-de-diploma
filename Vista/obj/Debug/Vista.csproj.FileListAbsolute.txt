@@ -94,3 +94,7 @@ D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\itextsharp.xml
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormControlCaja.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormPago.resources
 D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.FormBusquedaProducto.resources
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Vista.exe.manifest
+D:\proyecto\Trabajo-de-diploma\Vista\bin\Debug\Vista.application
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.exe.manifest
+D:\proyecto\Trabajo-de-diploma\Vista\obj\Debug\Vista.application
