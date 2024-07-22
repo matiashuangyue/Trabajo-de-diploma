@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -44,6 +44,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panelCompra = new System.Windows.Forms.Panel();
             this.panelDetalle = new System.Windows.Forms.Panel();
+            this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.ID_Compra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBuscarProducto = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnCerrarCompra = new System.Windows.Forms.Button();
@@ -58,16 +63,16 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCodigoDetalle = new System.Windows.Forms.TextBox();
-            this.dgvDetalles = new System.Windows.Forms.DataGridView();
-            this.ID_Compra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblCant = new System.Windows.Forms.Label();
+            this.btnEliminarDetalleCompra = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panelCompra.SuspendLayout();
             this.panelDetalle.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -247,6 +252,12 @@
             // panelDetalle
             // 
             this.panelDetalle.BackColor = System.Drawing.Color.White;
+            this.panelDetalle.Controls.Add(this.label11);
+            this.panelDetalle.Controls.Add(this.label12);
+            this.panelDetalle.Controls.Add(this.btnCerrarCompra);
+            this.panelDetalle.Controls.Add(this.btnEliminarDetalleCompra);
+            this.panelDetalle.Controls.Add(this.lblTotal);
+            this.panelDetalle.Controls.Add(this.lblCant);
             this.panelDetalle.Controls.Add(this.dgvDetalles);
             this.panelDetalle.Controls.Add(this.btnBuscarProducto);
             this.panelDetalle.Controls.Add(this.groupBox2);
@@ -258,6 +269,57 @@
             this.panelDetalle.Size = new System.Drawing.Size(1955, 1477);
             this.panelDetalle.TabIndex = 18;
             this.panelDetalle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDetalle_Paint);
+            // 
+            // dgvDetalles
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDetalles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID_Compra,
+            this.ID_Producto,
+            this.Cantidad,
+            this.PrecioUnitario});
+            this.dgvDetalles.Location = new System.Drawing.Point(76, 635);
+            this.dgvDetalles.Name = "dgvDetalles";
+            this.dgvDetalles.RowHeadersWidth = 62;
+            this.dgvDetalles.RowTemplate.Height = 30;
+            this.dgvDetalles.Size = new System.Drawing.Size(1327, 348);
+            this.dgvDetalles.TabIndex = 18;
+            // 
+            // ID_Compra
+            // 
+            this.ID_Compra.HeaderText = "ID de Compra";
+            this.ID_Compra.MinimumWidth = 8;
+            this.ID_Compra.Name = "ID_Compra";
+            this.ID_Compra.Width = 150;
+            // 
+            // ID_Producto
+            // 
+            this.ID_Producto.HeaderText = "ID de Producto";
+            this.ID_Producto.MinimumWidth = 8;
+            this.ID_Producto.Name = "ID_Producto";
+            this.ID_Producto.Width = 150;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 8;
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Width = 150;
+            // 
+            // PrecioUnitario
+            // 
+            this.PrecioUnitario.HeaderText = "Precio Unitario";
+            this.PrecioUnitario.MinimumWidth = 8;
+            this.PrecioUnitario.Name = "PrecioUnitario";
+            this.PrecioUnitario.Width = 150;
             // 
             // btnBuscarProducto
             // 
@@ -276,7 +338,6 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox2.Controls.Add(this.btnCerrarCompra);
             this.groupBox2.Controls.Add(this.txtPrecioDetalle);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtCantidad);
@@ -291,7 +352,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(1326, 691);
+            this.groupBox2.Size = new System.Drawing.Size(1326, 505);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de Productos";
@@ -301,7 +362,7 @@
             this.btnCerrarCompra.BackColor = System.Drawing.Color.Cornsilk;
             this.btnCerrarCompra.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarCompra.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarCompra.Location = new System.Drawing.Point(879, 529);
+            this.btnCerrarCompra.Location = new System.Drawing.Point(976, 1256);
             this.btnCerrarCompra.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarCompra.Name = "btnCerrarCompra";
             this.btnCerrarCompra.Size = new System.Drawing.Size(425, 104);
@@ -438,56 +499,71 @@
             this.txtCodigoDetalle.Size = new System.Drawing.Size(470, 42);
             this.txtCodigoDetalle.TabIndex = 14;
             // 
-            // dgvDetalles
+            // lblTotal
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDetalles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID_Compra,
-            this.ID_Producto,
-            this.Cantidad,
-            this.PrecioUnitario});
-            this.dgvDetalles.Location = new System.Drawing.Point(74, 825);
-            this.dgvDetalles.Name = "dgvDetalles";
-            this.dgvDetalles.RowHeadersWidth = 62;
-            this.dgvDetalles.RowTemplate.Height = 30;
-            this.dgvDetalles.Size = new System.Drawing.Size(1326, 584);
-            this.dgvDetalles.TabIndex = 18;
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.BackColor = System.Drawing.SystemColors.Control;
+            this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.Color.Green;
+            this.lblTotal.Location = new System.Drawing.Point(778, 1158);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(293, 56);
+            this.lblTotal.TabIndex = 25;
+            this.lblTotal.Text = "Total Precio";
             // 
-            // ID_Compra
+            // lblCant
             // 
-            this.ID_Compra.HeaderText = "ID de Compra";
-            this.ID_Compra.MinimumWidth = 8;
-            this.ID_Compra.Name = "ID_Compra";
-            this.ID_Compra.Width = 150;
+            this.lblCant.AutoSize = true;
+            this.lblCant.BackColor = System.Drawing.SystemColors.Control;
+            this.lblCant.Font = new System.Drawing.Font("Century Gothic", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCant.ForeColor = System.Drawing.Color.Green;
+            this.lblCant.Location = new System.Drawing.Point(67, 1163);
+            this.lblCant.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCant.Name = "lblCant";
+            this.lblCant.Size = new System.Drawing.Size(494, 51);
+            this.lblCant.TabIndex = 24;
+            this.lblCant.Text = "Cantidad de Producto";
             // 
-            // ID_Producto
+            // btnEliminarDetalleCompra
             // 
-            this.ID_Producto.HeaderText = "ID de Producto";
-            this.ID_Producto.MinimumWidth = 8;
-            this.ID_Producto.Name = "ID_Producto";
-            this.ID_Producto.Width = 150;
+            this.btnEliminarDetalleCompra.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnEliminarDetalleCompra.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarDetalleCompra.ForeColor = System.Drawing.Color.Black;
+            this.btnEliminarDetalleCompra.Location = new System.Drawing.Point(1081, 990);
+            this.btnEliminarDetalleCompra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarDetalleCompra.Name = "btnEliminarDetalleCompra";
+            this.btnEliminarDetalleCompra.Size = new System.Drawing.Size(320, 144);
+            this.btnEliminarDetalleCompra.TabIndex = 26;
+            this.btnEliminarDetalleCompra.Text = "Eliminar detalle seleccionado ";
+            this.btnEliminarDetalleCompra.UseVisualStyleBackColor = false;
+            this.btnEliminarDetalleCompra.Click += new System.EventHandler(this.btnEliminarDetalleCompra_Click);
             // 
-            // Cantidad
+            // label11
             // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 8;
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.Width = 150;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.Control;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(70, 1086);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(331, 34);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Cantidad de Producto :";
             // 
-            // PrecioUnitario
+            // label12
             // 
-            this.PrecioUnitario.HeaderText = "Precio Unitario";
-            this.PrecioUnitario.MinimumWidth = 8;
-            this.PrecioUnitario.Name = "PrecioUnitario";
-            this.PrecioUnitario.Width = 150;
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.SystemColors.Control;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(782, 1086);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(104, 34);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "TOTAL:";
             // 
             // FormCompra
             // 
@@ -506,9 +582,9 @@
             this.panelCompra.PerformLayout();
             this.panelDetalle.ResumeLayout(false);
             this.panelDetalle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -549,5 +625,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioUnitario;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblCant;
+        private System.Windows.Forms.Button btnEliminarDetalleCompra;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

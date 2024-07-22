@@ -145,6 +145,74 @@ namespace Modelo
             }
         }
 
+        public int EliminarDetalleCompra(long idCompra, int idProducto)
+        {
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string query = "DELETE FROM DetalleCompras WHERE ID_Compra = @ID_Compra AND ID_Producto = @ID_Producto";
+
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@ID_Compra", idCompra);
+                        cmd.Parameters.AddWithValue("@ID_Producto", idProducto);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return 1; // Eliminado correctamente
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return -1; // Error al eliminar
+            }
+        }
+
+        public List<DetalleCompra> ObtenerDetallesCompra(long idCompra)
+        {
+            List<DetalleCompra> detalles = new List<DetalleCompra>();
+
+            try
+            {
+                using (var cnn = GetConnection())
+                {
+                    cnn.Open();
+                    string query = @"SELECT dc.ID_Compra, dc.ID_Producto, p.Nombre AS NombreProducto, dc.Cantidad, dc.PrecioUnitario
+                             FROM DetalleCompras dc
+                             JOIN Productos p ON dc.ID_Producto = p.ID_Producto
+                             WHERE dc.ID_Compra = @ID_Compra";
+
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@ID_Compra", idCompra);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                DetalleCompra detalle = new DetalleCompra
+                                {
+                                    ID_Compra = reader.GetInt64(0),
+                                    ID_Producto = reader.GetInt32(1),
+                                    NombreProducto = reader.GetString(2),
+                                    Cantidad = reader.GetInt32(3),
+                                    PrecioUnitario = reader.GetDecimal(4)
+                                };
+                                detalles.Add(detalle);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // Manejar la excepción de manera adecuada
+            }
+
+            return detalles;
+        }
 
 
 
