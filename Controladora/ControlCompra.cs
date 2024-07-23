@@ -52,5 +52,17 @@ namespace Controladora
         {
             return modeloCompra.CambiarEstadoCompra(ID,NuevoEstado);
         }
+
+        public int EliminarDetalleCompra(long idCompra, int idProducto)
+        {
+            return modeloCompra.EliminarDetalleCompra(idCompra, idProducto);
+        }
+
+        public List<DetalleCompra> ObtenerDetallesCompra(long idCompra)
+        {
+            return modeloCompra.ObtenerDetallesCompra(idCompra);
+        }
+
+
     }
 }

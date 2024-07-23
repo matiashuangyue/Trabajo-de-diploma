@@ -35,19 +35,39 @@ namespace Vista
             this.RoleID = RoleID;
             this.DNIrol = DNI;
             cambiarForm(1);
-           
+            iniciartextbox();
+
         }
         
-
+        private void iniciartextbox()
+        {
+            txtCantidad.Text = "1";
+            lblCant.Text = "0";
+            lblTotal.Text = "$ 0";
+        }
        
 
         private void FormCompra_Load(object sender, EventArgs e)
         {
-            InitializalDgv();
-            
+            InicializarDgv();
+            CargarDetallesCompra();
+           
+        }
+        private void CargarDetallesCompra()
+        {
+            List<DetalleCompra> detalles = controlCompra.ObtenerDetallesCompra(IDCompra);
+
+            foreach (var detalle in detalles)
+            {
+                PasarDatos(detalle);
+            }
+
+            lblCant.Text = detalles.Count.ToString();
+            sumaTotal = detalles.Sum(d => d.PrecioTotal);
+            lblTotal.Text = sumaTotal.ToString("C");
         }
 
-        private void InitializalDgv()
+        private void InicializarDgv()
         {
             dgvDetalles.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
             dgvDetalles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -55,8 +75,17 @@ namespace Vista
             dgvDetalles.DefaultCellStyle.Font = new Font("Arial", 10, FontStyle.Regular);
             dgvDetalles.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvDetalles.DefaultCellStyle.ForeColor = Color.Black;
+
+            // Asegúrate de que las columnas están configuradas correctamente
+            dgvDetalles.Columns.Clear();
+            dgvDetalles.Columns.Add("ID_Producto", "ID Producto");
+            dgvDetalles.Columns.Add("NombreProducto", "Nombre del Producto");
+            dgvDetalles.Columns.Add("Cantidad", "Cantidad");
+            dgvDetalles.Columns.Add("PrecioUnitario", "Precio Unitario");
+            dgvDetalles.Columns.Add("PrecioTotal", "Precio Total");
         }
-      
+
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             if (int.TryParse(txtDNI.Text, out int dni))
@@ -125,8 +154,10 @@ namespace Vista
             txtDireccion.Text=string.Empty;
             txtNombDetalle.Text = string.Empty;
             txtDescripcionDetalle.Text = string.Empty;
-            txtCantidad.Text = string.Empty;
             txtPrecioDetalle.Text = string.Empty;
+            lblTotal.Text = "$ 0";
+            lblCant.Text = "0";
+            txtCantidad.Text = "1";
         }
 
         private void btnCompra_Click(object sender, EventArgs e)
@@ -228,34 +259,41 @@ namespace Vista
             if (txtCantidad.Text != "")
             {
                 int cantidad = int.Parse(txtCantidad.Text);
+                decimal precioUnitario = Convert.ToDecimal(txtPrecioDetalle.Text);
+                decimal precioTotal = cantidad * precioUnitario;
+
                 DetalleCompra nuevoDetalle = new DetalleCompra
                 {
                     ID_Compra = IDCompra, // Asigna el ID de la compra actual
                     ID_Producto = CodigoEncontrado, // Implementa tu lógica para obtener el ID del producto
+                    NombreProducto = txtNombDetalle.Text,
                     Cantidad = cantidad,
-                    PrecioUnitario = Convert.ToDecimal(txtPrecioDetalle.Text),
+                    PrecioUnitario = precioUnitario,
                 };
-                int seAgrego =controlCompra.AddDetalle(nuevoDetalle);
-                if (seAgrego==1)
+
+                int seAgrego = controlCompra.AddDetalle(nuevoDetalle);
+                if (seAgrego == 1)
                 {
                     calcularPrecioCantidad(nuevoDetalle.Cantidad, nuevoDetalle.PrecioUnitario);
                     MessageBox.Show("Detalle agregado exitosamente a la compra.");
                     vaciarTextbox();
                     PasarDatos(nuevoDetalle);
+
+                    // Actualizar los labels
+                    lblCant.Text = dgvDetalles.Rows.Count.ToString();
+                    lblTotal.Text = sumaTotal.ToString("C");
                 }
                 else
                 {
-                    MessageBox.Show("error al insertar datos.");
+                    MessageBox.Show("Error al insertar datos.");
                 }
-
             }
             else
             {
-                MessageBox.Show("Completa los campos porfavor");
+                MessageBox.Show("Completa los campos, por favor.");
             }
-               
-            
-        } 
+        }
+
 
         private void calcularPrecioCantidad(int cantidad,decimal precio)
         {
@@ -324,14 +362,54 @@ namespace Vista
         {
             int n = dgvDetalles.Rows.Add();
 
-            dgvDetalles.Rows[n].Cells[0].Value = detalleCompra.ID_Compra;
-            dgvDetalles.Rows[n].Cells[1].Value = detalleCompra.ID_Producto;
+            dgvDetalles.Rows[n].Cells[0].Value = detalleCompra.ID_Producto;
+            dgvDetalles.Rows[n].Cells[1].Value = detalleCompra.NombreProducto;
             dgvDetalles.Rows[n].Cells[2].Value = detalleCompra.Cantidad;
             dgvDetalles.Rows[n].Cells[3].Value = detalleCompra.PrecioUnitario;
+            dgvDetalles.Rows[n].Cells[4].Value = detalleCompra.PrecioTotal;
         }
+
+
+
         private void panelDetalle_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void btnEliminarDetalleCompra_Click(object sender, EventArgs e)
+        {
+            if (dgvDetalles.SelectedRows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dgvDetalles.SelectedRows)
+                {
+                    long idCompra = IDCompra;
+                    int idProducto = Convert.ToInt32(row.Cells["ID_Producto"].Value);
+                    decimal precioTotal = Convert.ToDecimal(row.Cells["PrecioTotal"].Value);
+
+                    int eliminado = controlCompra.EliminarDetalleCompra(idCompra, idProducto);
+
+                    if (eliminado == 1)
+                    {
+                        sumaTotal -= precioTotal;
+                        dgvDetalles.Rows.Remove(row);
+
+                        // Actualizar los labels
+                        lblCant.Text = dgvDetalles.Rows.Count.ToString();
+                        lblTotal.Text = sumaTotal.ToString("C");
+
+                        MessageBox.Show("Detalle eliminado exitosamente.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al eliminar el detalle de la base de datos.");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona un detalle para eliminar.");
+            }
+        }
+
     }
 }
