@@ -14,14 +14,14 @@ namespace Controladora
         
        
         private ModInforme modInforme = new ModInforme();
-        public DataTable ObtenerProductosMasVendidos()
+        public DataTable ObtenerProductosMasVendidos(DateTime fechaInicio, DateTime fechaFin)
         {
-            return modInforme.ObtenerProductosMasVendidos();
+            return modInforme.ObtenerProductosMasVendidos(fechaInicio, fechaFin);
         }
 
-        public DataTable ObtenerVentasPorVendedor()
+        public DataTable ObtenerVentasPorVendedor(DateTime fechaInicio, DateTime fechaFin)
         {
-            return modInforme.ObtenerVentasPorVendedor();
+            return modInforme.ObtenerVentasPorVendedor(fechaInicio, fechaFin);
         }
 
         public DataTable ObtenerVentaPorFecha(DateTime fechaInicio, DateTime fechaFin)
@@ -29,9 +29,9 @@ namespace Controladora
             return modInforme.ObtenerVentasPorFecha( fechaInicio,  fechaFin);
         }
 
-        public DataTable ObtenerMargenesDeGanancia()
+        public DataTable ObtenerMargenesDeGanancia(DateTime fechaInicio, DateTime fechaFin)
         {
-            return modInforme.ObtenerMargenesDeGanancia();
+            return modInforme.ObtenerMargenesDeGanancia(fechaInicio, fechaFin);
         }
 
     }

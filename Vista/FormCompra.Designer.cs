@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -272,14 +272,14 @@
             // 
             // dgvDetalles
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDetalles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDetalles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_Compra,
@@ -362,7 +362,7 @@
             this.btnCerrarCompra.BackColor = System.Drawing.Color.Cornsilk;
             this.btnCerrarCompra.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarCompra.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarCompra.Location = new System.Drawing.Point(976, 1256);
+            this.btnCerrarCompra.Location = new System.Drawing.Point(1401, 1100);
             this.btnCerrarCompra.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarCompra.Name = "btnCerrarCompra";
             this.btnCerrarCompra.Size = new System.Drawing.Size(425, 104);
@@ -530,10 +530,10 @@
             this.btnEliminarDetalleCompra.BackColor = System.Drawing.Color.Cornsilk;
             this.btnEliminarDetalleCompra.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarDetalleCompra.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminarDetalleCompra.Location = new System.Drawing.Point(1081, 990);
+            this.btnEliminarDetalleCompra.Location = new System.Drawing.Point(1516, 635);
             this.btnEliminarDetalleCompra.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarDetalleCompra.Name = "btnEliminarDetalleCompra";
-            this.btnEliminarDetalleCompra.Size = new System.Drawing.Size(320, 144);
+            this.btnEliminarDetalleCompra.Size = new System.Drawing.Size(254, 193);
             this.btnEliminarDetalleCompra.TabIndex = 26;
             this.btnEliminarDetalleCompra.Text = "Eliminar detalle seleccionado ";
             this.btnEliminarDetalleCompra.UseVisualStyleBackColor = false;

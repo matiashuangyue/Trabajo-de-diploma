@@ -29,22 +29,29 @@ namespace Vista
             this.DNI = dni;
             this.controlInforme = new ControlInforme();
 
-            DateTime fechaEspecifica = new DateTime(2022, 1, 1);
-            datePickerInicio.Value = fechaEspecifica;
+            DateTime fechaInicio = DateTime.Today; // Inicio del día de hoy
+            DateTime fechaFin = DateTime.Today.AddDays(1);
+            dtpInicio.Value = fechaInicio;
+            dtpFinal.Value = fechaFin;
         }
 
         private void FormInfoVisual_Load(object sender, EventArgs e)
         {
-            CargarProductoMásVendidos();
-            CargarVentasPorVendedorEnChart();
+            
+            Filtrado();
+        }
+        private void Filtrado()
+        {
+            CargarProductoMásVendidosPorFecha();
             CargarVentasPorFechaEnChart();
-            CargarMargenesDeGananciaEnChart();
+            CargarMargenesDeGananciaPorFechaEnChart();
+            CargarVentasPorVendedorPorFechaEnChart();
         }
 
         private void CargarVentasPorFechaEnChart()
         {
-            DateTime fechaInicio = datePickerInicio.Value.Date;
-            DateTime fechaFin = datePickerFin.Value.Date;
+            DateTime fechaInicio = dtpInicio.Value.Date;
+            DateTime fechaFin = dtpFinal.Value.Date;
 
             Console.WriteLine($"Fecha Inicio: {fechaInicio}, Fecha Fin: {fechaFin}"); // Depuración
 
@@ -100,9 +107,12 @@ namespace Vista
             series.BorderColor = Color.Black;
         }
 
-        private void CargarProductoMásVendidos()//Chart1 muestra los productos más vendidos
+        private void CargarProductoMásVendidosPorFecha()//Chart1 muestra los productos más vendidos
         {
-            DataTable dataTable = controlInforme.ObtenerProductosMasVendidos();
+            DateTime fechaInicio = dtpInicio.Value.Date;
+            DateTime fechaFin = dtpFinal.Value.Date;
+
+            DataTable dataTable = controlInforme.ObtenerProductosMasVendidos(fechaInicio, fechaFin);
 
             chart1.Series.Clear();
             chart1.Titles.Clear();
@@ -155,9 +165,11 @@ namespace Vista
             series.BorderColor = Color.Black;
         }
 
-        private void CargarVentasPorVendedorEnChart()
+        private void CargarVentasPorVendedorPorFechaEnChart()
         {
-            DataTable dataTable = controlInforme.ObtenerVentasPorVendedor();
+            DateTime fechaInicio = dtpInicio.Value.Date;
+            DateTime fechaFin = dtpFinal.Value.Date;
+            DataTable dataTable = controlInforme.ObtenerVentasPorVendedor(fechaInicio,fechaFin);
 
             chart2.Series.Clear();
             chart2.Titles.Clear();
@@ -210,9 +222,12 @@ namespace Vista
             series.BorderColor = Color.Black;
         }
 
-        private void CargarMargenesDeGananciaEnChart()
+        private void CargarMargenesDeGananciaPorFechaEnChart()
         {
-            DataTable dataTable = controlInforme.ObtenerMargenesDeGanancia();
+            DateTime fechaInicio = dtpInicio.Value.Date;
+            DateTime fechaFin = dtpFinal.Value.Date;
+
+            DataTable dataTable = controlInforme.ObtenerMargenesDeGanancia(fechaInicio,fechaFin);
 
             chart4.Series.Clear();
             chart4.Titles.Clear();
@@ -291,7 +306,7 @@ namespace Vista
         private void DatePicker_ValueChanged(object sender, EventArgs e)
         {
             // Actualiza el gráfico cuando se cambia la fecha seleccionada
-            CargarVentasPorFechaEnChart();
+           Filtrado();
         }
 
         private void panelInfoVisual_Paint(object sender, PaintEventArgs e)
@@ -306,7 +321,7 @@ namespace Vista
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            CargarVentasPorFechaEnChart();
+            Filtrado();
         }
 
         private void btnDownloadInforme_Click(object sender, EventArgs e)
@@ -366,6 +381,16 @@ namespace Vista
 
                 MessageBox.Show("Informe guardado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void datePickerInicio_ValueChanged(object sender, EventArgs e)
+        {
+            Filtrado();
+        }
+
+        private void dtpFinal_ValueChanged(object sender, EventArgs e)
+        {
+            Filtrado();
         }
     }
 }
