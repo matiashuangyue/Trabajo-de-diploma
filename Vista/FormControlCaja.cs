@@ -31,6 +31,12 @@ namespace Vista
             this.UserDNI = UserDNI;
             CargarNombreCombobox();
 
+            dtpFechaInicio.Value = DateTime.Today;
+            dtpFechaFinal.Value = DateTime.Today;
+
+            dtpFechaInicio.CustomFormat = "dd/MM/yyyy";
+            dtpFechaFinal.CustomFormat = "dd/MM/yyyy";
+
             dtpHoraInicio.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, 0, 0, 0);
 
             dtpHoraFinal.Value = DateTime.Now;

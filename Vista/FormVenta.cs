@@ -38,7 +38,7 @@ namespace Vista
 
             this.RoleID = RoleID;
             vaciarTextbox();
-            txtPorcentaje.Text = "0,4";
+            txtPorcentaje.Text = "0.4";
             txtCantidad.Text = "1";
             txtCliente.Text = ClienteDefecto;
             lblCant.Text = "0";

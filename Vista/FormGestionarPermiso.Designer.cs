@@ -87,6 +87,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(20, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 34);
@@ -104,7 +105,7 @@
             this.gbAddRoles.Controls.Add(this.txtNombRol);
             this.gbAddRoles.Controls.Add(this.label6);
             this.gbAddRoles.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAddRoles.Location = new System.Drawing.Point(47, 468);
+            this.gbAddRoles.Location = new System.Drawing.Point(47, 561);
             this.gbAddRoles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbAddRoles.Name = "gbAddRoles";
             this.gbAddRoles.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -119,7 +120,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(1373, 175);
+            this.label5.Location = new System.Drawing.Point(1373, 163);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(241, 34);
@@ -225,7 +226,7 @@
             this.groupBox1.Controls.Add(this.txtNombPermiso);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(47, 948);
+            this.groupBox1.Location = new System.Drawing.Point(47, 1041);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -303,7 +304,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(1914, 394);
+            this.groupBox2.Size = new System.Drawing.Size(1914, 487);
             this.groupBox2.TabIndex = 119;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Modificar Permisos";
@@ -320,7 +321,7 @@
             this.dgvPermisosSegunRol.Name = "dgvPermisosSegunRol";
             this.dgvPermisosSegunRol.RowHeadersWidth = 62;
             this.dgvPermisosSegunRol.RowTemplate.Height = 30;
-            this.dgvPermisosSegunRol.Size = new System.Drawing.Size(1259, 259);
+            this.dgvPermisosSegunRol.Size = new System.Drawing.Size(1259, 330);
             this.dgvPermisosSegunRol.TabIndex = 120;
             // 
             // dataGridViewCheckBoxColumn1
@@ -361,6 +362,7 @@
             this.Controls.Add(this.label10);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormGestionarPermiso";
+            this.Text = "Gestion de Roles y Permisos";
             this.Load += new System.EventHandler(this.FormGestionarPermiso_Load);
             this.gbAddRoles.ResumeLayout(false);
             this.gbAddRoles.PerformLayout();

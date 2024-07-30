@@ -253,7 +253,7 @@
             // rbDebito
             // 
             this.rbDebito.AutoSize = true;
-            this.rbDebito.Location = new System.Drawing.Point(282, 221);
+            this.rbDebito.Location = new System.Drawing.Point(236, 221);
             this.rbDebito.Name = "rbDebito";
             this.rbDebito.Size = new System.Drawing.Size(204, 34);
             this.rbDebito.TabIndex = 4;

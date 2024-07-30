@@ -417,26 +417,7 @@ namespace Vista
         private void btnCerrarSession_Click(object sender, EventArgs e)
         {
             VolverAHome();
-            try
-            {
-                DialogResult confirmacion = MessageBox.Show("¿Estás seguro de que deseas CERRAR LA SESSION?",
-                                                            "Confirmar Finalización",
-                                                            MessageBoxButtons.YesNo,
-                                                            MessageBoxIcon.Question);
-
-                if (confirmacion == DialogResult.Yes)
-                {   
-                        this.Close();
-                        AuditoriaGlobal.RegistrarLogout();
-                        Login login = new Login();
-                       login.ShowDialog();
-                        
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            this.Close();
         }
 
         private void lblRol_Click(object sender, EventArgs e)
@@ -514,6 +495,8 @@ namespace Vista
                 {
                     AuditoriaGlobal.RegistrarLogout();
                     this.Close(); // Cerrar el formulario después de realizar las operaciones necesarias
+                    Login login = new Login();
+                    login.ShowDialog();
                 }
                 catch (Exception ex)
                 {
