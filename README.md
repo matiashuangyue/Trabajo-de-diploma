@@ -1,3 +1,4 @@
+# STAR CG
 # Sistema de Gestión y Punto de Venta para Supermercado
 
 Este proyecto es un sistema de gestión y punto de venta (POS) desarrollado para un supermercado. El sistema permite la administración de compras, ventas y control de stock de mercaderías. Además, incluye características como inicio de sesión seguro, informes sobre ventas y stock, solicitud de compras, gestión de pedidos y control de caja.
