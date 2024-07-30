@@ -22,7 +22,7 @@ Este proyecto es un sistema de gestión y punto de venta (POS) desarrollado para
 
 ## Instalación
 
-1. Clonar el repositorio:
+1. ### Clonar el repositorio:
    ```bash
    git clone https://github.com/matiashuangyue/Trabajo-de-diploma.git
 
@@ -36,10 +36,10 @@ Para Importar archivo de base de datos a tu SQL Server, sigue estos pasos:
       4. Elige la opción "Import from local disk" y selecciona el archivo .bacpac proporcionado en la carpeta database.
       5. Sigue los pasos del asistente para completar la importación de la base de datos.
    
-3. Cambiar Link de Sql Server
-   entrar en carpeta de MODELO, archivo ' ConexionSQL.cs ' codigo linea 17 Cambiarlo por tu connexion!!!!!!!!!!!!
-   ejemplo:
-   string cnn = "Data Source=NombreDelServidor\\NombreDeLaInstancia; Initial Catalog=NombreDeLaBaseDeDatos; Integrated Security=True;";
+3. ### Cambiar Link de Sql Server
+   - entrar al carpeta de MODELO, archivo ' ConexionSQL.cs ', codigo linea 17 Cambiarlo por tu connexion!!!!!!!!!!!!
+   - ejemplo:
+   - string cnn = "Data Source=NombreDelServidor\\NombreDeLaInstancia; Initial Catalog=NombreDeLaBaseDeDatos; Integrated Security=True;";
 
    
 Con estas instrucciones, Ustedes podrás importar la base de datos en su entorno local después de clonar el repositorio.
