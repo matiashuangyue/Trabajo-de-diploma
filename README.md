@@ -70,21 +70,6 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=tu_contraseña
 DB_NAME=nombre_de_la_base_de_datos
-Iniciar el backend:
-
-cd ../backend
-npm start
-Iniciar el frontend:
-
-
-cd ../frontend
-npm start
-Uso
-Acceder al sistema desde un navegador web en http://localhost:3000.
-Iniciar sesión con las credenciales proporcionadas.
-Navegar por las diferentes secciones del sistema para gestionar ventas, compras, stock, usuarios, etc.
-Contribuciones
-Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request para cualquier mejora o corrección.
 
 Licencia
 Este proyecto está licenciado bajo la [Licencia].
