@@ -26,17 +26,22 @@ Este proyecto es un sistema de gestión y punto de venta (POS) desarrollado para
    ```bash
    git clone https://github.com/matiashuangyue/Trabajo-de-diploma.git
 
-2. Cambiar Link de Sql Server
 
-### Instrucciones para Importar Base de datos
+   
+2. ### Instrucciones para Importar Base de datos
 
 Para Importar archivo de base de datos a tu SQL Server, sigue estos pasos:
 
-1. Abre SQL Server Management Studio (SSMS) y conéctate a la instancia de SQL Server.
-2. Expande la carpeta "Bases de datos" y selecciona "Import Data-tier Application...".
-3. En el asistente de importación, selecciona "Next".
-4. Elige la opción "Import from local disk" y selecciona el archivo .bacpac proporcionado en la carpeta database.
-5. Sigue los pasos del asistente para completar la importación de la base de datos.
+   1. Abre SQL Server Management Studio (SSMS) y conéctate a la instancia de SQL Server.
+   2. Expande la carpeta "Bases de datos" y selecciona "Import Data-tier Application...".
+   3. En el asistente de importación, selecciona "Next".
+   4. Elige la opción "Import from local disk" y selecciona el archivo .bacpac proporcionado en la carpeta database.
+   5. Sigue los pasos del asistente para completar la importación de la base de datos.
+   
+3. Cambiar Link de Sql Server
+   entrar en carpeta de MODELO, archivo ' ConexionSQL.cs ' codigo linea 17 Cambiarlo por tu connexion!!!!!!!!!!!!
+   ejemplo:
+   string cnn = "Data Source=NombreDelServidor\\NombreDeLaInstancia; Initial Catalog=NombreDeLaBaseDeDatos; Integrated Security=True;";
 
-
+   
 Con estas instrucciones, Ustedes podrás importar la base de datos en su entorno local después de clonar el repositorio.
