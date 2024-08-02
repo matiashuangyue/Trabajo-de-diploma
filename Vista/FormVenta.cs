@@ -22,7 +22,7 @@ namespace Vista
         private decimal precioCompra = 0;
         private decimal precioVenta = 0;
         private ControlPedido controlPedido = new ControlPedido();
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private bool validarCliente;
         private decimal VentaTotal;
         private decimal NetosTotal;

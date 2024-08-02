@@ -19,7 +19,7 @@ namespace Vista
         private int DNIRol;
 
         private ControlDGV controlDGV =new ControlDGV();
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         public FormInfoVenta(int Rol,int DNI)
         {
             InitializeComponent();

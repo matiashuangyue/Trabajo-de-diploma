@@ -15,7 +15,7 @@ namespace Vista
 {
     public partial class Login : Form
     {
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;// utilizando metodo de singleton
         private int IDEstado;
         private int IDRol;
         private ControlAuditoria controlAuditoria = new ControlAuditoria();
@@ -47,14 +47,13 @@ namespace Vista
                         Password = txtPassword.Text,
                     };
 
-                    ControlUsuario User = new ControlUsuario();
-                    var LoginValido = User.Validar(usuario);
+                    var LoginValido = controlUsuario.Validar(usuario);
                     if (LoginValido)
                     {
                         ChequearEstado(usuario.DNI);
                         if(IDEstado == 1 || IDRol==1 )
                         {
-                        int RoleID = User.GetRoleID(usuario);
+                        int RoleID = controlUsuario.GetRoleID(usuario);
                         int DNI= usuario.DNI;
                         cambiarformulario(IDRol,DNI);
 
@@ -140,6 +139,11 @@ namespace Vista
             {
                 btnLogin.PerformClick();
             }
+        }
+
+        private void LOGO_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

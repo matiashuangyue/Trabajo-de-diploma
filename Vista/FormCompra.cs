@@ -18,7 +18,7 @@ namespace Vista
     public partial class FormCompra : Form
     {
         private int RoleID;
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private int DNIEncontrado;
         private int CodigoEncontrado;
         private Compra compraActual = CompraActualContext.ObtenerCompraActual();

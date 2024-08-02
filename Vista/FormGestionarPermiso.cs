@@ -17,6 +17,7 @@ namespace Vista
 {
     public partial class FormGestionarPermiso : Form
     {
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         public Button BtnGuardarDetalle;
         private int Rol;
         private int DNI;
@@ -184,7 +185,7 @@ namespace Vista
                 if (resultado == DialogResult.Yes)
                 {
                     // Crear el nuevo rol en la base de datos
-                    ControlUsuario controlUsuario = new ControlUsuario();
+                    
                     int idRol = controlUsuario.CrearNuevoRol(nombreRol);
 
                     if (idRol > 0)
@@ -241,7 +242,6 @@ namespace Vista
                 DialogResult resultado = MessageBox.Show("¿Está seguro de que desea crear el nuevo permiso?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if(resultado==DialogResult.Yes)
                 {
-                    ControlUsuario controlUsuario = new ControlUsuario();
                     int idPermiso = controlUsuario.CrearPermiso(nombrePermioso);
                     if (idPermiso > 0)
                     {
@@ -285,7 +285,6 @@ namespace Vista
             if (!string.IsNullOrEmpty(rolSeleccionado))
             {
                 // Obtener el ID del rol seleccionado
-                ControlUsuario controlUsuario = new ControlUsuario();
                 int idRol = controlUsuario.ObtenerRolID(rolSeleccionado);
 
                 // Verificar que se haya encontrado el ID del rol
@@ -323,7 +322,6 @@ namespace Vista
             if (!string.IsNullOrEmpty(rolSeleccionado))
             {
                 // Obtener el ID del rol seleccionado
-                ControlUsuario controlUsuario = new ControlUsuario();
                 int idRol = controlUsuario.ObtenerRolID(rolSeleccionado);
 
                 // Verificar que se haya encontrado el ID del rol

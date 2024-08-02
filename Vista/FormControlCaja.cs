@@ -22,8 +22,8 @@ namespace Vista
         private int RoleID;
         private int UserDNI;
 
-        private ControlDGV controlDGV = new ControlDGV();
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlDGV controlDGV = new ControlDGV(); 
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         public FormControlCaja(int RoleID,int UserDNI)
         {
             InitializeComponent();

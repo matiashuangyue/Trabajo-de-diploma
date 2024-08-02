@@ -21,6 +21,7 @@ namespace Vista
         private Panel leftBorderBtn;
         private Form currentChildForm;
         private FormCompra formCompra;
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private ControlAuditoria controlAuditoria = new ControlAuditoria();
 
         public int rol;
@@ -98,7 +99,6 @@ namespace Vista
         //para obtener todos los botones
         private void HabilitarControlesSegunRolPermiso()
         {
-            ControlUsuario controlUsuario = new ControlUsuario();
             List<string> permisos = ControlUsuario.ObtenerPermisosPorRol(rol);
             Control[] controles = GetAllControls(this);
             foreach (Control control in controles)

@@ -20,7 +20,7 @@ namespace Vista
         private int DNI;
         private int Estado;
         private ControlDGV controlDGV = new ControlDGV();
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private ControlCompra controlCompra = new ControlCompra();
 
         public FormInfoCompra(int rol, int dNI)

@@ -19,8 +19,7 @@ namespace Vista
         private int UserDNI;
         private int NewEstadoID;
         private int NewRoleID;
-
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
 
         public FormModificacionesUsuario(int rol, int DNI)
         {

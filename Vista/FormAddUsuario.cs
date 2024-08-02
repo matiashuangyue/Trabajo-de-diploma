@@ -19,7 +19,7 @@ namespace Vista
         private int NewRoleID;
         private string selectedItem;
         private int DNI;
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         public FormAddUsuario(int RoleID, int DNI)
         {
             InitializeComponent();
@@ -100,8 +100,8 @@ namespace Vista
                 ID_Estado = 1,
             };
 
-            ControlUsuario User = new ControlUsuario();
-            int registrarse = User.RegistrarCuenta(UserActual);
+           
+            int registrarse = controlUsuario.RegistrarCuenta(UserActual);
 
             if (registrarse == 1)
             {
