@@ -18,15 +18,15 @@ namespace Vista
     public partial class FormCompra : Form
     {
         private int RoleID;
-        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private int DNIEncontrado;
         private int CodigoEncontrado;
         private Compra compraActual = CompraActualContext.ObtenerCompraActual();
         private long IDCompra;
-        private ControlCompra controlCompra = new ControlCompra();
         private decimal precioCantidad;
         private decimal sumaTotal;
         private int DNIrol;
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
+        private ControlCompra controlCompra = ControlCompra.Instance;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         private ControlProducto controlProducto = ControlProducto.Instance;
 

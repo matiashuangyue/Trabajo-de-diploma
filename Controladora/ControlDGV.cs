@@ -12,10 +12,29 @@ namespace Controladora
 {
     public class ControlDGV
     {
-       
-            private ModDGV modDGV = new ModDGV();
+        private static ControlDGV _instance;
+        private static readonly object _lock = new object();
+        private ModDGV modDGV = new ModDGV();
 
-            public List<string> ObtenerNombresVendedores(int IDROL)
+        private ControlDGV()
+        {
+        }
+        public static ControlDGV Instance
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new ControlDGV();
+                    }
+                    return _instance;
+                }
+            }
+        }
+
+        public List<string> ObtenerNombresVendedores(int IDROL)
             {
                 return modDGV.LoadNombreVendedor(IDROL);
             }

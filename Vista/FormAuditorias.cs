@@ -14,7 +14,7 @@ namespace Vista
     {
         private int Rol;
         private int DNI;
-        private ControlDGV controlDGV = new ControlDGV();
+        private ControlDGV controlDGV = ControlDGV.Instance;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         public FormAuditorias(int dni, int rol)
         {
@@ -43,7 +43,6 @@ namespace Vista
 
         private void CargarDetallesAuditoria(string auditoriaID)
         {
-            ControlDGV controlDGV = new ControlDGV();
             DataTable dataTable = controlDGV.ObtenerDetallesAuditoria(auditoriaID);
             dgvDetallesAuditoria.DataSource = dataTable;
         }

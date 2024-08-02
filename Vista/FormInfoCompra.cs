@@ -19,9 +19,9 @@ namespace Vista
         private int Rol;
         private int DNI;
         private int Estado;
-        private ControlDGV controlDGV = new ControlDGV();
+        private ControlDGV controlDGV = ControlDGV.Instance;
         private ControlUsuario controlUsuario = ControlUsuario.Instance;
-        private ControlCompra controlCompra = new ControlCompra();
+        private ControlCompra controlCompra = ControlCompra.Instance;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
 
         public FormInfoCompra(int rol, int dNI)
