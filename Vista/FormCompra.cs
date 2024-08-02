@@ -27,6 +27,7 @@ namespace Vista
         private decimal precioCantidad;
         private decimal sumaTotal;
         private int DNIrol;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
 
 
         public FormCompra(int RoleID,int DNI)
@@ -316,7 +317,6 @@ namespace Vista
                 if (confirmacion == DialogResult.Yes)
                 {
                     // Guarda la compra actual en la base de datos
-                    ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNIrol, "Compra");
                     MessageBox.Show("Compra cerrada y registrada correctamente.");
 

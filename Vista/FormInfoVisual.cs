@@ -21,6 +21,7 @@ namespace Vista
         private int Rol;
         private int DNI;
         private ControlInforme controlInforme;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
 
         public FormInfoVisual(int dni, int rol)
         {
@@ -327,7 +328,6 @@ namespace Vista
         private void btnDownloadInforme_Click(object sender, EventArgs e)
         {
             ExportarChartsAPdf();
-            ControlAuditoria controlAuditoria = new ControlAuditoria();
             controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Exportar Informe");
         }
 

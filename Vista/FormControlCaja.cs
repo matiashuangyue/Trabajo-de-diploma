@@ -24,6 +24,7 @@ namespace Vista
 
         private ControlDGV controlDGV = new ControlDGV(); 
         private ControlUsuario controlUsuario = ControlUsuario.Instance;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         public FormControlCaja(int RoleID,int UserDNI)
         {
             InitializeComponent();
@@ -126,7 +127,6 @@ namespace Vista
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ExportarDGVsAPdf(lblCantidad.Text, lblTotal.Text);
-            ControlAuditoria controlAuditoria = new ControlAuditoria();
             controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Exportar Informe");
         }
 

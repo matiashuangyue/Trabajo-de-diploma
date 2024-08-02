@@ -18,7 +18,7 @@ namespace Vista
         private ControlUsuario controlUsuario = ControlUsuario.Instance;// utilizando metodo de singleton
         private int IDEstado;
         private int IDRol;
-        private ControlAuditoria controlAuditoria = new ControlAuditoria();
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         private string auditoriaId;
         public Login()
         {

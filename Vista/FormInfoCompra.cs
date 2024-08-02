@@ -22,6 +22,7 @@ namespace Vista
         private ControlDGV controlDGV = new ControlDGV();
         private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private ControlCompra controlCompra = new ControlCompra();
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
 
         public FormInfoCompra(int rol, int dNI)
         {
@@ -170,7 +171,6 @@ namespace Vista
                     MessageBox.Show(estado == 0 ? "La compra ha sido cambiada a estado de baja con éxito!" :
                         "La compra ha sido cambiada a estado de alta con éxito!");
                     
-                    ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Ver Informe");
 
                     cbEstado.SelectedItem = estado == 0 ? "Baja" : "Alta";

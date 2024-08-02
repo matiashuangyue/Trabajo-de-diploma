@@ -15,6 +15,7 @@ namespace Vista
         private int Rol;
         private int DNI;
         private ControlDGV controlDGV = new ControlDGV();
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         public FormAuditorias(int dni, int rol)
         {
             InitializeComponent();
@@ -218,7 +219,6 @@ namespace Vista
         private void btnDescargarInformeAuditoria_Click(object sender, EventArgs e)
         {
             ExportarDGVsAPdf();
-            ControlAuditoria controlAuditoria = new ControlAuditoria();
             controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Exportar Informe");
         }
     }

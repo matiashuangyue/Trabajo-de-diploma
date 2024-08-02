@@ -23,6 +23,7 @@ namespace Vista
         private decimal precioVenta = 0;
         private ControlPedido controlPedido = new ControlPedido();
         private ControlUsuario controlUsuario = ControlUsuario.Instance;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         private bool validarCliente;
         private decimal VentaTotal;
         private decimal NetosTotal;
@@ -337,7 +338,6 @@ namespace Vista
                     string metodoPago = formPago.MetodoPago;
                     decimal montoRecibido = formPago.MontoRecibido;
 
-                    ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNIrol, "Venta");
 
                     Pedido cerrarPedido = new Pedido

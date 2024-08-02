@@ -18,6 +18,7 @@ namespace Vista
         private int Rol;
         private int DNI;
         private ControlBackUp controlBackUp = new ControlBackUp();
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         public FormResguardoyRestauracion(int dni, int rol)
         {
             InitializeComponent();
@@ -42,7 +43,6 @@ namespace Vista
                     {
 
                         MessageBox.Show("Resguardo realizado correctamente. En: " + Ruta + posicion);
-                        ControlAuditoria controlAuditoria = new ControlAuditoria();
                         controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Resguardo y Restauracion");
                     }
                     else
@@ -115,7 +115,6 @@ namespace Vista
                             if (exito == 1)
                             {
                                 MessageBox.Show("Restauración realizada correctamente.");
-                                ControlAuditoria controlAuditoria = new ControlAuditoria();
                                 controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Resguardo y Restauracion");
                             }
                             else

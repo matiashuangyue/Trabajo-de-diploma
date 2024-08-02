@@ -17,6 +17,7 @@ namespace Vista
     {
         private int RoleID;
         private int DNI;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         public FormAddProducto(int RoleID,int DNi)
         {
             InitializeComponent();
@@ -51,7 +52,6 @@ namespace Vista
 
                     MessageBox.Show("Ha Agregado nuevo producto con existo");
 
-                    ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI , "Gestionar Producto");
                 }
                 else if (registrarse == -1)

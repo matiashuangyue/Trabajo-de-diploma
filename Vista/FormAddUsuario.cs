@@ -20,6 +20,7 @@ namespace Vista
         private string selectedItem;
         private int DNI;
         private ControlUsuario controlUsuario = ControlUsuario.Instance;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         public FormAddUsuario(int RoleID, int DNI)
         {
             InitializeComponent();
@@ -106,7 +107,6 @@ namespace Vista
             if (registrarse == 1)
             {
                 MessageBox.Show("Ha creado nuevo usuario");
-                ControlAuditoria controlAuditoria = new ControlAuditoria();
                 controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Gestionar Usuario");
             }
             else if (registrarse == -1)
