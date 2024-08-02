@@ -11,9 +11,9 @@ namespace Controladora
     public class ControlUsuario
     {
 
-        private static ControlUsuario _instance;
-        private static readonly object _lock = new object();
-        private ModUsuario modUsuario = new ModUsuario();
+        private static ControlUsuario _instance;//crear una instancia de la clase
+        private static readonly object _lock = new object();//crea un objeto para bloquear el acceso a la instancia
+        private ModUsuario modUsuario = new ModUsuario();//crea una instancia de la clase ModUsuario
 
         private ControlUsuario()
         {
