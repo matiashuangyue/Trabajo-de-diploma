@@ -18,6 +18,7 @@ namespace Vista
         private int RoleID;
         private int DNI;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
+        private ControlProducto controlProducto = ControlProducto.Instance;
         public FormAddProducto(int RoleID,int DNi)
         {
             InitializeComponent();
@@ -45,8 +46,7 @@ namespace Vista
                     ProductoActual.Stock = 0;
                     ProductoActual.ID_Estado = 1;
                 }
-                Controladora.ControlProducto Product = new  Controladora.ControlProducto();
-                int registrarse = Product.AddProducto(ProductoActual);
+                int registrarse = controlProducto.AddProducto(ProductoActual);
                 if (registrarse == 1)
                 {
 

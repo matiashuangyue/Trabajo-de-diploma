@@ -28,6 +28,7 @@ namespace Vista
         private decimal sumaTotal;
         private int DNIrol;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
+        private ControlProducto controlProducto = ControlProducto.Instance;
 
 
         public FormCompra(int RoleID,int DNI)
@@ -206,7 +207,6 @@ namespace Vista
                     return;
                 }
 
-                ControlProducto controlProducto = new ControlProducto();
                 Producto productoBuscado = new Producto { Codigo = codigoProducto };
 
                 Producto productoEncontrado = controlProducto.BuscarProductoPorCodigo(productoBuscado);

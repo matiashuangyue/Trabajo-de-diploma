@@ -24,6 +24,7 @@ namespace Vista
         private ControlPedido controlPedido = new ControlPedido();
         private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
+        private ControlProducto controlProducto = ControlProducto.Instance;
         private bool validarCliente;
         private decimal VentaTotal;
         private decimal NetosTotal;
@@ -118,7 +119,6 @@ namespace Vista
                     return;
                 }
 
-                ControlProducto controlProducto = new ControlProducto();
                 Producto productoBuscado = new Producto { Codigo = codigoProducto };
 
                 Producto productoEncontrado = controlProducto.BuscarProductoPorCodigo(productoBuscado);

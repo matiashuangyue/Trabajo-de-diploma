@@ -10,7 +10,27 @@ namespace Controladora
 {
     public class ControlProducto
     {
+        private static ControlProducto _instance;
+        private static readonly object _lock = new object();
         Modelo.ModProducto Produc= new ModProducto();
+
+        private ControlProducto()
+        {
+        }
+        public static ControlProducto Instance
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new ControlProducto();
+                    }
+                    return _instance;
+                }
+            }
+        }
         public int AddProducto(Producto producto)
         {
             return Produc.agregarProducto(producto);
