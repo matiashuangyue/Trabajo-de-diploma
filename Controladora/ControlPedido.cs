@@ -11,9 +11,26 @@ namespace Controladora
 {
     public class ControlPedido
     {
+        private static ControlPedido _instance;
+        private static readonly object _lock = new object();
         private ModPedido modeloPedido = new ModPedido();
-        
-        
+
+        private ControlPedido() { }
+        public static ControlPedido Instance
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new ControlPedido();
+    }
+                    return _instance;
+                }
+            }
+        }
+
         public DataTable ObtenerDetallePedido(DetallePedido detallePedido)
         {
             return modeloPedido.ArrancarPedido(detallePedido);

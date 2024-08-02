@@ -21,7 +21,7 @@ namespace Vista
         private decimal porcentaje;
         private decimal precioCompra = 0;
         private decimal precioVenta = 0;
-        private ControlPedido controlPedido = new ControlPedido();
+        private ControlPedido controlPedido = ControlPedido.Instance;
         private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         private ControlProducto controlProducto = ControlProducto.Instance;
