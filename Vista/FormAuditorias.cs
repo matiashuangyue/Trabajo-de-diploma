@@ -52,8 +52,8 @@ namespace Vista
 
         private void FormAuditorias_Load(object sender, EventArgs e)
         {
-           AjustarDGV();
-            dtpFechaInicio.Value = new DateTime(2020, 1, 1);
+           AjustarDGV(); 
+            dtpFechaInicio.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, 0, 0, 0);
         }
 
         private void AjustarDGV()
