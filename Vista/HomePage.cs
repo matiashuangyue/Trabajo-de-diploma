@@ -21,7 +21,8 @@ namespace Vista
         private Panel leftBorderBtn;
         private Form currentChildForm;
         private FormCompra formCompra;
-        private ControlAuditoria controlAuditoria = new ControlAuditoria();
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
 
         public int rol;
         public int UserDNI;
@@ -98,7 +99,6 @@ namespace Vista
         //para obtener todos los botones
         private void HabilitarControlesSegunRolPermiso()
         {
-            ControlUsuario controlUsuario = new ControlUsuario();
             List<string> permisos = ControlUsuario.ObtenerPermisosPorRol(rol);
             Control[] controles = GetAllControls(this);
             foreach (Control control in controles)
@@ -381,7 +381,6 @@ namespace Vista
         private void button4_Click(object sender, EventArgs e)
         {
             OpenChidForm(new FormControlCaja(rol,UserDNI));
-            ControlAuditoria controlAuditoria = new ControlAuditoria();
             controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Controlar Caja");
             hideSubmenu();
         }
@@ -410,7 +409,6 @@ namespace Vista
         {
             OpenChidForm(new FormInfoVenta(rol,UserDNI));
             hideSubmenu();
-            ControlAuditoria controlAuditoria = new ControlAuditoria();
             controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Ver Informe");
         }
 
@@ -457,7 +455,6 @@ namespace Vista
             OpenChidForm(new FormInfoVisual(rol, UserDNI));
             hideSubmenu();
 
-            ControlAuditoria controlAuditoria = new ControlAuditoria();
             controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Ver Informe");
         }
 
@@ -467,7 +464,6 @@ namespace Vista
             OpenChidForm(new FormAuditorias(rol, UserDNI));
             hideSubmenu();
 
-            ControlAuditoria controlAuditoria = new ControlAuditoria();
             controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Gestionar Auditorias");
         }
 

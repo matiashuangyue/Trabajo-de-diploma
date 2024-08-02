@@ -1,4 +1,5 @@
-﻿using Entidades;
+﻿using Controladora;
+using Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ namespace Vista
 {
     public partial class FormSignUp : Form
     {
-        
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         public FormSignUp( )
         {
             InitializeComponent();
@@ -87,9 +88,8 @@ namespace Vista
                             ID_Rol = 0,
                             ID_Estado = 1,
                         };
-                        Controladora.ControlUsuario User = new Controladora.ControlUsuario();
 
-                        int registrarse = User.RegistrarCuenta(UserActual);
+                        int registrarse = controlUsuario.RegistrarCuenta(UserActual);
                         if (registrarse == 1)
                         {
                             

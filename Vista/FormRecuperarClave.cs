@@ -18,8 +18,8 @@ namespace Vista
 {
     public partial class FormRecuperarClave : Form
     {
-        private int DNI;
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private int DNI; 
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         //contra gmail :area uroj yyri bvwb
         public FormRecuperarClave(int DNI)
         {

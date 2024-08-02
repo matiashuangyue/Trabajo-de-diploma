@@ -19,6 +19,8 @@ namespace Vista
         private int RoleID;
         private int EstadoID;
         private int DNI;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
+        private ControlProducto controlProducto = ControlProducto.Instance;
         public FormModificacionesProducto(int RoleID, int DNI)
         {
             InitializeComponent();
@@ -52,7 +54,6 @@ namespace Vista
                     return;
                 }
 
-                ControlProducto controlProducto = new ControlProducto();
                 Producto productoBuscado = new Producto { Codigo = codigoProducto };
 
                 Producto productoEncontrado = controlProducto.BuscarProductoPorCodigo(productoBuscado);
@@ -108,7 +109,6 @@ namespace Vista
                 }
                 // Modificar el producto usando la controladora
                 estadoProducto();
-                ControlProducto controlProducto = new ControlProducto();
                 Producto productoModificado = new Producto
                 {
                     Codigo = codigoProducto,
@@ -125,7 +125,6 @@ namespace Vista
                 {
                     MessageBox.Show("Producto modificado correctamente.");
 
-                    ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Gestionar Producto");
                 }
                 else if (resultado == -1)

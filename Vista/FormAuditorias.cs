@@ -14,7 +14,8 @@ namespace Vista
     {
         private int Rol;
         private int DNI;
-        private ControlDGV controlDGV = new ControlDGV();
+        private ControlDGV controlDGV = ControlDGV.Instance;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         public FormAuditorias(int dni, int rol)
         {
             InitializeComponent();
@@ -42,7 +43,6 @@ namespace Vista
 
         private void CargarDetallesAuditoria(string auditoriaID)
         {
-            ControlDGV controlDGV = new ControlDGV();
             DataTable dataTable = controlDGV.ObtenerDetallesAuditoria(auditoriaID);
             dgvDetallesAuditoria.DataSource = dataTable;
         }
@@ -51,8 +51,8 @@ namespace Vista
 
         private void FormAuditorias_Load(object sender, EventArgs e)
         {
-           AjustarDGV();
-            dtpFechaInicio.Value = new DateTime(2020, 1, 1);
+           AjustarDGV(); 
+            dtpFechaInicio.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, 0, 0, 0);
         }
 
         private void AjustarDGV()
@@ -218,7 +218,6 @@ namespace Vista
         private void btnDescargarInformeAuditoria_Click(object sender, EventArgs e)
         {
             ExportarDGVsAPdf();
-            ControlAuditoria controlAuditoria = new ControlAuditoria();
             controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Exportar Informe");
         }
     }

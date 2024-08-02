@@ -10,9 +10,31 @@ namespace Controladora
 {
     public class ControlUsuario
     {
-        
-       
+
+        private static ControlUsuario _instance;
+        private static readonly object _lock = new object();
         private ModUsuario modUsuario = new ModUsuario();
+
+        private ControlUsuario()
+        {
+            // Constructor privado para evitar que se creen instancias fuera de esta clase
+        }
+
+        // Propiedad pública estática para obtener la instancia única
+        public static ControlUsuario Instance
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new ControlUsuario();
+                    }
+                    return _instance;
+                }
+            }
+        }
         public bool Validar(Usuario usuario)
         {
             return modUsuario.login(usuario);

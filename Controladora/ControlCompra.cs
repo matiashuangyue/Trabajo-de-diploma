@@ -10,8 +10,27 @@ namespace Controladora
 {
     public class ControlCompra
     {
+        private static ControlCompra _instance;
+        private static readonly object _lock = new object();
         private ModCompra modeloCompra = new ModCompra();
 
+        private ControlCompra()
+        {
+        }
+        public static ControlCompra Instance
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new ControlCompra();
+                    }
+                    return _instance;
+                }
+            }
+        }
         public int CerrarCompra(Compra compra)
         {
             return modeloCompra.CerrarCompra(compra);

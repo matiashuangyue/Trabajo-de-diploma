@@ -12,8 +12,27 @@ namespace Controladora
     public class ControlInforme
     {
         
-       
+       private static ControlInforme _instance;
+        private static readonly object _lock = new object();
         private ModInforme modInforme = new ModInforme();
+
+        private ControlInforme() { }
+
+        public static ControlInforme Instance
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new ControlInforme();
+                    }
+                    return _instance;
+                }
+            }
+        }
+
         public DataTable ObtenerProductosMasVendidos(DateTime fechaInicio, DateTime fechaFin)
         {
             return modInforme.ObtenerProductosMasVendidos(fechaInicio, fechaFin);

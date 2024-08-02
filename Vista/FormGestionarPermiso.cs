@@ -17,12 +17,14 @@ namespace Vista
 {
     public partial class FormGestionarPermiso : Form
     {
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
         public Button BtnGuardarDetalle;
         private int Rol;
         private int DNI;
         private int Estado;
         // Declara una variable para almacenar los permisos seleccionados
         private List<string> permisosSeleccionados = new List<string>();
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         public FormGestionarPermiso(int dni, int  rol)
         {
             
@@ -184,7 +186,7 @@ namespace Vista
                 if (resultado == DialogResult.Yes)
                 {
                     // Crear el nuevo rol en la base de datos
-                    ControlUsuario controlUsuario = new ControlUsuario();
+                    
                     int idRol = controlUsuario.CrearNuevoRol(nombreRol);
 
                     if (idRol > 0)
@@ -215,7 +217,7 @@ namespace Vista
 
                         // Mostrar un mensaje de éxito
                         MessageBox.Show("Se ha creado el nuevo rol correctamente y se han asignado los permisos seleccionados.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ControlAuditoria controlAuditoria = new ControlAuditoria();
+                       
                         controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Gestionar Permisos");
                     }
                     else
@@ -241,13 +243,11 @@ namespace Vista
                 DialogResult resultado = MessageBox.Show("¿Está seguro de que desea crear el nuevo permiso?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if(resultado==DialogResult.Yes)
                 {
-                    ControlUsuario controlUsuario = new ControlUsuario();
                     int idPermiso = controlUsuario.CrearPermiso(nombrePermioso);
                     if (idPermiso > 0)
                     {
                         MessageBox.Show("Se ha creado el nuevo permiso correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         CargarPermisos();
-                        ControlAuditoria controlAuditoria = new ControlAuditoria();
                         controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Gestionar Permisos");
                     }
                     else
@@ -285,7 +285,6 @@ namespace Vista
             if (!string.IsNullOrEmpty(rolSeleccionado))
             {
                 // Obtener el ID del rol seleccionado
-                ControlUsuario controlUsuario = new ControlUsuario();
                 int idRol = controlUsuario.ObtenerRolID(rolSeleccionado);
 
                 // Verificar que se haya encontrado el ID del rol
@@ -323,7 +322,6 @@ namespace Vista
             if (!string.IsNullOrEmpty(rolSeleccionado))
             {
                 // Obtener el ID del rol seleccionado
-                ControlUsuario controlUsuario = new ControlUsuario();
                 int idRol = controlUsuario.ObtenerRolID(rolSeleccionado);
 
                 // Verificar que se haya encontrado el ID del rol
@@ -357,7 +355,6 @@ namespace Vista
                     controlUsuario.ActualizarPermisosPorRol(idRol, permisos);
                     
                     MessageBox.Show("Los permisos del rol se han actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNI, "Gestionar Permisos");
                 }
                 else

@@ -17,7 +17,7 @@ namespace Vista
     {
 
         public Producto ProductoSeleccionado { get; private set; }
-        private ControlProducto controlProducto;
+        private ControlProducto controlProducto = ControlProducto.Instance;
         public FormBusquedaProducto()
         {
             InitializeComponent();
@@ -25,7 +25,6 @@ namespace Vista
 
         private void FormBusquedaProducto_Load(object sender, EventArgs e)
         {
-            controlProducto = new ControlProducto();
             dgvProductos.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
             dgvProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }

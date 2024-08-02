@@ -21,8 +21,10 @@ namespace Vista
         private decimal porcentaje;
         private decimal precioCompra = 0;
         private decimal precioVenta = 0;
-        private ControlPedido controlPedido = new ControlPedido();
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlPedido controlPedido = ControlPedido.Instance;
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
+        private ControlProducto controlProducto = ControlProducto.Instance;
         private bool validarCliente;
         private decimal VentaTotal;
         private decimal NetosTotal;
@@ -117,7 +119,6 @@ namespace Vista
                     return;
                 }
 
-                ControlProducto controlProducto = new ControlProducto();
                 Producto productoBuscado = new Producto { Codigo = codigoProducto };
 
                 Producto productoEncontrado = controlProducto.BuscarProductoPorCodigo(productoBuscado);
@@ -337,7 +338,6 @@ namespace Vista
                     string metodoPago = formPago.MetodoPago;
                     decimal montoRecibido = formPago.MontoRecibido;
 
-                    ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNIrol, "Venta");
 
                     Pedido cerrarPedido = new Pedido

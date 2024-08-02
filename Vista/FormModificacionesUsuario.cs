@@ -19,8 +19,8 @@ namespace Vista
         private int UserDNI;
         private int NewEstadoID;
         private int NewRoleID;
-
-        private ControlUsuario controlUsuario = new ControlUsuario();
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
 
         public FormModificacionesUsuario(int rol, int DNI)
         {
@@ -198,7 +198,6 @@ namespace Vista
             if (resultado == 1)
             {
                 MessageBox.Show("Usuario modificado correctamente.");
-                ControlAuditoria controlAuditoria = new ControlAuditoria();
                 controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Gestionar Usuario");
             }
             else if (resultado == -1)

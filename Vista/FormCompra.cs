@@ -18,15 +18,17 @@ namespace Vista
     public partial class FormCompra : Form
     {
         private int RoleID;
-        private ControlUsuario controlUsuario = new ControlUsuario();
         private int DNIEncontrado;
         private int CodigoEncontrado;
         private Compra compraActual = CompraActualContext.ObtenerCompraActual();
         private long IDCompra;
-        private ControlCompra controlCompra = new ControlCompra();
         private decimal precioCantidad;
         private decimal sumaTotal;
         private int DNIrol;
+        private ControlUsuario controlUsuario = ControlUsuario.Instance;
+        private ControlCompra controlCompra = ControlCompra.Instance;
+        private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
+        private ControlProducto controlProducto = ControlProducto.Instance;
 
 
         public FormCompra(int RoleID,int DNI)
@@ -205,7 +207,6 @@ namespace Vista
                     return;
                 }
 
-                ControlProducto controlProducto = new ControlProducto();
                 Producto productoBuscado = new Producto { Codigo = codigoProducto };
 
                 Producto productoEncontrado = controlProducto.BuscarProductoPorCodigo(productoBuscado);
@@ -316,7 +317,6 @@ namespace Vista
                 if (confirmacion == DialogResult.Yes)
                 {
                     // Guarda la compra actual en la base de datos
-                    ControlAuditoria controlAuditoria = new ControlAuditoria();
                     controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, DNIrol, "Compra");
                     MessageBox.Show("Compra cerrada y registrada correctamente.");
 

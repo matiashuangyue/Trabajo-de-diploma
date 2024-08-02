@@ -198,6 +198,7 @@
             this.LOGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LOGO.TabIndex = 11;
             this.LOGO.TabStop = false;
+            this.LOGO.Click += new System.EventHandler(this.LOGO_Click);
             // 
             // Login
             // 

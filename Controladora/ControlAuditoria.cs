@@ -10,7 +10,29 @@ namespace Controladora
 {
     public class ControlAuditoria
     {
+
+        private static ControlAuditoria _instance;// creo una instancia de la clase
+        private static readonly object _lock = new object();//creo un objeto para bloquear el acceso a la instancia
         private ModAuditoria modAuditoria = new ModAuditoria();
+
+        private ControlAuditoria()
+        {//Constructor privado
+        }
+        // Propiedad pública estática para obtener la instancia única
+        public static ControlAuditoria Instance
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new ControlAuditoria();
+                    }
+                    return _instance;
+                }
+            }
+        }
 
         public string RegistrarLogin(int dni)
         {
