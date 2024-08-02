@@ -20,7 +20,7 @@ namespace Vista
     {
         private int Rol;
         private int DNI;
-        private ControlInforme controlInforme;
+        private ControlInforme controlInforme = ControlInforme.Instance;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
 
         public FormInfoVisual(int dni, int rol)
@@ -28,7 +28,6 @@ namespace Vista
             InitializeComponent();
             this.Rol = rol;
             this.DNI = dni;
-            this.controlInforme = new ControlInforme();
 
             DateTime fechaInicio = DateTime.Today; // Inicio del día de hoy
             DateTime fechaFin = DateTime.Today.AddDays(1);
