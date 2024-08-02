@@ -17,7 +17,7 @@ namespace Vista
     {
         private int Rol;
         private int DNI;
-        private ControlBackUp controlBackUp = new ControlBackUp();
+        private ControlBackUp controlBackUp = ControlBackUp.Instance;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
         public FormResguardoyRestauracion(int dni, int rol)
         {
