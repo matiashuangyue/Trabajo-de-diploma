@@ -19,5 +19,6 @@ namespace Modelo.Interfaces
         //Metodo que se encarga de notificar a los observadores
         //Recibe un usuario como parametro
         void Notify(Usuario usuario);
+
     }
 }

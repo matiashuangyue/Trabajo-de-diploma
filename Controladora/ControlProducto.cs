@@ -31,6 +31,10 @@ namespace Controladora
                 }
             }
         }
+
+
+        
+
         public int AddProducto(Producto producto)
         {
             return Produc.agregarProducto(producto);

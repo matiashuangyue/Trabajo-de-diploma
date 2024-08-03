@@ -64,6 +64,7 @@
     <Compile Include="ModPedido.cs" />
     <Compile Include="ModProducto.cs" />
     <Compile Include="ModUsuario.cs" />
+    <Compile Include="Observers\StockNotifier.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

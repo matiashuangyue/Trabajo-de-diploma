@@ -43,7 +43,7 @@ namespace Modelo
                 // Enviar el correo electrónico
                 MetodosComunes.EnviarMail(cuerpoMail, remitente, destinatario);
 
-            } catch (Exception ex) { }
+            } catch (Exception ) { }
 
         }
     }

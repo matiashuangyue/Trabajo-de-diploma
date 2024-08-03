@@ -9,10 +9,9 @@ namespace Modelo.Interfaces
 {
     public interface IObserver
     {
-        //Metodo que se encarga de actualizar la informacion de un usuario
-        //Recibe un usuario como parametro
-        //No devuelve nada
-        void Update(Usuario usuario);
         
+        void Update(Usuario usuario);//Metodo que se encarga de actualizar la informacion de un usuario
+
+
     }
 }

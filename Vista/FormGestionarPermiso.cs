@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using Entidades;
-using System.Data;
 using System.Runtime.CompilerServices;
 using static Controladora.ControlAuditoria;
 
@@ -21,7 +20,6 @@ namespace Vista
         public Button BtnGuardarDetalle;
         private int Rol;
         private int DNI;
-        private int Estado;
         // Declara una variable para almacenar los permisos seleccionados
         private List<string> permisosSeleccionados = new List<string>();
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;

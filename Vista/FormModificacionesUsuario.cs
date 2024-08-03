@@ -232,7 +232,7 @@ namespace Vista
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al notificar a los observadores.");
+                    MessageBox.Show("Error al notificar a los observadores."+ex.Message);
                 }
             }
             else if (resultado == -1)

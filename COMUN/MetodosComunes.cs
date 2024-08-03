@@ -603,7 +603,7 @@ namespace COMUN
                 
                 server.Send(correoElectronico);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return;
             }

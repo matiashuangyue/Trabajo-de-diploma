@@ -9,7 +9,7 @@ using Modelo.Interfaces;
 
 namespace Controladora
 {
-    public class ControlUsuario :ISubject
+    public class ControlUsuario : ISubject
     {
 
         private static ControlUsuario _instance;//crear una instancia de la clase

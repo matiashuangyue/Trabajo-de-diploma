@@ -17,7 +17,6 @@ namespace Vista
     {
         public int rol;
         private int NewRoleID;
-        private string selectedItem;
         private int DNI;
         private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
