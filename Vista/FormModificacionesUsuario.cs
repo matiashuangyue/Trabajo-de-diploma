@@ -27,6 +27,7 @@ namespace Vista
             InitializeComponent();
             this.RoleID = rol;
             this.UserDNI = DNI;
+            EsAdmin();
         }
 
         private void vaciarTextbox()
@@ -40,6 +41,24 @@ namespace Vista
             cmbEstado.SelectedItem = null;
         }
 
+        private void EsAdmin()
+        {
+            if (RoleID == 1)
+            {
+                txtDNI.Enabled = true;
+                btnBuscar.Enabled = true;
+                cmbRol.Enabled = true;
+                cmbEstado.Enabled = true;
+            }
+            else
+            {
+                cmbRol.Enabled = false;
+                cmbEstado.Enabled = false;
+                btnBuscar.Enabled = false;
+                txtDNI.Enabled = false;
+            }
+        }
+
         private bool CamposCompletados()
         {
             // Verifica que todos los campos estén completados
@@ -50,16 +69,12 @@ namespace Vista
                    !string.IsNullOrEmpty(txtPassword.Text);
         }
 
-        private void permiso()
-        {
-            perfilUsuario(UserDNI);
-        }
-
+     
         private void IdentificarRol(int rol)
         {
             foreach (var item in cmbRol.Items)
             {
-                if (item is KeyValuePair<int, string> kvp && kvp.Key == rol)
+                if (item is KeyValuePair<int, string> kvp && kvp.Key == rol)//si el rol es igual al rol del usuario
                 {
                     cmbRol.SelectedItem = item;
                     break;
@@ -81,10 +96,12 @@ namespace Vista
 
         private void FormModificacionesUsuario_Load(object sender, EventArgs e)
         {
-            permiso();
+            
             CargarRoles();
             CargarEstados();
+            perfilUsuario(UserDNI);
         }
+   
 
         private void CargarRoles()
         {
@@ -138,14 +155,19 @@ namespace Vista
         private void perfilUsuario(int DNI)
         {
             Usuario usuarioEncontrado = controlUsuario.BuscarUsuarioPorDNI(DNI);
-            txtDNI.Text = DNI.ToString();
-            txtName.Text = usuarioEncontrado.Name;
-            txtMail.Text = usuarioEncontrado.Mail;
-            txtDireccion.Text = usuarioEncontrado.Direccion;
-            txtPassword.Text = usuarioEncontrado.Password;
-            txtTelefono.Text = usuarioEncontrado.Telefono.ToString();
-            IdentificarEstado(usuarioEncontrado.ID_Estado);
-            IdentificarRol(usuarioEncontrado.ID_Rol);
+           
+            if (usuarioEncontrado != null)
+            {
+                // Mostrar información del usuario encontrado en tu formulario
+                txtDNI.Text = DNI.ToString();
+                txtName.Text = usuarioEncontrado.Name;
+                txtMail.Text = usuarioEncontrado.Mail;
+                txtDireccion.Text = usuarioEncontrado.Direccion;
+                txtPassword.Text = usuarioEncontrado.Password;
+                txtTelefono.Text = usuarioEncontrado.Telefono.ToString();
+                IdentificarEstado(usuarioEncontrado.ID_Estado);
+                IdentificarRol(usuarioEncontrado.ID_Rol);
+            }
         }
 
         private void obtenerRol()
