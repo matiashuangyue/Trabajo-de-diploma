@@ -10,3 +10,6 @@ obj/
 *.user
 *.userosscache
 *.sln.docstates
+
+# Ignora archivos de cache de AssemblyReference
+*.csproj.AssemblyReference.cache
