@@ -23,7 +23,7 @@ namespace Vista
         {
             InitializeComponent();
             this.RoleID = RoleID;
-            this.DNI = DNI;
+            this.DNI = DNi;
         }
 
         private void FormProducto_Load(object sender, EventArgs e)

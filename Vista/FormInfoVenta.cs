@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controladora;
 using Entidades;
-using System.Data;
 
 namespace Vista
 {

@@ -20,7 +20,6 @@ namespace Vista
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-        private FormCompra formCompra;
         private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
 

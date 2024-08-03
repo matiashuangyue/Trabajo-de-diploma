@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Entidades
 {
-    public class Producto
+    public class Producto 
     {
         public int Codigo { get; set; }
         public string Name { get; set; }

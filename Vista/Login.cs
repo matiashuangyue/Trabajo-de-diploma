@@ -19,7 +19,6 @@ namespace Vista
         private int IDEstado;
         private int IDRol;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
-        private string auditoriaId;
         public Login()
         {
             InitializeComponent();

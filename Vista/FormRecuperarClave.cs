@@ -75,7 +75,7 @@ namespace Vista
                     cuerpoMail.AppendLine();
                     cuerpoMail.AppendLine("Saludos cordiales,");
                     cuerpoMail.AppendLine("El equipo de soporte");
-                    string remitente = "Yue1786812727@gmail.com"; // Remitente del correo electrónico
+                    string remitente = "Starcgcompany@gmail.com"; // Remitente del correo electrónico
                     string destinatario = mail; // Dirección de correo electrónico del destinatario
 
                     try

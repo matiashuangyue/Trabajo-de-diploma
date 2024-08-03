@@ -63,7 +63,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(39, 144);
+            this.chart1.Location = new System.Drawing.Point(39, 177);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
@@ -81,7 +81,7 @@
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(1057, 144);
+            this.chart2.Location = new System.Drawing.Point(1057, 177);
             this.chart2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
@@ -98,14 +98,14 @@
             this.chart3.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chart3.Legends.Add(legend3);
-            this.chart3.Location = new System.Drawing.Point(39, 684);
+            this.chart3.Location = new System.Drawing.Point(39, 717);
             this.chart3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart3.Name = "chart3";
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.chart3.Series.Add(series3);
-            this.chart3.Size = new System.Drawing.Size(949, 419);
+            this.chart3.Size = new System.Drawing.Size(949, 503);
             this.chart3.TabIndex = 3;
             this.chart3.Text = "chart3";
             // 
@@ -115,14 +115,14 @@
             this.chart4.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.chart4.Legends.Add(legend4);
-            this.chart4.Location = new System.Drawing.Point(1057, 684);
+            this.chart4.Location = new System.Drawing.Point(1057, 717);
             this.chart4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart4.Name = "chart4";
             series4.ChartArea = "ChartArea1";
             series4.Legend = "Legend1";
             series4.Name = "Series1";
             this.chart4.Series.Add(series4);
-            this.chart4.Size = new System.Drawing.Size(868, 418);
+            this.chart4.Size = new System.Drawing.Size(868, 503);
             this.chart4.TabIndex = 2;
             this.chart4.Text = "chart4";
             // 

@@ -31,3 +31,6 @@ D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.csproj.CoreCo
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.exe
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controladora.pdb
 D:\proyecto\Trabajo-de-diploma\Controladora\obj\Debug\Controla.1EE7A4DA.Up2Date
+D:\proyecto\Trabajo-de-diploma\Controladora\bin\Debug\COMUN.dll
+D:\proyecto\Trabajo-de-diploma\Controladora\bin\Debug\COMUN.pdb
+D:\proyecto\Trabajo-de-diploma\Controladora\bin\Debug\COMUN.dll.config

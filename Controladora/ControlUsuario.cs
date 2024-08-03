@@ -5,15 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using Entidades;
 using Modelo;
+using Modelo.Interfaces;
 
 namespace Controladora
 {
-    public class ControlUsuario
+    public class ControlUsuario : ISubject
     {
 
         private static ControlUsuario _instance;//crear una instancia de la clase
         private static readonly object _lock = new object();//crea un objeto para bloquear el acceso a la instancia
         private ModUsuario modUsuario = new ModUsuario();//crea una instancia de la clase ModUsuario
+
+        private List<IObserver> observers = new List<IObserver>();//crea una lista de observadores para notificar cambios
 
         private ControlUsuario()
         {
@@ -35,6 +38,46 @@ namespace Controladora
                 }
             }
         }
+
+
+        // metodos para adjuntar, desadjuntar y notificar a los observadores
+        public void Attach(IObserver observer)
+        {
+            observers.Add(observer);
+        }
+
+        public void Detach(IObserver observer)
+        {
+            observers.Remove(observer);
+        }
+
+        public void Notify(Usuario usuario)
+        {
+            foreach (var observer in observers)
+            {
+                observer.Update(usuario);
+            }
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // utilizando metodo de observador para notificar cambios
+        public int ModificarUsuario(Usuario usuario)
+        {
+            int resultado = modUsuario.modificarUsuario(usuario);
+
+            if (resultado == 1)
+            {
+                Notify(usuario);
+            }
+
+            return resultado;
+        }
+
+
+        //metodos de la clase
+
+
         public bool Validar(Usuario usuario)
         {
             return modUsuario.login(usuario);
@@ -61,11 +104,7 @@ namespace Controladora
         {
             return modUsuario.BuscarUsuarioPorDNI(dni);
         }
-        public int ModificarUsuario(Usuario usuario)
-        {
-            return modUsuario.modificarUsuario(usuario);
-        }
-
+       
         public bool validacionID(Usuario usuario)
         {
             return modUsuario.IsValidID(usuario);
