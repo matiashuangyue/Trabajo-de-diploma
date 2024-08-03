@@ -47,12 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionSQL.cs" />
+    <Compile Include="EmailNotifier.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IObserver.cs" />
+    <Compile Include="Interfaces\ISubject.cs" />
     <Compile Include="ModAuditoria.cs" />
     <Compile Include="ModBackUpRestore.cs" />
     <Compile Include="ModCompra.cs" />
@@ -86,10 +89,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\COMUN\COMUN.csproj">
+      <Project>{21f742ee-e636-4200-848e-92c2cb85af3d}</Project>
+      <Name>COMUN</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{86eda5c7-fb70-4f3f-8ec6-ef5cb512a293}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

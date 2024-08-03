@@ -22,12 +22,17 @@ namespace Vista
         private ControlUsuario controlUsuario = ControlUsuario.Instance;
         private ControlAuditoria controlAuditoria = ControlAuditoria.Instance;
 
+        private UsuarioControllerObserver Observer = new UsuarioControllerObserver();
+
         public FormModificacionesUsuario(int rol, int DNI)
         {
             InitializeComponent();
             this.RoleID = rol;
             this.UserDNI = DNI;
             EsAdmin();
+
+
+           
         }
 
         private void vaciarTextbox()
@@ -221,6 +226,14 @@ namespace Vista
             {
                 MessageBox.Show("Usuario modificado correctamente.");
                 controlAuditoria.RegistrarOperacion(AuditoriaGlobal.AuditoriaId, UserDNI, "Gestionar Usuario");
+                try
+                {
+                Observer.ModificarUsuario(usuarioModificado);//notifica a los observadores
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al notificar a los observadores.");
+                }
             }
             else if (resultado == -1)
             {

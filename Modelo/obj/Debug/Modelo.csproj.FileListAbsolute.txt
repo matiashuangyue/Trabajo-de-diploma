@@ -25,3 +25,6 @@ D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.
 D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.csproj.Up2Date
 D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.exe
 D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.pdb
+D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\COMUN.dll
+D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\COMUN.pdb
+D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\COMUN.dll.config

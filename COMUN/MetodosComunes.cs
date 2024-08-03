@@ -591,7 +591,7 @@ namespace COMUN
                 //ServicePointManager.ServerCertificateValidationCallback = new System.Net.Security.RemoteCertificateValidationCallback(AcceptAllCertifications);
 
                 MailMessage correoElectronico = new MailMessage();
-                correoElectronico.Subject = "LOG: ";
+                correoElectronico.Subject = "Star CG Notifier : ";
                 correoElectronico.To.Add(new MailAddress(email));
                 correoElectronico.From = new MailAddress(remitente);
 
