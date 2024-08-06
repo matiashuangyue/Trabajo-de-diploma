@@ -24,6 +24,9 @@ namespace Vista
             CargarNombreCombobox();
             this.Rol = Rol;
             this.DNIRol = DNI;
+            DateTime dtpFechaInicio = DateTime.Today; // Inicio del día de hoy
+            DateTime dtpFechaFin = DateTime.Today.AddDays(1);
+
 
         }
         private void CargarNombreCombobox()
@@ -51,7 +54,6 @@ namespace Vista
             // this.pedidosTableAdapter.Fill(this.trabajoDeDiplomaDataSet2.Pedidos);
             dgvVentasVendedor.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11, FontStyle.Bold);
             dgvVentasVendedor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dtpFechaInicio.Value = new DateTime(2020, 1, 1);
         }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)

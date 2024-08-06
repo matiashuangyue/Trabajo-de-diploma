@@ -30,7 +30,8 @@ namespace Vista
             this.Rol = rol;
             this.DNI = dNI;
             cbEstado.SelectedItem = "Alta";
-            dtpFechaInicio.Value = new DateTime(2020, 1, 1);
+            DateTime dtpFechaInicio = DateTime.Today; // Inicio del día de hoy
+            DateTime dtpFechaFin = DateTime.Today.AddDays(1);
         }
 
         private void CargarNombreCombobox(int IDROL)

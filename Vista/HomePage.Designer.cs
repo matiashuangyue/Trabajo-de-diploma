@@ -459,7 +459,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
             this.ForeColor = System.Drawing.Color.Gainsboro;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "HomePage";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HomePage_FormClosing);
             this.Load += new System.EventHandler(this.HomePage_Load);
