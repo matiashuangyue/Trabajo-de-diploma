@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Permiso
+    public abstract class  Componente
     {
-       
+        public string Nombre { get; set; }
+
     }
 }
