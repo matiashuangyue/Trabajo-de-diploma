@@ -34,6 +34,16 @@ namespace Vista
             txtNombRol.TextChanged += txtNombRol_TextChanged;
             cbRoles.SelectedIndexChanged += cbRoles_SelectedIndexChanged;
         }
+
+
+        private void agregarPermiso(List<Permiso> permiso)
+        {
+            Permiso NuevoPermiso = new Permiso();
+            GrupoPermiso grupoPermiso = new GrupoPermiso();
+            grupoPermiso.Nombre = "GrupoPermiso";
+            grupoPermiso.Agregar(NuevoPermiso);
+            MessageBox.Show(grupoPermiso.ToString());
+        }
        
 
         private void CargarPermisos()
@@ -333,7 +343,6 @@ namespace Vista
                     {
                         // Obtener el permiso de la segunda columna en la misma fila
                         string permiso = fila.Cells[1].Value?.ToString();
-
                         // Verificar si el checkbox está marcado en la primera columna
                         bool tienePermiso = (bool)fila.Cells[0].Value;
 

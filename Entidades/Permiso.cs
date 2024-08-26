@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Permiso
+    public class Permiso: Componente
     {
-       
+        public override string ToString()
+        {
+            return Nombre;
+        }
+        public Permiso() { }
+        public Permiso(string nombre)
+        {
+            Nombre = nombre;
+        }
+
     }
 }
