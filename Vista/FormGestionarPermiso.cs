@@ -186,6 +186,14 @@ namespace Vista
             {
                 // Obtener el nombre del nuevo rol
                 string nombreRol = txtNombRol.Text;
+                List<string> roles = ControlUsuario.ObtenerRoles();
+                // Verifica si el rol ya existe (ignorando mayúsculas/minúsculas)
+                bool existe = roles.Any(r => string.Equals(r, nombreRol, StringComparison.OrdinalIgnoreCase));
+                if (existe)
+                {
+                    MessageBox.Show("El rol ya existe en la base de datos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 // Mostrar un mensaje de confirmación al usuario
                 DialogResult resultado = MessageBox.Show("¿Está seguro de que desea crear el nuevo rol?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

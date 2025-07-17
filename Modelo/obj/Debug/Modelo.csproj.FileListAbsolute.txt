@@ -28,3 +28,4 @@ D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.pdb
 D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\COMUN.dll
 D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\COMUN.pdb
 D:\proyecto\Trabajo-de-diploma\Modelo\bin\Debug\COMUN.dll.config
+D:\proyecto\Trabajo-de-diploma\Modelo\obj\Debug\Modelo.exe.config
