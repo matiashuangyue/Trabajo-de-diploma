@@ -9,6 +9,17 @@ namespace Entidades
 {
     public class Producto 
     {
+        // ATRIBUTOS PRIVADOS
+        //
+        private int codigo;
+        private string name;
+        private string descripcion;
+        private decimal? price;
+        private int stock;
+        private int id_estado;
+
+        // PROPIEDADES PÚBLICAS
+        //
         public int Codigo { get; set; }
         public string Name { get; set; }
         public string Descripcion { get; set; }

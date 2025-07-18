@@ -8,6 +8,17 @@ namespace Entidades
 {
     public class Compra
     {
+        // ATRIBUTOS PRIVADOS
+        //
+        private long id_compra;
+        private DateTime fecha;
+        private decimal importeTotal;
+        private int id_proveedor;
+        private int dni_usuario;
+        private int id_estado;
+        // PROPIEDADES PÚBLICAS
+        //
+
         public long ID_Compra { get; set; }
         public DateTime Fecha { get; set; }
         public decimal ImporteTotal { get; set; }
@@ -15,16 +26,23 @@ namespace Entidades
         public int DNI_Usuario { get; set; }
         public int ID_Estado { get; set; }
 
-     
+
         // Método para calcular el importe total de la compra
-        
 
-       
 
-    } 
+
+
+    }
+
+    // Esta clase es un Singleton que mantiene la compra actual
     public class CompraActualContext
         {
-            private static Compra compraActual;
+        // ATRIBUTOS PRIVADOS
+        //
+        // Esta clase es un Singleton que mantiene la compra actual
+        // para evitar crear múltiples instancias de Compra en la aplicación.
+
+        private static Compra compraActual;
 
             public static Compra ObtenerCompraActual()
             {
@@ -40,6 +58,15 @@ namespace Entidades
 
     public class DetalleCompra
     {
+        // ATRIBUTOS PRIVADOS
+        //
+        private long id_compra;
+        private int id_producto;
+        private int cantidad;
+        private decimal precioUnitario;
+        private string nombreProducto;
+        // PROPIEDADES PÚBLICAS
+        //
 
         public long ID_Compra { get; set; }
         public int ID_Producto { get; set; }

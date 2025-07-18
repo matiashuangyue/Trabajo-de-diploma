@@ -8,6 +8,12 @@ namespace Entidades
 {
     public class GrupoPermiso: Componente
     {
+        // ATRIBUTOS PRIVADOS
+        //
+        private string nombre;
+
+        // PROPIEDADES PÚBLICAS
+        //
         public List<Componente> Permisos { get; set; }
 
         public GrupoPermiso()

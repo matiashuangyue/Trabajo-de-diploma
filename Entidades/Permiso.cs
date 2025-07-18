@@ -8,6 +8,12 @@ namespace Entidades
 {
     public class Permiso: Componente
     {
+
+        // ATRIBUTOS PRIVADOS
+        //
+        private string nombre;
+        // PROPIEDADES PÚBLICAS
+        //
         public override string ToString()
         {
             return Nombre;

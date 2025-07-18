@@ -8,7 +8,13 @@ namespace Entidades
 {
     public class Rol
     {
-       
+        //ATRIBUTOS
+        //
+        private string nombre;
+    
+        //
+        //PROPIEDADES
+        //
         public string Nombre { get; set; } 
     }
 }

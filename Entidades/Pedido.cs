@@ -8,6 +8,19 @@ namespace Entidades
 {
     public class Pedido
     {
+        // ATRIBUTOS PRIVADOS
+        //
+        private long id_pedido;
+        private DateTime fecha;
+        private decimal importe;
+            
+        private decimal netos;
+        private int id_vendedor;
+        private int id_cliente;
+        private int id_estado;
+        private string metodoPago; // Nuevo campo para el método de pago
+        // PROPIEDADES PÚBLICAS
+        //
         public long ID_Pedido { get; set; }
         public DateTime Fecha { get; set; }
         public decimal Importe { get; set; }
@@ -20,6 +33,19 @@ namespace Entidades
     }
     public class DetallePedido
     {
+        // ATRIBUTOS PRIVADOS
+        //
+        private long detalleID;
+        private long id_pedido;
+        private int id_producto;
+        private int cantidad;
+        private decimal precioVenta;
+        private decimal cantidadPrecio;
+
+        // PROPIEDADES PÚBLICAS
+        //
+
+
         public long DetalleID { get; set; }
         public long ID_Pedido { get; set; }
         public int ID_Producto { get; set; }

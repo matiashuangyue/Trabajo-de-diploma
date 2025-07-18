@@ -8,6 +8,22 @@ namespace Entidades
 {
     public class Usuario
     {
+        //ATRIBUTOS
+        //
+        private int dni;
+        private string name;
+        private string mail;
+        private long telefono;
+        private string direccion;
+        private string password;
+        private int id_rol;
+        private int id_estado;
+
+
+        //
+        //PROPIEDADES
+        //
+
         public int DNI { get; set; }
         public string Name { get; set; }
         public string Mail { get; set; }
