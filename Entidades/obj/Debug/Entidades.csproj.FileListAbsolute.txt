@@ -17,3 +17,4 @@ D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.csproj.GenerateReso
 D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.exe
 D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.pdb
+D:\proyecto\Trabajo-de-diploma\Entidades\obj\Debug\Entidades.exe.config
