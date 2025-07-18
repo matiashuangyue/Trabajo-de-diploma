@@ -12,7 +12,16 @@ namespace Entidades
         //
         private int idDetalleAuditoria;
         private long idAuditoria;
-        private string accion;
+        private int idOperacion;
+        private DateTime fechaOperacion;
+
+        // PROPIEDADES PÚBLICAS 
+        //
+        public int ID_DetalleAuditoria { get; set; }
+        public long ID_Auditoria { get; set; }
+        public int ID_Operacion { get; set; }// Nuevo campo para el ID de la operación, viene de la tabla de permisos
+        public DateTime FechaOperacion { get; set; }
+
 
     }
 }
