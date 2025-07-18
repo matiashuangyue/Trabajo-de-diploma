@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Auditoria
+    public class Auditoria
     {
+        // ATRIBUTOS PRIVADOS
+        //
+        private long idAuditoria;
+        private int dni;
+        private DateTime timeLogin;
+        private DateTime timeLogout;
+
+        // PROPIEDADES PÚBLICAS
+        //
+        public long ID_Auditoria { get; set; }
+        public int DNI { get; set; }
+        public DateTime TimeLogin { get; set; }
+        public DateTime TimeLogout { get; set; }
+
+
     }
 }

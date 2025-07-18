@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auditoria.cs" />
     <Compile Include="Componente.cs" />
     <Compile Include="Compra.cs" />
+    <Compile Include="DetalleAuditoria.cs" />
     <Compile Include="DetalleCompra.cs" />
     <Compile Include="DetallePedido.cs" />
     <Compile Include="GrupoPermiso.cs" />

@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class DetalleAuditoria
+    public class DetalleAuditoria
     {
+        // ATRIBUTOS PRIVADOS
+        //
+        private int idDetalleAuditoria;
+        private long idAuditoria;
+        private string accion;
+
     }
 }
