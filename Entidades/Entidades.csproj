@@ -49,6 +49,7 @@
     <Compile Include="Componente.cs" />
     <Compile Include="Compra.cs" />
     <Compile Include="DetalleCompra.cs" />
+    <Compile Include="DetallePedido.cs" />
     <Compile Include="GrupoPermiso.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Permiso.cs" />
